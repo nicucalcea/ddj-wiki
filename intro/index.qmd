@@ -4,7 +4,7 @@ subtitle: "What is it and why do we need it?"
 href: intro
 ---
 
-Data Journalism goes by different names. It can be called data-driven journalism, computer-assisted reporting or CAR (in the US), precision journalism. Its history is even older than that though: the [first edition of the Manchester Guardian](https://www.theguardian.com/news/datablog/2011/sep/26/data-journalism-guardian) had a data journalism article. So don't focus too much on what you call it.
+Data Journalism goes by different names. It can be called data-driven journalism, computer-assisted reporting or CAR (in the US), precision journalism. Its history is even older than that though: the [first edition of the Manchester Guardian](https://www.theguardian.com/news/datablog/2011/sep/26/data-journalism-guardian){target="_blank"} had a data journalism article. So don't focus too much on what you call it.
 
 > In its most simple definition, data journalism is the practice of using numbers and trends to tell a story. - Betsy Ladyzhets
 

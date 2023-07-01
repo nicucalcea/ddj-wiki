@@ -8,9 +8,27 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
       - intro/index.qmd
-      - city/index.qmd
+      # - city/index.qmd
+    tools:
+      - icon: person-circle
+        href: https://nicu.md/
+      - icon: mastodon
+        href: https://journa.host/@nicu
+      - icon: twitter
+        href: https://twitter.com/nicucalcea
+      - icon: linkedin
+        href: https://www.linkedin.com/in/nicucalcea/
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/nicucalcea/ddj-wiki
+          - text: Report an Issue
+            url:  https://github.com/nicucalcea/ddj-wiki/issues
+  repo-url: https://github.com/nicucalcea/ddj-wiki
+  repo-actions: [edit, issue]
+  site-url: http://nicu.md/ddj-wiki/
+  page-footer: "Copyright 2023, <a href='https://nicu.md/'>Nicu Calcea</a>"
 
 format:
   html:
@@ -18,5 +36,4 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
-
+editor: source

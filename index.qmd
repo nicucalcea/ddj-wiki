@@ -1,11 +1,5 @@
 ---
-title: "ddj-wiki"
+title: "Data Journalism Wiki"
 ---
 
 This is a website about data journalism.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
