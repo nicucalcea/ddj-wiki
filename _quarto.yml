@@ -13,12 +13,6 @@ website:
     tools:
       - icon: person-circle
         href: https://nicu.md/
-      - icon: mastodon
-        href: https://journa.host/@nicu
-      - icon: twitter
-        href: https://twitter.com/nicucalcea
-      - icon: linkedin
-        href: https://www.linkedin.com/in/nicucalcea/
       - icon: github
         menu:
           - text: Source Code

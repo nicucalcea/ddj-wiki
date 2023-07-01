@@ -3,8 +3,9 @@ title: "City Slides"
 subtitle: "What is it and why do we need it?"
 format:
   revealjs:
-    self-contained: true
     multiplex: true
+    chalkboard: 
+      buttons: false
 href: city
 ---
 
