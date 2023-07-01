@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Data Journalism Wiki"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - intro/index.qmd
+      - city/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+

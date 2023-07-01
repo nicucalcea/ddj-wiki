@@ -47,3 +47,20 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+/.quarto/
+
+# Speaker files for reveal.js
+*-speaker.html
+
+# Quarto
+/.quarto/
+/_*.local
+/.venv/
+/.condaenv/
+*_cache/
+/env/
+/_site/
+
+
+/.luarc.json
