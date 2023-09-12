@@ -1,9 +1,9 @@
 ---
 title: "Intro to Data Journalism"
-subtitle: "City, University of London"
+subtitle: "City, University of London<br><a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>"
 format:
   revealjs:
-    theme: night
+    theme: [night, css/custom.scss]
     multiplex: true
     chalkboard: 
       buttons: false
@@ -43,7 +43,7 @@ I'm a data journalist and City University alumnus, originally from Moldova, curr
 I work as a data journalist at *BBC News*, previously Data Projects Editor at the *New Statesman*.
 
 ::: notes
-I graduated two years ago and did this module 3 years ago.
+I graduated 4 years ago and did this module 5 years ago.
 
 You can email me with any questions about these slides, examples I've given, assignments, etc.
 
