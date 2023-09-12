@@ -1,15 +1,17 @@
 ---
-title: "City Slides"
-subtitle: "What is it and why do we need it?"
+title: "Intro to Data Journalism"
+subtitle: "City, University of London"
 format:
   revealjs:
+    theme: night
     multiplex: true
     chalkboard: 
       buttons: false
 href: city
 ---
 
-# <span class="wave">👋</span> Welcome to <span style="color:#F44336;">Introduction to Data Journalism</span>
+# [👋]{.wave} Welcome to [Introduction to Data Journalism]{style="color:#F44336;"}
+
 ```{=html}
 <style>
   .wave {
@@ -32,17 +34,16 @@ href: city
 }
 </style>
 ```
-
 ## Who am I?
 
 My name is Nicu Calcea.
 
-I'm a data journalist and City University alumnus, originally from the Republic of Moldova, currently based in London.
+I'm a data journalist and City University alumnus, originally from Moldova, currently based in London.
 
-Currently a data journalist at the BBC, previously Data Projects Editor at the New Statesman.
+I work as a data journalist at *BBC News*, previously Data Projects Editor at the *New Statesman*.
 
 ::: notes
-My name is Nicu. I graduated two years ago and did this module 3 years ago.
+I graduated two years ago and did this module 3 years ago.
 
 You can email me with any questions about these slides, examples I've given, assignments, etc.
 
@@ -50,7 +51,7 @@ I do have a full time job, so for any administrative or urgent queries, please c
 :::
 
 ::: footer
-More about me: [nicu.md](https://nicu.md/)
+My personal website: [nicu.md](https://nicu.md/)
 :::
 
 ## Who are you?
