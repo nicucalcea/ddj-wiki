@@ -42,3 +42,6 @@ format:
     toc: true
 
 editor: source
+
+resources:
+  - CNAME
