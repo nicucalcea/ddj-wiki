@@ -1,15 +1,15 @@
 ---
-title: "Data Sources"
+title: "Data Calendar"
 # subtitle: "Where to find data and how to keep up with new releases?"
-href: sources
+# href: sources
 listing: 
   id: data-sources
-  contents: data-sources.yml
+  contents: data-calendar.yml
 metadata-files: 
   - _metadata.yml
 ---
 
-This is not meant to be an exhaustive list of all data sources, as that would be impossible to put on a page. However, it should give you a starting point and might spark a few ideas.
+Here's a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases.
 
 ::: column-page-inset-right
 ```{=html}
@@ -120,3 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ::: {#data-sources .column-body-outset-right}
 :::
+
+Here's a view of upcoming business releases that I keep up to date for work.
+
+<iframe src="https://calendar.google.com/calendar/embed?src=p3j1ihatp6f23c3rhp71thvs2175t66l%40import.calendar.google.com&ctz=Europe%2FLondon" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>

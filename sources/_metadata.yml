@@ -4,11 +4,13 @@ listing:
   fields: 
     - name
     - description
+    # - schedule
     - country
   field-links: 
     - name
   field-display-names: 
     name: Name
+    # schedule: Schedule
     country: Country
 format:
   html:

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Journalism Wiki - Data Sources</title>
+<title>Data Journalism Wiki - Data Calendar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       valueNames: ['listing-name','listing-description','listing-country',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-name-sort'] }],
       page: 30,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-name","listing-path","listing-country","listing-description","listing-schedule"],
+      searchColumns: ["listing-name","listing-path","listing-country","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -179,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Sources</h1>
+<h1 class="title">Data Calendar</h1>
 </div>
 
 
@@ -194,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is not meant to be an exhaustive list of all data sources, as that would be impossible to put on a page. However, it should give you a starting point and might spark a few ideas.</p>
+<p>Here’s a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases.</p>
 <div class="column-page-inset-right">
 
 
@@ -325,7 +325,7 @@ Country
 <tbody class="list">
 <tr data-index="0" data-listing-name-sort="Australian Bureau of Statistics">
 <td>
-<a href="https://www.abs.gov.au/" class="name listing-name">Australian Bureau of Statistics</a>
+<a href="https://www.abs.gov.au/release-calendar/future-releases-calendar" class="name listing-name">Australian Bureau of Statistics</a>
 </td>
 <td>
 <span class="listing-description">Australia’s national statistical agency and an official source of independent, reliable information. </span>
@@ -339,7 +339,7 @@ Country
 <a href="https://www.bankofengland.co.uk/news/statistics" class="name listing-name">Bank of England</a>
 </td>
 <td>
-<span class="listing-description">The UK’s central bank. </span>
+<span class="listing-description">The UK’s central bank. Click “Upcoming” for the upcoming data releases. </span>
 </td>
 <td>
 <span class="listing-country">🇬🇧 United Kindom</span>
@@ -347,7 +347,7 @@ Country
 </tr>
 <tr data-index="2" data-listing-name-sort="Bank for International Settlements">
 <td>
-<a href="https://data.bis.org/" class="name listing-name">Bank for International Settlements</a>
+<a href="https://www.bis.org/statistics/relcal.htm" class="name listing-name">Bank for International Settlements</a>
 </td>
 <td>
 <span class="listing-description">Compiled in cooperation with central banks and other national authorities, are designed to inform analysis of financial stability, international monetary spillovers and global liquidity. </span>
@@ -358,7 +358,7 @@ Country
 </tr>
 <tr data-index="3" data-listing-name-sort="British Film Institute">
 <td>
-<a href="https://www.bfi.org.uk/industry-data-insights/" class="name listing-name">British Film Institute</a>
+<a href="https://www.bfi.org.uk/industry-data-insights/official-statistics-release-calendar" class="name listing-name">British Film Institute</a>
 </td>
 <td>
 <span class="listing-description">Research data and market intelligence on the UK film industry and other screen sectors. </span>
@@ -369,7 +369,7 @@ Country
 </tr>
 <tr data-index="4" data-listing-name-sort="Bureau of Labor Statistics">
 <td>
-<a href="https://www.bls.gov/" class="name listing-name">Bureau of Labor Statistics</a>
+<a href="https://www.bls.gov/schedule/" class="name listing-name">Bureau of Labor Statistics</a>
 </td>
 <td>
 <span class="listing-description">The principal fact-finding agency for the U.S. government in the broad field of labor economics and statistics. </span>
@@ -380,7 +380,7 @@ Country
 </tr>
 <tr data-index="5" data-listing-name-sort="Central Statistics Office">
 <td>
-<a href="https://www.cso.ie/en/" class="name listing-name">Central Statistics Office</a>
+<a href="https://www.cso.ie/en/csolatestnews/releasecalendar/" class="name listing-name">Central Statistics Office</a>
 </td>
 <td>
 <span class="listing-description">Ireland’s national statistical office that collects, analyses and makes available statistics about Ireland’s people, society and economy. </span>
@@ -391,7 +391,7 @@ Country
 </tr>
 <tr data-index="6" data-listing-name-sort="Civil Aviation Authority">
 <td>
-<a href="https://www.caa.co.uk/data-and-analysis/" class="name listing-name">Civil Aviation Authority</a>
+<a href="https://www.caa.co.uk/data-and-analysis/uk-aviation-market/data-publication-dates/" class="name listing-name">Civil Aviation Authority</a>
 </td>
 <td>
 <span class="listing-description">Aviation data, statistics and reports. </span>
@@ -400,31 +400,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="7" data-listing-name-sort="Companies House">
+<tr data-index="7" data-listing-name-sort="Economic Research Service">
 <td>
-<a href="http://download.companieshouse.gov.uk/en_output.html" class="name listing-name">Companies House</a>
-</td>
-<td>
-<span class="listing-description">Downloadable data snapshot containing basic company data of live companies on the Companies House register. Also available as an <a href="https://developer.company-information.service.gov.uk/">API</a>. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="8" data-listing-name-sort="Energy Performance of Buildings">
-<td>
-<a href="https://epc.opendatacommunities.org/" class="name listing-name">Energy Performance of Buildings</a>
-</td>
-<td>
-<span class="listing-description">The official place for all Energy Performance Certificates (EPCs), Display Energy Certificates (DECs) and Air Conditioning Inspection Reports (ACIRs). </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="9" data-listing-name-sort="Economic Research Service">
-<td>
-<a href="https://www.ers.usda.gov/" class="name listing-name">Economic Research Service</a>
+<a href="https://www.ers.usda.gov/calendar/" class="name listing-name">Economic Research Service</a>
 </td>
 <td>
 <span class="listing-description">Trends and emerging issues in agriculture, food, the environment, and rural America. </span>
@@ -433,9 +411,9 @@ Country
 <span class="listing-country">🇺🇸 United States</span>
 </td>
 </tr>
-<tr data-index="10" data-listing-name-sort="Energy Information Administration">
+<tr data-index="8" data-listing-name-sort="Energy Information Administration">
 <td>
-<a href="https://www.eia.gov/" class="name listing-name">Energy Information Administration</a>
+<a href="https://www.eia.gov/reports/upcoming.php" class="name listing-name">Energy Information Administration</a>
 </td>
 <td>
 <span class="listing-description">Independent and impartial energy information to promote sound policymaking, efficient markets, and public understanding of energy and its interaction with the economy and the environment. </span>
@@ -444,9 +422,9 @@ Country
 <span class="listing-country">🇺🇸 United States</span>
 </td>
 </tr>
-<tr data-index="11" data-listing-name-sort="European Central Bank">
+<tr data-index="9" data-listing-name-sort="European Central Bank">
 <td>
-<a href="https://www.ecb.europa.eu/pub/html/index.en.html" class="name listing-name">European Central Bank</a>
+<a href="https://www.ecb.europa.eu/press/calendars/statscal/html/index.en.html" class="name listing-name">European Central Bank</a>
 </td>
 <td>
 <span class="listing-description">Economic research on a wide range of topics in Europe. </span>
@@ -455,9 +433,9 @@ Country
 <span class="listing-country">🇪🇺 Europe</span>
 </td>
 </tr>
-<tr data-index="12" data-listing-name-sort="Eurostat">
+<tr data-index="10" data-listing-name-sort="Eurostat">
 <td>
-<a href="https://ec.europa.eu/eurostat/web/main/home" class="name listing-name">Eurostat</a>
+<a href="https://ec.europa.eu/eurostat/web/main/news/release-calendar?type=listMonth&amp;start=1693519200000" class="name listing-name">Eurostat</a>
 </td>
 <td>
 <span class="listing-description">The statistical office of the European Union </span>
@@ -466,20 +444,9 @@ Country
 <span class="listing-country">🇪🇺 Europe</span>
 </td>
 </tr>
-<tr data-index="13" data-listing-name-sort="Financial Conduct Authority">
+<tr data-index="11" data-listing-name-sort="GOV.UK">
 <td>
-<a href="https://www.fca.org.uk/data" class="name listing-name">Financial Conduct Authority</a>
-</td>
-<td>
-<span class="listing-description">Official data on financial services firms. See also the <a href="https://register.fca.org.uk/s/">register of firms</a>. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="14" data-listing-name-sort="GOV.UK">
-<td>
-<a href="https://www.gov.uk/search/research-and-statistics" class="name listing-name">GOV.UK</a>
+<a href="https://www.gov.uk/search/research-and-statistics?content_store_document_type=upcoming_statistics&amp;order=updated-newest" class="name listing-name">GOV.UK</a>
 </td>
 <td>
 <span class="listing-description">Official data from various government sources. </span>
@@ -488,7 +455,7 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="15" data-listing-name-sort="Halifax House Price Index">
+<tr data-index="12" data-listing-name-sort="Halifax House Price Index">
 <td>
 <a href="https://www.halifax.co.uk/media-centre/house-price-index.html" class="name listing-name">Halifax House Price Index</a>
 </td>
@@ -499,9 +466,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="16" data-listing-name-sort="Higher Education Statistics Agency">
+<tr data-index="13" data-listing-name-sort="Higher Education Statistics Agency">
 <td>
-<a href="https://www.hesa.ac.uk/data-and-analysis" class="name listing-name">Higher Education Statistics Agency</a>
+<a href="https://www.hesa.ac.uk/data-and-analysis/upcoming" class="name listing-name">Higher Education Statistics Agency</a>
 </td>
 <td>
 <span class="listing-description">Data on all aspects of the UK higher education sector. </span>
@@ -510,53 +477,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="17" data-listing-name-sort="HM Land Registry">
+<tr data-index="14" data-listing-name-sort="International Energy Agency">
 <td>
-<a href="https://landregistry.data.gov.uk/" class="name listing-name">HM Land Registry</a>
-</td>
-<td>
-<span class="listing-description">Price paid, transaction and UK House Price Index, updated monthly. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="18" data-listing-name-sort="House of Lords Register of Interests">
-<td>
-<a href="https://members.parliament.uk/members/lords/interests/register-of-lords-interests" class="name listing-name">House of Lords Register of Interests</a>
-</td>
-<td>
-<span class="listing-description">Information on any financial or non-financial benefit received by a Member of the Lords. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="19" data-listing-name-sort="House of Commons Library">
-<td>
-<a href="https://commonslibrary.parliament.uk/research-for-commons-business/" class="name listing-name">House of Commons Library</a>
-</td>
-<td>
-<span class="listing-description">Information and analysis on legislation, policy areas and topical issues. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="20" data-listing-name-sort="Inside Airbnb">
-<td>
-<a href="http://insideairbnb.com/" class="name listing-name">Inside Airbnb</a>
-</td>
-<td>
-<span class="listing-description">A mission driven project that provides data and advocacy about Airbnb’s impact on residential communities. </span>
-</td>
-<td>
-<span class="listing-country">🌍 Global</span>
-</td>
-</tr>
-<tr data-index="21" data-listing-name-sort="International Energy Agency">
-<td>
-<a href="https://www.iea.org/data-and-statistics" class="name listing-name">International Energy Agency</a>
+<a href="https://www.iea.org/events" class="name listing-name">International Energy Agency</a>
 </td>
 <td>
 <span class="listing-description">Intergovernmental organisation, established in 1974, that provides policy recommendations, analysis and data on the entire global energy sector. </span>
@@ -565,7 +488,7 @@ Country
 <span class="listing-country">🌍 Global</span>
 </td>
 </tr>
-<tr data-index="22" data-listing-name-sort="International Monetary Fund">
+<tr data-index="15" data-listing-name-sort="International Monetary Fund">
 <td>
 <a href="https://data.imf.org/" class="name listing-name">International Monetary Fund</a>
 </td>
@@ -576,31 +499,20 @@ Country
 <span class="listing-country">🌍 Global</span>
 </td>
 </tr>
-<tr data-index="23" data-listing-name-sort="Meta Ad Library">
+<tr data-index="16" data-listing-name-sort="MarketWatch Economic Calendar">
 <td>
-<a href="https://www.facebook.com/ads/library/" class="name listing-name">Meta Ad Library</a>
+<a href="https://www.marketwatch.com/economy-politics/calendar" class="name listing-name">MarketWatch Economic Calendar</a>
 </td>
 <td>
-<span class="listing-description">Search all of the ads currently running across Meta technologies, primarily used for Facebook. </span>
+<span class="listing-description">Major U.S. economic reports &amp; fed speakers. </span>
 </td>
 <td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="24" data-listing-name-sort="National River Flow Archive">
-<td>
-<a href="https://nrfa.ceh.ac.uk/" class="name listing-name">National River Flow Archive</a>
-</td>
-<td>
-<span class="listing-description">The UK’s official record of river flow data. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
+<span class="listing-country">🇺🇸 United States</span>
 </td>
 </tr>
-<tr data-index="25" data-listing-name-sort="NHS Digital">
+<tr data-index="17" data-listing-name-sort="NHS Digital">
 <td>
-<a href="https://digital.nhs.uk/data" class="name listing-name">NHS Digital</a>
+<a href="https://digital.nhs.uk/search/document-type/publication/publicationStatus/false?sort=date&amp;area=data" class="name listing-name">NHS Digital</a>
 </td>
 <td>
 <span class="listing-description">The statutory custodian for health and care data for England. </span>
@@ -609,9 +521,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="26" data-listing-name-sort="Nomis">
+<tr data-index="18" data-listing-name-sort="Nomis">
 <td>
-<a href="https://www.nomisweb.co.uk/" class="name listing-name">Nomis</a>
+<a href="https://www.nomisweb.co.uk/home/release_group.asp" class="name listing-name">Nomis</a>
 </td>
 <td>
 <span class="listing-description">Statistics related to population, society and the labour market at national, regional and local levels. </span>
@@ -620,9 +532,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="27" data-listing-name-sort="New York Fed">
+<tr data-index="19" data-listing-name-sort="New York Fed">
 <td>
-<a href="https://www.newyorkfed.org/data-and-statistics" class="name listing-name">New York Fed</a>
+<a href="https://www.newyorkfed.org/research/calendars/nationalecon_cal.html" class="name listing-name">New York Fed</a>
 </td>
 <td>
 <span class="listing-description">Provides the date and time of key economic data releases. </span>
@@ -631,9 +543,9 @@ Country
 <span class="listing-country">🇺🇸 United States</span>
 </td>
 </tr>
-<tr data-index="28" data-listing-name-sort="Ofcom">
+<tr data-index="20" data-listing-name-sort="Ofcom">
 <td>
-<a href="https://www.ofcom.org.uk/research-and-data/data" class="name listing-name">Ofcom</a>
+<a href="https://www.ofcom.org.uk/research-and-data/data/statistics/stats23" class="name listing-name">Ofcom</a>
 </td>
 <td>
 <span class="listing-description">The regulator for communications services, including broadband, home phone, mobile services, TV and radio. </span>
@@ -642,9 +554,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="29" data-listing-name-sort="Ofgem">
+<tr data-index="21" data-listing-name-sort="Ofgem">
 <td>
-<a href="https://www.ofgem.gov.uk/energy-data-and-research" class="name listing-name">Ofgem</a>
+<a href="https://www.ofgem.gov.uk/publications/ofgem-data-upcoming-release-calendar" class="name listing-name">Ofgem</a>
 </td>
 <td>
 <span class="listing-description">Great Britain’s independent energy regulator. </span>
@@ -653,7 +565,7 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="30" data-listing-name-sort="Office for Budget Responsibility">
+<tr data-index="22" data-listing-name-sort="Office for Budget Responsibility">
 <td>
 <a href="https://obr.uk/publications/" class="name listing-name">Office for Budget Responsibility</a>
 </td>
@@ -664,9 +576,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="31" data-listing-name-sort="Office for National Statistics">
+<tr data-index="23" data-listing-name-sort="Office for National Statistics">
 <td>
-<a href="https://www.ons.gov.uk/" class="name listing-name">Office for National Statistics</a>
+<a href="https://www.ons.gov.uk/releasecalendar?view=upcoming&amp;size=50" class="name listing-name">Office for National Statistics</a>
 </td>
 <td>
 <span class="listing-description">The UK official statistics body. </span>
@@ -675,9 +587,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="32" data-listing-name-sort="Office for Students">
+<tr data-index="24" data-listing-name-sort="Office for Students">
 <td>
-<a href="https://www.officeforstudents.org.uk/data-and-analysis/" class="name listing-name">Office for Students</a>
+<a href="https://www.officeforstudents.org.uk/data-and-analysis/official-statistics/release-schedules/" class="name listing-name">Office for Students</a>
 </td>
 <td>
 <span class="listing-description">Data-driven analysis and essential evidence on key trends and current issues in English higher education. </span>
@@ -686,9 +598,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="33" data-listing-name-sort="Office of Rail and Road">
+<tr data-index="25" data-listing-name-sort="Office of Rail and Road">
 <td>
-<a href="https://dataportal.orr.gov.uk/" class="name listing-name">Office of Rail and Road</a>
+<a href="https://dataportal.orr.gov.uk/publication-dates-for-statistics/" class="name listing-name">Office of Rail and Road</a>
 </td>
 <td>
 <span class="listing-description">Government department responsible for the economic and safety regulation of Britain’s railways, and the economic monitoring of National Highways. </span>
@@ -697,20 +609,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="34" data-listing-name-sort="Office of the Registrar of Consultant Lobbyists">
+<tr data-index="26" data-listing-name-sort="OECD">
 <td>
-<a href="https://registrarofconsultantlobbyists.org.uk/" class="name listing-name">Office of the Registrar of Consultant Lobbyists</a>
-</td>
-<td>
-<span class="listing-description">Set up to ensure transparency in the work of consultant lobbyists and their engagement with Ministers and Permanent Secretaries on behalf of clients. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="35" data-listing-name-sort="OECD">
-<td>
-<a href="https://data.oecd.org/" class="name listing-name">OECD</a>
+<a href="https://www.oecd.org/sdd/statisticsnewsreleases.htm" class="name listing-name">OECD</a>
 </td>
 <td>
 <span class="listing-description">Data, policy advice and research on the economy, education, employment, environment, health, tax, trade, GDP, unemployment rate, etc. </span>
@@ -719,75 +620,9 @@ Country
 <span class="listing-country">🌍 Global</span>
 </td>
 </tr>
-<tr data-index="36" data-listing-name-sort="Parliament.uk">
+<tr data-index="27" data-listing-name-sort="Statistics Canada">
 <td>
-<a href="https://explore.data.parliament.uk/" class="name listing-name">Parliament.uk</a>
-</td>
-<td>
-<span class="listing-description">A list of open datasets supported by the Parliamentary Digital Service. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="37" data-listing-name-sort="Police.uk">
-<td>
-<a href="https://data.police.uk/" class="name listing-name">Police.uk</a>
-</td>
-<td>
-<span class="listing-description">Open data about crime and policing in England, Wales and Northern Ireland. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="38" data-listing-name-sort="Register of data protection fee payers">
-<td>
-<a href="https://ico.org.uk/about-the-ico/what-we-do/register-of-fee-payers/" class="name listing-name">Register of data protection fee payers</a>
-</td>
-<td>
-<span class="listing-description">Organisations and people registered with the Information Commissioner’s Office (ICO) under the Data Protection Act 2018. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="39" data-listing-name-sort="Register of charities">
-<td>
-<a href="https://register-of-charities.charitycommission.gov.uk/" class="name listing-name">Register of charities</a>
-</td>
-<td>
-<span class="listing-description">Information about registered charities in England and Wales </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="40" data-listing-name-sort="Schools">
-<td>
-<a href="https://get-information-schools.service.gov.uk/" class="name listing-name">Schools</a>
-</td>
-<td>
-<span class="listing-description">The Department for Education’s register for several organisation types and where information on other organisations is recorded and maintained. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="41" data-listing-name-sort="Stat-Xplore">
-<td>
-<a href="https://stat-xplore.dwp.gov.uk/" class="name listing-name">Stat-Xplore</a>
-</td>
-<td>
-<span class="listing-description">A guided way to explore Department for Work &amp; Pensions benefit statistics, currently holding data relating to a range of different benefits/programmes. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="42" data-listing-name-sort="Statistics Canada">
-<td>
-<a href="https://www.statcan.gc.ca/en/start" class="name listing-name">Statistics Canada</a>
+<a href="https://www150.statcan.gc.ca/n1/dai-quo/cal2-eng.htm" class="name listing-name">Statistics Canada</a>
 </td>
 <td>
 <span class="listing-description">Statistics Canada is the national statistical office of Canada. </span>
@@ -796,9 +631,9 @@ Country
 <span class="listing-country">🇨🇦 Canada</span>
 </td>
 </tr>
-<tr data-index="43" data-listing-name-sort="Statistisches Bundesamt">
+<tr data-index="28" data-listing-name-sort="Statistisches Bundesamt">
 <td>
-<a href="https://www.destatis.de/EN/Home/_node.html" class="name listing-name">Statistisches Bundesamt</a>
+<a href="https://www.destatis.de/SiteGlobals/Forms/Suche/Termine/EN/Terminsuche_Formular.html?queryResultId=null&amp;pageNo=0" class="name listing-name">Statistisches Bundesamt</a>
 </td>
 <td>
 <span class="listing-description">Official data on the society, the economy, the environment and the state of Germany. </span>
@@ -807,18 +642,7 @@ Country
 <span class="listing-country">🇩🇪 Germany</span>
 </td>
 </tr>
-<tr data-index="44" data-listing-name-sort="UK AIR">
-<td>
-<a href="https://uk-air.defra.gov.uk/" class="name listing-name">UK AIR</a>
-</td>
-<td>
-<span class="listing-description">Data about air quality and pollution in the UK. </span>
-</td>
-<td>
-<span class="listing-country">🇬🇧 United Kindom</span>
-</td>
-</tr>
-<tr data-index="45" data-listing-name-sort="UK Finance">
+<tr data-index="29" data-listing-name-sort="UK Finance">
 <td>
 <a href="https://www.ukfinance.org.uk/data-research" class="name listing-name">UK Finance</a>
 </td>
@@ -829,9 +653,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="46" data-listing-name-sort="Universities and Colleges Admissions Service">
+<tr data-index="30" data-listing-name-sort="Universities and Colleges Admissions Service">
 <td>
-<a href="https://www.ucas.com/data-and-analysis/" class="name listing-name">Universities and Colleges Admissions Service</a>
+<a href="https://www.ucas.com/data-and-analysis/ucas-timetable-data-and-analysis" class="name listing-name">Universities and Colleges Admissions Service</a>
 </td>
 <td>
 <span class="listing-description">An independent charity, and the UK’s shared admissions service for higher education. </span>
@@ -840,9 +664,9 @@ Country
 <span class="listing-country">🇬🇧 United Kindom</span>
 </td>
 </tr>
-<tr data-index="47" data-listing-name-sort="UNdata">
+<tr data-index="31" data-listing-name-sort="UNdata">
 <td>
-<a href="http://data.un.org/" class="name listing-name">UNdata</a>
+<a href="http://data.un.org/UpdateCalendar.aspx" class="name listing-name">UNdata</a>
 </td>
 <td>
 <span class="listing-description">A variety of statistical resources compiled by the United Nations (UN) statistical system and other international agencies. </span>
@@ -861,6 +685,9 @@ No matching items
   <ul class="pagination"></ul>
 </nav>
 </div>
+<p>Here’s a view of upcoming business releases that I keep up to date for work.</p>
+<iframe src="https://calendar.google.com/calendar/embed?src=p3j1ihatp6f23c3rhp71thvs2175t66l%40import.calendar.google.com&amp;ctz=Europe%2FLondon" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no">
+</iframe>
 
 
 
@@ -1098,7 +925,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023, <a href="https://nicu.md/">Nicu Calcea</a><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nicucalcea/ddj-wiki/edit/main/sources/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center">Copyright 2023, <a href="https://nicu.md/">Nicu Calcea</a><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nicucalcea/ddj-wiki/edit/main/sources/data-calendar.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

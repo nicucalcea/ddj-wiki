@@ -19,6 +19,7 @@ Data can be hard and complex, you'll always want to reach out to experts who can
 ```{=html}
 <div class="flourish-embed flourish-timeline" data-src="visualisation/14307302?1293534"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 ```
+
 Despite newsrooms struggling and reducing in size, data journalism teams are growing.
 
 ## Job trends in data journalism

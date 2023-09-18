@@ -7,11 +7,20 @@ website:
   favicon: favicon.png
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - intro/index.qmd
-      - sources/index.qmd
-      # - city/index.qmd
+      - text: Home
+        icon: "house"
+        href: index.qmd
+      - href: intro/index.qmd
+        icon: "pencil"
+      - text: "Data Sources"
+        icon: "table"
+        menu:
+          - text: "Data Sources"
+            icon: "table"
+            href: sources/index.qmd
+          - text: "Data Calendar"
+            icon: "calendar-week"
+            href: sources/data-calendar.qmd
     tools:
       - icon: person-circle
         href: https://nicu.md/
