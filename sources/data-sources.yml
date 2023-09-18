@@ -1,0 +1,101 @@
+- name: Companies House
+  path: http://download.companieshouse.gov.uk/en_output.html
+  country: "United Kindom"
+  description: |
+    Downloadable data snapshot containing basic company data of live companies on the Companies House register. Also available as an [API](https://developer.company-information.service.gov.uk/).
+
+- name: Energy Performance of Buildings
+  path: https://epc.opendatacommunities.org/
+  country: "United Kindom"
+  description: |
+    The official place for all Energy Performance Certificates (EPCs), Display Energy Certificates (DECs) and Air Conditioning Inspection Reports (ACIRs).
+
+- name: Financial Conduct Authority
+  path: https://www.fca.org.uk/data
+  country: "United Kindom"
+  description: |
+    Official data on financial services firms. See also the [register of firms](https://register.fca.org.uk/s/).
+
+- name: Inside Airbnb
+  path: http://insideairbnb.com/
+  country: "Global"
+  description: |
+    A mission driven project that provides data and advocacy about Airbnb's impact on residential communities.
+
+- name: HM Land Registry
+  path: https://landregistry.data.gov.uk/
+  country: "United Kindom"
+  description: |
+     Price paid, transaction and UK House Price Index, updated monthly.
+
+- name: House of Lords Register of Interests
+  path: https://members.parliament.uk/members/lords/interests/register-of-lords-interests
+  country: "United Kindom"
+  description: |
+     Information on any financial or non-financial benefit received by a Member of the Lords.
+
+- name: Meta Ad Library
+  path: https://www.facebook.com/ads/library/
+  country: "United Kindom"
+  description: |
+    Search all of the ads currently running across Meta technologies, primarily used for Facebook.
+
+- name: National River Flow Archive
+  path: https://nrfa.ceh.ac.uk/
+  country: "United Kindom"
+  description: |
+    The UK’s official record of river flow data.
+
+- name: Nomis
+  path: https://www.nomisweb.co.uk/
+  country: "United Kindom"
+  description: |
+    Statistics related to population, society and the labour market at national, regional and local levels.
+
+- name: Office of the Registrar of Consultant Lobbyists
+  path: https://registrarofconsultantlobbyists.org.uk/
+  country: "United Kindom"
+  description: |
+    Set up to ensure transparency in the work of consultant lobbyists and their engagement with Ministers and Permanent Secretaries on behalf of clients.
+
+- name: Parliament.uk
+  path: https://explore.data.parliament.uk/
+  country: "United Kindom"
+  description: |
+    A list of open datasets supported by the Parliamentary Digital Service.
+
+- name: Police.uk
+  path: https://data.police.uk/
+  country: "United Kindom"
+  description: |
+    Open data about crime and policing in England, Wales and Northern Ireland.
+
+- name: Register of data protection fee payers
+  path: https://ico.org.uk/about-the-ico/what-we-do/register-of-fee-payers/
+  country: "United Kindom"
+  description: |
+    Organisations and people registered with the Information Commissioner's Office (ICO) under the Data Protection Act 2018. 
+
+- name: Register of charities
+  path: https://register-of-charities.charitycommission.gov.uk/
+  country: "United Kindom"
+  description: |
+    Information about registered charities in England and Wales
+
+- name: Schools
+  path: https://get-information-schools.service.gov.uk/
+  country: "United Kindom"
+  description: |
+    The Department for Education’s register for several organisation types and where information on other organisations is recorded and maintained.
+
+- name: Stat-Xplore
+  path: https://stat-xplore.dwp.gov.uk/
+  country: "United Kindom"
+  description: |
+    A guided way to explore Department for Work & Pensions benefit statistics, currently holding data relating to a range of different benefits/programmes.
+
+- name: UK AIR
+  path: https://uk-air.defra.gov.uk/
+  country: "United Kindom"
+  description: |
+    Data about air quality and pollution in the UK.

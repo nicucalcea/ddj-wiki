@@ -1,0 +1,13 @@
+---
+title: "Data Sources"
+# subtitle: "Where to find data and how to keep up with new releases?"
+href: sources
+listing: 
+  id: data-sources
+  contents: data-sources.yml
+metadata-files: 
+  - _metadata.yml
+---
+
+::: {#data-sources .column-body-outset-right}
+:::

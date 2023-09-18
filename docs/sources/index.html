@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Journalism Wiki</title>
+<title>Data Journalism Wiki - Data Sources</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -59,9 +60,40 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-data-sources .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-name','listing-description','listing-country',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-name-sort'] }],
+      
+      searchColumns: ["listing-name","listing-path","listing-country","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-data-sources'] = new List('listing-data-sources', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -71,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Data Journalism Wiki</span>
     </a>
   </div>
@@ -82,15 +114,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./intro/index.html" rel="" target="">
+    <a class="nav-link" href="../intro/index.html" rel="" target="">
  <span class="menu-text">Introduction to Data Journalism</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./sources/index.html" rel="" target="">
+    <a class="nav-link active" href="../sources/index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Data Sources</span></a>
   </li>  
 </ul>
@@ -124,11 +156,11 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Journalism Wiki</h1>
+<h1 class="title">Data Sources</h1>
 </div>
 
 
@@ -143,7 +175,224 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is a website about data journalism.</p>
+<div id="listing-data-sources" class="column-body-outset-right quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+<th>
+Country
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-name-sort="Companies House">
+<td>
+<a href="http://download.companieshouse.gov.uk/en_output.html" class="name listing-name">Companies House</a>
+</td>
+<td>
+<span class="listing-description">Downloadable data snapshot containing basic company data of live companies on the Companies House register. Also available as an <a href="https://developer.company-information.service.gov.uk/">API</a>. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="1" data-listing-name-sort="Energy Performance of Buildings">
+<td>
+<a href="https://epc.opendatacommunities.org/" class="name listing-name">Energy Performance of Buildings</a>
+</td>
+<td>
+<span class="listing-description">The official place for all Energy Performance Certificates (EPCs), Display Energy Certificates (DECs) and Air Conditioning Inspection Reports (ACIRs). </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-name-sort="Financial Conduct Authority">
+<td>
+<a href="https://www.fca.org.uk/data" class="name listing-name">Financial Conduct Authority</a>
+</td>
+<td>
+<span class="listing-description">Official data on financial services firms. See also the <a href="https://register.fca.org.uk/s/">register of firms</a>. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-name-sort="Inside Airbnb">
+<td>
+<a href="http://insideairbnb.com/" class="name listing-name">Inside Airbnb</a>
+</td>
+<td>
+<span class="listing-description">A mission driven project that provides data and advocacy about Airbnb’s impact on residential communities. </span>
+</td>
+<td>
+<span class="listing-country">Global</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-name-sort="HM Land Registry">
+<td>
+<a href="https://landregistry.data.gov.uk/" class="name listing-name">HM Land Registry</a>
+</td>
+<td>
+<span class="listing-description">Price paid, transaction and UK House Price Index, updated monthly. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-name-sort="House of Lords Register of Interests">
+<td>
+<a href="https://members.parliament.uk/members/lords/interests/register-of-lords-interests" class="name listing-name">House of Lords Register of Interests</a>
+</td>
+<td>
+<span class="listing-description">Information on any financial or non-financial benefit received by a Member of the Lords. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="6" data-listing-name-sort="Meta Ad Library">
+<td>
+<a href="https://www.facebook.com/ads/library/" class="name listing-name">Meta Ad Library</a>
+</td>
+<td>
+<span class="listing-description">Search all of the ads currently running across Meta technologies, primarily used for Facebook. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="7" data-listing-name-sort="National River Flow Archive">
+<td>
+<a href="https://nrfa.ceh.ac.uk/" class="name listing-name">National River Flow Archive</a>
+</td>
+<td>
+<span class="listing-description">The UK’s official record of river flow data. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="8" data-listing-name-sort="Nomis">
+<td>
+<a href="https://www.nomisweb.co.uk/" class="name listing-name">Nomis</a>
+</td>
+<td>
+<span class="listing-description">Statistics related to population, society and the labour market at national, regional and local levels. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="9" data-listing-name-sort="Office of the Registrar of Consultant Lobbyists">
+<td>
+<a href="https://registrarofconsultantlobbyists.org.uk/" class="name listing-name">Office of the Registrar of Consultant Lobbyists</a>
+</td>
+<td>
+<span class="listing-description">Set up to ensure transparency in the work of consultant lobbyists and their engagement with Ministers and Permanent Secretaries on behalf of clients. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="10" data-listing-name-sort="Parliament.uk">
+<td>
+<a href="https://explore.data.parliament.uk/" class="name listing-name">Parliament.uk</a>
+</td>
+<td>
+<span class="listing-description">A list of open datasets supported by the Parliamentary Digital Service. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="11" data-listing-name-sort="Police.uk">
+<td>
+<a href="https://data.police.uk/" class="name listing-name">Police.uk</a>
+</td>
+<td>
+<span class="listing-description">Open data about crime and policing in England, Wales and Northern Ireland. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="12" data-listing-name-sort="Register of data protection fee payers">
+<td>
+<a href="https://ico.org.uk/about-the-ico/what-we-do/register-of-fee-payers/" class="name listing-name">Register of data protection fee payers</a>
+</td>
+<td>
+<span class="listing-description">Organisations and people registered with the Information Commissioner’s Office (ICO) under the Data Protection Act 2018. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="13" data-listing-name-sort="Register of charities">
+<td>
+<a href="https://register-of-charities.charitycommission.gov.uk/" class="name listing-name">Register of charities</a>
+</td>
+<td>
+<span class="listing-description">Information about registered charities in England and Wales </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="14" data-listing-name-sort="Schools">
+<td>
+<a href="https://get-information-schools.service.gov.uk/" class="name listing-name">Schools</a>
+</td>
+<td>
+<span class="listing-description">The Department for Education’s register for several organisation types and where information on other organisations is recorded and maintained. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="15" data-listing-name-sort="Stat-Xplore">
+<td>
+<a href="https://stat-xplore.dwp.gov.uk/" class="name listing-name">Stat-Xplore</a>
+</td>
+<td>
+<span class="listing-description">A guided way to explore Department for Work &amp; Pensions benefit statistics, currently holding data relating to a range of different benefits/programmes. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+<tr data-index="16" data-listing-name-sort="UK AIR">
+<td>
+<a href="https://uk-air.defra.gov.uk/" class="name listing-name">UK AIR</a>
+</td>
+<td>
+<span class="listing-description">Data about air quality and pollution in the UK. </span>
+</td>
+<td>
+<span class="listing-country">United Kindom</span>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+
 
 
 
@@ -168,13 +417,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -387,7 +629,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023, <a href="https://nicu.md/">Nicu Calcea</a><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nicucalcea/ddj-wiki/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center">Copyright 2023, <a href="https://nicu.md/">Nicu Calcea</a><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nicucalcea/ddj-wiki/edit/main/sources/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
