@@ -14,11 +14,18 @@
     "text": "Who are you?\n\nWhat’s your name?\nWhat course are you in?\nDo you have any experience in data journalism?\nWhy did you choose this module?\n\n\nSorry if I mispronounce all of your names and also sorry if I don’t remember everyone’s name. I will do my best.\nI understand we are at different levels of experience. You have access to datacamp which will let you move ahead if you want to get a bit more from this module."
   },
   {
+    "objectID": "city/index.html#plan",
+    "href": "city/index.html#plan",
+    "title": "Intro to Data Journalism",
+    "section": "Plan",
+    "text": "Plan\n\n\nWeek 1: Introduction\nWeeks 2-3: Analysis\nWeek 4: Cleaning\nWeek 5: Stories\nWeek 6: Visualisation\nWeek 7: Maps\nWeek 8: Projects\nWeek 9: Scraping\nWeek 10: Conclusions"
+  },
+  {
     "objectID": "city/index.html#what-is-data-journalism",
     "href": "city/index.html#what-is-data-journalism",
     "title": "Intro to Data Journalism",
     "section": "What is Data Journalism?",
-    "text": "What is Data Journalism?\n\nIn its most simple definition, data journalism is the practice of using numbers and trends to tell a story. — Betsy Ladyzhets\n\n\nSome people call it data-driven journalism, computer-assisted reporting or CAR (in the US), precision journalism. It’s history is even older than that though: the first edition of the Manchester Guardian had a data journalism article. So don’t focus too much on what you call it.\n\n\nData journalism [is] finding – in data – stories that are of interest to the public and presenting them in the most appropriate manner for public use and reuse. — Bahareh Heravi\n\n\nData journalism does not mean you have to limit yourself to data: we do everything else other reporters do, including developing contacts, interviewing sources, sending FOIs, doing field investigations, checking facts, writing, editing, multimedia (when relevant), etc. At the NS, data journalists are usually in charge of their stories from start to end, we’re not just a graphics desk.\nSome people even have their own beats. I have data journalist colleagues who focus on particular beats, like politics, the environment, business, even fine wines (World of Fine Wines).\nData can be hard and complex, you’ll always want to reach out to experts who can explain things for you. Energy consumption map as an example."
+    "text": "What is Data Journalism?\n\nIn its most simple definition, data journalism is the practice of using numbers and trends to tell a story. — Betsy Ladyzhets\n\n\nSome people call it data-driven journalism, computer-assisted reporting or CAR (in the US), precision journalism. It’s history is even older than that though: the first edition of the Manchester Guardian had a data journalism article. So don’t focus too much on what you call it.\n\n\n\nData journalism [is] finding – in data – stories that are of interest to the public and presenting them in the most appropriate manner for public use and reuse. — Bahareh Heravi\n\n\nData journalism does not mean you have to limit yourself to data: we do everything else other reporters do, including developing contacts, interviewing sources, sending FOIs, doing field investigations, checking facts, writing, editing, multimedia (when relevant), etc. At the NS, data journalists are usually in charge of their stories from start to end, we’re not just a graphics desk.\nSome people even have their own beats. I have data journalist colleagues who focus on particular beats, like politics, the environment, business, even fine wines (World of Fine Wines).\nData can be hard and complex, you’ll always want to reach out to experts who can explain things for you. Energy consumption map as an example."
   },
   {
     "objectID": "city/index.html#history-of-data-journalism",
@@ -35,11 +42,39 @@
     "text": "Job trends\n\n\nSince the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions.\n\nNew(-ish) platforms like Datawrapper and Flourish allow journalists to create and visualise data stories easier and without much technical expertise.\n\nHowever, the increased supply of data journalists from courses like this means there are higher entry requirements (R, Python, SQL).\n\n\n\nData teams like the one at the FT and the BBC are now so big they need to be split into two teams.\nThere are R, Python and SQL courses on Datacamp, which you have access to for free."
   },
   {
-    "objectID": "city/index.html#code-example",
-    "href": "city/index.html#code-example",
+    "objectID": "city/index.html#why-we-need-ddj",
+    "href": "city/index.html#why-we-need-ddj",
     "title": "Intro to Data Journalism",
-    "section": "Code example",
-    "text": "Code example\n=LET(hello,\"Hello World, \",hello & Sheet1!$A2 & \"!\")"
+    "section": "",
+    "text": "Tell richer stories\nAn increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.\n\nBe more efficient\nWe tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.\n\nBe more accurate\nThough not without data quality issues and ethical considerations, accuracy is central to data journalism.\n\nUnique angles\nThere are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.\n\nPersonalise news\nMake readers invested in a story by personalising it to their postcode, age or socio-economic status.\n\nNew audiences\nData journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks."
+  },
+  {
+    "objectID": "city/index.html#the-process",
+    "href": "city/index.html#the-process",
+    "title": "Intro to Data Journalism",
+    "section": "The process",
+    "text": "The process\n\n\n\n\nQuestion\nAs is the case with all journalism, data journalism starts with a question that the reporter wants to answer.\n\n\n\n\nSource data\nData can come from government sources, third parties, or be collected by the reporter themselves.\n\n\n\n\nClean data\nIn most cases, you will need to filter, sort and clean up any errors or missing information in your dataset."
+  },
+  {
+    "objectID": "city/index.html#the-process-1",
+    "href": "city/index.html#the-process-1",
+    "title": "Intro to Data Journalism",
+    "section": "The process",
+    "text": "The process\n\n\nAnalyse data\nHow do you find the answer to your question in the data?\n\n\n\nReview\nWhile data doesn’t lie, data publishers do. Do your findings make sense? Can you verify using other sources? Have you made any mistakes?\n\n\n\n\nPresent results\nCommunicate data in the most suitable way. Usually, you will visualise your findings, but that is not always necessary.\n\n\n\n\nAnalyse data: be platform antagonistic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives."
+  },
+  {
+    "objectID": "city/index.html#the-lifecycle-of-a-data-release",
+    "href": "city/index.html#the-lifecycle-of-a-data-release",
+    "title": "Intro to Data Journalism",
+    "section": "The lifecycle of a data release",
+    "text": "The lifecycle of a data release\n\n\nSource: Paul Bradshaw"
+  },
+  {
+    "objectID": "city/index.html#baby-names",
+    "href": "city/index.html#baby-names",
+    "title": "Intro to Data Journalism",
+    "section": "Baby names",
+    "text": "Baby names\n\nMake a copy of this spreadsheet and pick one tab to work in (boys or girls).\nThe yellow cells indicate where you need to fill in formulas.\nWhat are some other potential stories that you can think of? Are there more babies named after the royals? What about Game of Thrones characters? What are the most popular gender-neutral names? Long-term trends?"
   },
   {
     "objectID": "intro/index.html",

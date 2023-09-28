@@ -36,11 +36,11 @@ href: city
 ```
 ## Who am I?
 
-My name is Nicu Calcea.
+My name is [Nicu Calcea]{style="color:#F44336;"}.
 
-I'm a data journalist and City University alumnus, originally from Moldova, currently based in London.
+I'm a [data journalist]{style="color:#F44336;"} and City University alumnus, originally from Moldova, currently based in London.
 
-I work as a data journalist at *BBC News*, previously Data Projects Editor at the *New Statesman*.
+I work as a data journalist at [*BBC News*]{style="color:#F44336;"}, previously Data Projects Editor at the [*New Statesman*]{style="color:#F44336;"}.
 
 ::: notes
 I graduated 4 years ago and did this module 5 years ago.
@@ -67,15 +67,36 @@ Sorry if I mispronounce all of your names and also sorry if I don't remember eve
 I understand we are at different levels of experience. You have access to datacamp which will let you move ahead if you want to get a bit more from this module.
 :::
 
+## Plan
+
+::: {.incremental}
+-   Week 1: [Introduction]{style="color:#F44336;"}
+-   Weeks 2-3: [Analysis]{style="color:#F44336;"}
+-   Week 4: [Cleaning]{style="color:#F44336;"}
+-   Week 5: [Stories]{style="color:#F44336;"}
+-   Week 6: [Visualisation]{style="color:#F44336;"}
+-   Week 7: [Maps]{style="color:#F44336;"}
+-   Week 8: [Projects]{style="color:#F44336;"}
+-   Week 9: [Scraping]{style="color:#F44336;"}
+-   Week 10: [Conclusions]{style="color:#F44336;"}
+:::
+
+
+
+# Week 1
+Introduction to [Data Journalism]{style="color:#F44336;"}
+
 ## What is Data Journalism?
 
-> In its most simple definition, data journalism is the practice of using numbers and trends to tell a story. --- Betsy Ladyzhets
+> In its most simple definition, data journalism is the practice of using numbers and trends to tell a story. --- **Betsy Ladyzhets**
 
 ::: notes
 Some people call it data-driven journalism, computer-assisted reporting or CAR (in the US), precision journalism. It's history is even older than that though: the first edition of the Manchester Guardian had a data journalism article. So don't focus too much on what you call it.
 :::
 
-> Data journalism \[is\] finding -- in data -- stories that are of interest to the public and presenting them in the most appropriate manner for public use and reuse. --- Bahareh Heravi
+. . .
+
+> Data journalism \[is\] finding -- in data -- stories that are of interest to the public and presenting them in the most appropriate manner for public use and reuse. --- **Bahareh Heravi**
 
 ::: notes
 Data journalism does not mean you have to limit yourself to data: we do everything else other reporters do, including developing contacts, interviewing sources, sending FOIs, doing field investigations, checking facts, writing, editing, multimedia (when relevant), etc. At the NS, data journalists are usually in charge of their stories from start to end, we're not just a graphics desk.
@@ -90,7 +111,7 @@ Data can be hard and complex, you'll always want to reach out to experts who can
 ```{=html}
 <div class="flourish-embed flourish-timeline" data-src="visualisation/14307302?1293534"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 ```
-## Job trends
+## Job trends {.smaller}
 
 ::: columns
 ::: {.column width="33.33%"}
@@ -98,11 +119,11 @@ Since the pandemic, nearly every newsrooms has prioritised data journalism and h
 :::
 
 ::: {.column width="33.33%"}
-New(-ish) platforms like Datawrapper and Flourish allow journalists to create and visualise data stories easier and without much technical expertise.
+New(-ish) platforms like [Datawrapper]{style="color:#F44336;"} and [Flourish]{style="color:#F44336;"} allow journalists to create and visualise data stories easier and without much technical expertise.
 :::
 
 ::: {.column width="33.33%"}
-However, the increased supply of data journalists from courses like this means there are higher entry requirements (R, Python, SQL).
+However, the increased supply of data journalists from courses like this means there are higher entry requirements ([R]{style="color:#F44336;"}, [Python]{style="color:#F44336;"}, [SQL]{style="color:#F44336;"}).
 :::
 :::
 
@@ -112,10 +133,117 @@ Data teams like the one at the FT and the BBC are now so big they need to be spl
 There are R, Python and SQL courses on Datacamp, which you have access to for free.
 :::
 
+# Why do we need [data journalism]{style="color:#F44336;"}?
+
+## {#why-we-need-ddj data-menu-title="Why we need data journalism" .smaller}
+
+::: columns
+::: {.column width="33.33%"}
+##### [Tell richer stories]{style="color:#F44336;"}
+An increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.
+:::
+
+::: {.column width="33.33%"}
+##### [Be more efficient]{style="color:#F44336;"}
+We tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.
+:::
+
+::: {.column width="33.33%"}
+##### [Be more accurate]{style="color:#F44336;"}
+Though not without data quality issues and ethical considerations, accuracy is central to data journalism. 
+:::
+
+::: {.column width="33.33%"}
+##### [Unique angles]{style="color:#F44336;"}
+There are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.
+:::
+
+::: {.column width="33.33%"}
+##### [Personalise news]{style="color:#F44336;"}
+Make readers invested in a story by personalising it to their postcode, age or socio-economic status.
+:::
+
+::: {.column width="33.33%"}
+##### [New audiences]{style="color:#F44336;"}
+Data journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks.
+:::
+:::
+
+## The process
+
+::: columns
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### [Question]{style="color:#F44336;"}
+As is the case with all journalism, data journalism starts with a question that the reporter wants to answer.
+:::
+:::
+
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### [Source data]{style="color:#F44336;"}
+Data can come from government sources, third parties, or be collected by the reporter themselves.
+:::
+:::
+
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### [Clean data]{style="color:#F44336;"}
+In most cases, you will need to filter, sort and clean up any errors or missing information in your dataset.
+:::
+:::
+:::
+
+## The process
+
+::: columns
+::: {.column width="33.33%"}
+##### [Analyse data]{style="color:#F44336;"}
+How do you find the answer to your question in the data?
+:::
+
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### [Review]{style="color:#F44336;"}
+While data doesn’t lie, data publishers do. Do your findings make sense? Can you verify using other sources? Have you made any mistakes?
+:::
+:::
+
+::: {.column width="33.33%"}
+:::  {.fragment}
+##### [Present results]{style="color:#F44336;"}
+Communicate data in the most suitable way. Usually, you will visualise your findings, but that is not always necessary.
+:::
+:::
+:::
+
+::: notes
+Analyse data: be platform antagonistic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives.
+:::
+
+## The lifecycle of a data release
+
+![](media/lifecycle-of-data-release.png)
+
+::: footer
+Source: [Paul Bradshaw](https://twitter.com/paulbradshaw/status/1445015559742050312)
+:::
+
+## Baby names
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1bjXatiwmXDPjG1Id8ynDLDXhSNhUHhc7H0j8yOKk3O8/copy) and pick one tab to work in ([boys](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsboys) or [girls](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsgirls)).
+2. The [ yellow cells ]{style="background:#e3b341;color:black;"} indicate where you need to fill in formulas.
+3. What are some other potential stories that you can think of? Are there more babies named after the royals? What about Game of Thrones characters? What are the most popular gender-neutral names? Long-term trends?
+
+
+
+
+
+
 <!-- ## {background-iframe="https://www.nytimes.com/interactive/2022/10/04/climate/south-asia-monsoon-climate-change.html?unlocked_article_code=BXzpmSDLKRmxex3aAJ0NuQP4B9ZaOm8vB09LF5jYNC4Dn82EyfEyNgTQB9JpT2OSxMQNxfgkr5rXOex7CcVI291C6r6dECugn6AQn-t_Q-AZpkmodsbd1jMUxHaq-4idE2cOH_E3W8g2XzUqeN2JPp4mzkfoQwSUrV-MNG3Ppox4Gan-eR0KJsUBFYGixnoeM7BYIhDGfezZ5lWGI1MXdst1NgsJJy7RuxQVXHzRkucWXA57hlz1_6RbQ_S-QCp7DBS9VpNYlNnMqH1s4wxcsblMSKPueG9T4nObZpslM_m_r6qdRQ2R8R4MhwkS3eNSghh0jqS_LBzmJvA40_dpEYN5xtxGge9o0N-w_HuYFnEXZrjJJdRFCxhRkA&smid=share-url" background-interactive=true} -->
 
-## Code example
+<!-- ## Code example -->
 
-``` scala
-=LET(hello,"Hello World, ",hello & Sheet1!$A2 & "!")
-```
+<!-- ``` scala -->
+<!-- =LET(hello,"Hello World, ",hello & Sheet1!$A2 & "!") -->
+<!-- ``` -->
