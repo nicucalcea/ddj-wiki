@@ -323,12 +323,21 @@ Shows percentage change.
 :::
 :::
 
+::: notes
+No plagiarism, careful with AI.
+:::
+
+
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
 
-<!-- ## {background-iframe="https://www.nytimes.com/interactive/2022/10/04/climate/south-asia-monsoon-climate-change.html?unlocked_article_code=BXzpmSDLKRmxex3aAJ0NuQP4B9ZaOm8vB09LF5jYNC4Dn82EyfEyNgTQB9JpT2OSxMQNxfgkr5rXOex7CcVI291C6r6dECugn6AQn-t_Q-AZpkmodsbd1jMUxHaq-4idE2cOH_E3W8g2XzUqeN2JPp4mzkfoQwSUrV-MNG3Ppox4Gan-eR0KJsUBFYGixnoeM7BYIhDGfezZ5lWGI1MXdst1NgsJJy7RuxQVXHzRkucWXA57hlz1_6RbQ_S-QCp7DBS9VpNYlNnMqH1s4wxcsblMSKPueG9T4nObZpslM_m_r6qdRQ2R8R4MhwkS3eNSghh0jqS_LBzmJvA40_dpEYN5xtxGge9o0N-w_HuYFnEXZrjJJdRFCxhRkA&smid=share-url" background-interactive=true} -->
+
+<!-- ## {fullscreen=true} -->
+<!-- <iframe class="stretch" data-src="https://www.reportingwithnumbers.com/"></iframe> -->
+
+<!-- ## {background-iframe="https://www.reportingwithnumbers.com/" background-interactive=true} -->
 
 <!-- ## Code example -->
 
