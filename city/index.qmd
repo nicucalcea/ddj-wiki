@@ -231,7 +231,7 @@ Source: [Paul Bradshaw](https://twitter.com/paulbradshaw/status/1445015559742050
 
 ## Baby names
 
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1bjXatiwmXDPjG1Id8ynDLDXhSNhUHhc7H0j8yOKk3O8/copy) and pick one tab to work in ([boys](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsboys) or [girls](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsgirls)).
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1GatzEY5cl3JmdVOpJKsF9ME-SSHNNi8dVfqm54ZONYA/copy) and pick one tab to work in. Data from the ([ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996)).
 2. The [ yellow cells ]{style="background:#e3b341;color:black;"} indicate where you need to fill in formulas.
 3. What are some other potential stories that you can think of? Are there more babies named after the royals? What about Game of Thrones characters? What are the most popular gender-neutral names? Long-term trends?
 
@@ -304,24 +304,29 @@ Shows percentage change.
 ::: columns
 ::: {.column width="50%"}
 ##### [Critique a data journalism project]{style="color:#F44336;"}
-A 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.
-500-word group reflection, with appropriate references.
-A 200-word reflection on your own learning.
+- A 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.
+- 500-word group reflection, with appropriate references.
+- A 200-word reflection on your own learning.
 
-Deadline: Friday, December 10, 4pm
-Marking: 40% of your final mark
+**Deadline**: Friday, December 10, 4pm
+**Marking**: 40% of your final mark
 :::
 
 ::: {.column width="50%"}
-##### [Data journalism portfolio of two stories]{style="color:#F44336;"}
-One news story (400 words).
-One EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.
-A 200 word reflective blog-post style log on you own learning journey.
+##### [Data journalism portfolio]{style="color:#F44336;"}
+- One news story (400 words).
+- One EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.
+- A 200 word reflective blog-post style log on you own learning journey.
 
-Deadline: Friday 7 January 2021, 4pm
-Marking: 60% of your final mark
+**Deadline**: Friday 7 January 2021, 4pm
+**Marking**: 60% of your final mark
 :::
 :::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
 
 <!-- ## {background-iframe="https://www.nytimes.com/interactive/2022/10/04/climate/south-asia-monsoon-climate-change.html?unlocked_article_code=BXzpmSDLKRmxex3aAJ0NuQP4B9ZaOm8vB09LF5jYNC4Dn82EyfEyNgTQB9JpT2OSxMQNxfgkr5rXOex7CcVI291C6r6dECugn6AQn-t_Q-AZpkmodsbd1jMUxHaq-4idE2cOH_E3W8g2XzUqeN2JPp4mzkfoQwSUrV-MNG3Ppox4Gan-eR0KJsUBFYGixnoeM7BYIhDGfezZ5lWGI1MXdst1NgsJJy7RuxQVXHzRkucWXA57hlz1_6RbQ_S-QCp7DBS9VpNYlNnMqH1s4wxcsblMSKPueG9T4nObZpslM_m_r6qdRQ2R8R4MhwkS3eNSghh0jqS_LBzmJvA40_dpEYN5xtxGge9o0N-w_HuYFnEXZrjJJdRFCxhRkA&smid=share-url" background-interactive=true} -->
 
