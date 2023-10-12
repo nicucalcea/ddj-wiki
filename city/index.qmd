@@ -34,13 +34,22 @@ href: city
 }
 </style>
 ```
-## Who am I?
+## Who am I? {.smaller}
 
 My name is [Nicu Calcea]{style="color:#F44336;"}.
 
 I'm a [data journalist]{style="color:#F44336;"} and City University alumnus, originally from Moldova, currently based in London.
 
 I work as a data journalist at [*BBC News*]{style="color:#F44336;"}, previously Data Projects Editor at the [*New Statesman*]{style="color:#F44336;"}.
+
+&nbsp;
+&nbsp;
+
+Some stories:
+
+- [Eight out of ten firms pay men more than women](https://www.bbc.co.uk/news/business-65179430)
+- [How much territory does Ukraine control? Use this interactive map to find out](https://www.newstatesman.com/world/europe/ukraine/2022/06/how-occupied-ukraine-territory-interactive-map)
+- [Tory MPs would be over £1m worse off in six months with Boris Johnson’s second job ban](https://www.newstatesman.com/politics/uk-politics/2021/11/exclusive-tory-mps-would-be-over-1m-worse-off-in-six-months-with-boris-johnsons-second-job-ban)
 
 ::: notes
 I graduated 4 years ago and did this module 5 years ago.
@@ -53,9 +62,6 @@ I do have a full time job, so for any administrative or urgent queries, please c
 ::: footer
 My personal website: [nicu.md](https://nicu.md/)
 :::
-
-## {#bbc-gender-pay data-menu-title="BBC: Gender Pay Gap" background-iframe="https://www.bbc.co.uk/news/business-65179430" background-interactive=true}
-
 
 ## Who are you?
 
