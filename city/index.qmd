@@ -54,6 +54,9 @@ I do have a full time job, so for any administrative or urgent queries, please c
 My personal website: [nicu.md](https://nicu.md/)
 :::
 
+## {#bbc-gender-pay data-menu-title="BBC: Gender Pay Gap" background-iframe="https://www.bbc.co.uk/news/business-65179430" background-interactive=true}
+
+
 ## Who are you?
 
 -   What's your name?
@@ -80,7 +83,6 @@ I understand we are at different levels of experience. You have access to dataca
 -   Week 9: [Scraping]{style="color:#F44336;"}
 -   Week 10: [Conclusions]{style="color:#F44336;"}
 :::
-
 
 
 # Week 1
@@ -296,7 +298,6 @@ Shows percentage change.
 :::
 :::
 :::
-
 
 
 ## Assignments {.smaller}
