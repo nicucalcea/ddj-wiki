@@ -7,6 +7,8 @@ format:
     multiplex: true
     chalkboard: 
       buttons: false
+filters:
+  - filters/newpagelink.lua
 href: city
 ---
 
@@ -34,6 +36,7 @@ href: city
 }
 </style>
 ```
+
 ## Who am I? {.smaller}
 
 My name is [Nicu Calcea]{style="color:#F44336;"}.
@@ -141,7 +144,7 @@ Data teams like the one at the FT and the BBC are now so big they need to be spl
 There are R, Python and SQL courses on Datacamp, which you have access to for free.
 :::
 
-# Why do we need [data journalism]{style="color:#F44336;"}?
+## Why do we need [data journalism]{style="color:#F44336;"}?
 
 ## {#why-we-need-ddj data-menu-title="Why we need data journalism" .smaller}
 
@@ -341,11 +344,212 @@ No plagiarism, careful with AI.
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
 
 
-<!-- ## {fullscreen=true} -->
-<!-- <iframe class="stretch" data-src="https://www.reportingwithnumbers.com/"></iframe> -->
+# Week 2
+Introduction to [Data Journalism]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-<!-- ## {background-iframe="https://www.reportingwithnumbers.com/" background-interactive=true} -->
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.reuters.com/graphics/ISRAEL-PALESTINIANS/MAPS/movajdladpa/"></iframe>
+::: footer
+Source: [Reuters](https://www.reuters.com/graphics/ISRAEL-PALESTINIANS/MAPS/movajdladpa/)
+:::
 
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.ft.com/content/7b618433-ba5f-4e92-a3e0-d5d41d6d17f8"></iframe>
+::: footer
+Source: [FT](https://www.ft.com/content/7b618433-ba5f-4e92-a3e0-d5d41d6d17f8)
+:::
+
+##
+![](https://blog.datawrapper.de/wp-content/uploads/2023/10/image27.png){.absolute height="700"}
+
+::: footer
+Source: [Die Zeit](https://www.zeit.de/politik/ausland/israel-gazastreifen-krieg-karten)
+:::
+
+
+##
+![](https://blog.datawrapper.de/wp-content/uploads/2023/10/image2-2.png){.absolute height="700"}
+
+::: footer
+Source: [The New York Times](https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html"></iframe>
+::: footer
+Source: [Wyborcza](https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://pudding.cool/2023/10/romance-covers/"></iframe>
+::: footer
+Source: [The Pudding](https://pudding.cool/2023/10/romance-covers/)
+:::
+
+
+## Sourcing data {.smaller}
+
+. . .
+
+#### Open Data
+
+::: columns
+::: {.column width="50%"}
+- UK
+  - [ONS](https://www.ons.gov.uk/)
+  - [GOV.UK](https://www.gov.uk/search/research-and-statistics)
+  - [Nomis (labour stats)](https://www.nomisweb.co.uk/)
+  - [NHS Digital](https://digital.nhs.uk/search?sort=date&area=data&searchTab=data&contentSearch=false)
+  - [Covid dashboard](https://coronavirus.data.gov.uk/)
+
+:::
+
+::: {.column width="50%"}
+- Other nations
+  - [US gov](https://www.data.gov/)
+  - [Eurostat](https://ec.europa.eu/eurostat/web/main/home)
+- International
+  - [World Bank](https://data.worldbank.org/)
+  - [United Nations](http://data.un.org/)
+  - [OECD](https://data.oecd.org/)
+  - [Our World in Data](https://ourworldindata.org/)
+
+:::
+:::
+
+::: footer
+More sources: [ddj.nicu.md](https://ddj.nicu.md/sources/)
+:::
+
+
+## Plan ahead
+
+<iframe class="stretch" data-src="https://ddj.nicu.md/sources/data-calendar.html"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/sources/data-calendar.html)
+:::
+
+## Closed data
+
+![](media/closed-data.png)
+
+## FOIs
+
+![](media/foi.png)
+
+::: notes
+WhatDoTheyKnow
+
+Be as specific as possible or you might get the “too much work” excuse, specify the format or you’ll get a PDF
+
+Likelihood they’ll refuse (they refused my locations of CCTV cameras locations on national security grounds)
+
+If you want to use FOIs, do it as soon as possible.
+:::
+
+## Scraping
+
+![](media/scraping.png)
+
+::: notes
+Scraping (week 9)
+
+pre-scraped data like Inside Airbnb
+
+Parsehub, browser extensions, R/Python/Node
+:::
+
+
+## Census exercise
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1wbCYpp-5-2nZCaTdMcnNWSYtsUabQ0MDG_l4FGrZDwg/copy) (here’s [the original data](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021)).
+2. Before you do anything else, what are some questions you would like to answer?
+3. Free first row, filter the table to the region you’re from (or London)
+4. Fill in the columns at the end
+5. What are some other potential stories that you can think of?
+
+::: notes
+1) Concatenate title =CONCATENATE(A2,", ",B2, " (", C2,")")
+2) Conditional formatting on success column
+:::
+
+##  {#basic-excel-formulas-1-recap data-menu-title="Basic Excel Formulas Recap"}
+
+::: columns
+::: {.column width="33.33%"}
+##### [=A1+A2]{style="color:#F44336;"}
+Returns one number added (+) or subtracting (*) another.
+:::
+
+::: {.column width="33.33%"}
+##### [=A1/B$1]{style="color:#F44336;"}
+Returns one number divided (/) or multiplied (*) by another.
+:::
+
+::: {.column width="33.33%"}
+##### [=SUM()]{style="color:#F44336;"}
+Returns the sum of a series of numbers and/or cells.
+:::
+
+::: {.column width="33.33%"}
+##### [=AVERAGE()]{style="color:#F44336;"}
+Returns the numerical average value in a dataset, ignoring text.
+:::
+
+::: {.column width="33.33%"}
+##### [=MEDIAN()]{style="color:#F44336;"}
+Returns the median value in a numeric dataset.
+:::
+
+::: {.column width="33.33%"}
+##### [=(NEW-OLD)/OLD]{style="color:#F44336;"}
+Shows percentage change.
+:::
+:::
+
+
+##  {#basic-excel-formulas-2 data-menu-title="Basic Excel Formulas 2"}
+
+::: columns
+::: {.column width="33.33%"}
+##### [=IF()]{style="color:#F44336;"}
+Returns one value if the result is true, another if it’s false.
+:::
+
+::: {.column width="33.33%"}
+##### [=COUNTIF()]{style="color:#F44336;"}
+Count all the cells that match a condition.
+:::
+
+::: {.column width="33.33%"}
+##### [=SUMIF()]{style="color:#F44336;"}
+Sum all the cells that match a condition.
+:::
+
+::: {.column width="33.33%"}
+##### [=CONCATENATE()]{style="color:#F44336;"}
+Combine multiple bits of text together.
+Use =SPLIT() for the opposite.
+:::
+
+::: {.column width="33.33%"}
+##### [=VLOOKUP()]{style="color:#F44336;"}
+Match the values in a cell with the corresponding row in another dataset.
+:::
+
+::: {.column width="33.33%"}
+##### [=XLOOKUP()]{style="color:#F44336;"}
+Same as =XLOOKUP() but more flexible and easier to grasp.
+:::
+:::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
 <!-- ## Code example -->
 
 <!-- ``` scala -->
