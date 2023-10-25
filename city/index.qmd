@@ -95,6 +95,7 @@ I understand we are at different levels of experience. You have access to dataca
 
 
 # Week 1
+
 Introduction to [Data Journalism]{style="color:#F44336;"}
 
 ## What is Data Journalism?
@@ -345,6 +346,7 @@ No plagiarism, careful with AI.
 
 
 # Week 2
+
 Introduction to [Data Journalism]{style="color:#F44336;"}<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
@@ -579,9 +581,16 @@ Source: [The Washington Post](https://www.washingtonpost.com/climate-environment
 Source: [The Register](https://www.theregister.com/2023/10/20/royal_college_excel_blunder/)
 :::
 
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://thedivtagguy.com/tidytuesday/taylor-swift/"></iframe>
+::: footer
+Source: [Aman Bhargava](https://thedivtagguy.com/tidytuesday/taylor-swift/)
+:::
+
+
 ## Toolbox
 
-<iframe class="stretch" data-src="https://ddj.nicu.md/tools/"></iframe>
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/"></iframe>
 ::: footer
 Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/)
 :::
