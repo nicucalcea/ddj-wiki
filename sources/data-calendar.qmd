@@ -1,15 +1,6 @@
 ---
 title: "Data Calendar"
-# subtitle: "Where to find data and how to keep up with new releases?"
-# href: sources
-listing: 
-  id: data-sources
-  contents: data-calendar.yml
-metadata-files: 
-  - _metadata.yml
 ---
-
-Here's a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases.
 
 ::: column-page-inset-right
 ```{=html}
@@ -83,6 +74,11 @@ Here's a list of organisations that list when they publish new data. You can loo
     </a>
   </li>
   <li class="nav-item" role="presentation">
+    <a class="nav-link" href="academic.html">
+      <i class="bi bi-mortarboard"></i>Academic Sources
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
     <a class="nav-link" href="data-calendar.html">
       <i class="bi bi-calendar-week"></i>Data Calendar
     </a>
@@ -118,8 +114,49 @@ document.addEventListener("DOMContentLoaded", function() {
 ```
 :::
 
-::: {#data-sources .column-body-outset-right}
-:::
+Here's a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases.
+
+
+## United Kingdom
+- [Bank of England](https://www.bankofengland.co.uk/news/statistics) — The UK’s central bank. Click “Upcoming” for the upcoming data releases.
+- [British Film Institute](https://www.bfi.org.uk/industry-data-insights/official-statistics-release-calendar) — Research data and market intelligence on the UK film industry and other screen sectors.
+- [Civil Aviation Authority](https://www.caa.co.uk/data-and-analysis/uk-aviation-market/data-publication-dates/) — Aviation data, statistics and reports.
+- [GOV.UK](https://www.gov.uk/search/research-and-statistics?content_store_document_type=upcoming_statistics&order=updated-newest) — Official data from various government sources.
+- [Halifax House Price Index](https://www.halifax.co.uk/media-centre/house-price-index.html) — The Halifax House Price Index is the UK’s longest running monthly house price series with data covering the whole country going back to January 1983.
+- [Higher Education Statistics Agency](https://www.hesa.ac.uk/data-and-analysis/upcoming) — Data on all aspects of the UK higher education sector.
+- [NHS Digital](https://digital.nhs.uk/search/document-type/publication/publicationStatus/false?sort=date&area=data) — The statutory custodian for health and care data for England.
+- [Nomis](https://www.nomisweb.co.uk/home/release_group.asp) — Statistics related to population, society and the labour market at national, regional and local levels.
+- [Ofcom](https://www.ofcom.org.uk/research-and-data/data/statistics/stats23) — The regulator for communications services, including broadband, home phone, mobile services, TV and radio.
+- [Ofgem](https://www.ofgem.gov.uk/publications/ofgem-data-upcoming-release-calendar) — Great Britain’s independent energy regulator.
+- [Office for Budget Responsibility](https://obr.uk/publications/) — The OBR produces a variety of publications in pursuit of its duty to examine and report on the sustainability of the public finances.
+- [Office for National Statistics](https://www.ons.gov.uk/releasecalendar?view=upcoming&size=50) — The UK official statistics body.
+- [Office for Students](https://www.officeforstudents.org.uk/data-and-analysis/official-statistics/release-schedules/) — Data-driven analysis and essential evidence on key trends and current issues in English higher education.
+- [Office of Rail and Road](https://dataportal.orr.gov.uk/publication-dates-for-statistics/) — Government department responsible for the economic and safety regulation of Britain’s railways, and the economic monitoring of National Highways.
+- [UK Finance](https://www.ukfinance.org.uk/data-research) — Data and analysis of banking and finance industry activity.
+- [Universities and Colleges Admissions Service](https://www.ucas.com/data-and-analysis/ucas-timetable-data-and-analysis) — An independent charity, and the UK’s shared admissions service for higher education.
+
+## Other countries
+- 🇦🇺 [Australian Bureau of Statistics](https://www.abs.gov.au/release-calendar/future-releases-calendar) — Australia’s national statistical agency and an official source of independent, reliable information.
+- 🇺🇸 [Bureau of Labor Statistics](https://www.bls.gov/schedule/) — The principal fact-finding agency for the U.S. government in the broad field of labor economics and statistics.
+- 🇮🇪 [Central Statistics Office](https://www.cso.ie/en/csolatestnews/releasecalendar/) — Ireland’s national statistical office that collects, analyses and makes available statistics about Ireland’s people, society and economy.
+- 🇺🇸 [Economic Research Service](https://www.ers.usda.gov/calendar/) — Trends and emerging issues in agriculture, food, the environment, and rural America.
+- 🇺🇸 [Energy Information Administration](https://www.eia.gov/reports/upcoming.php) — Independent and impartial energy information to promote sound policymaking, efficient markets, and public understanding of energy and its interaction with the economy and the environment.
+- 🇺🇸 [MarketWatch Economic Calendar](https://www.marketwatch.com/economy-politics/calendar) — Major U.S. economic reports & fed speakers.
+- 🇺🇸 [New York Fed](https://www.newyorkfed.org/research/calendars/nationalecon_cal.html) — Provides the date and time of key economic data releases.
+- 🇨🇦 [Statistics Canada](https://www150.statcan.gc.ca/n1/dai-quo/cal2-eng.htm) — Statistics Canada is the national statistical office of Canada.
+- 🇩🇪 [Statistisches Bundesamt](https://www.destatis.de/SiteGlobals/Forms/Suche/Termine/EN/Terminsuche_Formular.html?queryResultId=null&pageNo=0) — Official data on the society, the economy, the environment and the state of Germany.
+
+
+## International
+- 🌍 [Bank for International Settlements](https://www.bis.org/statistics/relcal.htm) — Compiled in cooperation with central banks and other national authorities, are designed to inform analysis of financial stability, international monetary spillovers and global liquidity.
+- 🇪🇺 [European Central Bank](https://www.ecb.europa.eu/press/calendars/statscal/html/index.en.html) — Economic research on a wide range of topics in Europe.
+- 🇪🇺 [Eurostat](https://ec.europa.eu/eurostat/web/main/news/release-calendar?type=listMonth&start=1693519200000) — The statistical office of the European Union.
+- 🌍 [International Energy Agency](https://www.iea.org/events) — Intergovernmental organisation, established in 1974, that provides policy recommendations, analysis and data on the entire global energy sector.
+- 🌍 [International Monetary Fund](https://data.imf.org/) — International macroeconomic and financial data.
+- 🌍 [OECD](https://www.oecd.org/sdd/statisticsnewsreleases.htm) — Data, policy advice and research on the economy, education, employment, environment, health, tax, trade, GDP, unemployment rate, etc.
+- 🌍 [UNdata](http://data.un.org/UpdateCalendar.aspx) — A variety of statistical resources compiled by the United Nations (UN) statistical system and other international agencies.
+
+## Calendar
 
 Here's a view of upcoming business releases that I keep up to date for work.
 

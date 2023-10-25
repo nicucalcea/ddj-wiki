@@ -1,0 +1,175 @@
+---
+title: "Academic Data Sources"
+---
+
+::: column-page-inset-right
+```{=html}
+
+<style type="text/css">
+.nav-tabs {
+  margin-top: 0.5rem;
+  border-bottom: none;
+}
+
+.callout {
+  margin-top: 0;
+}
+
+.nav-tabs .nav-link {
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 10px;
+  width: 147px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+
+.nav-tabs .nav-link, 
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-item.show .nav-link {
+  border: 1px solid  rgb(222, 226, 230);
+  border-radius: 10px;
+  color: rgb(80,146,221);
+}
+.nav-tabs .nav-link:hover {
+   border-color: rgb(80,146,221);
+   border-width: 1px;
+} 
+
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-item.show .nav-link {
+  border-color: rgb(80,146,221);
+  border-width: 2px;
+}
+
+
+.nav-tabs .nav-link i {
+  display: block;
+  font-size: 3rem;
+  color: rgb(80,146,221);
+  margin-bottom: 5px;
+}
+
+.quarto-listing {
+  margin-top: 2em;
+}
+
+.quarto-listing .listing-name,
+.quarto-listing .listing-author {
+  white-space: nowrap;
+}
+
+.quarto-listing .listing-actions-group h3 {
+  margin-top: 0;
+}
+
+ 
+</style>
+
+<ul id="index-chooser" class="nav nav-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="index.html">
+      <i class="bi bi-table"></i>Data Sources
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="academic.html">
+      <i class="bi bi-mortarboard"></i>Academic Sources
+    </a>
+  </li>
+  <li class="nav-item" role="presentation">
+    <a class="nav-link" href="data-calendar.html">
+      <i class="bi bi-calendar-week"></i>Data Calendar
+    </a>
+  </li>
+</ul>
+
+<br>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  // get file name
+  const filename = window.location.pathname.split("/").slice(-1)[0];
+
+  // latch active
+  const toolLinks = window.document.querySelectorAll("#index-chooser a");
+  for (const tool of toolLinks) {
+    if (filename && filename !== "index.html") {
+      if (tool.href.endsWith(filename)) {
+        tool.classList.add("active");
+      } 
+    } else {
+      if (tool.href.endsWith("listing-filters.html")) {
+        tool.classList.add("active");
+      }
+    }
+  }
+  
+  // move heading into table
+  <!-- document.querySelector(".listing-actions-group").prepend(document.querySelector("h3.unlisted")); -->
+});
+
+</script>
+```
+:::
+
+This is a small guide on how to use academic papers for your data journalism needs.
+
+## Where to find papers
+
+### Search engines
+
+There are several websites that index all the major journals. That makes it easier to keep track of new publications and to search all academic journals in one place.
+
+- [Google Scholar](https://scholar.google.com/): The most popular academic search engine.
+- [Lens.org](https://www.lens.org/lens/search/scholar/structured): Shows a few aggregated stats such as most cited authors, journals, etc.
+- [Dimensions.ai](https://app.dimensions.ai/discover/publication): Includes an “Altmetric”, which is a measure of how popular a paper is based on news coverage, blogs, social media, etc. Useful for weeding out obscure papers if you don’t want those.
+- [ArXiv](https://arxiv.org/): Repository of open-access papers. Many preprint papers. Included in some of the search engines above.
+
+### Data sources
+
+Additionally, there are several repositories of data used in academic research. These are usually replication data, meaning you can use them to recreate the findings of the study, but you can also analyse them differently for new angles.
+
+- [Harvard Dataverse](https://dataverse.harvard.edu/dataverse/harvard?q=&types=dataverses%3Adatasets&sort=dateSort&order=desc&page=1): Includes replication data and code (often Stata or SPSS, sometimes R).
+- [Zenodo](https://zenodo.org/): Same as above, fewer datasets.
+- [ICPSR](https://www.icpsr.umich.edu/web/ICPSR/search/studies?start=0&sort=DATEUPDATED%20desc&RESTRICTED_DATA_TYPE=Public%20Use&ARCHIVE=ICPSR&PUBLISH_STATUS=PUBLISHED&rows=50&q=): More academic data.
+- [Humanitarian Data Exchange](https://data.humdata.org/search?q=&ext_page_size=100): Mainly datasets that get regularly updated by various corporations and non-profit orgs. Heavy humanitarian focus. Also see [AidData](https://www.aiddata.org/datasets).
+- [OasisHUB](https://oasishub.co/dataset?q=&sort=metadata_modified+desc): Environmental and risk data.
+- [Papers with Code](https://paperswithcode.com/): What it says on the tin
+- [Economic Articles with Data](https://ejd.econ.mathematik.uni-ulm.de/): Economic articles that have provided data and code for replication purposes
+
+### Research institutions
+
+- [NBER](https://www.nber.org/): Has a “New This Week” customisable newsletter that includes [working papers](https://www.nber.org/papers?page=1&perPage=50&sortBy=public_date). You can choose a few categories or keywords, or get everything.
+    
+
+## How to get alerts for new papers
+
+[Google Scholar](https://academicanswers.waldenu.edu/faq/134432), [Lens.org](https://support.lens.org/knowledge-base/saved-queries/) and [Dimensions.ai](https://plus.dimensions.ai/support/solutions/articles/23000018788-how-can-i-get-alerts-on-new-publications-or-grants-for-my-search-) can all send you alerts for particular topics.
+
+With most of them, you can also use advanced search queries to tweak your search to only get certain keywords. Google Scholar, for example, uses the same search operators as normal Google, ex. fdi OR "foreign direct investment" -"flexible display interface".
+
+Once you’ve tuned your search, set an email alert and they’ll send you all new papers that match those search terms.
+
+## How to access the papers
+
+### Institutional access
+
+If you know someone who’s a student or lecturer, they might have access to academic resources.
+
+### Authors
+
+Authors usually retain copyright and have the legal right to distribute their papers, so you’ll often find them on [ResearchGate](https://www.researchgate.net/), [Scribd](https://www.scribd.com/) or the authors’ websites. You can also email them and they’ll usually send over a copy.
+
+<!-- ## Sci-Hub -->
+
+<!-- [Sci-Hub](https://sci-hub.se/) is a website that uses academic logins donated by researchers to automatically retrieve the papers you need. Just paste the URL or DOI of the paper you’re trying to access, and Sci-Hub will retrieve the paper for you. -->
+
+<!-- Note that no new papers are being added to the database while the creator awaits a court hearing. Most stuff before 2020 should be available though. -->
+
+<!-- Also try [Library Genesis](https://www.libgen.is/scimag/), a website associated with Sci-Hub, as well as [Z-Library](https://booksc.org/). -->
+
+### /r/Scholar
+
+There’s [a subreddit](https://www.reddit.com/r/Scholar/) where people can request specific papers. Try the other methods and if you can’t get the paper, request it there and someone with access will retrieve it for you.

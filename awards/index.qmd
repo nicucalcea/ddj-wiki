@@ -1,0 +1,12 @@
+---
+title: "Data Journalism Awards"
+href: awards
+---
+
+There's an ever-growing number of Data Journalism awards. Here is a very incomplete list.
+
+- [Sigma Awards](https://sigmaawards.org/)
+- [The University of Florida Award for Investigative Data Journalism](https://awards.journalists.org/awards/investigative-data-journalism/)
+- [The Wincott Awards: Data journalism of the Year](https://wincott.co.uk/the-wincott-awards-2022-what-the-judges-are-looking-for-and-how-to-apply/)
+- [Royal Statistical Society: Awards for Statistical Excellence in Journalism](https://rss.org.uk/training-events/events/excellence-awards/journalism-awards/)
+- [Newspaper Awards](https://www.newsawards.co.uk/)

@@ -88,11 +88,6 @@ ul.task-list li input[type="checkbox"] {
 </i> 
  <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../intro/index.html" rel="" target=""><i class="bi bi-pencil" role="img">
-</i> 
- <span class="menu-text">Introduction to Data Journalism</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data-sources" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
       <i class="bi bi-table" role="img">
@@ -106,6 +101,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Data Sources</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../sources/academic.html" rel="" target=""><i class="bi bi-mortarboard" role="img">
+</i> 
+ <span class="dropdown-text">Academic Sources</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../sources/data-calendar.html" rel="" target=""><i class="bi bi-calendar-week" role="img">
 </i> 
  <span class="dropdown-text">Data Calendar</span></a>
@@ -113,9 +113,14 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../toolbox/index.html" rel="" target="" aria-current="page"><i class="bi bi-wrench" role="img">
+    <a class="nav-link active" href="../toolbox/index.html" rel="" target="" aria-current="page"><i class="bi bi-tools" role="img">
 </i> 
  <span class="menu-text">Toolbox</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../awards/index.html" rel="" target=""><i class="bi bi-trophy" role="img">
+</i> 
+ <span class="menu-text">Awards</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -149,7 +154,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-collection" id="toc-data-collection" class="nav-link active" data-scroll-target="#data-collection">Data collection</a></li>
+  <li><a href="#collection" id="toc-collection" class="nav-link active" data-scroll-target="#collection">Collection</a></li>
+  <li><a href="#foia" id="toc-foia" class="nav-link" data-scroll-target="#foia">FOIA</a></li>
   <li><a href="#wrangling" id="toc-wrangling" class="nav-link" data-scroll-target="#wrangling">Wrangling</a></li>
   <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis">Analysis</a></li>
   <li><a href="#visualisation" id="toc-visualisation" class="nav-link" data-scroll-target="#visualisation">Visualisation</a></li>
@@ -176,76 +182,77 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Based on <a href="https://nitter.net/Bahareh360">a list by Prof.&nbsp;Bahareh Heravi</a>, with a few additions from me. You can find <a href="https://www.journaliststoolbox.org/category/data-visualization-and-online-tools/">a list of even more tools on SPJ Toolbox</a>.</p>
-<section id="data-collection" class="level2">
-<h2 class="anchored" data-anchor-id="data-collection">Data collection</h2>
+<p>Initially based on <a href="https://nitter.net/Bahareh360">a list by Prof.&nbsp;Bahareh Heravi</a>, with some additions from me. You can find <a href="https://www.journaliststoolbox.org/category/data-visualization-and-online-tools/">a list of even more tools on SPJ Toolbox</a>.</p>
+<section id="collection" class="level2">
+<h2 class="anchored" data-anchor-id="collection">Collection</h2>
 <ul>
-<li><a href="https://webscraper.io/">Web Scraper</a></li>
-<li><a href="http://outwit.com/product/hub/">Outwit Hub</a></li>
-<li><a href="https://www.parsehub.com/">Parsehub</a></li>
-<li><a href="https://www.octoparse.co/">Octoparse</a></li>
-<li><a href="http://tabula.technology/">Tabula</a></li>
-<li><a href="https://aps.automeris.io/wpd/">WebPlotDigitize</a></li>
-<li><a href="https://ifttt.com/">IFTTT</a></li>
-<li><a href="https://www.googlecom/sheets/about/">Google Sheets</a></li>
-<li><a href="https://netlytic.org/">Netlytic</a></li>
-<li><a href="http://www.smrfoundation.org/nodexl/">NodeXL</a></li>
-<li><a href="https://dedupe.io/for-journalists.html">Media Monitor</a></li>
-<li><a href="https://chrome.google.com/webstore/detail/page-monitor/ogeebjpdeabhncjpfhgdibjajcajepgg?hl=en">Page Monitor</a></li>
-<li><a href="https://rvest.tidyverse.org/">R</a> / <a href="https://rvest.tidyverse.org/">rvest</a></li>
-<li><a href="https://www.crummy.com/software/BeautifulSoup/">Python</a> / <a href="https://www.crummy.com/software/BeautifulSoup/">beautifulsoup</a></li>
-<li><a href="https://www.selenium.dev/">Selenium</a></li>
+<li><a href="https://webscraper.io/">Web Scraper</a> — browser plugin for scraping</li>
+<li><a href="https://www.outwit.com/products/hub/OutWit-Hub-Light-Pro-Expert-Enterprise-editions">Outwit Hub</a> — desktop app for scraping</li>
+<li><a href="https://www.parsehub.com/">Parsehub</a> — desktop app for scraping</li>
+<li><a href="https://visualping.io/">Visualping</a> — monitor website changes</li>
+<li><a href="http://tabula.technology/">Tabula</a> — get data from PDFs</li>
+<li><a href="https://aps.automeris.io/wpd/">WebPlotDigitize</a> — digitise image charts</li>
+<li><a href="https://mapster.me/map-digitizer/">Map Digitizer</a> — digitise image maps</li>
+<li><a href="https://ifttt.com/">IFTTT</a> — automate tasks</li>
+<li><a href="http://www.smrfoundation.org/nodexl/">NodeXL</a> — network analysis</li>
+<li><a href="https://www.mediacloud.org/">Media Cloud</a> — media analysis</li>
+<li><a href="https://rvest.tidyverse.org/">R</a> / <a href="https://rvest.tidyverse.org/">rvest</a> — programming language</li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/">Python</a> / <a href="https://www.crummy.com/software/BeautifulSoup/">beautifulsoup</a> — programming language</li>
+<li><a href="https://www.selenium.dev/">Selenium</a> — browser automation</li>
+<li><a href="https://curlconverter.com/">curl converter</a> — convert curl commands to Python, JS, R, etc.</li>
+<li><a href="https://selectorgadget.com/">SelectorGadget</a> — CSS selector helper</li>
+<li><a href="https://data.page/json/csv">data.page</a> — JSON to CSV converter</li>
+<li><a href="https://nytimes.github.io/svg-crowbar/">SVG crowbar</a> — lift SVG off of webpages</li>
+</ul>
+</section>
+<section id="foia" class="level2">
+<h2 class="anchored" data-anchor-id="foia">FOIA</h2>
+<ul>
+<li><a href="https://foia.wiki/wiki/Main_Page">FOIA Wiki</a> — FOIA resources (US-focused)</li>
+<li><a href="https://www.data-liberation-project.org/">Data Liberation Project</a> — released government datasets</li>
+<li><a href="https://www.whatdotheyknow.com/">WhatDoTheyKnow</a> — FOIA tool and catalogue</li>
 </ul>
 </section>
 <section id="wrangling" class="level2">
 <h2 class="anchored" data-anchor-id="wrangling">Wrangling</h2>
 <ul>
-<li><a href="https://www.microsoft.com/en-gb/microsoft-365/excel">Microsoft Excel</a></li>
-<li><a href="https://www.google.com/sheets/about/">Google Sheets</a></li>
-<li><a href="http://openrefine.org/">OpenRefine</a></li>
-<li><a href="https://cloud.google.com/dataprep/">Dataprep</a> (paid)</li>
-<li><a href="http://vis.stanford.edu/wrangler/">DataWrangler</a> (not supported)</li>
-<li><a href="https://www.trifacta.com/products/wrangler-editions/">Trifacta Wrangler</a> (paid)</li>
-<li><a href="https://exploratory.io/">Exploratory</a></li>
-<li><a href="https://parserator.datamade.us/">Parserator</a></li>
-<li><a href="https://dedupe.io/for-journalists.html">Dedupe</a></li>
+<li><a href="https://www.microsoft.com/en-gb/microsoft-365/excel">Microsoft Excel</a> — desktop spreadsheets app</li>
+<li><a href="https://www.google.com/sheets/about/">Google Sheets</a> — free spreadsheets web app</li>
+<li><a href="http://openrefine.org/">OpenRefine</a> — data cleaning and transformation (<a href="https://github.com/ChrisMuir/refinr">R implementation</a>)</li>
+<li><a href="https://parserator.datamade.us/">Parserator</a> — parse addresses and other unstructured text</li>
+<li><a href="https://www.geocod.io/">Geocodio</a> — geocode 🇺🇸🇨🇦 addresses</li>
 </ul>
 </section>
 <section id="analysis" class="level2">
 <h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
 <ul>
-<li><a href="https://www.microsoft.com/en-gb/microsoft-365/excel">Microsoft Excel</a></li>
-<li><a href="https://www.google.com/sheets/about/">Google Sheets</a></li>
-<li><a href="https://www.r-project.org/">R</a> / <a href="https://www.tidyverse.org/">tidyverse</a></li>
-<li><a href="https://www.python.org/">Python</a> / <a href="https://pandas.pydata.org/">pandas</a></li>
-<li><a href="https://www.ibm.com/analytics/us/en/technology/spss/">SPSS</a></li>
-<li><a href="https://www.gnu.org/software/pspp/">PSPP</a></li>
-<li><a href="https://www.stat.auckland.ac.nz/~wild/iNZight/index.php">iNZight</a></li>
-<li><a href="https://www.tableau.com/">Tableau</a> (paid)</li>
-<li><a href="https://exploratory.io/">Exploratory</a></li>
-<li><a href="https://qgis.org/en/site/">QGIS</a></li>
-<li><a href="https://carto.com/">CARTO</a></li>
+<li><a href="https://www.microsoft.com/en-gb/microsoft-365/excel">Microsoft Excel</a> — desktop spreadsheets app</li>
+<li><a href="https://www.google.com/sheets/about/">Google Sheets</a> — free spreadsheets web app</li>
+<li><a href="https://rvest.tidyverse.org/">R</a> / <a href="https://rvest.tidyverse.org/">rvest</a> — programming language</li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/">Python</a> / <a href="https://www.crummy.com/software/BeautifulSoup/">beautifulsoup</a> — programming language</li>
+<li><a href="https://www.ibm.com/spss">SPSS</a> — statistical analysis software</li>
+<li><a href="https://www.gnu.org/software/pspp/">PSPP</a> — statistical analysis software</li>
+<li><a href="https://www.tableau.com/">Tableau</a> (paid) — data analysis and visualisation tool</li>
+<li><a href="https://qgis.org/en/site/">QGIS</a> — desktop mapping software</li>
+<li><a href="https://carto.com/">CARTO</a> — web mapping software</li>
 </ul>
 </section>
 <section id="visualisation" class="level2">
 <h2 class="anchored" data-anchor-id="visualisation">Visualisation</h2>
 <ul>
-<li><a href="http://datawrapper.de/">Datawrapper</a></li>
-<li><a href="http://flourish.studio/">Flourish</a></li>
-<li><a href="https://infogram.com/">Infogram</a></li>
-<li><a href="https://www.highcharts.com/">Highcharts</a></li>
-<li><a href="http://datamatic.io/">Datamatic.io</a></li>
-<li><a href="https://plot.ly/">Plotly</a></li>
-<li><a href="https://quartz.github.io/Chartbuilder/">Chartbuilder</a></li>
-<li><a href="http://www.quadrigram.com/">Quadrigram</a></li>
-<li><a href="http://raw.densitydesign.org/">RAW Graphs</a></li>
-<li><a href="https://www.mapbox.com/">Mapbox</a></li>
-<li><a href="https://gephi.org/">Gephi</a></li>
-<li><a href="https://d3js.org/">D3.js</a></li>
-<li><a href="https://www.r-project.org/">R</a> / <a href="http://ggplot2.org/">ggplot2</a></li>
-<li><a href="http://data-illustrator.com/">Data Illustrator</a></li>
-<li><a href="https://charticulator.com/">Charticulator</a></li>
-<li><a href="https://graphica.app/">Scimago Graphica</a></li>
+<li><a href="http://datawrapper.de/">Datawrapper</a> — web dataviz tool</li>
+<li><a href="http://flourish.studio/">Flourish</a> — web interactive/dataviz tool</li>
+<li><a href="https://www.rawgraphs.io/">RAW Graphs</a> — static chart maker</li>
+<li><a href="https://infogram.com/">Infogram</a> — infographic creator</li>
+<li><a href="http://datamatic.io/">Datamatic.io</a> — web dataviz tool</li>
+<li><a href="https://www.highcharts.com/">Highcharts</a> — chart library for developers</li>
+<li><a href="https://plot.ly/">Plotly</a> — chart library for developers</li>
+<li><a href="https://d3js.org/">D3.js</a> — library for advanced dataviz</li>
+<li><a href="https://www.mapbox.com/">Mapbox</a> — map maker</li>
+<li><a href="https://mapshaper.org/">Mapshaper</a> — editor for map data</li>
+<li><a href="https://geojson.io/">geojson.io</a> — editor for map data</li>
+<li><a href="https://gephi.org/">Gephi</a> — network visualisations</li>
+<li><a href="https://www.r-project.org/">R</a> / <a href="http://ggplot2.org/">ggplot2</a> — programming language</li>
 </ul>
 
 
