@@ -550,8 +550,97 @@ Same as =XLOOKUP() but more flexible and easier to grasp.
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
-<!-- ## Code example -->
 
-<!-- ``` scala -->
-<!-- =LET(hello,"Hello World, ",hello & Sheet1!$A2 & "!") -->
-<!-- ``` -->
+# Week 3
+Introduction to [Data Journalism]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html"></iframe>
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://uclab.fh-potsdam.de/projects/klimakarten/"></iframe>
+::: footer
+Source: [Urban Complexity Lab](https://uclab.fh-potsdam.de/projects/klimakarten/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/"></iframe>
+::: footer
+Source: [The Washington Post](https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/"></iframe>
+::: footer
+Source: [The Register](https://www.theregister.com/2023/10/20/royal_college_excel_blunder/)
+:::
+
+## Toolbox
+
+<iframe class="stretch" data-src="https://ddj.nicu.md/tools/"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/)
+:::
+
+## XLOOKUP
+
+``` scala
+=XLOOKUP(search_term, col_to_search, col_to_return)
+```
+
+![](media/xlookup.png)
+
+## Pivot Tables {.smaller}
+
+Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.
+
+You can calculate averages, counts, max/min values or sums for numbers in a group.
+
+![](media/pivot-recipe.png)
+
+## Averages {.smaller}
+
+::: columns
+::: {.column width="50%"}
+![](media/mean-median.svg){height="600"}
+:::
+
+::: {.column width="50%"}
+### =MODE(){style="color:#F44336;"}
+
+Finds the most common value in a range.
+
+&nbsp;
+&nbsp;
+
+### =MEDIAN(){style="color:#F44336;"}
+
+Finds the value that’s right in the middle of a dataset.
+
+&nbsp;
+&nbsp;
+
+### =AVERAGE(){style="color:#F44336;"}
+
+Sum all the values and divide by the number of records.
+
+:::
+:::
+
+## Census exercise v2
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1dhkZApmrXbdySBjOESNWgBT9bdzUdIDrfmU12nZgFHc/copy).
+2. Fill in the empty columns with formulas we learned last time.
+3. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+::: notes
+:::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)

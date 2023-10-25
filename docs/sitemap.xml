@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://nicu.md/ddj-wiki/sources/data-calendar.html</loc>
-    <lastmod>2023-10-18T20:04:09.425Z</lastmod>
+    <lastmod>2023-10-25T19:57:19.902Z</lastmod>
   </url>
   <url>
-    <loc>http://nicu.md/ddj-wiki/index.html</loc>
-    <lastmod>2023-10-18T20:04:07.081Z</lastmod>
-  </url>
-  <url>
-    <loc>http://nicu.md/ddj-wiki/city/index.html</loc>
-    <lastmod>2023-10-18T20:04:05.891Z</lastmod>
-  </url>
-  <url>
-    <loc>http://nicu.md/ddj-wiki/city/old-slides/Intro to Data Journalism.html</loc>
-    <lastmod>2023-10-18T20:04:04.714Z</lastmod>
+    <loc>http://nicu.md/ddj-wiki/toolbox/index.html</loc>
+    <lastmod>2023-10-25T19:57:18.462Z</lastmod>
   </url>
   <url>
     <loc>http://nicu.md/ddj-wiki/intro/index.html</loc>
-    <lastmod>2023-10-18T20:04:06.515Z</lastmod>
+    <lastmod>2023-10-25T19:57:17.810Z</lastmod>
+  </url>
+  <url>
+    <loc>http://nicu.md/ddj-wiki/city/old-slides/Intro to Data Journalism.html</loc>
+    <lastmod>2023-10-25T19:57:16.450Z</lastmod>
+  </url>
+  <url>
+    <loc>http://nicu.md/ddj-wiki/city/index.html</loc>
+    <lastmod>2023-10-25T19:57:17.360Z</lastmod>
+  </url>
+  <url>
+    <loc>http://nicu.md/ddj-wiki/index.html</loc>
+    <lastmod>2023-10-25T19:57:18.096Z</lastmod>
   </url>
   <url>
     <loc>http://nicu.md/ddj-wiki/sources/index.html</loc>
-    <lastmod>2023-10-18T20:04:08.371Z</lastmod>
+    <lastmod>2023-10-25T19:57:19.283Z</lastmod>
   </url>
 </urlset>

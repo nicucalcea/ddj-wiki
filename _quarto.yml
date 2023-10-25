@@ -21,6 +21,9 @@ website:
           - text: "Data Calendar"
             icon: "calendar-week"
             href: sources/data-calendar.qmd
+      - text: Toolbox
+        icon: "wrench"
+        href: toolbox/index.qmd
     tools:
       - icon: person-circle
         href: https://nicu.md/
