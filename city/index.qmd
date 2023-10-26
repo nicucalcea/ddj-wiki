@@ -569,11 +569,11 @@ Source: [The New York Times](https://www.nytimes.com/interactive/2023/10/16/us/c
 Source: [Urban Complexity Lab](https://uclab.fh-potsdam.de/projects/klimakarten/)
 :::
 
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/"></iframe>
-::: footer
-Source: [The Washington Post](https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/)
-:::
+<!-- ## {fullscreen=true} -->
+<!-- <iframe class="stretch" data-src="https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/"></iframe> -->
+<!-- ::: footer -->
+<!-- Source: [The Washington Post](https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/) -->
+<!-- ::: -->
 
 ## {fullscreen=true}
 <iframe class="stretch" data-src="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/"></iframe>
