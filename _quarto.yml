@@ -29,7 +29,7 @@ website:
         icon: "trophy"
         href: awards/index.qmd
     tools:
-      - icon: person-circle
+      - icon: c-circle
         href: https://nicu.md/
       - icon: github
         menu:

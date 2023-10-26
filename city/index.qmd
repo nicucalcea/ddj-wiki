@@ -587,6 +587,13 @@ Source: [The Register](https://www.theregister.com/2023/10/20/royal_college_exce
 Source: [Aman Bhargava](https://thedivtagguy.com/tidytuesday/taylor-swift/)
 :::
 
+## Bloomberg jobs
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Bloomberg is expanding its data journalism and visualization teams globally by hiring approximately 40 new data journalists, data visualization reporters, editors and engineers.<br><br>a thread 🧵… <a href="https://t.co/kQklY9cyPf">pic.twitter.com/kQklY9cyPf</a></p>&mdash; Bloomberg Graphics (@BBGVisualData) <a href="https://twitter.com/BBGVisualData/status/1717253500827021384?ref_src=twsrc%5Etfw">October 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+::: notes
+https://nitter.net/martinstabe/status/1717507555360920055#m
+:::
+
 
 ## Toolbox
 
