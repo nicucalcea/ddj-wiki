@@ -12,6 +12,13 @@ filters:
 href: city
 ---
 
+
+
+<!-- TODO -->
+<!-- Pad out week 3, I finished it too soon. -->
+<!-- Add more of Glyn's resources from Moodle -->
+
+
 # [👋]{.wave} Welcome to [Introduction to Data Journalism]{style="color:#F44336;"}
 
 ```{=html}
@@ -554,6 +561,9 @@ Same as =XLOOKUP() but more flexible and easier to grasp.
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
 
 # Week 3
+
+<!-- Pad this week out, add more content (about 25%) -->
+
 Introduction to [Data Journalism]{style="color:#F44336;"}<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
@@ -655,6 +665,147 @@ Sum all the values and divide by the number of records.
 
 ::: notes
 :::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+
+
+# Week 4
+
+Data [Cleaning]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+
+## {#dirty-data data-menu-title="Dirty Data" .smaller}
+
+::: columns
+::: {.column width="33.33%"}
+##### [Missing data]{style="color:#F44336;"}
+Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.
+:::
+
+::: {.column width="33.33%"}
+##### [Duplicated data]{style="color:#F44336;"}
+Records can be repeated, either due to technical mishaps or due to repeated input.
+:::
+
+::: {.column width="33.33%"}
+##### [Misspellings]{style="color:#F44336;"}
+Humans make mistakes. Assume any dataset manually created by humans to have missspelings.
+:::
+
+::: {.column width="33.33%"}
+##### [Poor formatting]{style="color:#F44336;"}
+Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.
+:::
+
+::: {.column width="33.33%"}
+##### [Parsing errors]{style="color:#F44336;"}
+Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.
+:::
+
+::: {.column width="33.33%"}
+##### [Inconsistent data]{style="color:#F44336;"}
+A column can have different unites, spell categories differently or record different methodologies.
+:::
+:::
+
+## The guide to bad data
+
+![](media/guide-bad-data.png)
+
+::: footer
+Source: [Quartz](https://qz.com/572338/the-quartz-guide-to-bad-data) (also onm [GitHub](https://github.com/Quartz/bad-data-guide))
+:::
+
+
+## Data prep
+
+<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
+
+::: footer
+Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
+:::
+
+## {#inflation-screenshot data-menu-title="ONS inflation data" .smaller}
+
+![](media/inflation-ons-screenshot.png)
+
+::: footer
+Source: [ONS](https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation)
+:::
+
+## Baby names exercise
+
+1. Download the [Baby names for girls/boys in England and Wales file](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021/relateddata).
+2. Upload the spreadsheet to Google Drive and open it in Google Sheets.
+3. Find and clean Table 1.
+4. Read about [Shart](https://www.thecourier.co.uk/fp/courier-investigations/3168365/baby-name-rules-scotland/).
+
+Also check last year’s tables: [here](https://docs.google.com/spreadsheets/d/1V88_N_jJHh9rrT16IYEBAGddtD_t_LpoBNvG9DY056g/edit).
+
+## OpenRefine
+
+![](media/open-refine-guardian.png)
+
+::: footer
+Source: [The Guardian](https://www.theguardian.com/politics/2021/oct/25/tories-received-13m-from-fossil-fuel-interests-and-climate-sceptics-since-2019)
+:::
+
+## Download OpenRefine
+
+<iframe class="stretch" data-src="https://openrefine.org/"></iframe>
+
+::: footer
+Source: [OpenRefine](https://openrefine.org/)
+:::
+
+::: notes
+https://search.electoralcommission.org.uk/
+:::
+
+## Food hygiene data
+
+<iframe class="stretch" data-src="https://ratings.food.gov.uk/open-data"></iframe>
+
+::: footer
+Source: [Food Standards Agency](https://ratings.food.gov.uk/open-data)
+:::
+
+## Food hygiene exercise {.smaller}
+
+- Make a copy of the [food hygiene ratings data](https://docs.google.com/spreadsheets/d/1eNZZlAL3pYEd31Ge56qdkc3tko42fAGvEv8VARdwCr8/copy).
+- Answer these questions:
+    1. What kind of establishments are the best rated in Islington?
+    2. What establishment with a rating of 0-1 is due a follow-up visit?
+    3. How many establishments received a 5-star rating this month?
+    4. What is the cleanest hotspots (highest average hygiene with 10+ ratings)?
+    5. Any other interesting angles?
+
+::: notes
+N7 6NJ. Use Google Sheets filter instead of pivot for 10+ ratings
+:::
+
+## Group assignment {.smaller}
+
+You will be split into teams of four to create a narrated PowerPoint presentation critiquing a data project featured in the [Sigma Awards](https://sigmaawards.org/projects/). You can choose a winner or a short-listed project (at the bottom of the page).
+
+&nbsp;
+&nbsp;
+
+Deadline: **Friday, December 8, 4pm**
+
+&nbsp;
+&nbsp;
+
+Deliverables
+
+- A 20-25 minute long [narrated PowerPoint presentation](https://support.microsoft.com/en-us/office/record-audio-narration-for-your-powerpoint-presentation-232d5fec-fc90-4abb-9332-c469d336d947).
+- A 500-word group reflection, with appropriate references (Harvard and I suggest using Zotero as citation manager).
+- Fill in [this spreadsheet](https://docs.google.com/spreadsheets/d/1_OVgO5ExbH_Xe8FOipb0LAAh4DUbMZ4RI9G3ZxgVfI0/edit#gid=0) with your name and the project you're working on.
+
 
 ## Contact
 

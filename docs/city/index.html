@@ -399,6 +399,12 @@
 </div>
 
 </section>
+<section class="slide level2">
+
+<!-- TODO -->
+<!-- Pad out week 3, I finished it too soon. -->
+<!-- Add more of Glyn's resources from Moodle -->
+</section>
 <section>
 <section id="welcome-to-introduction-to-data-journalism" class="title-slide slide level1 center">
 <h1><span class="wave">👋</span> Welcome to <span style="color:#F44336;">Introduction to Data Journalism</span></h1>
@@ -990,6 +996,7 @@
 <section>
 <section id="week-3" class="title-slide slide level1 center">
 <h1>Week 3</h1>
+<!-- Pad this week out, add more content (about 25%) -->
 <p>Introduction to <span style="color:#F44336;">Data Journalism</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-8" class="slide level2" data-fullscreen="true">
@@ -1111,6 +1118,150 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
       }</style></aside>
 </section>
 <section id="contact-2" class="slide level2">
+<h2>Contact</h2>
+<ul>
+<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
+<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
+</ul>
+</section></section>
+<section>
+<section id="week-4" class="title-slide slide level1 center">
+<h1>Week 4</h1>
+<p>Data <span style="color:#F44336;">Cleaning</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+</section>
+<section id="dirty-data" class="slide level2 smaller" data-menu-title="Dirty Data">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:33.33%;">
+<h5 id="missing-data"><span style="color:#F44336;">Missing data</span></h5>
+<p>Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="duplicated-data"><span style="color:#F44336;">Duplicated data</span></h5>
+<p>Records can be repeated, either due to technical mishaps or due to repeated input.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="misspellings"><span style="color:#F44336;">Misspellings</span></h5>
+<p>Humans make mistakes. Assume any dataset manually created by humans to have missspelings.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="poor-formatting"><span style="color:#F44336;">Poor formatting</span></h5>
+<p>Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="parsing-errors"><span style="color:#F44336;">Parsing errors</span></h5>
+<p>Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="inconsistent-data"><span style="color:#F44336;">Inconsistent data</span></h5>
+<p>A column can have different unites, spell categories differently or record different methodologies.</p>
+</div>
+</div>
+</section>
+<section id="the-guide-to-bad-data" class="slide level2">
+<h2>The guide to bad data</h2>
+
+<img data-src="media/guide-bad-data.png" class="r-stretch"><div class="footer">
+<p>Source: <a href="https://qz.com/572338/the-quartz-guide-to-bad-data" target="_blank">Quartz</a> (also onm <a href="https://github.com/Quartz/bad-data-guide" target="_blank">GitHub</a>)</p>
+</div>
+</section>
+<section id="data-prep" class="slide level2">
+<h2>Data prep</h2>
+<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets" target="_blank">Datawrapper</a></p>
+</div>
+</section>
+<section id="inflation-screenshot" class="slide level2 smaller" data-menu-title="ONS inflation data">
+<h2></h2>
+
+<img data-src="media/inflation-ons-screenshot.png" class="r-stretch"><div class="footer">
+<p>Source: <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation" target="_blank">ONS</a></p>
+</div>
+</section>
+<section id="baby-names-exercise" class="slide level2">
+<h2>Baby names exercise</h2>
+<ol type="1">
+<li>Download the <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021/relateddata" target="_blank">Baby names for girls/boys in England and Wales file</a>.</li>
+<li>Upload the spreadsheet to Google Drive and open it in Google Sheets.</li>
+<li>Find and clean Table 1.</li>
+<li>Read about <a href="https://www.thecourier.co.uk/fp/courier-investigations/3168365/baby-name-rules-scotland/" target="_blank">Shart</a>.</li>
+</ol>
+<p>Also check last year’s tables: <a href="https://docs.google.com/spreadsheets/d/1V88_N_jJHh9rrT16IYEBAGddtD_t_LpoBNvG9DY056g/edit" target="_blank">here</a>.</p>
+</section>
+<section id="openrefine" class="slide level2">
+<h2>OpenRefine</h2>
+
+<img data-src="media/open-refine-guardian.png" class="r-stretch"><div class="footer">
+<p>Source: <a href="https://www.theguardian.com/politics/2021/oct/25/tories-received-13m-from-fossil-fuel-interests-and-climate-sceptics-since-2019" target="_blank">The Guardian</a></p>
+</div>
+</section>
+<section id="download-openrefine" class="slide level2">
+<h2>Download OpenRefine</h2>
+<iframe class="stretch" data-src="https://openrefine.org/">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://openrefine.org/" target="_blank">OpenRefine</a></p>
+</div>
+<aside class="notes">
+<p>https://search.electoralcommission.org.uk/</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="food-hygiene-data" class="slide level2">
+<h2>Food hygiene data</h2>
+<iframe class="stretch" data-src="https://ratings.food.gov.uk/open-data">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://ratings.food.gov.uk/open-data" target="_blank">Food Standards Agency</a></p>
+</div>
+</section>
+<section id="food-hygiene-exercise" class="slide level2 smaller">
+<h2>Food hygiene exercise</h2>
+<ul>
+<li>Make a copy of the <a href="https://docs.google.com/spreadsheets/d/1eNZZlAL3pYEd31Ge56qdkc3tko42fAGvEv8VARdwCr8/copy" target="_blank">food hygiene ratings data</a>.</li>
+<li>Answer these questions:
+<ol type="1">
+<li>What kind of establishments are the best rated in Islington?</li>
+<li>What establishment with a rating of 0-1 is due a follow-up visit?</li>
+<li>How many establishments received a 5-star rating this month?</li>
+<li>What is the cleanest hotspots (highest average hygiene with 10+ ratings)?</li>
+<li>Any other interesting angles?</li>
+</ol></li>
+</ul>
+<aside class="notes">
+<p>N7 6NJ. Use Google Sheets filter instead of pivot for 10+ ratings</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="group-assignment" class="slide level2 smaller">
+<h2>Group assignment</h2>
+<p>You will be split into teams of four to create a narrated PowerPoint presentation critiquing a data project featured in the <a href="https://sigmaawards.org/projects/" target="_blank">Sigma Awards</a>. You can choose a winner or a short-listed project (at the bottom of the page).</p>
+<p>&nbsp; &nbsp;</p>
+<p>Deadline: <strong>Friday, December 8, 4pm</strong></p>
+<p>&nbsp; &nbsp;</p>
+<p>Deliverables</p>
+<ul>
+<li>A 20-25 minute long <a href="https://support.microsoft.com/en-us/office/record-audio-narration-for-your-powerpoint-presentation-232d5fec-fc90-4abb-9332-c469d336d947" target="_blank">narrated PowerPoint presentation</a>.</li>
+<li>A 500-word group reflection, with appropriate references (Harvard and I suggest using Zotero as citation manager).</li>
+<li>Fill in <a href="https://docs.google.com/spreadsheets/d/1_OVgO5ExbH_Xe8FOipb0LAAh4DUbMZ4RI9G3ZxgVfI0/edit#gid=0" target="_blank">this spreadsheet</a> with your name and the project you’re working on.</li>
+</ul>
+</section>
+<section id="contact-3" class="slide level2">
 <h2>Contact</h2>
 <ul>
 <li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
