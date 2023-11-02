@@ -678,6 +678,44 @@ Data [Cleaning]{style="color:#F44336;"}<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
+## {fullscreen=true}
+![](media/bbc-wages.png){.absolute height="700"}
+
+::: footer
+Source: [BBC](https://www.bbc.co.uk/news/business-67278269)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://oct7map.com/"></iframe>
+
+::: footer
+Source: [October 7th Geo-visualization Project](https://oct7map.com/)
+:::
+
+## {fullscreen=true}
+<video autoplay="" loop="" muted="" src="https://blog.datawrapper.de/wp-content/uploads/2023/10/CleanShot-2023-10-30-at-17.04.24.mp4" class="thin-grey-border"></video>
+
+::: footer
+Source: [The Washington Post](https://www.washingtonpost.com/nation/interactive/mass-shootings/)
+:::
+
+
+## 
+![](media/nyt-neighbourhoods.png)
+
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/upshot/extremely-detailed-nyc-neighborhood-map.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/"></iframe>
+
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/)
+:::
+
+
+
 ## {#dirty-data data-menu-title="Dirty Data" .smaller}
 
 ::: columns
@@ -717,7 +755,7 @@ A column can have different unites, spell categories differently or record diffe
 ![](media/guide-bad-data.png)
 
 ::: footer
-Source: [Quartz](https://qz.com/572338/the-quartz-guide-to-bad-data) (also onm [GitHub](https://github.com/Quartz/bad-data-guide))
+Source: [Quartz](https://qz.com/572338/the-quartz-guide-to-bad-data) (also on [GitHub](https://github.com/Quartz/bad-data-guide))
 :::
 
 
@@ -805,6 +843,14 @@ Deliverables
 - A 20-25 minute long [narrated PowerPoint presentation](https://support.microsoft.com/en-us/office/record-audio-narration-for-your-powerpoint-presentation-232d5fec-fc90-4abb-9332-c469d336d947).
 - A 500-word group reflection, with appropriate references (Harvard and I suggest using Zotero as citation manager).
 - Fill in [this spreadsheet](https://docs.google.com/spreadsheets/d/1_OVgO5ExbH_Xe8FOipb0LAAh4DUbMZ4RI9G3ZxgVfI0/edit#gid=0) with your name and the project you're working on.
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/"></iframe>
+
+::: footer
+Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/)
+:::
 
 
 ## Contact
