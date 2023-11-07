@@ -497,6 +497,62 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
   },
   {
+    "objectID": "city/index.html#why-do-we-visualise-data",
+    "href": "city/index.html#why-do-we-visualise-data",
+    "title": "Intro to Data Journalism",
+    "section": "Why do we visualise data?",
+    "text": "Why do we visualise data?\nSummarising data, like we did in previous lessons, is not always enough to reveal pattern or trends.\nVisualising it can provide insight we’d otherwise lose out on."
+  },
+  {
+    "objectID": "city/index.html#what-can-we-visualise",
+    "href": "city/index.html#what-can-we-visualise",
+    "title": "Intro to Data Journalism",
+    "section": "What can we visualise?",
+    "text": "What can we visualise?\n\nPosition \n\n\nSize\n    Width \n\n\n    Height \n\n\n    Area \n\n\nColour\n    Fill \n\n\n    Colour \n\n\n    Opacity\n    Pattern\nShape \n\n\nLocation"
+  },
+  {
+    "objectID": "city/index.html#what-visual-encoding-can-you-find-in-this-chart",
+    "href": "city/index.html#what-visual-encoding-can-you-find-in-this-chart",
+    "title": "Intro to Data Journalism",
+    "section": "What visual encoding can you find in this chart?",
+    "text": "What visual encoding can you find in this chart?"
+  },
+  {
+    "objectID": "city/index.html#the-fts-scatter-plot",
+    "href": "city/index.html#the-fts-scatter-plot",
+    "title": "Intro to Data Journalism",
+    "section": "The FT’s scatter plot",
+    "text": "The FT’s scatter plot\n\nStandard scatter plot \n\n\nChange scale to log \n\n\nSize by population \n\n\nColour by continent \n\n\nAnimate over time \n\n\nhttps://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655"
+  },
+  {
+    "objectID": "city/index.html#ft-vocabulary",
+    "href": "city/index.html#ft-vocabulary",
+    "title": "Intro to Data Journalism",
+    "section": "FT Vocabulary",
+    "text": "FT Vocabulary\n\n\nSource: FT"
+  },
+  {
+    "objectID": "city/index.html#many-types-of-charts",
+    "href": "city/index.html#many-types-of-charts",
+    "title": "Intro to Data Journalism",
+    "section": "Many types of charts",
+    "text": "Many types of charts\n\nFT Vocabulary\nData Viz Project\nData to Viz\nData Visualisation Catalogue"
+  },
+  {
+    "objectID": "city/index.html#imdb-exercise",
+    "href": "city/index.html#imdb-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "IMDb exercise",
+    "text": "IMDb exercise\n\nMake a copy of the IMDB top 250 data.\nWorking in groups, think of stories to tell based on this data.\nWhat would you visualise to support your story/stories?\nWould you look for any other datasets you can combine with this?\nScout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like Datawrapper or Flourish.\nIf you have time left, discuss plans for the group assignment."
+  },
+  {
+    "objectID": "city/index.html#contact-4",
+    "href": "city/index.html#contact-4",
+    "title": "Intro to Data Journalism",
+    "section": "Contact",
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
+  },
+  {
     "objectID": "city/old-slides/Intro to Data Journalism.html",
     "href": "city/old-slides/Intro to Data Journalism.html",
     "title": "Data Journalism Wiki",

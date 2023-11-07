@@ -12,13 +12,6 @@ filters:
 href: city
 ---
 
-
-
-<!-- TODO -->
-<!-- Pad out week 3, I finished it too soon. -->
-<!-- Add more of Glyn's resources from Moodle -->
-
-
 # [👋]{.wave} Welcome to [Introduction to Data Journalism]{style="color:#F44336;"}
 
 ```{=html}
@@ -43,6 +36,10 @@ href: city
 }
 </style>
 ```
+
+<!-- TODO -->
+<!-- Pad out week 3, I finished it too soon. -->
+<!-- Add more of Glyn's resources from Moodle -->
 
 ## Who am I? {.smaller}
 
@@ -852,6 +849,128 @@ Deliverables
 Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/)
 :::
 
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+
+
+# Week 5
+
+Data [Projects]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+
+## {fullscreen=true}
+![](media/bbc-wages.png){.absolute height="700"}
+
+
+## Why do we visualise data? {background-color="#e9e9e9"}
+
+Summarising data, like we did in previous lessons, is not always enough to reveal pattern or trends.
+
+Visualising it can provide insight we’d otherwise lose out on.
+
+![](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif){.absolute width="700"}
+
+
+## What can we visualise? {.smaller background-color="white"}
+
+::: {.fragment}
+Position ![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+Size
+
+&nbsp;&nbsp;&nbsp;&nbsp;Width ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Horizontal-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Height ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Area ![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+Colour
+
+&nbsp;&nbsp;&nbsp;&nbsp;Fill ![](https://datavizproject.com/wp-content/uploads/types/Pictorial-Stacked-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Colour ![](https://datavizproject.com/wp-content/uploads/types/Cluster-Analysis-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Opacity
+
+&nbsp;&nbsp;&nbsp;&nbsp;Pattern
+
+Shape ![](https://datavizproject.com/wp-content/uploads/types/Matrix-Diagram--600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+Location ![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+
+## What visual encoding can you find in this chart? {background-color="#fff1e0"}
+
+![](media/ft/scatter-5.gif){.absolute height="500"}
+
+## The FT's scatter plot {background-color="#fff1e0"}
+
+::: {.fragment .fade-in-then-out}
+Standard scatter plot ![](media/ft/scatter-1.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Change scale to log ![](media/ft/scatter-2.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Size by population ![](media/ft/scatter-3.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Colour by continent ![](media/ft/scatter-4.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment}
+Animate over time ![](media/ft/scatter-5.gif){.absolute top=100 right=20 height="450"}
+:::
+
+::: notes
+https://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655
+:::
+
+## FT Vocabulary
+
+![](https://raw.githubusercontent.com/Financial-Times/chart-doctor/main/visual-vocabulary/poster.png){.absolute top=0 left=0 height="800"}
+
+::: footer
+Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
+:::
+
+## Many types of charts
+
+- [FT Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
+- [Data Viz Project](https://datavizproject.com/)
+- [Data to Viz](https://www.data-to-viz.com/)
+- [Data Visualisation Catalogue](https://datavizcatalogue.com/)
+
+## IMDb exercise {.smaller}
+
+1. Make a copy of the [IMDB top 250 data](https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies).
+2. Working in groups, think of stories to tell based on this data.
+3. What would you visualise to support your story/stories?
+4. Would you look for any other datasets you can combine with this?
+5. Scout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like [Datawrapper](https://www.datawrapper.de/) or [Flourish](https://flourish.studio/).
+6. If you have time left, discuss plans for the group assignment.
 
 ## Contact
 
