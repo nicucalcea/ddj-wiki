@@ -996,7 +996,7 @@ Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vo
 ## Gapminder exercise
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.gapminder.org/tools/' frameborder='0' allowfullscreen></iframe></div>
 
-## IMDb exercise
+## IMDb exercise {.smaller}
 1. Make a copy of the [IMDb data](https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies).
 2. Working in groups, think of stories to tell based on this data.
 3. What would you visualise to support your story/stories?
