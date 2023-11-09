@@ -858,13 +858,30 @@ Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring
 
 # Week 5
 
-Data [Projects]{style="color:#F44336;"}<br>
+Data [Stories]{style="color:#F44336;"}<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
-## {fullscreen=true}
-![](media/bbc-wages.png){.absolute height="700"}
+## 30-day challenge (Erwan) {fullscreen=true}
+![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg){.absolute height="600"}
 
+::: footer
+Source: [Erwan Rivault](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
+:::
+
+## 30-day challenge (Jana) {fullscreen=true}
+![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-G8R9ZW0AAso94.jpeg){.absolute height="600"}
+
+::: footer
+Source: [Jana Tauschinski](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
+:::
+
+## {fullscreen=true}
+![](https://blog.datawrapper.de/wp-content/uploads/2023/11/image6.png){.absolute height="700"}
+
+::: footer
+Source: [FT](https://www.ft.com/content/ed739236-7430-4dc1-95f5-4a23534d8841)
+:::
 
 ## Why do we visualise data? {background-color="#e9e9e9"}
 
@@ -877,9 +894,7 @@ Visualising it can provide insight we’d otherwise lose out on.
 
 ## What can we visualise? {.smaller background-color="white"}
 
-::: {.fragment}
 Position ![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png){.absolute top=100 right=50 width="500" height="500"}
-:::
 
 ::: {.fragment}
 Size
@@ -916,6 +931,9 @@ Shape ![](https://datavizproject.com/wp-content/uploads/types/Matrix-Diagram--60
 ::: {.fragment}
 Location ![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map-600x600.png){.absolute top=100 right=50 width="500" height="500"}
 :::
+
+## People suck at sizes {background-color="white"}
+<iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/@mizinov/area-comparison?cell=*"></iframe>
 
 
 ## What visual encoding can you find in this chart? {background-color="#fff1e0"}
@@ -963,16 +981,26 @@ Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vo
 - [Data to Viz](https://www.data-to-viz.com/)
 - [Data Visualisation Catalogue](https://datavizcatalogue.com/)
 
-## IMDb exercise {.smaller}
+## Gapminder
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/hVimVzgtD6w' frameborder='0' allowfullscreen></iframe></div>
 
-1. Make a copy of the [IMDB top 250 data](https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies).
+## Gapminder exercise {.smaller}
+
+1. Make a copy of the [Gapminder data](https://www.gapminder.org/data/).
 2. Working in groups, think of stories to tell based on this data.
 3. What would you visualise to support your story/stories?
 4. Would you look for any other datasets you can combine with this?
 5. Scout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like [Datawrapper](https://www.datawrapper.de/) or [Flourish](https://flourish.studio/).
 6. If you have time left, discuss plans for the group assignment.
 
+## Gapminder exercise
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.gapminder.org/tools/' frameborder='0' allowfullscreen></iframe></div>
+
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+
+::: notes
+Please make Flourish and Datawrapper accounts
+:::

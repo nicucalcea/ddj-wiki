@@ -497,6 +497,27 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
   },
   {
+    "objectID": "city/index.html#day-challenge-erwan",
+    "href": "city/index.html#day-challenge-erwan",
+    "title": "Intro to Data Journalism",
+    "section": "30-day challenge (Erwan)",
+    "text": "30-day challenge (Erwan)\n\n\nSource: Erwan Rivault"
+  },
+  {
+    "objectID": "city/index.html#day-challenge-jana",
+    "href": "city/index.html#day-challenge-jana",
+    "title": "Intro to Data Journalism",
+    "section": "30-day challenge (Jana)",
+    "text": "30-day challenge (Jana)\n\n\nSource: Jana Tauschinski"
+  },
+  {
+    "objectID": "city/index.html#section-18",
+    "href": "city/index.html#section-18",
+    "title": "Intro to Data Journalism",
+    "section": "",
+    "text": "Source: FT"
+  },
+  {
     "objectID": "city/index.html#why-do-we-visualise-data",
     "href": "city/index.html#why-do-we-visualise-data",
     "title": "Intro to Data Journalism",
@@ -508,7 +529,14 @@
     "href": "city/index.html#what-can-we-visualise",
     "title": "Intro to Data Journalism",
     "section": "What can we visualise?",
-    "text": "What can we visualise?\n\nPosition \n\n\nSize\n    Width \n\n\n    Height \n\n\n    Area \n\n\nColour\n    Fill \n\n\n    Colour \n\n\n    Opacity\n    Pattern\nShape \n\n\nLocation"
+    "text": "What can we visualise?\nPosition \n\nSize\n    Width \n\n\n    Height \n\n\n    Area \n\n\nColour\n    Fill \n\n\n    Colour \n\n\n    Opacity\n    Pattern\nShape \n\n\nLocation"
+  },
+  {
+    "objectID": "city/index.html#people-suck-at-sizes",
+    "href": "city/index.html#people-suck-at-sizes",
+    "title": "Intro to Data Journalism",
+    "section": "People suck at sizes",
+    "text": "People suck at sizes"
   },
   {
     "objectID": "city/index.html#what-visual-encoding-can-you-find-in-this-chart",
@@ -539,18 +567,32 @@
     "text": "Many types of charts\n\nFT Vocabulary\nData Viz Project\nData to Viz\nData Visualisation Catalogue"
   },
   {
-    "objectID": "city/index.html#imdb-exercise",
-    "href": "city/index.html#imdb-exercise",
+    "objectID": "city/index.html#gapminder",
+    "href": "city/index.html#gapminder",
     "title": "Intro to Data Journalism",
-    "section": "IMDb exercise",
-    "text": "IMDb exercise\n\nMake a copy of the IMDB top 250 data.\nWorking in groups, think of stories to tell based on this data.\nWhat would you visualise to support your story/stories?\nWould you look for any other datasets you can combine with this?\nScout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like Datawrapper or Flourish.\nIf you have time left, discuss plans for the group assignment."
+    "section": "Gapminder",
+    "text": "Gapminder"
+  },
+  {
+    "objectID": "city/index.html#gapminder-exercise",
+    "href": "city/index.html#gapminder-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Gapminder exercise",
+    "text": "Gapminder exercise\n\nMake a copy of the Gapminder data.\nWorking in groups, think of stories to tell based on this data.\nWhat would you visualise to support your story/stories?\nWould you look for any other datasets you can combine with this?\nScout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like Datawrapper or Flourish.\nIf you have time left, discuss plans for the group assignment."
+  },
+  {
+    "objectID": "city/index.html#gapminder-exercise-1",
+    "href": "city/index.html#gapminder-exercise-1",
+    "title": "Intro to Data Journalism",
+    "section": "Gapminder exercise",
+    "text": "Gapminder exercise"
   },
   {
     "objectID": "city/index.html#contact-4",
     "href": "city/index.html#contact-4",
     "title": "Intro to Data Journalism",
     "section": "Contact",
-    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk\n\n\nPlease make Flourish and Datawrapper accounts"
   },
   {
     "objectID": "city/old-slides/Intro to Data Journalism.html",
