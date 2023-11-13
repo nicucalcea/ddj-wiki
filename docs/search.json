@@ -81,7 +81,7 @@
     "href": "toolbox/index.html#visualisation",
     "title": "Data Toolbox",
     "section": "Visualisation",
-    "text": "Visualisation\n\nDatawrapper — web dataviz tool\nFlourish — web interactive/dataviz tool\nRAW Graphs — static chart maker\nInfogram — infographic creator\nDatamatic.io — web dataviz tool\nHighcharts — chart library for developers\nPlotly — chart library for developers\nD3.js — library for advanced dataviz\nMapbox — map maker\nMapshaper — editor for map data\ngeojson.io — editor for map data\nGephi — network visualisations\nR / ggplot2 — programming language"
+    "text": "Visualisation\n\nDatawrapper — web dataviz tool\nFlourish — web interactive/dataviz tool\nRAW Graphs — static chart maker\nInfogram — infographic creator\nDatamatic.io — web dataviz tool\nHighcharts — chart library for developers\nPlotly — chart library for developers\nD3.js — library for advanced dataviz\nMapbox — map maker\nMapshaper — editor for map data\ngeojson.io — editor for map data\nGephi — network visualisations\nR / ggplot2 — programming language\n\n\nColours\n\nColorBrewer — collection of safe colour palettes\nChroma.js — colour palette helper\nScientific Colour Maps — colour-blind and accurate colour palette"
   },
   {
     "objectID": "city/index.html#who-am-i",
@@ -592,7 +592,7 @@
     "href": "city/index.html#imdb-exercise",
     "title": "Intro to Data Journalism",
     "section": "IMDb exercise",
-    "text": "IMDb exercise\n\nMake a copy of the IMDb data.\nWorking in groups, think of stories to tell based on this data.\nWhat would you visualise to support your story/stories?\nWould you look for any other datasets you can combine with this?\nScout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like Datawrapper or Flourish.\nIf you have time left, discuss plans for the group assignment."
+    "text": "IMDb exercise\n\n\nMake a copy of the IMDb data.\nWorking in groups, think of stories to tell based on this data.\nWhat would you visualise to support your story/stories?\nWould you look for any other datasets you can combine with this?\nScout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like Datawrapper or Flourish.\nIf you have time left, discuss plans for the group assignment."
   },
   {
     "objectID": "city/index.html#contact-4",
@@ -600,6 +600,118 @@
     "title": "Intro to Data Journalism",
     "section": "Contact",
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk\n\n\nPlease make Flourish and Datawrapper accounts"
+  },
+  {
+    "objectID": "city/index.html#day-challenge-erwan-1",
+    "href": "city/index.html#day-challenge-erwan-1",
+    "title": "Intro to Data Journalism",
+    "section": "30-day challenge (Erwan)",
+    "text": "30-day challenge (Erwan)"
+  },
+  {
+    "objectID": "city/index.html#dataviz-toolbox",
+    "href": "city/index.html#dataviz-toolbox",
+    "title": "Intro to Data Journalism",
+    "section": "Dataviz Toolbox",
+    "text": "Dataviz Toolbox\n\n\n\nSource: ddj.nicu.md"
+  },
+  {
+    "objectID": "city/index.html#barcolumn-charts",
+    "href": "city/index.html#barcolumn-charts",
+    "title": "Intro to Data Journalism",
+    "section": "Bar/column charts",
+    "text": "Bar/column charts\n\n\n\n\nHorizontal or vertical rectangles with lengths proportional to the values that they represent.  Good for comparing across different values or showing a trend over time."
+  },
+  {
+    "objectID": "city/index.html#line-chart",
+    "href": "city/index.html#line-chart",
+    "title": "Intro to Data Journalism",
+    "section": "Line chart",
+    "text": "Line chart\n\n\n\n\nShows values on a continuous scale. Similar to a scatter plot, except all dots are connected.  Good for showing trends over time."
+  },
+  {
+    "objectID": "city/index.html#area-chart",
+    "href": "city/index.html#area-chart",
+    "title": "Intro to Data Journalism",
+    "section": "Area chart",
+    "text": "Area chart\n\n\n\n\nSimilar to a line chart but the area underneath the line is coloured in. When stacked, it can show multiple data series as well as their cumulative trend.  Good for showing trends over time."
+  },
+  {
+    "objectID": "city/index.html#scatter-plot",
+    "href": "city/index.html#scatter-plot",
+    "title": "Intro to Data Journalism",
+    "section": "Scatter plot",
+    "text": "Scatter plot\n\n\n\n\nPlots a dataset across two continuous dimensions, each on a different axis (X and Y).  Good for showing correlation between different data series."
+  },
+  {
+    "objectID": "city/index.html#map",
+    "href": "city/index.html#map",
+    "title": "Intro to Data Journalism",
+    "section": "Map",
+    "text": "Map\n\n\n\n\nOnly works with geographical data (duh!).  Even with geographical data, other charts can often be a better choice."
+  },
+  {
+    "objectID": "city/index.html#anatomy-of-a-chart",
+    "href": "city/index.html#anatomy-of-a-chart",
+    "title": "Intro to Data Journalism",
+    "section": "Anatomy of a chart",
+    "text": "Anatomy of a chart\n\n\n\nTitle\nSubtitle / description\nSeries\nLabels\nGridlines\nx-axix\ny-axis\nLegend/key\nSource"
+  },
+  {
+    "objectID": "city/index.html#colour-scales",
+    "href": "city/index.html#colour-scales",
+    "title": "Intro to Data Journalism",
+    "section": "Colour scales",
+    "text": "Colour scales\n\n\nSequential: Colours (of the same hue) that go from light to dark or the other way around. Usually, darker means higher value.\nDiverging: Similar to sequential, but they have a light middle colour that turns darker on both ends of the scale. Useful when you have both positive and negative values.\nCategorical: For values that aren’t on a numeric scale or don’t have an intrinsic order. Useful when none of the colours are more important than others."
+  },
+  {
+    "objectID": "city/index.html#colour-toolbox",
+    "href": "city/index.html#colour-toolbox",
+    "title": "Intro to Data Journalism",
+    "section": "Colour Toolbox",
+    "text": "Colour Toolbox\n\n\n\nSource: ddj.nicu.md"
+  },
+  {
+    "objectID": "city/index.html#dataviz-fonts",
+    "href": "city/index.html#dataviz-fonts",
+    "title": "Intro to Data Journalism",
+    "section": "Dataviz Fonts",
+    "text": "Dataviz Fonts\n\n\n\nSource: Datawrapper"
+  },
+  {
+    "objectID": "city/index.html#bad-charts-daily-mail",
+    "href": "city/index.html#bad-charts-daily-mail",
+    "title": "Intro to Data Journalism",
+    "section": "Bad charts: Daily Mail",
+    "text": "Bad charts: Daily Mail\n\n\nSource: Daily Mail"
+  },
+  {
+    "objectID": "city/index.html#bad-charts-the-sun",
+    "href": "city/index.html#bad-charts-the-sun",
+    "title": "Intro to Data Journalism",
+    "section": "Bad charts: The Sun",
+    "text": "Bad charts: The Sun\n\n\nSource: The Sun"
+  },
+  {
+    "objectID": "city/index.html#bad-charts-reuters",
+    "href": "city/index.html#bad-charts-reuters",
+    "title": "Intro to Data Journalism",
+    "section": "Bad charts: Reuters",
+    "text": "Bad charts: Reuters\n\n\n\n\n\nSource: Reuters"
+  },
+  {
+    "objectID": "city/index.html#bad-charts-cbs-news",
+    "href": "city/index.html#bad-charts-cbs-news",
+    "title": "Intro to Data Journalism",
+    "section": "Bad charts: CBS News",
+    "text": "Bad charts: CBS News\n\n\nSource: CBS News"
+  },
+  {
+    "objectID": "city/index.html#wtf-visualizations",
+    "href": "city/index.html#wtf-visualizations",
+    "title": "Intro to Data Journalism",
+    "section": "WTF Visualizations",
+    "text": "WTF Visualizations\n\n\n\nSource: WTF Visualizations"
   },
   {
     "objectID": "city/old-slides/Intro to Data Journalism.html",

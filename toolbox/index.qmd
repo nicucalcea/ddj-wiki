@@ -65,3 +65,9 @@ Initially based on [a list by Prof. Bahareh Heravi](https://nitter.net/Bahareh36
 - [geojson.io](https://geojson.io/) — editor for map data
 - [Gephi](https://gephi.org/) — network visualisations
 - [R](https://www.r-project.org/) / [ggplot2](http://ggplot2.org/) — programming language
+
+### Colours
+- [ColorBrewer](https://colorbrewer2.org) — collection of safe colour palettes
+- [Chroma.js](https://gka.github.io/palettes/) — colour palette helper
+- [Scientific Colour Maps](https://www.fabiocrameri.ch/colourmaps/) — colour-blind and accurate colour palette
+

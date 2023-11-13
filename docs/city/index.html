@@ -1457,6 +1457,7 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 </section>
 <section id="imdb-exercise" class="slide level2 smaller">
 <h2>IMDb exercise</h2>
+<!-- Upload this somewhere so students don't have to log in -->
 <ol type="1">
 <li>Make a copy of the <a href="https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies" target="_blank">IMDb data</a>.</li>
 <li>Working in groups, think of stories to tell based on this data.</li>
@@ -1485,6 +1486,174 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section></section>
+<section>
+<section id="week-6" class="title-slide slide level1 center">
+<h1>Week 6</h1>
+<p>Data <span style="color:#F44336;">Visualisation</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+</section>
+<section id="day-challenge-erwan-1" class="slide level2" data-fullscreen="true">
+<h2>30-day challenge (Erwan)</h2>
+<p><img data-src="https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg" class="absolute" style="height: 600px; "></p>
+</section>
+<section id="dataviz-toolbox" class="slide level2">
+<h2>Dataviz Toolbox</h2>
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#visualisation">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://ddj.nicu.md/toolbox/#visualisation" target="_blank">ddj.nicu.md</a></p>
+</div>
+</section>
+<section id="barcolumn-charts" class="slide level2" data-background-color="white">
+<h2>Bar/column charts</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical.png"></p>
+</div><div class="column" style="width:40%;">
+<p>Horizontal or vertical rectangles with lengths proportional to the values that they represent. <br><br> Good for comparing across different values or showing a trend over time.</p>
+</div>
+</div>
+</section>
+<section id="line-chart" class="slide level2" data-background-color="white">
+<h2>Line chart</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Line-Graph.png"></p>
+</div><div class="column" style="width:40%;">
+<p>Shows values on a continuous scale. Similar to a scatter plot, except all dots are connected. <br><br> Good for showing trends over time.</p>
+</div>
+</div>
+</section>
+<section id="area-chart" class="slide level2" data-background-color="white">
+<h2>Area chart</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart.png"></p>
+</div><div class="column" style="width:40%;">
+<p>Similar to a line chart but the area underneath the line is coloured in. When stacked, it can show multiple data series as well as their cumulative trend. <br><br> Good for showing trends over time.</p>
+</div>
+</div>
+</section>
+<section id="scatter-plot" class="slide level2" data-background-color="white">
+<h2>Scatter plot</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png"></p>
+</div><div class="column" style="width:40%;">
+<p>Plots a dataset across two continuous dimensions, each on a different axis (X and Y). <br><br> Good for showing correlation between different data series.</p>
+</div>
+</div>
+</section>
+<section id="map" class="slide level2" data-background-color="white">
+<h2>Map</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png"></p>
+</div><div class="column" style="width:40%;">
+<p>Only works with geographical data (duh!). <br><br> Even with geographical data, other charts can often be a better choice.</p>
+</div>
+</div>
+</section>
+<section id="anatomy-of-a-chart" class="slide level2" data-background-color="white">
+<h2>Anatomy of a chart</h2>
+
+<img data-src="https://c.files.bbci.co.uk/13899/production/_128352008_optimised-debt-ceiling-nc.png" class="r-stretch"><aside class="notes">
+<ul>
+<li>Title</li>
+<li>Subtitle / description</li>
+<li>Series</li>
+<li>Labels</li>
+<li>Gridlines</li>
+<li>x-axix</li>
+<li>y-axis</li>
+<li>Legend/key</li>
+<li>Source</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="colour-scales" class="slide level2" data-background-color="white">
+<h2>Colour scales</h2>
+
+<img data-src="https://blog.datawrapper.de/wp-content/uploads/2021/03/200801_colorscale-intro-f-1.png" class="r-stretch"><aside class="notes">
+<p>Sequential: Colours (of the same hue) that go from light to dark or the other way around. Usually, darker means higher value.</p>
+<p>Diverging: Similar to sequential, but they have a light middle colour that turns darker on both ends of the scale. Useful when you have both positive and negative values.</p>
+<p>Categorical: For values that aren’t on a numeric scale or don’t have an intrinsic order. Useful when none of the colours are more important than others.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="colour-toolbox" class="slide level2">
+<h2>Colour Toolbox</h2>
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#colours">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://ddj.nicu.md/toolbox/#colours" target="_blank">ddj.nicu.md</a></p>
+</div>
+</section>
+<section id="dataviz-fonts" class="slide level2" data-background-color="white">
+<h2>Dataviz Fonts</h2>
+<iframe class="stretch" data-src="https://blog.datawrapper.de/fonts-for-data-visualization/">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://blog.datawrapper.de/fonts-for-data-visualization/" target="_blank">Datawrapper</a></p>
+</div>
+</section>
+<section id="bad-charts-daily-mail" class="slide level2">
+<h2>Bad charts: Daily Mail</h2>
+
+<img data-src="media/bad-charts/daily-fail-2.jpg" class="r-stretch"><div class="footer">
+<p>Source: <a href="https://www.dailymail.co.uk/news/article-8028565/EU-leaders-argue-early-hours-bruising-budget-talks.html" target="_blank">Daily Mail</a></p>
+</div>
+</section>
+<section id="bad-charts-the-sun" class="slide level2">
+<h2>Bad charts: The Sun</h2>
+
+<img data-src="media/bad-charts/the-s-n.webp" class="r-stretch"><div class="footer">
+<p>Source: The Sun</p>
+</div>
+</section>
+<section id="bad-charts-reuters" class="slide level2">
+<h2>Bad charts: Reuters</h2>
+<p><img data-src="media/bad-charts/gun-deaths.webp" class="absolute" style="top: 90px; left: 0px; height: 500px; "></p>
+<div class="fragment">
+<p><img data-src="media/bad-charts/gun-deaths-2.webp" class="absolute" style="top: 90px; left: 0px; height: 456px; "></p>
+</div>
+<div class="footer">
+<p>Source: Reuters</p>
+</div>
+</section>
+<section id="bad-charts-cbs-news" class="slide level2">
+<h2>Bad charts: CBS News</h2>
+
+<img data-src="media/bad-charts/cbsn.jpg" class="r-stretch"><div class="footer">
+<p>Source: CBS News</p>
+</div>
+</section>
+<section id="wtf-visualizations" class="slide level2">
+<h2>WTF Visualizations</h2>
+<iframe class="stretch" data-src="https://viz.wtf/">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://viz.wtf/" target="_blank">WTF Visualizations</a></p>
+</div>
 
 <div class="footer footer-default">
 

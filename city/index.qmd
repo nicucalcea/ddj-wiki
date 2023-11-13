@@ -997,6 +997,8 @@ Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vo
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.gapminder.org/tools/' frameborder='0' allowfullscreen></iframe></div>
 
 ## IMDb exercise {.smaller}
+
+<!-- Upload this somewhere so students don't have to log in -->
 1. Make a copy of the [IMDb data](https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies).
 2. Working in groups, think of stories to tell based on this data.
 3. What would you visualise to support your story/stories?
@@ -1011,4 +1013,178 @@ Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vo
 
 ::: notes
 Please make Flourish and Datawrapper accounts
+:::
+
+
+# Week 6
+
+Data [Visualisation]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+
+## 30-day challenge (Erwan) {fullscreen=true}
+![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg){.absolute height="600"}
+
+
+## Dataviz Toolbox
+
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#visualisation"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/#visualisation)
+:::
+
+
+## Bar/column charts { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical.png)
+:::
+
+::: {.column width="40%"}
+Horizontal or vertical rectangles with lengths proportional to the values that they represent.
+<br><br>
+Good for comparing across different values or showing a trend over time.
+:::
+:::
+
+## Line chart { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Line-Graph.png)
+:::
+
+::: {.column width="40%"}
+Shows values on a continuous scale. Similar to a scatter plot, except all dots are connected.
+<br><br>
+Good for showing trends over time.
+:::
+:::
+
+
+## Area chart { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart.png)
+:::
+
+::: {.column width="40%"}
+Similar to a line chart but the area underneath the line is coloured in. When stacked, it can show multiple data series as well as their cumulative trend.
+<br><br>
+Good for showing trends over time.
+:::
+:::
+
+## Scatter plot { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png)
+:::
+
+::: {.column width="40%"}
+Plots a dataset across two continuous dimensions, each on a different axis (X and Y). 
+<br><br>
+Good for showing correlation between different data series.
+:::
+:::
+
+## Map { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
+:::
+
+::: {.column width="40%"}
+Only works with geographical data (duh!).
+<br><br>
+Even with geographical data, other charts can often be a better choice.
+:::
+:::
+
+
+## Anatomy of a chart {background-color="white"}
+
+![](https://c.files.bbci.co.uk/13899/production/_128352008_optimised-debt-ceiling-nc.png)
+
+::: notes
+- Title
+- Subtitle / description
+- Series
+- Labels
+- Gridlines
+- x-axix
+- y-axis
+- Legend/key
+- Source
+:::
+
+## Colour scales {background-color="white"}
+
+![](https://blog.datawrapper.de/wp-content/uploads/2021/03/200801_colorscale-intro-f-1.png)
+
+::: notes
+Sequential: Colours (of the same hue) that go from light to dark or the other way around. Usually, darker means higher value.
+
+Diverging: Similar to sequential, but they have a light middle colour that turns darker on both ends of the scale. Useful when you have both positive and negative values.
+
+Categorical: For values that aren’t on a numeric scale or don’t have an intrinsic order. Useful when none of the colours are more important than others.
+:::
+
+
+## Colour Toolbox
+
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#colours"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/#colours)
+:::
+
+
+## Dataviz Fonts {background-color="white"}
+
+<iframe class="stretch" data-src="https://blog.datawrapper.de/fonts-for-data-visualization/"></iframe>
+::: footer
+Source: [Datawrapper](https://blog.datawrapper.de/fonts-for-data-visualization/)
+:::
+
+## Bad charts: Daily Mail
+![](media/bad-charts/daily-fail-2.jpg)
+
+::: footer
+Source: [Daily Mail](https://www.dailymail.co.uk/news/article-8028565/EU-leaders-argue-early-hours-bruising-budget-talks.html)
+:::
+
+## Bad charts: The Sun
+![](media/bad-charts/the-s-n.webp)
+
+::: footer
+Source: The Sun
+:::
+
+## Bad charts: Reuters
+![](media/bad-charts/gun-deaths.webp){.absolute top=90 left=0 height="500"}
+
+::: fragment
+![](media/bad-charts/gun-deaths-2.webp){.absolute top=90 left=0 height="456"}
+:::
+
+::: footer
+Source: Reuters
+:::
+
+## Bad charts: CBS News
+![](media/bad-charts/cbsn.jpg)
+
+::: footer
+Source: CBS News
+:::
+
+## WTF Visualizations
+
+<iframe class="stretch" data-src="https://viz.wtf/"></iframe>
+::: footer
+Source: [WTF Visualizations](https://viz.wtf/)
 :::
