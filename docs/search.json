@@ -602,11 +602,25 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk\n\n\nPlease make Flourish and Datawrapper accounts"
   },
   {
-    "objectID": "city/index.html#day-challenge-erwan-1",
-    "href": "city/index.html#day-challenge-erwan-1",
+    "objectID": "city/index.html#section-19",
+    "href": "city/index.html#section-19",
     "title": "Intro to Data Journalism",
-    "section": "30-day challenge (Erwan)",
-    "text": "30-day challenge (Erwan)"
+    "section": "",
+    "text": "Source: Reuters"
+  },
+  {
+    "objectID": "city/index.html#section-20",
+    "href": "city/index.html#section-20",
+    "title": "Intro to Data Journalism",
+    "section": "",
+    "text": "Source: Bloomberg"
+  },
+  {
+    "objectID": "city/index.html#section-21",
+    "href": "city/index.html#section-21",
+    "title": "Intro to Data Journalism",
+    "section": "",
+    "text": "Source: Washington Post"
   },
   {
     "objectID": "city/index.html#dataviz-toolbox",
@@ -712,6 +726,41 @@
     "title": "Intro to Data Journalism",
     "section": "WTF Visualizations",
     "text": "WTF Visualizations\n\n\n\nSource: WTF Visualizations"
+  },
+  {
+    "objectID": "city/index.html#covid-exercise",
+    "href": "city/index.html#covid-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Covid exercise",
+    "text": "Covid exercise\n\nDownload a copy of the Covid-19 data.\nFilter it to only the deaths and vaccination rates in Europe.\nCopy the data into Datawrapper.\nCreate a scatter plot.\nCustomise axis labels, colours, size, tooltips, title, description and source.\nAdd annotations.\nPublish or download the chart."
+  },
+  {
+    "objectID": "city/index.html#covid-exercise---example",
+    "href": "city/index.html#covid-exercise---example",
+    "title": "Intro to Data Journalism",
+    "section": "Covid exercise - example",
+    "text": "Covid exercise - example"
+  },
+  {
+    "objectID": "city/index.html#taxis-vs-uber-exercise",
+    "href": "city/index.html#taxis-vs-uber-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Taxis vs Uber exercise",
+    "text": "Taxis vs Uber exercise\n\nCopy this spreadsheet.\nCopy the data into Flourish.\nCreate a bar chart race.\nCustomise axis labels, colours, size, title, description and source.\nAdd annotations (optionally).\nPublish or download the chart."
+  },
+  {
+    "objectID": "city/index.html#taxis-vs-uber-exercise---example",
+    "href": "city/index.html#taxis-vs-uber-exercise---example",
+    "title": "Intro to Data Journalism",
+    "section": "Taxis vs Uber exercise - example",
+    "text": "Taxis vs Uber exercise - example\n\n\n\n\nSource: Reddit"
+  },
+  {
+    "objectID": "city/index.html#contact-5",
+    "href": "city/index.html#contact-5",
+    "title": "Intro to Data Journalism",
+    "section": "Contact",
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
   },
   {
     "objectID": "city/old-slides/Intro to Data Journalism.html",

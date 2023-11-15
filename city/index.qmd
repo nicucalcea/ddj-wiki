@@ -1022,9 +1022,24 @@ Data [Visualisation]{style="color:#F44336;"}<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
-## 30-day challenge (Erwan) {fullscreen=true}
-![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg){.absolute height="600"}
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/"></iframe>
+::: footer
+Source: [Reuters](https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/)
+:::
 
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/"></iframe>
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/"></iframe>
+::: footer
+Source: [Washington Post](https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/)
+:::
 
 ## Dataviz Toolbox
 
@@ -1188,3 +1203,39 @@ Source: CBS News
 ::: footer
 Source: [WTF Visualizations](https://viz.wtf/)
 :::
+
+## Covid exercise
+
+1. Download a copy of the [Covid-19 data](https://github.com/owid/covid-19-data/blob/master/public/data/latest/owid-covid-latest.csv).
+2. Filter it to only the deaths and vaccination rates in Europe.
+3. Copy the data into Datawrapper.
+4. Create a scatter plot.
+5. Customise axis labels, colours, size, tooltips, title, description and source.
+6. Add annotations.
+7. Publish or download the chart.
+
+## Covid exercise - example {background-color="white"}
+
+<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/AyGb7/1/"></iframe>
+
+## Taxis vs Uber exercise {background-color="white"}
+
+1. Copy [this spreadsheet](https://docs.google.com/spreadsheets/d/1wf3qDM9Ew8lDeDpTHNz22S83ri8rDspnRycDG9m657Q/copy).
+2. Copy the data into Flourish.
+3. Create a bar chart race.
+4. Customise axis labels, colours, size, title, description and source.
+5. Add annotations (optionally).
+6. Publish or download the chart.
+
+## Taxis vs Uber exercise - example
+
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/11775147"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+::: footer
+Source: [Reddit](https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how_uber_took_over_new_york_city/)
+:::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
