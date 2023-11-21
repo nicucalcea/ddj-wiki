@@ -1239,3 +1239,161 @@ Source: [Reddit](https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+
+# Week 7
+
+[Maps]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://blog.datawrapper.de/how-to-get-started-with-data-visualization/"></iframe>
+::: footer
+Source: [Datawrapper](https://blog.datawrapper.de/how-to-get-started-with-data-visualization/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://honzaap.github.io/Pathfinding/"></iframe>
+::: footer
+Source: [Jan Pánek](https://honzaap.github.io/Pathfinding/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/"></iframe>
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/"></iframe>
+::: footer
+Source: [Washington Post](https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/)
+:::
+
+<!-- https://blog.datawrapper.de/pigeon-internet-speed/ -->
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/"></iframe>
+::: footer
+Source: [openDemocracy](https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/)
+:::
+
+## Choropleth {background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
+:::
+
+::: {.column width="40%"}
+Pre-defined areas such as countries, regions or districts are coloured (either sequential, diverging or categorical) in proportion to values in a dataset.
+:::
+:::
+
+## Bubble/symbol map {background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Bubble-Map.png)
+:::
+
+::: {.column width="40%"}
+Circles are drawn on top of a map, with their size or colour proportional to values in a dataset.
+:::
+:::
+
+## Cartogram / hex map {background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Cartogram.png)
+:::
+
+::: {.column width="40%"}
+Cartograms resize regions in proportion to a variable in your dataset, such as population.
+<br><br>
+Hex maps standardise administrative units into same-sizes hexagons, squares or triangles.
+:::
+:::
+
+
+## The 2019 general election {background-color="white"}
+
+![](https://geographical.co.uk/wp-content/uploads/UK-general-election-2019.jpeg)
+
+
+## Not always the right choice
+
+::: columns
+::: {.column width="50%"}
+![](https://imgs.xkcd.com/comics/heatmap_2x.png)
+:::
+
+::: {.column width="50%"}
+Try to only use maps when there’s a geographical pattern to your data.
+<br><br>
+Don’t make a map if it’s going to basically be a population map.
+:::
+:::
+
+::: footer
+Source: [xkcd](https://xkcd.com/1138/)
+:::
+
+## What data you'll need {.smaller background-color="#f9f9f9"}
+
+::: columns
+::: {.column width="50%"}
+![](media/geo-data-1.png)
+
+#### Geographical data
+
+This can be polygons (areas), lines or points. Some tools have a few options by default, or you can get additional ones from the ONS, Natural Earth or ArcGIS.
+
+:::
+
+::: {.column width="50%"}
+![](media/geo-data-2.png)
+
+#### Numerical or categorical data
+
+This is the data that will be placed in the shapes on your map. Normally contains region IDs or coordinates (latitude and longitude).
+
+:::
+:::
+
+## Internet speed exercise
+
+1. Make a copy of the [internet speed in Europe data](https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy).
+2. Create a choropleth map (NUTS3, 2021).
+3. Copy the data in.
+4. Customise colours, title, description and source.
+5. Add annotations.
+6. Publish or download the chart.
+
+## Internet speed - example {.smaller background-color="#1c1b22"}
+
+<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/uJ92E/"></iframe>
+
+## Students exercise
+
+1. Go to the international students tab in [the spreadsheet you’ve copied earlier](https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy).
+2. Create a 3D globe flow map in Flourish.
+3. Copy the data in.
+4. Customise colours, title, description and source.
+5. Publish or download the chart.
+
+## Missing migrants exercise
+
+1. Go to the missing migrants tab in the spreadsheet you’ve copied earlier.
+2. Copy the data into Datawrapper or Flourish.
+3. Create a symbol map.
+4. Customise it (colour, size, opacity, etc).
+
+## Missing migrants - example
+
+<div class="flourish-embed flourish-map" data-src="visualisation/6268496"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
