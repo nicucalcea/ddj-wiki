@@ -1252,6 +1252,18 @@ Source: [Datawrapper](https://blog.datawrapper.de/how-to-get-started-with-data-v
 :::
 
 ## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bbc.co.uk/news/business-67489975"></iframe>
+::: footer
+Source: [BBC](https://www.bbc.co.uk/news/business-67489975)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.ons.gov.uk/visualisations/censusorigindestination/"></iframe>
+::: footer
+Source: [ONS](https://www.ons.gov.uk/visualisations/censusorigindestination/)
+:::
+
+## {fullscreen=true}
 <iframe class="stretch" data-src="https://honzaap.github.io/Pathfinding/"></iframe>
 ::: footer
 Source: [Jan Pánek](https://honzaap.github.io/Pathfinding/)
@@ -1261,6 +1273,12 @@ Source: [Jan Pánek](https://honzaap.github.io/Pathfinding/)
 <iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/"></iframe>
 ::: footer
 Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html"></iframe>
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html)
 :::
 
 ## {fullscreen=true}
