@@ -1415,3 +1415,150 @@ This is the data that will be placed in the shapes on your map. Normally contain
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+
+
+
+
+
+
+
+# Week 8
+
+Data [Projects]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+<!-- ## {fullscreen=true} -->
+<!-- <iframe class="stretch" data-src="https://blog.datawrapper.de/how-to-get-started-with-data-visualization/"></iframe> -->
+<!-- ::: footer -->
+<!-- Source: [Datawrapper](https://blog.datawrapper.de/how-to-get-started-with-data-visualization/) -->
+<!-- ::: -->
+
+## {.smaller}
+
+::: columns
+::: {.column width="33.33%"}
+![](media/projects-1.png){width="100%"}
+
+Often, the best narratives warrant going further than simple graphics.
+:::
+
+::: {.column width="33.33%"}
+![](media/projects-2.png){width="100%"}
+
+Tailored visualisations designed specifically for a story will almost always be the best way to tell a story.
+:::
+
+::: {.column width="33.33%"}
+![](media/projects-3.png){width="100%"}
+
+Interactivity can sometimes help portray the intricacies of a story better.
+:::
+:::
+
+## The Martini Glass principle {background-color="#f2f2f2"}
+
+![](https://miro.medium.com/v2/1*Jca05UCRvx-iJ96zGIFQkw.jpeg){width="100%"}
+
+::: notes
+Kicker
+This is the top line you want to tell your audience. What does the data say? What will people share on Twitter?
+
+Explanation
+Guide your reader through your story, exposing different facets of your data.
+
+Exploration
+Let your readers explore the data on their own to find the stories that are relevant to them.
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html"></iframe>
+::: footer
+Source: [Gurman Bhatia](https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/"></iframe>
+::: footer
+Source: [Masters of Media](https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/)
+:::
+
+
+## Trackers {fullscreen=true .smaller background-color="white"}
+
+::: columns
+::: {.column width="66.66%"}
+<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://nsmg-projects-public.s3.eu-west-2.amazonaws.com/live/nsmg-031/index.html' frameborder='0' allowfullscreen></iframe></div>
+:::
+
+::: {.column width="33.33%"}
+Trackers are data visualisations connected to a data source that is periodically updated.
+<br><br>
+Examples include [FiveThirtyEight’s Biden approval rating tracker](https://projects.fivethirtyeight.com/biden-approval-rating/), [Bloomberg’s Pret Index](https://www.bloomberg.com/graphics/pret-index/) and [the New Statesman’s Covid-19 tracker](https://www.newstatesman.com/science-tech/2021/11/uk-covid-tracker-latest-data-local-authority).
+:::
+:::
+
+::: footer
+Source: [New Statesman](https://www.newstatesman.com/science-tech/2021/12/uk-covid-tracker-latest-data-local-authority)
+:::
+
+
+## Calculators {fullscreen=true .smaller background-color="white"}
+
+::: columns
+::: {.column width="66.66%"}
+<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://flo.uri.sh/visualisation/15816210/embed' frameborder='0' allowfullscreen></iframe></div>
+:::
+
+::: {.column width="33.33%"}
+Calculators allow readers to input their own data and receive a result.
+<br><br>
+Examples include the [FT personal data worth calculator](https://ig.ft.com/how-much-is-your-personal-data-worth/), [the New Statesman election calculator](https://www.newstatesman.com/politics/elections/2021/08/election-win-calculator) and [the BBC's energy calculator](https://www.bbc.co.uk/news/business-67489975).
+:::
+:::
+
+::: footer
+Source: [BBC News](https://www.bbc.co.uk/news/business-67489975)
+:::
+
+
+## Scrollable stories {fullscreen=true .smaller background-color="#222222"}
+
+::: columns
+::: {.column width="66.66%"}
+<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://news.test.files.bbci.co.uk/include/vjneareast/1230-critical-minerals/develop/english/app/test--full-width.html' frameborder='0' allowfullscreen></iframe></div>
+:::
+
+::: {.column width="33.33%"}
+Scrollytelling is the use of a browser’s scrolling functionality to interactively tell a data story.
+<br><br>
+Examples include [The Impatient List](https://xujunjiejack.github.io/), [the New York Times delta variant story](https://www.nytimes.com/interactive/2021/08/12/science/covid-delta-breakthrough.html) and [the New Statesman million years lost investigation](https://www.newstatesman.com/world/uk/2021/04/exclusive-covid-19-robbed-decade-life-average-victim-england-and-wales).
+:::
+:::
+
+::: footer
+Source: BBC News
+:::
+
+
+##
+
+> Information visualisation is meant to clarify data, but too much interactivity hinders understanding by transferring responsibility from the designer to the reader to work out the important points. --- **[Martin Stabe (FT)](https://www.ft.com/content/c62b21c6-7feb-11e6-8e50-8ec15fb462f4)**
+
+. . .
+
+> Readers just want to scroll, […] if you make the reader click or do anything other than scroll, something spectacular has to happen. --- **[Archie Tse (NYT)](https://raw.githubusercontent.com/archietse/malofiej-2016/master/tse-malofiej-2016-slides.pdf)**
+
+
+##
+
+> Interactive graphics are not just a fun addition but can actually increase the transparency of our work, open us for criticism, and thereby, hopefully, help re-build some trust in journalism. --- **[Gregor Aisch (Datawrapper)](https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/)**
+
+
+## Let’s hear from you
+
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
