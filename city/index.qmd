@@ -1427,11 +1427,48 @@ This is the data that will be placed in the shapes on your map. Normally contain
 Data [Projects]{style="color:#F44336;"}<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-<!-- ## {fullscreen=true} -->
-<!-- <iframe class="stretch" data-src="https://blog.datawrapper.de/how-to-get-started-with-data-visualization/"></iframe> -->
-<!-- ::: footer -->
-<!-- Source: [Datawrapper](https://blog.datawrapper.de/how-to-get-started-with-data-visualization/) -->
-<!-- ::: -->
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined"></iframe>
+::: footer
+Source: [Friends of the Earth](https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html"></iframe>
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://ig.ft.com/china-mosques/"></iframe>
+::: footer
+Source: [Financial Times](https://ig.ft.com/china-mosques/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src=https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html"></iframe>
+::: footer
+Source: [AP](https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.wsj.com/personal-finance/income-raise-happiness-06a70900"></iframe>
+::: footer
+Source: [Wall Street Journal](https://www.wsj.com/personal-finance/income-raise-happiness-06a70900)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/"></iframe>
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://texty.org.ua/projects/111159/"></iframe>
+::: footer
+Source: [Texty](https://texty.org.ua/projects/111159/)
+:::
+
 
 ## {.smaller}
 
