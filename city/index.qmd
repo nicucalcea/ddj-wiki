@@ -1338,6 +1338,7 @@ Hex maps standardise administrative units into same-sizes hexagons, squares or t
 
 ![](https://geographical.co.uk/wp-content/uploads/UK-general-election-2019.jpeg)
 
+<!-- https://www.dailykos.com/stories/2023/11/8/2204458/-A-majority-of-America-will-have-access-to-legal-marijuana-following-Ohio-election -->
 
 ## Not always the right choice
 
@@ -1415,9 +1416,6 @@ This is the data that will be placed in the shapes on your map. Normally contain
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
-
-
-
 
 
 
@@ -1593,6 +1591,114 @@ Source: BBC News
 
 
 ## Let’s hear from you
+
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+
+# Week 9
+
+[Scraping]{style="color:#F44336;"}<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+<!-- ## {fullscreen=true} -->
+<!-- <iframe class="stretch" data-src="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined"></iframe> -->
+<!-- ::: footer -->
+<!-- Source: [Friends of the Earth](https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined) -->
+<!-- ::: -->
+
+
+##
+
+> Data scraping, in its most general form, refers to a technique in which a computer program extracts data from output generated from another program. --- **[Cloudflare](https://www.cloudflare.com/en-gb/learning/bots/what-is-data-scraping/)**
+
+## Data can be stuck behind inaccessible formats {.smaller}
+
+::: columns
+::: {.column width="33.33%"}
+### PDFs
+
+Many organisations still publish data in PDFs, a proprietary format that is difficult to work with. Sometimes, they even do it on purpose. 
+:::
+
+::: {.column width="33.33%"}
+### Images
+
+If you can’t find the data behind a chart, ask the author. If you can’t do that either, read it from the image.
+:::
+
+::: {.column width="33.33%"}
+### Websites
+
+If you’ve got structured information on your page, you’ll most likely be able to download in a format that you can analyse.
+:::
+:::
+
+
+## Use Tabula to scrape PDF tables {fullscreen=true}
+<iframe class="stretch" data-src="https://tabula.technology/"></iframe>
+::: footer
+Source: [Tabula](https://tabula.technology/)
+:::
+
+::: notes
+Show an example.
+:::
+
+
+
+## Digitise image charts {fullscreen=true}
+<iframe class="stretch" data-src="https://apps.automeris.io/wpd/"></iframe>
+::: footer
+Source: [WebPlotDigitizer](https://apps.automeris.io/wpd/)
+:::
+
+::: notes
+Screenshot and digitize: https://www.ft.com/content/7e32dfb1-2282-40fa-9b10-181c01272ba3
+:::
+
+## Digitise maps {fullscreen=true}
+<iframe class="stretch" data-src="https://mapster.me/map-digitizer/"></iframe>
+::: footer
+Source: [Map Digitizer](https://mapster.me/map-digitizer/)
+:::
+
+## Scrape online charts {fullscreen=true}
+<iframe class="stretch" data-src="https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/"></iframe>
+::: footer
+Source: [Online Journalism Blog](https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/)
+:::
+
+## Hidden APIs {fullscreen=true}
+<iframe class="stretch" data-src="https://inspectelement.org/"></iframe>
+::: footer
+Source: [Inspect Element](https://inspectelement.org/)
+:::
+
+
+## Import HTML tables into Sheets
+
+1. Create a new Google Sheets document.
+2. Open [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_countries_by_wealth_per_adult) in another tab.
+3. Use the `=IMPORTHTML()` formula to import one of the tables.
+
+## Missing persons exercise
+
+1. Download and install the [Web Scraper](https://webscraper.io/) browser extension.
+2. Navigate to the [Missing Persons website](https://missingpersons.police.uk/en-gb/case-search).
+3. Scrape it.
+
+```{.json .code-overflow-wrap}
+{"_id":"missingpersons","startUrl":["https://missingpersons.police.uk/en-gb/case-search/?page=[1-10]&orderBy=dateDesc"],"selectors":[{"id":"gender-age","parentSelectors":["case"],"type":"SelectorText","selector":"a:nth-of-type(7) div:nth-of-type(1) div","multiple":false,"regex":""},{"id":"reference","parentSelectors":["case"],"type":"SelectorText","selector":"div.Detail:nth-of-type(2) div","multiple":false,"regex":""},{"id":"location","parentSelectors":["case"],"type":"SelectorText","selector":"div.Detail:nth-of-type(3) div","multiple":false,"regex":""},{"id":"case","parentSelectors":["_root"],"type":"SelectorElement","selector":"a.CaseThumbnail","multiple":true},{"id":"link","parentSelectors":["case"],"type":"SelectorLink","selector":"_parent_","multiple":false},{"id":"ethnicity","parentSelectors":["link"],"type":"SelectorText","selector":"div.Entry:nth-of-type(3) div.Value","multiple":false,"regex":""}]}
+```
+
+
+## The Gazette exercise
+
+1. Go to the [the Gazette website](https://m.thegazette.co.uk/insolvency?categorycode=G205010000&results-page=1)
+2. Scrape company names, notice IDs, types, company IDs, date, etc.
 
 
 ## Contact

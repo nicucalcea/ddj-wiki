@@ -1029,6 +1029,83 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
   },
   {
+    "objectID": "city/index.html#section-42",
+    "href": "city/index.html#section-42",
+    "title": "Intro to Data Journalism",
+    "section": "",
+    "text": "Data scraping, in its most general form, refers to a technique in which a computer program extracts data from output generated from another program. — Cloudflare"
+  },
+  {
+    "objectID": "city/index.html#data-can-be-stuck-behind-inaccessible-formats",
+    "href": "city/index.html#data-can-be-stuck-behind-inaccessible-formats",
+    "title": "Intro to Data Journalism",
+    "section": "Data can be stuck behind inaccessible formats",
+    "text": "Data can be stuck behind inaccessible formats\n\n\nPDFs\nMany organisations still publish data in PDFs, a proprietary format that is difficult to work with. Sometimes, they even do it on purpose.\n\nImages\nIf you can’t find the data behind a chart, ask the author. If you can’t do that either, read it from the image.\n\nWebsites\nIf you’ve got structured information on your page, you’ll most likely be able to download in a format that you can analyse."
+  },
+  {
+    "objectID": "city/index.html#use-tabula-to-scrape-pdf-tables",
+    "href": "city/index.html#use-tabula-to-scrape-pdf-tables",
+    "title": "Intro to Data Journalism",
+    "section": "Use Tabula to scrape PDF tables",
+    "text": "Use Tabula to scrape PDF tables\n\n\n\nSource: Tabula\n\n\nShow an example."
+  },
+  {
+    "objectID": "city/index.html#digitise-image-charts",
+    "href": "city/index.html#digitise-image-charts",
+    "title": "Intro to Data Journalism",
+    "section": "Digitise image charts",
+    "text": "Digitise image charts\n\n\n\nSource: WebPlotDigitizer\n\n\nScreenshot and digitize: https://www.ft.com/content/7e32dfb1-2282-40fa-9b10-181c01272ba3"
+  },
+  {
+    "objectID": "city/index.html#digitise-map-charts",
+    "href": "city/index.html#digitise-map-charts",
+    "title": "Intro to Data Journalism",
+    "section": "Digitise map charts",
+    "text": "Digitise map charts\n\n\n\nSource: Map Digitizer"
+  },
+  {
+    "objectID": "city/index.html#download-data-from-online-charts",
+    "href": "city/index.html#download-data-from-online-charts",
+    "title": "Intro to Data Journalism",
+    "section": "Download data from online charts",
+    "text": "Download data from online charts\n\n\n\nSource: Online Journalism Blog"
+  },
+  {
+    "objectID": "city/index.html#hidden-apis",
+    "href": "city/index.html#hidden-apis",
+    "title": "Intro to Data Journalism",
+    "section": "Hidden APIs",
+    "text": "Hidden APIs\n\n\n\nSource: Inspect Element"
+  },
+  {
+    "objectID": "city/index.html#import-html-tables-into-sheets",
+    "href": "city/index.html#import-html-tables-into-sheets",
+    "title": "Intro to Data Journalism",
+    "section": "Import HTML tables into Sheets",
+    "text": "Import HTML tables into Sheets\n\nCreate a new Google Sheets document.\nOpen this Wikipedia page in another tab.\nUse the =IMPORTHTML() formula to import one of the tables."
+  },
+  {
+    "objectID": "city/index.html#missing-persons-exercise",
+    "href": "city/index.html#missing-persons-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Missing persons exercise",
+    "text": "Missing persons exercise\n\nDownload and install the Web Scraper browser extension.\nNavigate to the Missing Persons website.\nScrape it.\n\n{\"_id\":\"missingpersons\",\"startUrl\":[\"https://missingpersons.police.uk/en-gb/case-search/?page=[1-10]&orderBy=dateDesc\"],\"selectors\":[{\"id\":\"gender-age\",\"parentSelectors\":[\"case\"],\"type\":\"SelectorText\",\"selector\":\"a:nth-of-type(7) div:nth-of-type(1) div\",\"multiple\":false,\"regex\":\"\"},{\"id\":\"reference\",\"parentSelectors\":[\"case\"],\"type\":\"SelectorText\",\"selector\":\"div.Detail:nth-of-type(2) div\",\"multiple\":false,\"regex\":\"\"},{\"id\":\"location\",\"parentSelectors\":[\"case\"],\"type\":\"SelectorText\",\"selector\":\"div.Detail:nth-of-type(3) div\",\"multiple\":false,\"regex\":\"\"},{\"id\":\"case\",\"parentSelectors\":[\"_root\"],\"type\":\"SelectorElement\",\"selector\":\"a.CaseThumbnail\",\"multiple\":true},{\"id\":\"link\",\"parentSelectors\":[\"case\"],\"type\":\"SelectorLink\",\"selector\":\"_parent_\",\"multiple\":false},{\"id\":\"ethnicity\",\"parentSelectors\":[\"link\"],\"type\":\"SelectorText\",\"selector\":\"div.Entry:nth-of-type(3) div.Value\",\"multiple\":false,\"regex\":\"\"}]}"
+  },
+  {
+    "objectID": "city/index.html#the-gazette-exercise",
+    "href": "city/index.html#the-gazette-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "The Gazette exercise",
+    "text": "The Gazette exercise\n\nGo to the the Gazette website\nScrape company names, notice IDs, types, company IDs, date, etc."
+  },
+  {
+    "objectID": "city/index.html#contact-8",
+    "href": "city/index.html#contact-8",
+    "title": "Intro to Data Journalism",
+    "section": "Contact",
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
+  },
+  {
     "objectID": "city/old-slides/Intro to Data Journalism.html",
     "href": "city/old-slides/Intro to Data Journalism.html",
     "title": "Data Journalism Wiki",
@@ -1111,5 +1188,19 @@
     "title": "Academic Data Sources",
     "section": "How to access the papers",
     "text": "How to access the papers\n\nInstitutional access\nIf you know someone who’s a student or lecturer, they might have access to academic resources.\n\n\nAuthors\nAuthors usually retain copyright and have the legal right to distribute their papers, so you’ll often find them on ResearchGate, Scribd or the authors’ websites. You can also email them and they’ll usually send over a copy.\n\n\n\n\n\n\n/r/Scholar\nThere’s a subreddit where people can request specific papers. Try the other methods and if you can’t get the paper, request it there and someone with access will retrieve it for you."
+  },
+  {
+    "objectID": "city/index.html#digitise-maps",
+    "href": "city/index.html#digitise-maps",
+    "title": "Intro to Data Journalism",
+    "section": "Digitise maps",
+    "text": "Digitise maps\n\n\n\nSource: Map Digitizer"
+  },
+  {
+    "objectID": "city/index.html#scrape-online-charts",
+    "href": "city/index.html#scrape-online-charts",
+    "title": "Intro to Data Journalism",
+    "section": "Scrape online charts",
+    "text": "Scrape online charts\n\n\n\nSource: Online Journalism Blog"
   }
 ]

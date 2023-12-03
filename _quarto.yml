@@ -39,7 +39,7 @@ website:
             url:  https://github.com/nicucalcea/ddj-wiki/issues
   repo-url: https://github.com/nicucalcea/ddj-wiki
   repo-actions: [edit, issue]
-  site-url: http://nicu.md/ddj-wiki/
+  site-url: https://ddj.nicu.md/
   page-footer: "Copyright 2023, <a href='https://nicu.md/'>Nicu Calcea</a>"
 
 format:
