@@ -9,6 +9,8 @@ format:
       buttons: false
 filters:
   - filters/newpagelink.lua
+  - quarto
+  - filters/speaker-notes.lua
 href: city
 ---
 
@@ -1663,6 +1665,10 @@ Screenshot and digitize: https://www.ft.com/content/7e32dfb1-2282-40fa-9b10-181c
 <iframe class="stretch" data-src="https://mapster.me/map-digitizer/"></iframe>
 ::: footer
 Source: [Map Digitizer](https://mapster.me/map-digitizer/)
+:::
+
+::: notes
+Digitize: https://www.bbc.co.uk/bitesize/guides/zgrh7yc/revision/4
 :::
 
 ## Scrape online charts {fullscreen=true}
