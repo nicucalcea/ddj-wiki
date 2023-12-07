@@ -1621,9 +1621,30 @@ Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-inflation-economy-co
 
 
 ## {fullscreen=true}
+<iframe class="stretch" data-src="https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/"></iframe>
+::: footer
+Source: [CNN](https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/)
+:::
+
+
+## {fullscreen=true}
 <iframe class="stretch" data-src="https://bbycroft.net/llm"></iframe>
 ::: footer
 Source: [Brendan Bycroft](https://bbycroft.net/llm)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states"></iframe>
+::: footer
+Source: [McKinsey](https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html"></iframe>
+::: footer
+Source: [Le Monde](https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html)
 :::
 
 
