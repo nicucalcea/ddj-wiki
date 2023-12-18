@@ -386,6 +386,7 @@
       margin-right: 0; 
     }
   </style>
+  <script defer="" src="src/bg-change.js"></script>
 </head>
 <body class="quarto-dark">
   <div class="reveal">
@@ -401,7 +402,7 @@
 </section>
 <section>
 <section id="welcome-to-introduction-to-data-journalism" class="title-slide slide level1 center">
-<h1><span class="wave">👋</span> Welcome to <span style="color:#F44336;">Introduction to Data Journalism</span></h1>
+<h1><span class="wave">👋</span> Welcome to Introduction to Data Journalism</h1>
 <style>
   .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -426,13 +427,14 @@
 <!-- Pad out week 3, I finished it too soon. -->
 <!-- Add more of Glyn's resources from Moodle -->
 </section>
-<section id="who-am-i" class="slide level2 smaller">
+<section id="who-am-i" class="slide level2">
 <h2>Who am I?</h2>
-<p>My name is <span style="color:#F44336;">Nicu Calcea</span>.</p>
-<p>I’m a <span style="color:#F44336;">data journalist</span> and City University alumnus, originally from Moldova, currently based in London.</p>
-<p>I work as a data journalist at <span style="color:#F44336;"><em>BBC News</em></span>, previously Data Projects Editor at the <span style="color:#F44336;"><em>New Statesman</em></span>.</p>
-<p>&nbsp; &nbsp;</p>
-<p>Some stories:</p>
+<p>My name is <strong>Nicu Calcea</strong>.</p>
+<p>I’m a <strong>data journalist</strong> and City University alumnus, originally from Moldova, currently based in London.</p>
+<p>I work as a data journalist at <strong>BBC News</strong>, previously Data Projects Editor at the <strong>New Statesman</strong>.</p>
+</section>
+<section id="some-stories" class="slide level2">
+<h2>Some stories</h2>
 <ul>
 <li><a href="https://www.bbc.co.uk/news/business-65179430" target="_blank">Eight out of ten firms pay men more than women</a></li>
 <li><a href="https://www.newstatesman.com/world/europe/ukraine/2022/06/how-occupied-ukraine-territory-interactive-map" target="_blank">How much territory does Ukraine control? Use this interactive map to find out</a></li>
@@ -480,26 +482,26 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="plan" class="slide level2">
+<section id="plan" class="slide level2 smaller">
 <h2>Plan</h2>
 <div>
 <ul>
-<li class="fragment">Week 1: <span style="color:#F44336;">Introduction</span></li>
-<li class="fragment">Weeks 2-3: <span style="color:#F44336;">Analysis</span></li>
-<li class="fragment">Week 4: <span style="color:#F44336;">Cleaning</span></li>
-<li class="fragment">Week 5: <span style="color:#F44336;">Stories</span></li>
-<li class="fragment">Week 6: <span style="color:#F44336;">Visualisation</span></li>
-<li class="fragment">Week 7: <span style="color:#F44336;">Maps</span></li>
-<li class="fragment">Week 8: <span style="color:#F44336;">Projects</span></li>
-<li class="fragment">Week 9: <span style="color:#F44336;">Scraping</span></li>
-<li class="fragment">Week 10: <span style="color:#F44336;">Conclusions</span></li>
+<li class="fragment">Week 1: Introduction</li>
+<li class="fragment">Weeks 2-3: Analysis</li>
+<li class="fragment">Week 4: Cleaning</li>
+<li class="fragment">Week 5: Stories</li>
+<li class="fragment">Week 6: Visualisation</li>
+<li class="fragment">Week 7: Maps</li>
+<li class="fragment">Week 8: Projects</li>
+<li class="fragment">Week 9: Scraping</li>
+<li class="fragment">Week 10: Conclusions</li>
 </ul>
 </div>
 </section></section>
 <section>
 <section id="week-1" class="title-slide slide level1 center">
 <h1>Week 1</h1>
-<p>Introduction to <span style="color:#F44336;">Data Journalism</span></p>
+<p>Introduction to <strong>Data Journalism</strong></p>
 </section>
 <section id="what-is-data-journalism" class="slide level2">
 <h2>What is Data Journalism?</h2>
@@ -550,9 +552,9 @@
 <div class="column" style="width:33.33%;">
 <p>Since the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions.</p>
 </div><div class="column" style="width:33.33%;">
-<p>New(-ish) platforms like <span style="color:#F44336;">Datawrapper</span> and <span style="color:#F44336;">Flourish</span> allow journalists to create and visualise data stories easier and without much technical expertise.</p>
+<p>New(-ish) platforms like <strong>Datawrapper</strong> and <strong>Flourish</strong> allow journalists to create and visualise data stories easier and without much technical expertise.</p>
 </div><div class="column" style="width:33.33%;">
-<p>However, the increased supply of data journalists from courses like this means there are higher entry requirements (<span style="color:#F44336;">R</span>, <span style="color:#F44336;">Python</span>, <span style="color:#F44336;">SQL</span>).</p>
+<p>However, the increased supply of data journalists from courses like this means there are higher entry requirements (<strong>R</strong>, <strong>Python</strong>, <strong>SQL</strong>).</p>
 </div>
 </div>
 <aside class="notes">
@@ -571,28 +573,28 @@
       }</style></aside>
 </section>
 <section id="why-do-we-need-data-journalism" class="slide level2">
-<h2>Why do we need <span style="color:#F44336;">data journalism</span>?</h2>
+<h2>Why do we need data journalism?</h2>
 </section>
 <section id="why-we-need-ddj" class="slide level2 smaller" data-menu-title="Why we need data journalism">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:33.33%;">
-<h5 id="tell-richer-stories"><span style="color:#F44336;">Tell richer stories</span></h5>
+<h5 id="tell-richer-stories">Tell richer stories</h5>
 <p>An increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="be-more-efficient"><span style="color:#F44336;">Be more efficient</span></h5>
+<h5 id="be-more-efficient">Be more efficient</h5>
 <p>We tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="be-more-accurate"><span style="color:#F44336;">Be more accurate</span></h5>
+<h5 id="be-more-accurate">Be more accurate</h5>
 <p>Though not without data quality issues and ethical considerations, accuracy is central to data journalism.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="unique-angles"><span style="color:#F44336;">Unique angles</span></h5>
+<h5 id="unique-angles">Unique angles</h5>
 <p>There are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="personalise-news"><span style="color:#F44336;">Personalise news</span></h5>
+<h5 id="personalise-news">Personalise news</h5>
 <p>Make readers invested in a story by personalising it to their postcode, age or socio-economic status.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="new-audiences"><span style="color:#F44336;">New audiences</span></h5>
+<h5 id="new-audiences">New audiences</h5>
 <p>Data journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks.</p>
 </div>
 </div>
@@ -603,19 +605,19 @@
 <div class="column" style="width:33.33%;">
 <div class="fragment">
 <!-- -->
-<h5 id="question"><span style="color:#F44336;">Question</span></h5>
+<h5 id="question">Question</h5>
 <p>As is the case with all journalism, data journalism starts with a question that the reporter wants to answer.</p>
 </div>
 </div><div class="column" style="width:33.33%;">
 <div class="fragment">
 <!-- -->
-<h5 id="source-data"><span style="color:#F44336;">Source data</span></h5>
+<h5 id="source-data">Source data</h5>
 <p>Data can come from government sources, third parties, or be collected by the reporter themselves.</p>
 </div>
 </div><div class="column" style="width:33.33%;">
 <div class="fragment">
 <!-- -->
-<h5 id="clean-data"><span style="color:#F44336;">Clean data</span></h5>
+<h5 id="clean-data">Clean data</h5>
 <p>In most cases, you will need to filter, sort and clean up any errors or missing information in your dataset.</p>
 </div>
 </div>
@@ -625,18 +627,18 @@
 <h2>The process</h2>
 <div class="columns">
 <div class="column" style="width:33.33%;">
-<h5 id="analyse-data"><span style="color:#F44336;">Analyse data</span></h5>
+<h5 id="analyse-data">Analyse data</h5>
 <p>How do you find the answer to your question in the data?</p>
 </div><div class="column" style="width:33.33%;">
 <div class="fragment">
 <!-- -->
-<h5 id="review"><span style="color:#F44336;">Review</span></h5>
+<h5 id="review">Review</h5>
 <p>While data doesn’t lie, data publishers do. Do your findings make sense? Can you verify using other sources? Have you made any mistakes?</p>
 </div>
 </div><div class="column" style="width:33.33%;">
 <div class="fragment">
 <!-- -->
-<h5 id="present-results"><span style="color:#F44336;">Present results</span></h5>
+<h5 id="present-results">Present results</h5>
 <p>Communicate data in the most suitable way. Usually, you will visualise your findings, but that is not always necessary.</p>
 </div>
 </div>
@@ -689,22 +691,22 @@
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:33.33%;">
-<h5 id="a1a2"><span style="color:#F44336;">=A1+A2</span></h5>
+<h5 id="a1a2">[=A1+A2]</h5>
 <p>Returns one number added (+) or subtracting (*) another.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="a1b1"><span style="color:#F44336;">=A1/B$1</span></h5>
+<h5 id="a1b1">[=A1/B$1]</h5>
 <p>Returns one number divided (/) or multiplied (*) by another.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="sum"><span style="color:#F44336;">=SUM()</span></h5>
+<h5 id="sum">[=SUM()]</h5>
 <p>Returns the sum of a series of numbers and/or cells.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="average"><span style="color:#F44336;">=AVERAGE()</span></h5>
+<h5 id="average"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
 <p>Returns the numerical average value in a dataset, ignoring text.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="median"><span style="color:#F44336;">=MEDIAN()</span></h5>
+<h5 id="median"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
 <p>Returns the median value in a numeric dataset.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="new-oldold"><span style="color:#F44336;">=(NEW-OLD)/OLD</span></h5>
+<h5 id="new-oldold">[=(NEW-OLD)/OLD]</h5>
 <p>Shows percentage change.</p>
 </div>
 </div>
@@ -715,13 +717,13 @@
 <div class="column" style="width:50%;">
 <div class="fragment">
 <!-- -->
-<h5 id="section"><span style="color:#F44336;">2018</span></h5>
+<h5 id="section">[2018]</h5>
 <p><img data-src="media/daily-mail-1.png"></p>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="fragment">
 <!-- -->
-<h5 id="section-1"><span style="color:#F44336;">2019</span></h5>
+<h5 id="section-1">[2019]</h5>
 <p><img data-src="media/daily-mail-2.png"></p>
 </div>
 </div>
@@ -731,7 +733,7 @@
 <h2>Assignments</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h5 id="critique-a-data-journalism-project"><span style="color:#F44336;">Critique a data journalism project</span></h5>
+<h5 id="critique-a-data-journalism-project">[Critique a data journalism project]</h5>
 <ul>
 <li>A 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.</li>
 <li>500-word group reflection, with appropriate references.</li>
@@ -739,7 +741,7 @@
 </ul>
 <p><strong>Deadline</strong>: Friday, December 10, 4pm <strong>Marking</strong>: 40% of your final mark</p>
 </div><div class="column" style="width:50%;">
-<h5 id="data-journalism-portfolio"><span style="color:#F44336;">Data journalism portfolio</span></h5>
+<h5 id="data-journalism-portfolio">[Data journalism portfolio]</h5>
 <ul>
 <li>One news story (400 words).</li>
 <li>One EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.</li>
@@ -772,7 +774,7 @@
 <section>
 <section id="week-2" class="title-slide slide level1 center">
 <h1>Week 2</h1>
-<p>Introduction to <span style="color:#F44336;">Data Journalism</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>Introduction to [Data Journalism]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-2" class="slide level2" data-fullscreen="true">
 <h2></h2>
@@ -939,22 +941,22 @@
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:33.33%;">
-<h5 id="a1a2-1"><span style="color:#F44336;">=A1+A2</span></h5>
+<h5 id="a1a2-1">[=A1+A2]</h5>
 <p>Returns one number added (+) or subtracting (*) another.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="a1b1-1"><span style="color:#F44336;">=A1/B$1</span></h5>
+<h5 id="a1b1-1">[=A1/B$1]</h5>
 <p>Returns one number divided (/) or multiplied (*) by another.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="sum-1"><span style="color:#F44336;">=SUM()</span></h5>
+<h5 id="sum-1">[=SUM()]</h5>
 <p>Returns the sum of a series of numbers and/or cells.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="average-1"><span style="color:#F44336;">=AVERAGE()</span></h5>
+<h5 id="average-1"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
 <p>Returns the numerical average value in a dataset, ignoring text.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="median-1"><span style="color:#F44336;">=MEDIAN()</span></h5>
+<h5 id="median-1"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
 <p>Returns the median value in a numeric dataset.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="new-oldold-1"><span style="color:#F44336;">=(NEW-OLD)/OLD</span></h5>
+<h5 id="new-oldold-1">[=(NEW-OLD)/OLD]</h5>
 <p>Shows percentage change.</p>
 </div>
 </div>
@@ -963,22 +965,22 @@
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:33.33%;">
-<h5 id="if"><span style="color:#F44336;">=IF()</span></h5>
+<h5 id="if">[=IF()]</h5>
 <p>Returns one value if the result is true, another if it’s false.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="countif"><span style="color:#F44336;">=COUNTIF()</span></h5>
+<h5 id="countif">[=COUNTIF()]</h5>
 <p>Count all the cells that match a condition.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="sumif"><span style="color:#F44336;">=SUMIF()</span></h5>
+<h5 id="sumif">[=SUMIF()]</h5>
 <p>Sum all the cells that match a condition.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="concatenate"><span style="color:#F44336;">=CONCATENATE()</span></h5>
+<h5 id="concatenate">[=CONCATENATE()]</h5>
 <p>Combine multiple bits of text together. Use =SPLIT() for the opposite.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="vlookup"><span style="color:#F44336;">=VLOOKUP()</span></h5>
+<h5 id="vlookup">[=VLOOKUP()]</h5>
 <p>Match the values in a cell with the corresponding row in another dataset.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="xlookup"><span style="color:#F44336;">=XLOOKUP()</span></h5>
+<h5 id="xlookup">[=XLOOKUP()]</h5>
 <p>Same as =XLOOKUP() but more flexible and easier to grasp.</p>
 </div>
 </div>
@@ -994,7 +996,7 @@
 <section id="week-3" class="title-slide slide level1 center">
 <h1>Week 3</h1>
 <!-- Pad this week out, add more content (about 25%) -->
-<p>Introduction to <span style="color:#F44336;">Data Journalism</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>Introduction to [Data Journalism]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-8" class="slide level2" data-fullscreen="true">
 <h2></h2>
@@ -1081,13 +1083,13 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <div class="column" style="width:50%;">
 <p><img data-src="media/mean-median.svg" height="600"></p>
 </div><div class="column" style="width:50%;">
-<h3 style="color:#F44336;" id="mode">=MODE()</h3>
+<h3 id="mode">=MODE()</h3>
 <p>Finds the most common value in a range.</p>
 <p>&nbsp; &nbsp;</p>
-<h3 style="color:#F44336;" id="median-2">=MEDIAN()</h3>
+<h3 id="median-2">=MEDIAN()</h3>
 <p>Finds the value that’s right in the middle of a dataset.</p>
 <p>&nbsp; &nbsp;</p>
-<h3 style="color:#F44336;" id="average-2">=AVERAGE()</h3>
+<h3 id="average-2">=AVERAGE()</h3>
 <p>Sum all the values and divide by the number of records.</p>
 </div>
 </div>
@@ -1124,7 +1126,7 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <section>
 <section id="week-4" class="title-slide slide level1 center">
 <h1>Week 4</h1>
-<p>Data <span style="color:#F44336;">Cleaning</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>Data [Cleaning]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-12" class="slide level2" data-fullscreen="true">
 <h2></h2>
@@ -1168,22 +1170,22 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:33.33%;">
-<h5 id="missing-data"><span style="color:#F44336;">Missing data</span></h5>
+<h5 id="missing-data">[Missing data]</h5>
 <p>Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="duplicated-data"><span style="color:#F44336;">Duplicated data</span></h5>
+<h5 id="duplicated-data">[Duplicated data]</h5>
 <p>Records can be repeated, either due to technical mishaps or due to repeated input.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="misspellings"><span style="color:#F44336;">Misspellings</span></h5>
+<h5 id="misspellings">[Misspellings]</h5>
 <p>Humans make mistakes. Assume any dataset manually created by humans to have missspelings.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="poor-formatting"><span style="color:#F44336;">Poor formatting</span></h5>
+<h5 id="poor-formatting">[Poor formatting]</h5>
 <p>Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="parsing-errors"><span style="color:#F44336;">Parsing errors</span></h5>
+<h5 id="parsing-errors">[Parsing errors]</h5>
 <p>Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="inconsistent-data"><span style="color:#F44336;">Inconsistent data</span></h5>
+<h5 id="inconsistent-data">[Inconsistent data]</h5>
 <p>A column can have different unites, spell categories differently or record different methodologies.</p>
 </div>
 </div>
@@ -1314,7 +1316,7 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <section>
 <section id="week-5" class="title-slide slide level1 center">
 <h1>Week 5</h1>
-<p>Data <span style="color:#F44336;">Stories</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>Data [Stories]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="day-challenge-erwan" class="slide level2" data-fullscreen="true">
 <h2>30-day challenge (Erwan)</h2>
@@ -1490,7 +1492,7 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <section>
 <section id="week-6" class="title-slide slide level1 center">
 <h1>Week 6</h1>
-<p>Data <span style="color:#F44336;">Visualisation</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>Data [Visualisation]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-19" class="slide level2" data-fullscreen="true">
 <h2></h2>
@@ -1722,7 +1724,7 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <section>
 <section id="week-7" class="title-slide slide level1 center">
 <h1>Week 7</h1>
-<p><span style="color:#F44336;">Maps</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>[Maps]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-22" class="slide level2" data-fullscreen="true">
 <h2></h2>
@@ -1902,7 +1904,7 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <section>
 <section id="week-8" class="title-slide slide level1 center">
 <h1>Week 8</h1>
-<p>Data <span style="color:#F44336;">Projects</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>Data [Projects]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-30" class="slide level2" data-fullscreen="true">
 <h2></h2>
@@ -2091,7 +2093,7 @@ Bloomberg is expanding its data journalism and visualization teams globally by h
 <section>
 <section id="week-9" class="title-slide slide level1 center">
 <h1>Week 9</h1>
-<p><span style="color:#F44336;">Scraping</span><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p><a href="#/scraping" target="_blank">Scraping</a><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="section-42" class="slide level2" data-fullscreen="true">
 <h2></h2>

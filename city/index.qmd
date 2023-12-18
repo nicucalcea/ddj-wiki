@@ -3,10 +3,13 @@ title: "Intro to Data Journalism"
 subtitle: "City, University of London<br><a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>"
 format:
   revealjs:
-    theme: [night, css/custom.scss]
+    # theme: [night, css/custom.scss]
+    theme: [default, css/sf.scss]
     multiplex: true
     chalkboard: 
       buttons: false
+    header-includes:
+    - "<script defer src='src/bg-change.js'></script>"
 filters:
   - filters/newpagelink.lua
   - quarto
@@ -14,7 +17,7 @@ filters:
 href: city
 ---
 
-# [👋]{.wave} Welcome to [Introduction to Data Journalism]{style="color:#F44336;"}
+# [👋]{.wave} Welcome to Introduction to Data Journalism
 
 ```{=html}
 <style>
@@ -43,18 +46,15 @@ href: city
 <!-- Pad out week 3, I finished it too soon. -->
 <!-- Add more of Glyn's resources from Moodle -->
 
-## Who am I? {.smaller}
+## Who am I?
 
-My name is [Nicu Calcea]{style="color:#F44336;"}.
+My name is **Nicu Calcea**.
 
-I'm a [data journalist]{style="color:#F44336;"} and City University alumnus, originally from Moldova, currently based in London.
+I'm a **data journalist** and City University alumnus, originally from Moldova, currently based in London.
 
-I work as a data journalist at [*BBC News*]{style="color:#F44336;"}, previously Data Projects Editor at the [*New Statesman*]{style="color:#F44336;"}.
+I work as a data journalist at **BBC News**, previously Data Projects Editor at the **New Statesman**.
 
-&nbsp;
-&nbsp;
-
-Some stories:
+## Some stories
 
 - [Eight out of ten firms pay men more than women](https://www.bbc.co.uk/news/business-65179430)
 - [How much territory does Ukraine control? Use this interactive map to find out](https://www.newstatesman.com/world/europe/ukraine/2022/06/how-occupied-ukraine-territory-interactive-map)
@@ -85,24 +85,24 @@ Sorry if I mispronounce all of your names and also sorry if I don't remember eve
 I understand we are at different levels of experience. You have access to datacamp which will let you move ahead if you want to get a bit more from this module.
 :::
 
-## Plan
+## Plan {.smaller}
 
 ::: {.incremental}
--   Week 1: [Introduction]{style="color:#F44336;"}
--   Weeks 2-3: [Analysis]{style="color:#F44336;"}
--   Week 4: [Cleaning]{style="color:#F44336;"}
--   Week 5: [Stories]{style="color:#F44336;"}
--   Week 6: [Visualisation]{style="color:#F44336;"}
--   Week 7: [Maps]{style="color:#F44336;"}
--   Week 8: [Projects]{style="color:#F44336;"}
--   Week 9: [Scraping]{style="color:#F44336;"}
--   Week 10: [Conclusions]{style="color:#F44336;"}
+-   Week 1: Introduction
+-   Weeks 2-3: Analysis
+-   Week 4: Cleaning
+-   Week 5: Stories
+-   Week 6: Visualisation
+-   Week 7: Maps
+-   Week 8: Projects
+-   Week 9: Scraping
+-   Week 10: Conclusions
 :::
 
 
 # Week 1
 
-Introduction to [Data Journalism]{style="color:#F44336;"}
+Introduction to **Data Journalism**
 
 ## What is Data Journalism?
 
@@ -137,11 +137,11 @@ Since the pandemic, nearly every newsrooms has prioritised data journalism and h
 :::
 
 ::: {.column width="33.33%"}
-New(-ish) platforms like [Datawrapper]{style="color:#F44336;"} and [Flourish]{style="color:#F44336;"} allow journalists to create and visualise data stories easier and without much technical expertise.
+New(-ish) platforms like **Datawrapper** and **Flourish** allow journalists to create and visualise data stories easier and without much technical expertise.
 :::
 
 ::: {.column width="33.33%"}
-However, the increased supply of data journalists from courses like this means there are higher entry requirements ([R]{style="color:#F44336;"}, [Python]{style="color:#F44336;"}, [SQL]{style="color:#F44336;"}).
+However, the increased supply of data journalists from courses like this means there are higher entry requirements (**R**, **Python**, **SQL**).
 :::
 :::
 
@@ -151,38 +151,38 @@ Data teams like the one at the FT and the BBC are now so big they need to be spl
 There are R, Python and SQL courses on Datacamp, which you have access to for free.
 :::
 
-## Why do we need [data journalism]{style="color:#F44336;"}?
+## Why do we need data journalism?
 
 ## {#why-we-need-ddj data-menu-title="Why we need data journalism" .smaller}
 
 ::: columns
 ::: {.column width="33.33%"}
-##### [Tell richer stories]{style="color:#F44336;"}
+##### Tell richer stories
 An increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.
 :::
 
 ::: {.column width="33.33%"}
-##### [Be more efficient]{style="color:#F44336;"}
+##### Be more efficient
 We tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.
 :::
 
 ::: {.column width="33.33%"}
-##### [Be more accurate]{style="color:#F44336;"}
-Though not without data quality issues and ethical considerations, accuracy is central to data journalism. 
+##### Be more accurate
+Though not without data quality issues and ethical considerations, accuracy is central to data journalism.
 :::
 
 ::: {.column width="33.33%"}
-##### [Unique angles]{style="color:#F44336;"}
+##### Unique angles
 There are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.
 :::
 
 ::: {.column width="33.33%"}
-##### [Personalise news]{style="color:#F44336;"}
+##### Personalise news
 Make readers invested in a story by personalising it to their postcode, age or socio-economic status.
 :::
 
 ::: {.column width="33.33%"}
-##### [New audiences]{style="color:#F44336;"}
+##### New audiences
 Data journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks.
 :::
 :::
@@ -192,21 +192,21 @@ Data journalism is exciting (I hope). The pandemic has shown that readers like c
 ::: columns
 ::: {.column width="33.33%"}
 :::  {.fragment}
-##### [Question]{style="color:#F44336;"}
+##### Question
 As is the case with all journalism, data journalism starts with a question that the reporter wants to answer.
 :::
 :::
 
 ::: {.column width="33.33%"}
 :::  {.fragment}
-##### [Source data]{style="color:#F44336;"}
+##### Source data
 Data can come from government sources, third parties, or be collected by the reporter themselves.
 :::
 :::
 
 ::: {.column width="33.33%"}
 :::  {.fragment}
-##### [Clean data]{style="color:#F44336;"}
+##### Clean data
 In most cases, you will need to filter, sort and clean up any errors or missing information in your dataset.
 :::
 :::
@@ -216,20 +216,20 @@ In most cases, you will need to filter, sort and clean up any errors or missing 
 
 ::: columns
 ::: {.column width="33.33%"}
-##### [Analyse data]{style="color:#F44336;"}
+##### Analyse data
 How do you find the answer to your question in the data?
 :::
 
 ::: {.column width="33.33%"}
 :::  {.fragment}
-##### [Review]{style="color:#F44336;"}
+##### Review
 While data doesn’t lie, data publishers do. Do your findings make sense? Can you verify using other sources? Have you made any mistakes?
 :::
 :::
 
 ::: {.column width="33.33%"}
 :::  {.fragment}
-##### [Present results]{style="color:#F44336;"}
+##### Present results
 Communicate data in the most suitable way. Usually, you will visualise your findings, but that is not always necessary.
 :::
 :::
@@ -266,32 +266,32 @@ For Nicu: choose boys or girls based on if there are more women or men in the gr
 
 ::: columns
 ::: {.column width="33.33%"}
-##### [=A1+A2]{style="color:#F44336;"}
+##### [=A1+A2]
 Returns one number added (+) or subtracting (*) another.
 :::
 
 ::: {.column width="33.33%"}
-##### [=A1/B$1]{style="color:#F44336;"}
+##### [=A1/B$1]
 Returns one number divided (/) or multiplied (*) by another.
 :::
 
 ::: {.column width="33.33%"}
-##### [=SUM()]{style="color:#F44336;"}
+##### [=SUM()]
 Returns the sum of a series of numbers and/or cells.
 :::
 
 ::: {.column width="33.33%"}
-##### [=AVERAGE()]{style="color:#F44336;"}
+##### [=AVERAGE()]
 Returns the numerical average value in a dataset, ignoring text.
 :::
 
 ::: {.column width="33.33%"}
-##### [=MEDIAN()]{style="color:#F44336;"}
+##### [=MEDIAN()]
 Returns the median value in a numeric dataset.
 :::
 
 ::: {.column width="33.33%"}
-##### [=(NEW-OLD)/OLD]{style="color:#F44336;"}
+##### [=(NEW-OLD)/OLD]
 Shows percentage change.
 :::
 :::
@@ -302,14 +302,14 @@ Shows percentage change.
 ::: columns
 ::: {.column width="50%"}
 :::  {.fragment}
-##### [2018]{style="color:#F44336;"}
+##### [2018]
 ![](media/daily-mail-1.png)
 :::
 :::
 
 ::: {.column width="50%"}
 :::  {.fragment}
-##### [2019]{style="color:#F44336;"}
+##### [2019]
 ![](media/daily-mail-2.png)
 :::
 :::
@@ -320,7 +320,7 @@ Shows percentage change.
 
 ::: columns
 ::: {.column width="50%"}
-##### [Critique a data journalism project]{style="color:#F44336;"}
+##### [Critique a data journalism project]
 - A 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.
 - 500-word group reflection, with appropriate references.
 - A 200-word reflection on your own learning.
@@ -330,7 +330,7 @@ Shows percentage change.
 :::
 
 ::: {.column width="50%"}
-##### [Data journalism portfolio]{style="color:#F44336;"}
+##### [Data journalism portfolio]
 - One news story (400 words).
 - One EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.
 - A 200 word reflective blog-post style log on you own learning journey.
@@ -353,7 +353,7 @@ No plagiarism, careful with AI.
 
 # Week 2
 
-Introduction to [Data Journalism]{style="color:#F44336;"}<br>
+Introduction to [Data Journalism]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 ## {fullscreen=true}
@@ -488,32 +488,32 @@ Parsehub, browser extensions, R/Python/Node
 
 ::: columns
 ::: {.column width="33.33%"}
-##### [=A1+A2]{style="color:#F44336;"}
+##### [=A1+A2]
 Returns one number added (+) or subtracting (*) another.
 :::
 
 ::: {.column width="33.33%"}
-##### [=A1/B$1]{style="color:#F44336;"}
+##### [=A1/B$1]
 Returns one number divided (/) or multiplied (*) by another.
 :::
 
 ::: {.column width="33.33%"}
-##### [=SUM()]{style="color:#F44336;"}
+##### [=SUM()]
 Returns the sum of a series of numbers and/or cells.
 :::
 
 ::: {.column width="33.33%"}
-##### [=AVERAGE()]{style="color:#F44336;"}
+##### [=AVERAGE()]
 Returns the numerical average value in a dataset, ignoring text.
 :::
 
 ::: {.column width="33.33%"}
-##### [=MEDIAN()]{style="color:#F44336;"}
+##### [=MEDIAN()]
 Returns the median value in a numeric dataset.
 :::
 
 ::: {.column width="33.33%"}
-##### [=(NEW-OLD)/OLD]{style="color:#F44336;"}
+##### [=(NEW-OLD)/OLD]
 Shows percentage change.
 :::
 :::
@@ -523,33 +523,33 @@ Shows percentage change.
 
 ::: columns
 ::: {.column width="33.33%"}
-##### [=IF()]{style="color:#F44336;"}
+##### [=IF()]
 Returns one value if the result is true, another if it’s false.
 :::
 
 ::: {.column width="33.33%"}
-##### [=COUNTIF()]{style="color:#F44336;"}
+##### [=COUNTIF()]
 Count all the cells that match a condition.
 :::
 
 ::: {.column width="33.33%"}
-##### [=SUMIF()]{style="color:#F44336;"}
+##### [=SUMIF()]
 Sum all the cells that match a condition.
 :::
 
 ::: {.column width="33.33%"}
-##### [=CONCATENATE()]{style="color:#F44336;"}
+##### [=CONCATENATE()]
 Combine multiple bits of text together.
 Use =SPLIT() for the opposite.
 :::
 
 ::: {.column width="33.33%"}
-##### [=VLOOKUP()]{style="color:#F44336;"}
+##### [=VLOOKUP()]
 Match the values in a cell with the corresponding row in another dataset.
 :::
 
 ::: {.column width="33.33%"}
-##### [=XLOOKUP()]{style="color:#F44336;"}
+##### [=XLOOKUP()]
 Same as =XLOOKUP() but more flexible and easier to grasp.
 :::
 :::
@@ -563,7 +563,7 @@ Same as =XLOOKUP() but more flexible and easier to grasp.
 
 <!-- Pad this week out, add more content (about 25%) -->
 
-Introduction to [Data Journalism]{style="color:#F44336;"}<br>
+Introduction to [Data Journalism]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 ## {fullscreen=true}
@@ -635,21 +635,21 @@ You can calculate averages, counts, max/min values or sums for numbers in a grou
 :::
 
 ::: {.column width="50%"}
-### =MODE(){style="color:#F44336;"}
+### =MODE()
 
 Finds the most common value in a range.
 
 &nbsp;
 &nbsp;
 
-### =MEDIAN(){style="color:#F44336;"}
+### =MEDIAN()
 
 Finds the value that’s right in the middle of a dataset.
 
 &nbsp;
 &nbsp;
 
-### =AVERAGE(){style="color:#F44336;"}
+### =AVERAGE()
 
 Sum all the values and divide by the number of records.
 
@@ -673,7 +673,7 @@ Sum all the values and divide by the number of records.
 
 # Week 4
 
-Data [Cleaning]{style="color:#F44336;"}<br>
+Data [Cleaning]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
@@ -699,7 +699,7 @@ Source: [The Washington Post](https://www.washingtonpost.com/nation/interactive/
 :::
 
 
-## 
+##
 ![](media/nyt-neighbourhoods.png)
 
 ::: footer
@@ -719,32 +719,32 @@ Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-taylor-swift-net-wor
 
 ::: columns
 ::: {.column width="33.33%"}
-##### [Missing data]{style="color:#F44336;"}
+##### [Missing data]
 Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.
 :::
 
 ::: {.column width="33.33%"}
-##### [Duplicated data]{style="color:#F44336;"}
+##### [Duplicated data]
 Records can be repeated, either due to technical mishaps or due to repeated input.
 :::
 
 ::: {.column width="33.33%"}
-##### [Misspellings]{style="color:#F44336;"}
+##### [Misspellings]
 Humans make mistakes. Assume any dataset manually created by humans to have missspelings.
 :::
 
 ::: {.column width="33.33%"}
-##### [Poor formatting]{style="color:#F44336;"}
+##### [Poor formatting]
 Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.
 :::
 
 ::: {.column width="33.33%"}
-##### [Parsing errors]{style="color:#F44336;"}
+##### [Parsing errors]
 Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.
 :::
 
 ::: {.column width="33.33%"}
-##### [Inconsistent data]{style="color:#F44336;"}
+##### [Inconsistent data]
 A column can have different unites, spell categories differently or record different methodologies.
 :::
 :::
@@ -860,7 +860,7 @@ Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring
 
 # Week 5
 
-Data [Stories]{style="color:#F44336;"}<br>
+Data [Stories]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
@@ -1020,7 +1020,7 @@ Please make Flourish and Datawrapper accounts
 
 # Week 6
 
-Data [Visualisation]{style="color:#F44336;"}<br>
+Data [Visualisation]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
@@ -1102,7 +1102,7 @@ Good for showing trends over time.
 :::
 
 ::: {.column width="40%"}
-Plots a dataset across two continuous dimensions, each on a different axis (X and Y). 
+Plots a dataset across two continuous dimensions, each on a different axis (X and Y).
 <br><br>
 Good for showing correlation between different data series.
 :::
@@ -1244,7 +1244,7 @@ Source: [Reddit](https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how
 
 # Week 7
 
-[Maps]{style="color:#F44336;"}<br>
+[Maps]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 ## {fullscreen=true}
@@ -1424,7 +1424,7 @@ This is the data that will be placed in the shapes on your map. Normally contain
 
 # Week 8
 
-Data [Projects]{style="color:#F44336;"}<br>
+Data [Projects]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 ## {fullscreen=true}
@@ -1602,7 +1602,7 @@ Source: BBC News
 
 # Week 9
 
-[Scraping]{style="color:#F44336;"}<br>
+[Scraping]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
@@ -1658,7 +1658,7 @@ Source: [Le Monde](https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decou
 ::: {.column width="33.33%"}
 ### PDFs
 
-Many organisations still publish data in PDFs, a proprietary format that is difficult to work with. Sometimes, they even do it on purpose. 
+Many organisations still publish data in PDFs, a proprietary format that is difficult to work with. Sometimes, they even do it on purpose.
 :::
 
 ::: {.column width="33.33%"}
@@ -1753,7 +1753,7 @@ Notes for staff:
 
 We recommend that you use this slide in class and when module evaluation surveys for your module are open. This is usually in week 9 of the term for ‘standard’ modules but if you are unsure your School contact will know (see Section 4 of the Guidance document - https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice)
 
-Once a survey opens, students will receive an email containing a link to the individual module survey. This email will also include a link to the Student Survey Portal (linked to on this slide) which is a static link to show students all open surveys. Individual module survey links will take students directly to the survey. To access the Student Survey Portal students will need to sign in using their University credentials. 
+Once a survey opens, students will receive an email containing a link to the individual module survey. This email will also include a link to the Student Survey Portal (linked to on this slide) which is a static link to show students all open surveys. Individual module survey links will take students directly to the survey. To access the Student Survey Portal students will need to sign in using their University credentials.
 
 Students will receive feedback on their responses but we do need a sufficient number of students to submit a response to enable us to do this. See the Guidance document and Module Leader FAQs for more on feedback https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice
 :::

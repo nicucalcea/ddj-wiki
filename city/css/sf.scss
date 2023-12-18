@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+// fonts
+$font-family-sans-serif: "ui-monospace", sans-serif !default;
+$presentation-font-size-root: 44px;
+
+// colors
+$body-bg: #004B72 !default;
+$body-color: #fff !default;
+$link-color: #fff !default;
+$selection-bg: #935cdc !default;
+$input-panel-bg: rgba(233, 236, 239, 0.2) !default;
+
+// headings
+$presentation-heading-font: "system-ui", sans-serif;
+$presentation-heading-font-weight: 1000;
+$presentation-heading-letter-spacing: -0.03em;
+$presentation-h1-font-size: 3em;
+$presentation-heading-text-transform: uppercase;
+
+// code blocks
+$code-block-border-color: rgba(233, 236, 239, 0.5) !default;
+
+// links
+.reveal a {
+  text-decoration: underline !important;
+}

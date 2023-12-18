@@ -88,7 +88,14 @@
     "href": "city/index.html#who-am-i",
     "title": "Intro to Data Journalism",
     "section": "Who am I?",
-    "text": "Who am I?\nMy name is Nicu Calcea.\nI’m a data journalist and City University alumnus, originally from Moldova, currently based in London.\nI work as a data journalist at BBC News, previously Data Projects Editor at the New Statesman.\n   \nSome stories:\n\nEight out of ten firms pay men more than women\nHow much territory does Ukraine control? Use this interactive map to find out\nTory MPs would be over £1m worse off in six months with Boris Johnson’s second job ban\n\n\nI graduated 4 years ago and did this module 5 years ago.\nYou can email me with any questions about these slides, examples I’ve given, assignments, etc.\nI do have a full time job, so for any administrative or urgent queries, please contact Glyn.\n\n\nMy personal website: nicu.md"
+    "text": "Who am I?\nMy name is Nicu Calcea.\nI’m a data journalist and City University alumnus, originally from Moldova, currently based in London.\nI work as a data journalist at BBC News, previously Data Projects Editor at the New Statesman."
+  },
+  {
+    "objectID": "city/index.html#some-stories",
+    "href": "city/index.html#some-stories",
+    "title": "Intro to Data Journalism",
+    "section": "Some stories",
+    "text": "Some stories\n\nEight out of ten firms pay men more than women\nHow much territory does Ukraine control? Use this interactive map to find out\nTory MPs would be over £1m worse off in six months with Boris Johnson’s second job ban\n\n\nI graduated 4 years ago and did this module 5 years ago.\nYou can email me with any questions about these slides, examples I’ve given, assignments, etc.\nI do have a full time job, so for any administrative or urgent queries, please contact Glyn.\n\n\nMy personal website: nicu.md"
   },
   {
     "objectID": "city/index.html#who-are-you",
@@ -172,21 +179,21 @@
     "href": "city/index.html#basic-excel-formulas",
     "title": "Intro to Data Journalism",
     "section": "",
-    "text": "=A1+A2\nReturns one number added (+) or subtracting (*) another.\n\n=A1/B$1\nReturns one number divided (/) or multiplied (*) by another.\n\n=SUM()\nReturns the sum of a series of numbers and/or cells.\n\n=AVERAGE()\nReturns the numerical average value in a dataset, ignoring text.\n\n=MEDIAN()\nReturns the median value in a numeric dataset.\n\n=(NEW-OLD)/OLD\nShows percentage change."
+    "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n=AVERAGE()\nReturns the numerical average value in a dataset, ignoring text.\n\n=MEDIAN()\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
   },
   {
     "objectID": "city/index.html#how-did-the-mail-do-it",
     "href": "city/index.html#how-did-the-mail-do-it",
     "title": "Intro to Data Journalism",
     "section": "How did the Mail do it?",
-    "text": "How did the Mail do it?\n\n\n\n\n2018\n\n\n\n\n\n2019"
+    "text": "How did the Mail do it?\n\n\n\n\n[2018]\n\n\n\n\n\n[2019]"
   },
   {
     "objectID": "city/index.html#assignments",
     "href": "city/index.html#assignments",
     "title": "Intro to Data Journalism",
     "section": "Assignments",
-    "text": "Assignments\n\n\nCritique a data journalism project\n\nA 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.\n500-word group reflection, with appropriate references.\nA 200-word reflection on your own learning.\n\nDeadline: Friday, December 10, 4pm Marking: 40% of your final mark\n\nData journalism portfolio\n\nOne news story (400 words).\nOne EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.\nA 200 word reflective blog-post style log on you own learning journey.\n\nDeadline: Friday 7 January 2021, 4pm Marking: 60% of your final mark\n\n\n\nNo plagiarism, careful with AI."
+    "text": "Assignments\n\n\n[Critique a data journalism project]\n\nA 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.\n500-word group reflection, with appropriate references.\nA 200-word reflection on your own learning.\n\nDeadline: Friday, December 10, 4pm Marking: 40% of your final mark\n\n[Data journalism portfolio]\n\nOne news story (400 words).\nOne EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.\nA 200 word reflective blog-post style log on you own learning journey.\n\nDeadline: Friday 7 January 2021, 4pm Marking: 60% of your final mark\n\n\n\nNo plagiarism, careful with AI."
   },
   {
     "objectID": "city/index.html#contact",
@@ -284,14 +291,14 @@
     "href": "city/index.html#basic-excel-formulas-1-recap",
     "title": "Intro to Data Journalism",
     "section": "",
-    "text": "=A1+A2\nReturns one number added (+) or subtracting (*) another.\n\n=A1/B$1\nReturns one number divided (/) or multiplied (*) by another.\n\n=SUM()\nReturns the sum of a series of numbers and/or cells.\n\n=AVERAGE()\nReturns the numerical average value in a dataset, ignoring text.\n\n=MEDIAN()\nReturns the median value in a numeric dataset.\n\n=(NEW-OLD)/OLD\nShows percentage change."
+    "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n=AVERAGE()\nReturns the numerical average value in a dataset, ignoring text.\n\n=MEDIAN()\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
   },
   {
     "objectID": "city/index.html#basic-excel-formulas-2",
     "href": "city/index.html#basic-excel-formulas-2",
     "title": "Intro to Data Journalism",
     "section": "",
-    "text": "=IF()\nReturns one value if the result is true, another if it’s false.\n\n=COUNTIF()\nCount all the cells that match a condition.\n\n=SUMIF()\nSum all the cells that match a condition.\n\n=CONCATENATE()\nCombine multiple bits of text together. Use =SPLIT() for the opposite.\n\n=VLOOKUP()\nMatch the values in a cell with the corresponding row in another dataset.\n\n=XLOOKUP()\nSame as =XLOOKUP() but more flexible and easier to grasp."
+    "text": "[=IF()]\nReturns one value if the result is true, another if it’s false.\n\n[=COUNTIF()]\nCount all the cells that match a condition.\n\n[=SUMIF()]\nSum all the cells that match a condition.\n\n[=CONCATENATE()]\nCombine multiple bits of text together. Use =SPLIT() for the opposite.\n\n[=VLOOKUP()]\nMatch the values in a cell with the corresponding row in another dataset.\n\n[=XLOOKUP()]\nSame as =XLOOKUP() but more flexible and easier to grasp."
   },
   {
     "objectID": "city/index.html#contact-1",
@@ -417,7 +424,7 @@
     "href": "city/index.html#dirty-data",
     "title": "Intro to Data Journalism",
     "section": "",
-    "text": "Missing data\nSometimes, records disappear or were never collected. It may not always be the obvious when that is the case.\n\nDuplicated data\nRecords can be repeated, either due to technical mishaps or due to repeated input.\n\nMisspellings\nHumans make mistakes. Assume any dataset manually created by humans to have missspelings.\n\nPoor formatting\nSome spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.\n\nParsing errors\nWrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.\n\nInconsistent data\nA column can have different unites, spell categories differently or record different methodologies."
+    "text": "[Missing data]\nSometimes, records disappear or were never collected. It may not always be the obvious when that is the case.\n\n[Duplicated data]\nRecords can be repeated, either due to technical mishaps or due to repeated input.\n\n[Misspellings]\nHumans make mistakes. Assume any dataset manually created by humans to have missspelings.\n\n[Poor formatting]\nSome spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.\n\n[Parsing errors]\nWrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.\n\n[Inconsistent data]\nA column can have different unites, spell categories differently or record different methodologies."
   },
   {
     "objectID": "city/index.html#the-guide-to-bad-data",
