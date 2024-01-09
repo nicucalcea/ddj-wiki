@@ -151,7 +151,7 @@ Data teams like the one at the FT and the BBC are now so big they need to be spl
 There are R, Python and SQL courses on Datacamp, which you have access to for free.
 :::
 
-## Why do we need data journalism?
+## Why do we need data journalism? {.title-slide}
 
 ## {#why-we-need-ddj data-menu-title="Why we need data journalism" .smaller}
 

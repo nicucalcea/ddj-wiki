@@ -10,7 +10,8 @@ const initialColors = [
           "#7C0010",
           "#9E2D00",
           "#A45400",
-          "#9D7900"
+          "#9D7900",
+          "#004B72"
       ];
 
 // Function to interpolate colors
