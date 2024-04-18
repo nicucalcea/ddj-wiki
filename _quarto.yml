@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  post-render: 
+    - _observable/render-scripts/build.bat
+    - _observable/render-scripts/generate-config.py
 
 website:
   title: "Data Journalism Wiki"
@@ -30,7 +33,7 @@ website:
         href: awards/index.qmd
       - text: LLM comparison
         icon: "robot"
-        href: llm
+        href: llm.html
     tools:
       - icon: c-circle
         href: https://nicu.md/
@@ -48,7 +51,6 @@ website:
 format:
   html:
     theme: darkly
-    css: styles.css
     toc: true
 
 editor: source
