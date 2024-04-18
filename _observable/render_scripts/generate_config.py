@@ -44,6 +44,6 @@ for nav_item in navbar_left:
 
 # Write the JSON to _observable/observablehq.config.js
 with open("_observable/observablehq.config.js", 'w') as f:
-    f.write("// See https://observablehq.com/framework/config for documentation.\n")
+    f.write("// This file is edited by generate_config.py, don't edit by hand. See https://observablehq.com/framework/config for documentation.\n")
     f.write("export default ")
     json.dump(output_json, f, indent=2)
