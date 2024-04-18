@@ -18,8 +18,8 @@ In your `_quarto.yml` file, add the following lines:
 
 ```yaml
 post-render: 
-    - _observable/render_scripts/build.bat
     - _observable/render_scripts/generate_config.py
+    - _observable/render_scripts/build.bat
 ```
 
 ### Step 3: Create the build scripts
