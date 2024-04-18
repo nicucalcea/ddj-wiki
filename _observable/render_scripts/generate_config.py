@@ -18,6 +18,7 @@ output_json = {
     "title": title,
     "output": "../" + output_dir,
     "cleanUrls": False,
+    "theme": "midnight",
     "pages": [
         {
             "name": "Menu",

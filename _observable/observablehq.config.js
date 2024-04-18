@@ -1,8 +1,9 @@
-// See https://observablehq.com/framework/config for documentation.
+// This file is edited by generate_config.py, don't edit by hand. See https://observablehq.com/framework/config for documentation.
 export default {
   "title": "Data Journalism Wiki",
   "output": "../docs",
   "cleanUrls": false,
+  "theme": "midnight",
   "pages": [
     {
       "name": "Menu",
