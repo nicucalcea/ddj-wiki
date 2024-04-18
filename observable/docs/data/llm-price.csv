@@ -1,0 +1,19 @@
+﻿name,context,input_1m_tokens,output_1m_tokens,context_source,price_source
+GPT-4-Turbo-2024-04-09,"128,000",10,30,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Claude 3 Opus,200000,15,75,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://www.anthropic.com/api
+GPT-4-1106-preview,128000,10,30,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+GPT-4-0125-preview,128000,10,30,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Bard (Gemini Pro),32000,0.5,1.5,https://blog.google/technology/ai/long-context-window-ai-models/,https://ai.google.dev/pricing
+Claude 3 Sonnet,200000,3,15,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://www.anthropic.com/api
+Command R+,128000,3,15,https://cohere.com/blog/command-r-plus-microsoft-azure,https://cohere.com/pricing
+Claude 3 Haiku,200000,0.25,1.25,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://www.anthropic.com/api
+GPT-4-0613,8192,30,60,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Mistral-Large-2402,32000,8,24,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://mistral.ai/technology/#pricing
+Mistral Medium,32000,2.7,8.1,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://mistral.ai/technology/#pricing
+Command R,128000,0.5,1.5,https://cohere.com/blog/Command-R,https://cohere.com/pricing
+Claude-2.0,100000,8,24,https://www.anthropic.com/api,https://www.anthropic.com/api
+GPT-3.5-Turbo-0613,4096,1.5,2,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Claude-2.1,200000,8,24,https://www.anthropic.com/api,https://www.anthropic.com/api
+Claude-Instant-1,100000,0.8,2.4,https://www.anthropic.com/api,https://www.anthropic.com/api
+GPT-3.5-Turbo-0125,16385,0.5,1.5,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+GPT-3.5-Turbo-1106,16385,1,2,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
