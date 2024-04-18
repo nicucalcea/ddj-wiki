@@ -28,6 +28,9 @@ website:
       - text: Awards
         icon: "trophy"
         href: awards/index.qmd
+      - text: LLM comparison
+        icon: "robot"
+        href: llm
     tools:
       - icon: c-circle
         href: https://nicu.md/

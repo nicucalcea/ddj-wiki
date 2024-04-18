@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "awards/index.html",
-    "href": "awards/index.html",
-    "title": "Data Journalism Awards",
-    "section": "",
-    "text": "There’s an ever-growing number of Data Journalism awards. Here is a very incomplete list.\n\nSigma Awards\nThe University of Florida Award for Investigative Data Journalism\nThe Wincott Awards: Data journalism of the Year\nRoyal Statistical Society: Awards for Statistical Excellence in Journalism\nNewspaper Awards"
-  },
-  {
-    "objectID": "sources/data-calendar.html",
-    "href": "sources/data-calendar.html",
-    "title": "Data Calendar",
-    "section": "",
-    "text": "Data Sources\n    \n  \n  \n    \n      Academic Sources\n    \n  \n  \n    \n      Data Calendar\nHere’s a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases."
-  },
-  {
-    "objectID": "sources/data-calendar.html#united-kingdom",
-    "href": "sources/data-calendar.html#united-kingdom",
-    "title": "Data Calendar",
-    "section": "United Kingdom",
-    "text": "United Kingdom\n\nBank of England — The UK’s central bank. Click “Upcoming” for the upcoming data releases.\nBritish Film Institute — Research data and market intelligence on the UK film industry and other screen sectors.\nCivil Aviation Authority — Aviation data, statistics and reports.\nGOV.UK — Official data from various government sources.\nHalifax House Price Index — The Halifax House Price Index is the UK’s longest running monthly house price series with data covering the whole country going back to January 1983.\nHigher Education Statistics Agency — Data on all aspects of the UK higher education sector.\nNHS Digital — The statutory custodian for health and care data for England.\nNomis — Statistics related to population, society and the labour market at national, regional and local levels.\nOfcom — The regulator for communications services, including broadband, home phone, mobile services, TV and radio.\nOfgem — Great Britain’s independent energy regulator.\nOffice for Budget Responsibility — The OBR produces a variety of publications in pursuit of its duty to examine and report on the sustainability of the public finances.\nOffice for National Statistics — The UK official statistics body.\nOffice for Students — Data-driven analysis and essential evidence on key trends and current issues in English higher education.\nOffice of Rail and Road — Government department responsible for the economic and safety regulation of Britain’s railways, and the economic monitoring of National Highways.\nUK Finance — Data and analysis of banking and finance industry activity.\nUniversities and Colleges Admissions Service — An independent charity, and the UK’s shared admissions service for higher education."
-  },
-  {
-    "objectID": "sources/data-calendar.html#other-countries",
-    "href": "sources/data-calendar.html#other-countries",
-    "title": "Data Calendar",
-    "section": "Other countries",
-    "text": "Other countries\n\n🇦🇺 Australian Bureau of Statistics — Australia’s national statistical agency and an official source of independent, reliable information.\n🇺🇸 Bureau of Labor Statistics — The principal fact-finding agency for the U.S. government in the broad field of labor economics and statistics.\n🇮🇪 Central Statistics Office — Ireland’s national statistical office that collects, analyses and makes available statistics about Ireland’s people, society and economy.\n🇺🇸 Economic Research Service — Trends and emerging issues in agriculture, food, the environment, and rural America.\n🇺🇸 Energy Information Administration — Independent and impartial energy information to promote sound policymaking, efficient markets, and public understanding of energy and its interaction with the economy and the environment.\n🇺🇸 MarketWatch Economic Calendar — Major U.S. economic reports & fed speakers.\n🇺🇸 New York Fed — Provides the date and time of key economic data releases.\n🇨🇦 Statistics Canada — Statistics Canada is the national statistical office of Canada.\n🇩🇪 Statistisches Bundesamt — Official data on the society, the economy, the environment and the state of Germany."
-  },
-  {
-    "objectID": "sources/data-calendar.html#international",
-    "href": "sources/data-calendar.html#international",
-    "title": "Data Calendar",
-    "section": "International",
-    "text": "International\n\n🌍 Bank for International Settlements — Compiled in cooperation with central banks and other national authorities, are designed to inform analysis of financial stability, international monetary spillovers and global liquidity.\n🇪🇺 European Central Bank — Economic research on a wide range of topics in Europe.\n🇪🇺 Eurostat — The statistical office of the European Union.\n🌍 International Energy Agency — Intergovernmental organisation, established in 1974, that provides policy recommendations, analysis and data on the entire global energy sector.\n🌍 International Monetary Fund — International macroeconomic and financial data.\n🌍 OECD — Data, policy advice and research on the economy, education, employment, environment, health, tax, trade, GDP, unemployment rate, etc.\n🌍 UNdata — A variety of statistical resources compiled by the United Nations (UN) statistical system and other international agencies."
-  },
-  {
-    "objectID": "sources/data-calendar.html#calendar",
-    "href": "sources/data-calendar.html#calendar",
-    "title": "Data Calendar",
-    "section": "Calendar",
-    "text": "Calendar\nHere’s a view of upcoming business releases that I keep up to date for work."
-  },
-  {
     "objectID": "toolbox/index.html",
     "href": "toolbox/index.html",
     "title": "Data Toolbox",
@@ -82,6 +40,69 @@
     "title": "Data Toolbox",
     "section": "Visualisation",
     "text": "Visualisation\n\nDatawrapper — web dataviz tool\nFlourish — web interactive/dataviz tool\nRAW Graphs — static chart maker\nInfogram — infographic creator\nDatamatic.io — web dataviz tool\nHighcharts — chart library for developers\nPlotly — chart library for developers\nD3.js — library for advanced dataviz\nMapbox — map maker\nMapshaper — editor for map data\ngeojson.io — editor for map data\nGephi — network visualisations\nR / ggplot2 — programming language\n\n\nColours\n\nColorBrewer — collection of safe colour palettes\nChroma.js — colour palette helper\nScientific Colour Maps — colour-blind and accurate colour palette"
+  },
+  {
+    "objectID": "sources/data-calendar.html",
+    "href": "sources/data-calendar.html",
+    "title": "Data Calendar",
+    "section": "",
+    "text": "Data Sources\n    \n  \n  \n    \n      Academic Sources\n    \n  \n  \n    \n      Data Calendar\nHere’s a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases."
+  },
+  {
+    "objectID": "sources/data-calendar.html#united-kingdom",
+    "href": "sources/data-calendar.html#united-kingdom",
+    "title": "Data Calendar",
+    "section": "United Kingdom",
+    "text": "United Kingdom\n\nBank of England — The UK’s central bank. Click “Upcoming” for the upcoming data releases.\nBritish Film Institute — Research data and market intelligence on the UK film industry and other screen sectors.\nCivil Aviation Authority — Aviation data, statistics and reports.\nGOV.UK — Official data from various government sources.\nHalifax House Price Index — The Halifax House Price Index is the UK’s longest running monthly house price series with data covering the whole country going back to January 1983.\nHigher Education Statistics Agency — Data on all aspects of the UK higher education sector.\nNHS Digital — The statutory custodian for health and care data for England.\nNomis — Statistics related to population, society and the labour market at national, regional and local levels.\nOfcom — The regulator for communications services, including broadband, home phone, mobile services, TV and radio.\nOfgem — Great Britain’s independent energy regulator.\nOffice for Budget Responsibility — The OBR produces a variety of publications in pursuit of its duty to examine and report on the sustainability of the public finances.\nOffice for National Statistics — The UK official statistics body.\nOffice for Students — Data-driven analysis and essential evidence on key trends and current issues in English higher education.\nOffice of Rail and Road — Government department responsible for the economic and safety regulation of Britain’s railways, and the economic monitoring of National Highways.\nUK Finance — Data and analysis of banking and finance industry activity.\nUniversities and Colleges Admissions Service — An independent charity, and the UK’s shared admissions service for higher education."
+  },
+  {
+    "objectID": "sources/data-calendar.html#other-countries",
+    "href": "sources/data-calendar.html#other-countries",
+    "title": "Data Calendar",
+    "section": "Other countries",
+    "text": "Other countries\n\n🇦🇺 Australian Bureau of Statistics — Australia’s national statistical agency and an official source of independent, reliable information.\n🇺🇸 Bureau of Labor Statistics — The principal fact-finding agency for the U.S. government in the broad field of labor economics and statistics.\n🇮🇪 Central Statistics Office — Ireland’s national statistical office that collects, analyses and makes available statistics about Ireland’s people, society and economy.\n🇺🇸 Economic Research Service — Trends and emerging issues in agriculture, food, the environment, and rural America.\n🇺🇸 Energy Information Administration — Independent and impartial energy information to promote sound policymaking, efficient markets, and public understanding of energy and its interaction with the economy and the environment.\n🇺🇸 MarketWatch Economic Calendar — Major U.S. economic reports & fed speakers.\n🇺🇸 New York Fed — Provides the date and time of key economic data releases.\n🇨🇦 Statistics Canada — Statistics Canada is the national statistical office of Canada.\n🇩🇪 Statistisches Bundesamt — Official data on the society, the economy, the environment and the state of Germany."
+  },
+  {
+    "objectID": "sources/data-calendar.html#international",
+    "href": "sources/data-calendar.html#international",
+    "title": "Data Calendar",
+    "section": "International",
+    "text": "International\n\n🌍 Bank for International Settlements — Compiled in cooperation with central banks and other national authorities, are designed to inform analysis of financial stability, international monetary spillovers and global liquidity.\n🇪🇺 European Central Bank — Economic research on a wide range of topics in Europe.\n🇪🇺 Eurostat — The statistical office of the European Union.\n🌍 International Energy Agency — Intergovernmental organisation, established in 1974, that provides policy recommendations, analysis and data on the entire global energy sector.\n🌍 International Monetary Fund — International macroeconomic and financial data.\n🌍 OECD — Data, policy advice and research on the economy, education, employment, environment, health, tax, trade, GDP, unemployment rate, etc.\n🌍 UNdata — A variety of statistical resources compiled by the United Nations (UN) statistical system and other international agencies."
+  },
+  {
+    "objectID": "sources/data-calendar.html#calendar",
+    "href": "sources/data-calendar.html#calendar",
+    "title": "Data Calendar",
+    "section": "Calendar",
+    "text": "Calendar\nHere’s a view of upcoming business releases that I keep up to date for work."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Data Journalism",
+    "section": "",
+    "text": "Use the menu above to navigate through the website.\nData Journalism goes by different names. It can be called data-driven journalism, computer-assisted reporting or CAR (in the US), precision journalism. Its history is even older than that though: the first edition of the Manchester Guardian had a data journalism article. So don’t focus too much on what you call it.\nData journalism does not mean you have to limit yourself to data: we do everything else other reporters do, including developing contacts, interviewing sources, sending FOIs, doing field investigations, checking facts, writing, editing, multimedia (when relevant), etc.\nData can be hard and complex, you’ll always want to reach out to experts who can explain things for you.\nDespite newsrooms struggling and reducing in size, data journalism teams are growing."
+  },
+  {
+    "objectID": "index.html#job-trends-in-data-journalism",
+    "href": "index.html#job-trends-in-data-journalism",
+    "title": "Introduction to Data Journalism",
+    "section": "Job trends in data journalism",
+    "text": "Job trends in data journalism\nSince the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions. Some data teams, like the one at the FT and the BBC, are now so big they need to be split into two or more teams.\nNew(-ish) platforms like Datawrapper and Flourish allow journalists to create and visualise data stories easier and without much technical expertise.\nHowever, the increased supply of data journalists from courses like this means there are higher entry requirements (R, Python, SQL)."
+  },
+  {
+    "objectID": "index.html#why-do-we-need-data-journalism",
+    "href": "index.html#why-do-we-need-data-journalism",
+    "title": "Introduction to Data Journalism",
+    "section": "Why do we need data journalism?",
+    "text": "Why do we need data journalism?\n\nTell richer stories\nAn increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.\n\n\nBe more efficient\nWe tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.\n\n\nBe more accurate\nThough not without data quality issues and ethical considerations, accuracy is central to data journalism.\n\n\nUnique angles\nThere are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.\n\n\nPersonalise news\nMake readers invested in a story by personalising it to their postcode, age or socio-economic status.\n\n\nNew audiences\nData journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks."
+  },
+  {
+    "objectID": "awards/index.html",
+    "href": "awards/index.html",
+    "title": "Data Journalism Awards",
+    "section": "",
+    "text": "There’s an ever-growing number of Data Journalism awards. Here is a very incomplete list.\n\nSigma Awards\nThe University of Florida Award for Investigative Data Journalism\nThe Wincott Awards: Data journalism of the Year\nRoyal Statistical Society: Awards for Statistical Excellence in Journalism\nNewspaper Awards"
   },
   {
     "objectID": "city/index.html#who-am-i",
@@ -1162,25 +1183,32 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nGlyn.Mottershead@city.ac.uk"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Introduction to Data Journalism",
+    "objectID": "sources/academic.html",
+    "href": "sources/academic.html",
+    "title": "Academic Data Sources",
     "section": "",
-    "text": "Use the menu above to navigate through the website.\nData Journalism goes by different names. It can be called data-driven journalism, computer-assisted reporting or CAR (in the US), precision journalism. Its history is even older than that though: the first edition of the Manchester Guardian had a data journalism article. So don’t focus too much on what you call it.\nData journalism does not mean you have to limit yourself to data: we do everything else other reporters do, including developing contacts, interviewing sources, sending FOIs, doing field investigations, checking facts, writing, editing, multimedia (when relevant), etc.\nData can be hard and complex, you’ll always want to reach out to experts who can explain things for you.\nDespite newsrooms struggling and reducing in size, data journalism teams are growing."
+    "text": "Data Sources\n    \n  \n  \n    \n      Academic Sources\n    \n  \n  \n    \n      Data Calendar\nThis is a small guide on how to use academic papers for your data journalism needs."
   },
   {
-    "objectID": "index.html#job-trends-in-data-journalism",
-    "href": "index.html#job-trends-in-data-journalism",
-    "title": "Introduction to Data Journalism",
-    "section": "Job trends in data journalism",
-    "text": "Job trends in data journalism\nSince the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions. Some data teams, like the one at the FT and the BBC, are now so big they need to be split into two or more teams.\nNew(-ish) platforms like Datawrapper and Flourish allow journalists to create and visualise data stories easier and without much technical expertise.\nHowever, the increased supply of data journalists from courses like this means there are higher entry requirements (R, Python, SQL)."
+    "objectID": "sources/academic.html#where-to-find-papers",
+    "href": "sources/academic.html#where-to-find-papers",
+    "title": "Academic Data Sources",
+    "section": "Where to find papers",
+    "text": "Where to find papers\n\nSearch engines\nThere are several websites that index all the major journals. That makes it easier to keep track of new publications and to search all academic journals in one place.\n\nGoogle Scholar: The most popular academic search engine.\nLens.org: Shows a few aggregated stats such as most cited authors, journals, etc.\nDimensions.ai: Includes an “Altmetric”, which is a measure of how popular a paper is based on news coverage, blogs, social media, etc. Useful for weeding out obscure papers if you don’t want those.\nArXiv: Repository of open-access papers. Many preprint papers. Included in some of the search engines above.\n\n\n\nData sources\nAdditionally, there are several repositories of data used in academic research. These are usually replication data, meaning you can use them to recreate the findings of the study, but you can also analyse them differently for new angles.\n\nHarvard Dataverse: Includes replication data and code (often Stata or SPSS, sometimes R).\nZenodo: Same as above, fewer datasets.\nICPSR: More academic data.\nHumanitarian Data Exchange: Mainly datasets that get regularly updated by various corporations and non-profit orgs. Heavy humanitarian focus. Also see AidData.\nOasisHUB: Environmental and risk data.\nPapers with Code: What it says on the tin\nEconomic Articles with Data: Economic articles that have provided data and code for replication purposes\n\n\n\nResearch institutions\n\nNBER: Has a “New This Week” customisable newsletter that includes working papers. You can choose a few categories or keywords, or get everything."
   },
   {
-    "objectID": "index.html#why-do-we-need-data-journalism",
-    "href": "index.html#why-do-we-need-data-journalism",
-    "title": "Introduction to Data Journalism",
-    "section": "Why do we need data journalism?",
-    "text": "Why do we need data journalism?\n\nTell richer stories\nAn increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.\n\n\nBe more efficient\nWe tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.\n\n\nBe more accurate\nThough not without data quality issues and ethical considerations, accuracy is central to data journalism.\n\n\nUnique angles\nThere are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.\n\n\nPersonalise news\nMake readers invested in a story by personalising it to their postcode, age or socio-economic status.\n\n\nNew audiences\nData journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks."
+    "objectID": "sources/academic.html#how-to-get-alerts-for-new-papers",
+    "href": "sources/academic.html#how-to-get-alerts-for-new-papers",
+    "title": "Academic Data Sources",
+    "section": "How to get alerts for new papers",
+    "text": "How to get alerts for new papers\nGoogle Scholar, Lens.org and Dimensions.ai can all send you alerts for particular topics.\nWith most of them, you can also use advanced search queries to tweak your search to only get certain keywords. Google Scholar, for example, uses the same search operators as normal Google, ex. fdi OR “foreign direct investment” -“flexible display interface”.\nOnce you’ve tuned your search, set an email alert and they’ll send you all new papers that match those search terms."
+  },
+  {
+    "objectID": "sources/academic.html#how-to-access-the-papers",
+    "href": "sources/academic.html#how-to-access-the-papers",
+    "title": "Academic Data Sources",
+    "section": "How to access the papers",
+    "text": "How to access the papers\n\nInstitutional access\nIf you know someone who’s a student or lecturer, they might have access to academic resources.\n\n\nAuthors\nAuthors usually retain copyright and have the legal right to distribute their papers, so you’ll often find them on ResearchGate, Scribd or the authors’ websites. You can also email them and they’ll usually send over a copy.\n\n\n\n\n\n\n/r/Scholar\nThere’s a subreddit where people can request specific papers. Try the other methods and if you can’t get the paper, request it there and someone with access will retrieve it for you."
   },
   {
     "objectID": "sources/index.html",
@@ -1209,33 +1237,5 @@
     "title": "Data Sources",
     "section": "International sources",
     "text": "International sources\n\n🌍 Bank for International Settlements — Compiled in cooperation with central banks and other national authorities, are designed to inform analysis of financial stability, international monetary spillovers and global liquidity.\n🇪🇺 European Central Bank — Economic research on a wide range of topics in Europe.| Europe|\n🇪🇺 Eurostat — The statistical office of the European Union\n🌍 Inside Airbnb — A mission driven project that provides data and advocacy about Airbnb’s impact on residential communities.\n🌍 International Energy Agency — Intergovernmental organisation, established in 1974, that provides policy recommendations, analysis and data on the entire global energy sector.\n🌍 International Monetary Fund — International macroeconomic and financial data.\n🌍 OECD — Data, policy advice and research on the economy, education, employment, environment, health, tax, trade, GDP, unemployment rate, etc.\n🌍 UNdata — A variety of statistical resources compiled by the United Nations (UN) statistical system and other international agencies."
-  },
-  {
-    "objectID": "sources/academic.html",
-    "href": "sources/academic.html",
-    "title": "Academic Data Sources",
-    "section": "",
-    "text": "Data Sources\n    \n  \n  \n    \n      Academic Sources\n    \n  \n  \n    \n      Data Calendar\nThis is a small guide on how to use academic papers for your data journalism needs."
-  },
-  {
-    "objectID": "sources/academic.html#where-to-find-papers",
-    "href": "sources/academic.html#where-to-find-papers",
-    "title": "Academic Data Sources",
-    "section": "Where to find papers",
-    "text": "Where to find papers\n\nSearch engines\nThere are several websites that index all the major journals. That makes it easier to keep track of new publications and to search all academic journals in one place.\n\nGoogle Scholar: The most popular academic search engine.\nLens.org: Shows a few aggregated stats such as most cited authors, journals, etc.\nDimensions.ai: Includes an “Altmetric”, which is a measure of how popular a paper is based on news coverage, blogs, social media, etc. Useful for weeding out obscure papers if you don’t want those.\nArXiv: Repository of open-access papers. Many preprint papers. Included in some of the search engines above.\n\n\n\nData sources\nAdditionally, there are several repositories of data used in academic research. These are usually replication data, meaning you can use them to recreate the findings of the study, but you can also analyse them differently for new angles.\n\nHarvard Dataverse: Includes replication data and code (often Stata or SPSS, sometimes R).\nZenodo: Same as above, fewer datasets.\nICPSR: More academic data.\nHumanitarian Data Exchange: Mainly datasets that get regularly updated by various corporations and non-profit orgs. Heavy humanitarian focus. Also see AidData.\nOasisHUB: Environmental and risk data.\nPapers with Code: What it says on the tin\nEconomic Articles with Data: Economic articles that have provided data and code for replication purposes\n\n\n\nResearch institutions\n\nNBER: Has a “New This Week” customisable newsletter that includes working papers. You can choose a few categories or keywords, or get everything."
-  },
-  {
-    "objectID": "sources/academic.html#how-to-get-alerts-for-new-papers",
-    "href": "sources/academic.html#how-to-get-alerts-for-new-papers",
-    "title": "Academic Data Sources",
-    "section": "How to get alerts for new papers",
-    "text": "How to get alerts for new papers\nGoogle Scholar, Lens.org and Dimensions.ai can all send you alerts for particular topics.\nWith most of them, you can also use advanced search queries to tweak your search to only get certain keywords. Google Scholar, for example, uses the same search operators as normal Google, ex. fdi OR “foreign direct investment” -“flexible display interface”.\nOnce you’ve tuned your search, set an email alert and they’ll send you all new papers that match those search terms."
-  },
-  {
-    "objectID": "sources/academic.html#how-to-access-the-papers",
-    "href": "sources/academic.html#how-to-access-the-papers",
-    "title": "Academic Data Sources",
-    "section": "How to access the papers",
-    "text": "How to access the papers\n\nInstitutional access\nIf you know someone who’s a student or lecturer, they might have access to academic resources.\n\n\nAuthors\nAuthors usually retain copyright and have the legal right to distribute their papers, so you’ll often find them on ResearchGate, Scribd or the authors’ websites. You can also email them and they’ll usually send over a copy.\n\n\n\n\n\n\n/r/Scholar\nThere’s a subreddit where people can request specific papers. Try the other methods and if you can’t get the paper, request it there and someone with access will retrieve it for you."
   }
 ]
