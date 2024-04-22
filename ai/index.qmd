@@ -3,28 +3,25 @@ title: "AI for journalists"
 href: ai
 ---
 
-::: {.callout-note}
+::: callout-note
 These notes are mostly inspired from the [Practical AI for (investigative) journalism](https://www.eventbrite.com/e/practical-ai-for-investigative-journalism-tickets-880990695887){target="_blank"} sessions.
 :::
 
 There are many excellent uses for AI in journalism. You can find some of them on the [Journalist's Toolbox](https://journaliststoolbox.ai/){target="_blank"} website.
 
-However, modern generative AIs tends to hallucinate, or say things that are not accurate. For example, here's what [Claude](https://claude.ai/){target="_blank"} says when you ask it `Who is Nicu Calcea?`.
+However, there is one important thing to keep in mind. AI tools are machines that generate text (or other forms of media), not facts.
+
+Let's look at an example. I asked [Claude](https://claude.ai/){target="_blank"} to tell me `Who is Nicu Calcea?`.
 
 > Nicu Calcea is a Romanian politician who has served as a member of the European Parliament since 2019. He is a member of the National Liberal Party (PNL) which is a center-right liberal-conservative political party in Romania.
-> 
-> Some key facts about Nicu Calcea:
-> - Born in 1968 in Buzău, Romania
-> - He has a background in economics, having graduated from the Bucharest Academy of Economic Studies
-> - Prior to entering politics, he had a business career in the private sector
-> - He was first elected to the European Parliament in 2019 on the PNL party list
-> - In the European Parliament, he sits with the Renew Europe group, which is liberal and pro-European Union
-> - His main areas of focus are economic and monetary affairs as well as the single market
-> - Within the PNL party in Romania, he is viewed as being part of the liberal/pro-European wing
-> 
+>
+> Some key facts about Nicu Calcea: - Born in 1968 in Buzău, Romania - He has a background in economics, having graduated from the Bucharest Academy of Economic Studies - Prior to entering politics, he had a business career in the private sector - He was first elected to the European Parliament in 2019 on the PNL party list - In the European Parliament, he sits with the Renew Europe group, which is liberal and pro-European Union - His main areas of focus are economic and monetary affairs as well as the single market - Within the PNL party in Romania, he is viewed as being part of the liberal/pro-European wing
+>
 > So in summary, he is a Romanian liberal politician currently serving as an MEP after previously working in the private business sector. His political positions are generally pro-EU and pro-market economics.
 
-Claude seems to be very confident and gives a detailed response. However, every single one of the "key facts" on that list is false. I know, because I am [Nicu Calcea](https://nicu.md/){target="_blank"}, and there is no Romanian politician with the same name.
+Claude seems to be very confident and gives a pretty detailed response. However, every single one of the "key facts" on that list is false. I know, because I am [Nicu Calcea](https://nicu.md/){target="_blank"}, and there is no Romanian politician with the same name.
+
+In the context of Large Language Models (LLMs), these falsehoods are called "hallucinations".
 
 Why does this happen?
 
@@ -36,13 +33,13 @@ What about if we say `I haven't eaten since yesteday, I'm ...`. Then, the answer
 
 Let's take yet another example: `Dearest friend, I daresay I have not partaken of food in ages. I'm positively...`. Based on the style of the sentence, a better fit would be `famished`.
 
-What we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a large language model (LLM) works.
+What we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a Large Language Model (LLM) works.
 
 You can see this in action in the [OpenAI Playground](https://platform.openai.com/playground?mode=complete){target="_blank"}. Copy the last sentence in the text box, make sure you have the `Show probabilities` box ticked on and click `Submit` to let the LLM complete it.
 
 You'll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next "token", or group of letters. In our example, there was a 91.38% chance that the sentence `Dearest friend, I daresay I have not partaken of food in ages. I'm positively` would be followed by `fam`, which had a 99.87% change of being followed by `ished`, and so on.
 
-![The OpenAI Playground](images/gpt-tokens.png)
+![The OpenAI Playground](/images/gpt-tokens.png)
 
 To keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.
 
@@ -52,4 +49,4 @@ In essence, this is a more advanced version of the text predictor on your smartp
 
 While this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting.
 
-Next, let's see how [we can use AI tools inside Google Sheets](/ai/google-sheets.html).
+Next, let's see how [we can use AI tools inside Google Sheets ➡️](/ai/google-sheets.html).
