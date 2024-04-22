@@ -1,0 +1,48 @@
+---
+title: "Using AI in Google Sheets"
+href: google-sheets
+---
+
+
+There are [several Google Sheets extensions](https://workspace.google.com/marketplace/search/AI?host=sheets) that will let you connect to a large language model (LLM), write requests and store the results of those requests.
+
+However, some of those extensions charge extra fees and the way they work is opaque, meaning they could be reading your requests.
+
+I wrote a very simple Google Sheets script that provides most of the same functionality without sending your data or charging a subscription. Follow the instructions in the link below to install it.
+
+[![nicucalcea/sheets-llm - GitHub](https://gh-card.dev/repos/nicucalcea/sheets-llm.svg)](https://github.com/nicucalcea/sheets-llm)
+
+Note that you will still need an OpenAI API key, which does have a cost. This key is different from ChatGPT Plus. You don't need the latter to get an API key.
+
+---
+
+Let's look at an example.
+
+Make a copy of [this Google Sheet](https://docs.google.com/spreadsheets/d/1OC1NLimTQ2lSLHOl2X6BVHTSJiKtpkPpFj3gabRVNec/copy). Note that this will also copy the associate Apps Script, aka. the code you need to make the LLM magic happen.
+
+Click on `LLM` in the top menu, select `Settings`, paste your OpenAI key and save.
+
+In cell `B2`, copy the following formula:
+
+```scala
+=LLM(A2, "Extract the category from the following text. It can be something like crime, environment, education or healthcare. Please respond with just the category.", "gpt-3.5-turbo", 0)
+```
+
+Let's break it down.
+
+1. First, we have the `LLM` formula which tells Sheets that we want to use the Apps Script that connects us to OpenAI.
+2. Then we're selecting the `A2` cell, or the first cell with data we want to analyse.
+3. Next we have the user prompt. This is a set of instructions that help the AI understand our request and respond accordingly. Notice how I included the `Please respond with just the category` sentence. Without it, the AI may respond with something like `The category of the text is "Schools/High School."`, which is more difficult to aggregate.
+4. You can optionally specify the model you want to use. We use `gpt-3.5-turbo` by default, but you can change it to `gpt-4` for a more intelligent, but much pricier model.
+5. Finally, you specify the model temperature. Since we want precision, rather than creativity, I've set the temperature to `0`.
+
+You can then drag the formula down to repeat the categorisation for each row.
+
+::: {.callout-tip}
+Because Google Sheets tends to recalculate cells at times, it may try to rerun your formula, which means you may incur additional charges. You can select your `LLM` cells, copy (`Ctrl + C`) and paste them as values (`Ctrl + Shift + C`) to overwrite the formulas with static text.
+:::
+
+
+### Exercise
+
+Use the `LLM` formula to detect whether each piece of legislation is about retirement. Make sure the output is either `Yes`, `No` or `Don't know`.

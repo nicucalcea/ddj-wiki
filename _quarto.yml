@@ -31,9 +31,18 @@ website:
       - text: Awards
         icon: "trophy"
         href: awards/index.qmd
-      - text: LLM comparison
+      - text: "AI"
         icon: "robot"
-        href: llm.html
+        menu:
+          - text: "AI for journalists"
+            icon: "robot"
+            href: ai/index.qmd
+          - text: "AI in Google Sheets"
+            icon: "file-earmark-spreadsheet"
+            href: ai/google-sheets.qmd
+          - text: "LLM comparison"
+            icon: "currency-dollar"
+            href: ai/llm.html
     tools:
       - icon: c-circle
         href: https://nicu.md/

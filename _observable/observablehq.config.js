@@ -33,8 +33,16 @@ export default {
           "path": "awards/index.html"
         },
         {
+          "name": "AI for journalists",
+          "path": "ai/index.html"
+        },
+        {
+          "name": "AI in Google Sheets",
+          "path": "ai/google-sheets.html"
+        },
+        {
           "name": "LLM comparison",
-          "path": "llm.html"
+          "path": "ai/llm.html"
         }
       ]
     }

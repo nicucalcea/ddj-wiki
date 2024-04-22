@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Journalism Wiki - Data Sources</title>
+<title>Data Journalism Wiki - Using AI in Google Sheets</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -177,18 +211,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#united-kingdom" id="toc-united-kingdom" class="nav-link active" data-scroll-target="#united-kingdom">United Kingdom</a></li>
-  <li><a href="#other-countries" id="toc-other-countries" class="nav-link" data-scroll-target="#other-countries">Other countries</a></li>
-  <li><a href="#international-sources" id="toc-international-sources" class="nav-link" data-scroll-target="#international-sources">International sources</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link active" data-scroll-target="#exercise">Exercise</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nicucalcea/ddj-wiki/edit/main/sources/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nicucalcea/ddj-wiki/edit/main/ai/google-sheets.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Sources</h1>
+<h1 class="title">Using AI in Google Sheets</h1>
 </div>
 
 
@@ -203,179 +235,47 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="column-page-inset-right">
-
-
-<style type="text/css">
-.nav-tabs {
-  margin-top: 0.5rem;
-  border-bottom: none;
-}
-
-.callout {
-  margin-top: 0;
-}
-
-.nav-tabs .nav-link {
-  text-align: center;
-  margin-right: 15px;
-  margin-top: 10px;
-  width: 147px;
-  font-size: 0.8em;
-  font-weight: 600;
-}
-
-
-.nav-tabs .nav-link, 
-.nav-tabs .nav-link.active, 
-.nav-tabs .nav-item.show .nav-link {
-  border: 1px solid  rgb(222, 226, 230);
-  border-radius: 10px;
-  color: rgb(80,146,221);
-}
-.nav-tabs .nav-link:hover {
-   border-color: rgb(80,146,221);
-   border-width: 1px;
-} 
-
-.nav-tabs .nav-link.active, 
-.nav-tabs .nav-item.show .nav-link {
-  border-color: rgb(80,146,221);
-  border-width: 2px;
-}
-
-
-.nav-tabs .nav-link i {
-  display: block;
-  font-size: 3rem;
-  color: rgb(80,146,221);
-  margin-bottom: 5px;
-}
-
-.quarto-listing {
-  margin-top: 2em;
-}
-
-.quarto-listing .listing-name,
-.quarto-listing .listing-author {
-  white-space: nowrap;
-}
-
-.quarto-listing .listing-actions-group h3 {
-  margin-top: 0;
-}
-
- 
-</style>
-
-<ul id="index-chooser" class="nav nav-tabs" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" href="index.html">
-      <i class="bi bi-table"></i>Data Sources
-    </a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" href="academic.html">
-      <i class="bi bi-mortarboard"></i>Academic Sources
-    </a>
-  </li>
-  <li class="nav-item" role="presentation">
-    <a class="nav-link" href="data-calendar.html">
-      <i class="bi bi-calendar-week"></i>Data Calendar
-    </a>
-  </li>
-</ul>
-
-<br>
-
-<script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function() {
-  // get file name
-  const filename = window.location.pathname.split("/").slice(-1)[0];
-
-  // latch active
-  const toolLinks = window.document.querySelectorAll("#index-chooser a");
-  for (const tool of toolLinks) {
-    if (filename && filename !== "index.html") {
-      if (tool.href.endsWith(filename)) {
-        tool.classList.add("active");
-      } 
-    } else {
-      if (tool.href.endsWith("listing-filters.html")) {
-        tool.classList.add("active");
-      }
-    }
-  }
-  
-  // move heading into table
-  <!-- document.querySelector(".listing-actions-group").prepend(document.querySelector("h3.unlisted")); -->
-});
-
-</script>
+<p>There are <a href="https://workspace.google.com/marketplace/search/AI?host=sheets">several Google Sheets extensions</a> that will let you connect to a large language model (LLM), write requests and store the results of those requests.</p>
+<p>However, some of those extensions charge extra fees and the way they work is opaque, meaning they could be reading your requests.</p>
+<p>I wrote a very simple Google Sheets script that provides most of the same functionality without sending your data or charging a subscription. Follow the instructions in the link below to install it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/nicucalcea/sheets-llm"><img src="https://gh-card.dev/repos/nicucalcea/sheets-llm.svg" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">nicucalcea/sheets-llm - GitHub</figcaption>
+</figure>
 </div>
-<p>This is not meant to be an exhaustive list of all data sources, as that would be impossible to put on a page. However, it should give you a starting point and might spark a few ideas.</p>
-<section id="united-kingdom" class="level2">
-<h2 class="anchored" data-anchor-id="united-kingdom">United Kingdom</h2>
-<ul>
-<li><a href="https://www.bankofengland.co.uk/news/statistics">Bank of England</a> — The UK’s central bank.</li>
-<li><a href="https://www.bfi.org.uk/industry-data-insights/">British Film Institute</a> — Research data and market intelligence on the UK film industry and other screen sectors.</li>
-<li><a href="https://www.caa.co.uk/data-and-analysis/">Civil Aviation Authority</a> — Aviation data, statistics and reports.</li>
-<li><a href="http://download.companieshouse.gov.uk/en_output.html">Companies House</a> — Downloadable data snapshot containing basic company data of live companies on the Companies House register. Also available as an <a href="https://developer.company-information.service.gov.uk/">API</a>.</li>
-<li><a href="https://epc.opendatacommunities.org/">Energy Performance of Buildings</a> — The official place for all Energy Performance Certificates (EPCs), Display Energy Certificates (DECs) and Air Conditioning Inspection Reports (ACIRs).</li>
-<li><a href="https://www.fca.org.uk/data">Financial Conduct Authority</a> — Official data on financial services firms. See also the <a href="https://register.fca.org.uk/s/">register of firms</a>.</li>
-<li><a href="https://www.gov.uk/search/research-and-statistics">GOV.UK</a> — Official data from various government sources.</li>
-<li><a href="https://www.halifax.co.uk/media-centre/house-price-index.html">Halifax House Price Index</a> — The Halifax House Price Index is the UK’s longest running monthly house price series with data covering the whole country going back to January 1983.</li>
-<li><a href="https://www.hesa.ac.uk/data-and-analysis">Higher Education Statistics Agency</a> — Data on all aspects of the UK higher education sector.</li>
-<li><a href="https://landregistry.data.gov.uk/">HM Land Registry</a> — Price paid, transaction and UK House Price Index, updated monthly.</li>
-<li><a href="https://members.parliament.uk/members/lords/interests/register-of-lords-interests">House of Lords Register of Interests</a> — Information on any financial or non-financial benefit received by a Member of the Lords.</li>
-<li><a href="https://commonslibrary.parliament.uk/research-for-commons-business/">House of Commons Library</a> — Information and analysis on legislation, policy areas and topical issues.</li>
-<li><a href="https://www.facebook.com/ads/library/">Meta Ad Library</a> — Search all of the ads currently running across Meta technologies, primarily used for Facebook.</li>
-<li><a href="https://nrfa.ceh.ac.uk/">National River Flow Archive</a> — The UK’s official record of river flow data.</li>
-<li><a href="https://digital.nhs.uk/data">NHS Digital</a> — The statutory custodian for health and care data for England.</li>
-<li><a href="https://www.nomisweb.co.uk/">Nomis</a> — Statistics related to population, society and the labour market at national, regional and local levels.</li>
-<li><a href="https://www.ofcom.org.uk/research-and-data/data">Ofcom</a> — The regulator for communications services, including broadband, home phone, mobile services, TV and radio.</li>
-<li><a href="https://www.ofgem.gov.uk/energy-data-and-research">Ofgem</a> — Great Britain’s independent energy regulator.</li>
-<li><a href="https://obr.uk/publications/">Office for Budget Responsibility</a> — The OBR produces a variety of publications in pursuit of its duty to examine and report on the sustainability of the public finances.</li>
-<li><a href="https://www.ons.gov.uk/">Office for National Statistics</a> — The UK official statistics body.</li>
-<li><a href="https://www.officeforstudents.org.uk/data-and-analysis/">Office for Students</a> — Data-driven analysis and essential evidence on key trends and current issues in English higher education.</li>
-<li><a href="https://dataportal.orr.gov.uk/">Office of Rail and Road</a> — Government department responsible for the economic and safety regulation of Britain’s railways, and the economic monitoring of National Highways.</li>
-<li><a href="https://registrarofconsultantlobbyists.org.uk/">Office of the Registrar of Consultant Lobbyists</a> — Set up to ensure transparency in the work of consultant lobbyists and their engagement with Ministers and Permanent Secretaries on behalf of clients.</li>
-<li><a href="https://explore.data.parliament.uk/">Parliament.uk</a> — A list of open datasets supported by the Parliamentary Digital Service.</li>
-<li><a href="https://data.police.uk/">Police.uk</a> — Open data about crime and policing in England, Wales and Northern Ireland.</li>
-<li><a href="https://ico.org.uk/about-the-ico/what-we-do/register-of-fee-payers/">Register of data protection fee payers</a> — Organisations and people registered with the Information Commissioner’s Office (ICO) under the Data Protection Act 2018.</li>
-<li><a href="https://register-of-charities.charitycommission.gov.uk/">Register of charities</a> — Information about registered charities in England and Wales</li>
-<li><a href="https://get-information-schools.service.gov.uk/">Schools</a> — The Department for Education’s register for several organisation types and where information on other organisations is recorded and maintained.</li>
-<li><a href="https://stat-xplore.dwp.gov.uk/">Stat-Xplore</a> — A guided way to explore Department for Work &amp; Pensions benefit statistics, currently holding data relating to a range of different benefits/programmes.</li>
-<li><a href="https://uk-air.defra.gov.uk/">UK AIR</a> — Data about air quality and pollution in the UK.</li>
-<li><a href="https://www.ukfinance.org.uk/data-research">UK Finance</a> — Data and analysis of banking and finance industry activity.</li>
-<li><a href="https://www.ucas.com/data-and-analysis/">Universities and Colleges Admissions Service</a> — An independent charity, and the UK’s shared admissions service for higher education.</li>
-</ul>
-</section>
-<section id="other-countries" class="level2">
-<h2 class="anchored" data-anchor-id="other-countries">Other countries</h2>
-<ul>
-<li>🇦🇺 <a href="https://www.abs.gov.au/">Australian Bureau of Statistics</a> — Australia’s national statistical agency and an official source of independent, reliable information.</li>
-<li>🇺🇸 <a href="https://www.bls.gov/">Bureau of Labor Statistics</a> — The principal fact-finding agency for the U.S. government in the broad field of labor economics and statistics.</li>
-<li>🇮🇪 <a href="https://www.cso.ie/en/">Central Statistics Office</a> — Ireland’s national statistical office that collects, analyses and makes available statistics about Ireland’s people, society and economy.</li>
-<li>🇺🇸 <a href="https://www.ers.usda.gov/">Economic Research Service</a> — Trends and emerging issues in agriculture, food, the environment, and rural America.</li>
-<li>🇺🇸 <a href="https://www.eia.gov/">Energy Information Administration</a> — Independent and impartial energy information to promote sound policymaking, efficient markets, and public understanding of energy and its interaction with the economy and the environment.</li>
-<li>🇺🇸 <a href="https://www.newyorkfed.org/data-and-statistics">New York Fed</a> — Provides the date and time of key economic data releases.</li>
-<li>🇨🇦 <a href="https://www.statcan.gc.ca/en/start">Statistics Canada</a> — Statistics Canada is the national statistical office of Canada.</li>
-<li>🇩🇪 <a href="https://www.destatis.de/EN/Home/_node.html">Statistisches Bundesamt</a> — Official data on the society, the economy, the environment and the state of Germany.</li>
-</ul>
-</section>
-<section id="international-sources" class="level2">
-<h2 class="anchored" data-anchor-id="international-sources">International sources</h2>
-<ul>
-<li>🌍 <a href="https://data.bis.org/">Bank for International Settlements</a> — Compiled in cooperation with central banks and other national authorities, are designed to inform analysis of financial stability, international monetary spillovers and global liquidity.</li>
-<li>🇪🇺 <a href="https://www.ecb.europa.eu/pub/html/index.en.html">European Central Bank</a> — Economic research on a wide range of topics in Europe.| Europe|</li>
-<li>🇪🇺 <a href="https://ec.europa.eu/eurostat/web/main/home">Eurostat</a> — The statistical office of the European Union</li>
-<li>🌍 <a href="http://insideairbnb.com/">Inside Airbnb</a> — A mission driven project that provides data and advocacy about Airbnb’s impact on residential communities.</li>
-<li>🌍 <a href="https://www.iea.org/data-and-statistics">International Energy Agency</a> — Intergovernmental organisation, established in 1974, that provides policy recommendations, analysis and data on the entire global energy sector.</li>
-<li>🌍 <a href="https://data.imf.org/">International Monetary Fund</a> — International macroeconomic and financial data.</li>
-<li>🌍 <a href="https://data.oecd.org/">OECD</a> — Data, policy advice and research on the economy, education, employment, environment, health, tax, trade, GDP, unemployment rate, etc.</li>
-<li>🌍 <a href="http://data.un.org/">UNdata</a> — A variety of statistical resources compiled by the United Nations (UN) statistical system and other international agencies.</li>
-</ul>
+<p>Note that you will still need an OpenAI API key, which does have a cost. This key is different from ChatGPT Plus. You don’t need the latter to get an API key.</p>
+<hr>
+<p>Let’s look at an example.</p>
+<p>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1OC1NLimTQ2lSLHOl2X6BVHTSJiKtpkPpFj3gabRVNec/copy">this Google Sheet</a>. Note that this will also copy the associate Apps Script, aka. the code you need to make the LLM magic happen.</p>
+<p>Click on <code>LLM</code> in the top menu, select <code>Settings</code>, paste your OpenAI key and save.</p>
+<p>In cell <code>B2</code>, copy the following formula:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">LLM</span><span class="op">(</span>A2<span class="op">,</span> <span class="st">"Extract the category from the following text. It can be something like crime, environment, education or healthcare. Please respond with just the category."</span><span class="op">,</span> <span class="st">"gpt-3.5-turbo"</span><span class="op">,</span> <span class="dv">0</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Let’s break it down.</p>
+<ol type="1">
+<li>First, we have the <code>LLM</code> formula which tells Sheets that we want to use the Apps Script that connects us to OpenAI.</li>
+<li>Then we’re selecting the <code>A2</code> cell, or the first cell with data we want to analyse.</li>
+<li>Next we have the user prompt. This is a set of instructions that help the AI understand our request and respond accordingly. Notice how I included the <code>Please respond with just the category</code> sentence. Without it, the AI may respond with something like <code>The category of the text is "Schools/High School."</code>, which is more difficult to aggregate.</li>
+<li>You can optionally specify the model you want to use. We use <code>gpt-3.5-turbo</code> by default, but you can change it to <code>gpt-4</code> for a more intelligent, but much pricier model.</li>
+<li>Finally, you specify the model temperature. Since we want precision, rather than creativity, I’ve set the temperature to <code>0</code>.</li>
+</ol>
+<p>You can then drag the formula down to repeat the categorisation for each row.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because Google Sheets tends to recalculate cells at times, it may try to rerun your formula, which means you may incur additional charges. You can select your <code>LLM</code> cells, copy (<code>Ctrl + C</code>) and paste them as values (<code>Ctrl + Shift + C</code>) to overwrite the formulas with static text.</p>
+</div>
+</div>
+<section id="exercise" class="level3">
+<h3 class="anchored" data-anchor-id="exercise">Exercise</h3>
+<p>Use the <code>LLM</code> formula to detect whether each piece of legislation is about retirement. Make sure the output is either <code>Yes</code>, <code>No</code> or <code>Don't know</code>.</p>
 
 
 </section>
