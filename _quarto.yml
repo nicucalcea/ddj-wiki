@@ -25,12 +25,6 @@ website:
           - text: "Data Calendar"
             icon: "calendar-week"
             href: sources/data-calendar.qmd
-      - text: Toolbox
-        icon: "tools"
-        href: toolbox/index.qmd
-      - text: Awards
-        icon: "trophy"
-        href: awards/index.qmd
       - text: "AI"
         icon: "robot"
         menu:
@@ -43,6 +37,12 @@ website:
           - text: "LLM comparison"
             icon: "currency-dollar"
             href: ai/llm.html
+      - text: Toolbox
+        icon: "tools"
+        href: toolbox/index.qmd
+      - text: Awards
+        icon: "trophy"
+        href: awards/index.qmd
     tools:
       - icon: c-circle
         href: https://nicu.md/
@@ -55,7 +55,7 @@ website:
   repo-url: https://github.com/nicucalcea/ddj-wiki
   repo-actions: [edit, issue]
   site-url: https://ddj.nicu.md/
-  page-footer: "Copyright 2023, <a href='https://nicu.md/'>Nicu Calcea</a>"
+  page-footer: "Copyright 2024, <a href='https://nicu.md/' target='_blank'>Nicu Calcea</a>."
 
 format:
   html:

@@ -4,12 +4,12 @@ href: ai
 ---
 
 ::: {.callout-note}
-These notes are mostly inspired from the [Practical AI for (investigative) journalism](https://www.eventbrite.com/e/practical-ai-for-investigative-journalism-tickets-880990695887) sessions.
+These notes are mostly inspired from the [Practical AI for (investigative) journalism](https://www.eventbrite.com/e/practical-ai-for-investigative-journalism-tickets-880990695887){target="_blank"} sessions.
 :::
 
-There are many excellent uses for AI in journalism. You can find some of them on the [Journalist's Toolbox](https://journaliststoolbox.ai/) website.
+There are many excellent uses for AI in journalism. You can find some of them on the [Journalist's Toolbox](https://journaliststoolbox.ai/){target="_blank"} website.
 
-However, modern generative AIs tends to hallucinate, or say things that are not accurate. For example, here's what [Claude](https://claude.ai/) says when you ask it `Who is Nicu Calcea?`.
+However, modern generative AIs tends to hallucinate, or say things that are not accurate. For example, here's what [Claude](https://claude.ai/){target="_blank"} says when you ask it `Who is Nicu Calcea?`.
 
 > Nicu Calcea is a Romanian politician who has served as a member of the European Parliament since 2019. He is a member of the National Liberal Party (PNL) which is a center-right liberal-conservative political party in Romania.
 > 
@@ -24,7 +24,7 @@ However, modern generative AIs tends to hallucinate, or say things that are not 
 > 
 > So in summary, he is a Romanian liberal politician currently serving as an MEP after previously working in the private business sector. His political positions are generally pro-EU and pro-market economics.
 
-Clause seems to be very confident and gives a detailed response. However, every single one of the "key facts" on that list is false. I know, because I am [Nicu Calcea](https://nicu.md/), and there is no Romanian politician with the same name.
+Claude seems to be very confident and gives a detailed response. However, every single one of the "key facts" on that list is false. I know, because I am [Nicu Calcea](https://nicu.md/){target="_blank"}, and there is no Romanian politician with the same name.
 
 Why does this happen?
 
@@ -38,11 +38,11 @@ Let's take yet another example: `Dearest friend, I daresay I have not partaken o
 
 What we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a large language model (LLM) works.
 
-You can see this in action in the [OpenAI Playground](https://platform.openai.com/playground?mode=complete). Copy the last sentence in the text box, make sure you have the `Show probabilities` box ticked on and click `Submit` to let the LLM complete it.
+You can see this in action in the [OpenAI Playground](https://platform.openai.com/playground?mode=complete){target="_blank"}. Copy the last sentence in the text box, make sure you have the `Show probabilities` box ticked on and click `Submit` to let the LLM complete it.
 
 You'll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next "token", or group of letters. In our example, there was a 91.38% chance that the sentence `Dearest friend, I daresay I have not partaken of food in ages. I'm positively` would be followed by `fam`, which had a 99.87% change of being followed by `ished`, and so on.
 
-![[images/gpt-tokens.png]]
+![The OpenAI Playground](images/gpt-tokens.png)
 
 To keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.
 
@@ -51,3 +51,5 @@ You can adjust the `Temperature` slider in the Playground to control that degree
 In essence, this is a more advanced version of the text predictor on your smartphone. That's why you can't trust that its output is the truth, though it often is. It is just the statistically most likely word based on the existing text.
 
 While this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting.
+
+Next, let's see how [we can use AI tools inside Google Sheets](/ai/google-sheets.html).

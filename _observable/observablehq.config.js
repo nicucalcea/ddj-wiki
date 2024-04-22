@@ -28,14 +28,6 @@ export default {
       ]
     },
     {
-      "name": "Toolbox",
-      "path": "toolbox/index.html"
-    },
-    {
-      "name": "Awards",
-      "path": "awards/index.html"
-    },
-    {
       "name": "AI",
       "open": true,
       "pages": [
@@ -52,6 +44,14 @@ export default {
           "path": "ai/llm.html"
         }
       ]
+    },
+    {
+      "name": "Toolbox",
+      "path": "toolbox/index.html"
+    },
+    {
+      "name": "Awards",
+      "path": "awards/index.html"
     }
   ]
 }

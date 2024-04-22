@@ -111,16 +111,6 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../toolbox/index.html" rel="" target=""><i class="bi bi-tools" role="img">
-</i> 
- <span class="menu-text">Toolbox</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../awards/index.html" rel="" target=""><i class="bi bi-trophy" role="img">
-</i> 
- <span class="menu-text">Awards</span></a>
-  </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-ai" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
       <i class="bi bi-robot" role="img">
@@ -145,6 +135,16 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../toolbox/index.html" rel="" target=""><i class="bi bi-tools" role="img">
+</i> 
+ <span class="menu-text">Toolbox</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../awards/index.html" rel="" target=""><i class="bi bi-trophy" role="img">
+</i> 
+ <span class="menu-text">Awards</span></a>
+  </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
     <a href="https://nicu.md/" rel="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-c-circle"></i></a>
@@ -211,17 +211,17 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>These notes are mostly inspired from the <a href="https://www.eventbrite.com/e/practical-ai-for-investigative-journalism-tickets-880990695887">Practical AI for (investigative) journalism</a> sessions.</p>
+<p>These notes are mostly inspired from the <a href="https://www.eventbrite.com/e/practical-ai-for-investigative-journalism-tickets-880990695887" target="_blank">Practical AI for (investigative) journalism</a> sessions.</p>
 </div>
 </div>
-<p>There are many excellent uses for AI in journalism. You can find some of them on the <a href="https://journaliststoolbox.ai/">Journalist’s Toolbox</a> website.</p>
-<p>However, modern generative AIs tends to hallucinate, or say things that are not accurate. For example, here’s what <a href="https://claude.ai/">Claude</a> says when you ask it <code>Who is Nicu Calcea?</code>.</p>
+<p>There are many excellent uses for AI in journalism. You can find some of them on the <a href="https://journaliststoolbox.ai/" target="_blank">Journalist’s Toolbox</a> website.</p>
+<p>However, modern generative AIs tends to hallucinate, or say things that are not accurate. For example, here’s what <a href="https://claude.ai/" target="_blank">Claude</a> says when you ask it <code>Who is Nicu Calcea?</code>.</p>
 <blockquote class="blockquote">
 <p>Nicu Calcea is a Romanian politician who has served as a member of the European Parliament since 2019. He is a member of the National Liberal Party (PNL) which is a center-right liberal-conservative political party in Romania.</p>
 <p>Some key facts about Nicu Calcea: - Born in 1968 in Buzău, Romania - He has a background in economics, having graduated from the Bucharest Academy of Economic Studies - Prior to entering politics, he had a business career in the private sector - He was first elected to the European Parliament in 2019 on the PNL party list - In the European Parliament, he sits with the Renew Europe group, which is liberal and pro-European Union - His main areas of focus are economic and monetary affairs as well as the single market - Within the PNL party in Romania, he is viewed as being part of the liberal/pro-European wing</p>
 <p>So in summary, he is a Romanian liberal politician currently serving as an MEP after previously working in the private business sector. His political positions are generally pro-EU and pro-market economics.</p>
 </blockquote>
-<p>Clause seems to be very confident and gives a detailed response. However, every single one of the “key facts” on that list is false. I know, because I am <a href="https://nicu.md/">Nicu Calcea</a>, and there is no Romanian politician with the same name.</p>
+<p>Claude seems to be very confident and gives a detailed response. However, every single one of the “key facts” on that list is false. I know, because I am <a href="https://nicu.md/" target="_blank">Nicu Calcea</a>, and there is no Romanian politician with the same name.</p>
 <p>Why does this happen?</p>
 <section id="how-ai-works" class="level2">
 <h2 class="anchored" data-anchor-id="how-ai-works">How AI works</h2>
@@ -229,13 +229,19 @@ Note
 <p>What about if we say <code>I haven't eaten since yesteday, I'm ...</code>. Then, the answer is likely to be <code>hungry</code> or <code>starving</code>.</p>
 <p>Let’s take yet another example: <code>Dearest friend, I daresay I have not partaken of food in ages. I'm positively...</code>. Based on the style of the sentence, a better fit would be <code>famished</code>.</p>
 <p>What we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a large language model (LLM) works.</p>
-<p>You can see this in action in the <a href="https://platform.openai.com/playground?mode=complete">OpenAI Playground</a>. Copy the last sentence in the text box, make sure you have the <code>Show probabilities</code> box ticked on and click <code>Submit</code> to let the LLM complete it.</p>
+<p>You can see this in action in the <a href="https://platform.openai.com/playground?mode=complete" target="_blank">OpenAI Playground</a>. Copy the last sentence in the text box, make sure you have the <code>Show probabilities</code> box ticked on and click <code>Submit</code> to let the LLM complete it.</p>
 <p>You’ll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next “token”, or group of letters. In our example, there was a 91.38% chance that the sentence <code>Dearest friend, I daresay I have not partaken of food in ages. I'm positively</code> would be followed by <code>fam</code>, which had a 99.87% change of being followed by <code>ished</code>, and so on.</p>
-<p>[[images/gpt-tokens.png]]</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gpt-tokens.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">The OpenAI Playground</figcaption>
+</figure>
+</div>
 <p>To keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.</p>
 <p>You can adjust the <code>Temperature</code> slider in the Playground to control that degree of randomness, where a lower number makes the reply more precise and predictable, while the higher one makes it more creative. For journalism, you’ll normally want to set the temperature to <code>0</code>, as that will return the most likely output, which is likely to be more precise.</p>
 <p>In essence, this is a more advanced version of the text predictor on your smartphone. That’s why you can’t trust that its output is the truth, though it often is. It is just the statistically most likely word based on the existing text.</p>
 <p>While this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting.</p>
+<p>Next, let’s see how <a href="../ai/google-sheets.html">we can use AI tools inside Google Sheets</a>.</p>
 
 
 </section>
@@ -480,7 +486,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Copyright 2023, <a href="https://nicu.md/">Nicu Calcea</a></div>
+    <div class="nav-footer-center">Copyright 2024, <a href="https://nicu.md/" target="_blank">Nicu Calcea</a>.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
