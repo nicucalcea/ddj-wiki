@@ -19,29 +19,30 @@ output_json = {
     "output": "../" + output_dir,
     "cleanUrls": False,
     "theme": "midnight",
-    "pages": [
-        {
-            "name": "Menu",
-            "pages": []
-        }
-    ]
+    "pages": []
 }
 
 # Populate the pages data
 for nav_item in navbar_left:
+    page = {
+        "name": nav_item['text'],
+    }
+
     if 'menu' in nav_item:
+        page['open'] = True
+        page['pages'] = []
+
         for sub_item in nav_item['menu']:
             path = sub_item['href'].replace('.qmd', '.html')
-            output_json['pages'][0]['pages'].append({
+            page['pages'].append({
                 "name": sub_item['text'],
                 "path": path
             })
     else:
         path = nav_item['href'].replace('.qmd', '.html')
-        output_json['pages'][0]['pages'].append({
-            "name": nav_item['text'],
-            "path": path
-        })
+        page['path'] = path
+
+    output_json['pages'].append(page)
 
 # Write the JSON to _observable/observablehq.config.js
 with open("_observable/observablehq.config.js", 'w') as f:

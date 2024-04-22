@@ -6,12 +6,13 @@ export default {
   "theme": "midnight",
   "pages": [
     {
-      "name": "Menu",
+      "name": "Home",
+      "path": "index.html"
+    },
+    {
+      "name": "Data Sources",
+      "open": true,
       "pages": [
-        {
-          "name": "Home",
-          "path": "index.html"
-        },
         {
           "name": "Data Sources",
           "path": "sources/index.html"
@@ -23,15 +24,21 @@ export default {
         {
           "name": "Data Calendar",
           "path": "sources/data-calendar.html"
-        },
-        {
-          "name": "Toolbox",
-          "path": "toolbox/index.html"
-        },
-        {
-          "name": "Awards",
-          "path": "awards/index.html"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Toolbox",
+      "path": "toolbox/index.html"
+    },
+    {
+      "name": "Awards",
+      "path": "awards/index.html"
+    },
+    {
+      "name": "AI",
+      "open": true,
+      "pages": [
         {
           "name": "AI for journalists",
           "path": "ai/index.html"

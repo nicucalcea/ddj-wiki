@@ -1,11 +1,11 @@
 library(tidyverse)
 library(rvest)
 
-llm_price <- read_csv("docs/data/llm-price.csv")
+llm_price <- read_csv("docs/ai/data/llm-price.csv")
 
 # Read in the data
 # https://chat.lmsys.org/?leaderboard
-lmsys <- read_html("docs/data/lmsys.html") |>
+lmsys <- read_html("docs/ai/data/lmsys.html") |>
     html_elements("head script") |>
     pluck(2) |>
     # retrieve the text
