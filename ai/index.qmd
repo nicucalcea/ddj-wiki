@@ -48,5 +48,3 @@ You can adjust the `Temperature` slider in the Playground to control that degree
 In essence, this is a more advanced version of the text predictor on your smartphone. That's why you can't trust that its output is the truth, though it often is. It is just the statistically most likely word based on the existing text.
 
 While this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting.
-
-Next, let's see how [we can use AI tools inside Google Sheets ➡️](/ai/google-sheets.html).

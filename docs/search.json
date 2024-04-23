@@ -42,36 +42,36 @@
     "text": "Visualisation\n\nDatawrapper — web dataviz tool\nFlourish — web interactive/dataviz tool\nRAW Graphs — static chart maker\nInfogram — infographic creator\nDatamatic.io — web dataviz tool\nHighcharts — chart library for developers\nPlotly — chart library for developers\nD3.js — library for advanced dataviz\nMapbox — map maker\nMapshaper — editor for map data\ngeojson.io — editor for map data\nGephi — network visualisations\nR / ggplot2 — programming language\n\n\nColours\n\nColorBrewer — collection of safe colour palettes\nChroma.js — colour palette helper\nScientific Colour Maps — colour-blind and accurate colour palette"
   },
   {
-    "objectID": "sources/data-calendar.html",
-    "href": "sources/data-calendar.html",
+    "objectID": "sources/calendar.html",
+    "href": "sources/calendar.html",
     "title": "Data Calendar",
     "section": "",
-    "text": "Data Sources\n    \n  \n  \n    \n      Academic Sources\n    \n  \n  \n    \n      Data Calendar\nHere’s a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases."
+    "text": "Here’s a list of organisations that list when they publish new data. You can look ahead and plan stories around those data releases."
   },
   {
-    "objectID": "sources/data-calendar.html#united-kingdom",
-    "href": "sources/data-calendar.html#united-kingdom",
+    "objectID": "sources/calendar.html#united-kingdom",
+    "href": "sources/calendar.html#united-kingdom",
     "title": "Data Calendar",
     "section": "United Kingdom",
     "text": "United Kingdom\n\nBank of England — The UK’s central bank. Click “Upcoming” for the upcoming data releases.\nBritish Film Institute — Research data and market intelligence on the UK film industry and other screen sectors.\nCivil Aviation Authority — Aviation data, statistics and reports.\nGOV.UK — Official data from various government sources.\nHalifax House Price Index — The Halifax House Price Index is the UK’s longest running monthly house price series with data covering the whole country going back to January 1983.\nHigher Education Statistics Agency — Data on all aspects of the UK higher education sector.\nNHS Digital — The statutory custodian for health and care data for England.\nNomis — Statistics related to population, society and the labour market at national, regional and local levels.\nOfcom — The regulator for communications services, including broadband, home phone, mobile services, TV and radio.\nOfgem — Great Britain’s independent energy regulator.\nOffice for Budget Responsibility — The OBR produces a variety of publications in pursuit of its duty to examine and report on the sustainability of the public finances.\nOffice for National Statistics — The UK official statistics body.\nOffice for Students — Data-driven analysis and essential evidence on key trends and current issues in English higher education.\nOffice of Rail and Road — Government department responsible for the economic and safety regulation of Britain’s railways, and the economic monitoring of National Highways.\nUK Finance — Data and analysis of banking and finance industry activity.\nUniversities and Colleges Admissions Service — An independent charity, and the UK’s shared admissions service for higher education."
   },
   {
-    "objectID": "sources/data-calendar.html#other-countries",
-    "href": "sources/data-calendar.html#other-countries",
+    "objectID": "sources/calendar.html#other-countries",
+    "href": "sources/calendar.html#other-countries",
     "title": "Data Calendar",
     "section": "Other countries",
     "text": "Other countries\n\n🇦🇺 Australian Bureau of Statistics — Australia’s national statistical agency and an official source of independent, reliable information.\n🇺🇸 Bureau of Labor Statistics — The principal fact-finding agency for the U.S. government in the broad field of labor economics and statistics.\n🇮🇪 Central Statistics Office — Ireland’s national statistical office that collects, analyses and makes available statistics about Ireland’s people, society and economy.\n🇺🇸 Economic Research Service — Trends and emerging issues in agriculture, food, the environment, and rural America.\n🇺🇸 Energy Information Administration — Independent and impartial energy information to promote sound policymaking, efficient markets, and public understanding of energy and its interaction with the economy and the environment.\n🇺🇸 MarketWatch Economic Calendar — Major U.S. economic reports & fed speakers.\n🇺🇸 New York Fed — Provides the date and time of key economic data releases.\n🇨🇦 Statistics Canada — Statistics Canada is the national statistical office of Canada.\n🇩🇪 Statistisches Bundesamt — Official data on the society, the economy, the environment and the state of Germany."
   },
   {
-    "objectID": "sources/data-calendar.html#international",
-    "href": "sources/data-calendar.html#international",
+    "objectID": "sources/calendar.html#international",
+    "href": "sources/calendar.html#international",
     "title": "Data Calendar",
     "section": "International",
     "text": "International\n\n🌍 Bank for International Settlements — Compiled in cooperation with central banks and other national authorities, are designed to inform analysis of financial stability, international monetary spillovers and global liquidity.\n🇪🇺 European Central Bank — Economic research on a wide range of topics in Europe.\n🇪🇺 Eurostat — The statistical office of the European Union.\n🌍 International Energy Agency — Intergovernmental organisation, established in 1974, that provides policy recommendations, analysis and data on the entire global energy sector.\n🌍 International Monetary Fund — International macroeconomic and financial data.\n🌍 OECD — Data, policy advice and research on the economy, education, employment, environment, health, tax, trade, GDP, unemployment rate, etc.\n🌍 UNdata — A variety of statistical resources compiled by the United Nations (UN) statistical system and other international agencies."
   },
   {
-    "objectID": "sources/data-calendar.html#calendar",
-    "href": "sources/data-calendar.html#calendar",
+    "objectID": "sources/calendar.html#calendar",
+    "href": "sources/calendar.html#calendar",
     "title": "Data Calendar",
     "section": "Calendar",
     "text": "Calendar\nHere’s a view of upcoming business releases that I keep up to date for work."
@@ -130,7 +130,7 @@
     "href": "ai/index.html#how-ai-works",
     "title": "AI for journalists",
     "section": "How AI works",
-    "text": "How AI works\nLet’s assume I ask you to guess the next word in this sentence: I'm .... The answer could be hungry, Nicu, confused, or anything else.\nWhat about if we say I haven't eaten since yesteday, I'm .... Then, the answer is likely to be hungry or starving.\nLet’s take yet another example: Dearest friend, I daresay I have not partaken of food in ages. I'm positively.... Based on the style of the sentence, a better fit would be famished.\nWhat we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a Large Language Model (LLM) works.\nYou can see this in action in the OpenAI Playground. Copy the last sentence in the text box, make sure you have the Show probabilities box ticked on and click Submit to let the LLM complete it.\nYou’ll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next “token”, or group of letters. In our example, there was a 91.38% chance that the sentence Dearest friend, I daresay I have not partaken of food in ages. I'm positively would be followed by fam, which had a 99.87% change of being followed by ished, and so on.\n\n\n\nThe OpenAI Playground\n\n\nTo keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.\nYou can adjust the Temperature slider in the Playground to control that degree of randomness, where a lower number makes the reply more precise and predictable, while the higher one makes it more creative. For journalism, you’ll normally want to set the temperature to 0, as that will return the most likely output, which is likely to be more precise.\nIn essence, this is a more advanced version of the text predictor on your smartphone. That’s why you can’t trust that its output is the truth, though it often is. It is just the statistically most likely word based on the existing text.\nWhile this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting.\nNext, let’s see how we can use AI tools inside Google Sheets ➡️."
+    "text": "How AI works\nLet’s assume I ask you to guess the next word in this sentence: I'm .... The answer could be hungry, Nicu, confused, or anything else.\nWhat about if we say I haven't eaten since yesteday, I'm .... Then, the answer is likely to be hungry or starving.\nLet’s take yet another example: Dearest friend, I daresay I have not partaken of food in ages. I'm positively.... Based on the style of the sentence, a better fit would be famished.\nWhat we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a Large Language Model (LLM) works.\nYou can see this in action in the OpenAI Playground. Copy the last sentence in the text box, make sure you have the Show probabilities box ticked on and click Submit to let the LLM complete it.\nYou’ll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next “token”, or group of letters. In our example, there was a 91.38% chance that the sentence Dearest friend, I daresay I have not partaken of food in ages. I'm positively would be followed by fam, which had a 99.87% change of being followed by ished, and so on.\n\n\n\nThe OpenAI Playground\n\n\nTo keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.\nYou can adjust the Temperature slider in the Playground to control that degree of randomness, where a lower number makes the reply more precise and predictable, while the higher one makes it more creative. For journalism, you’ll normally want to set the temperature to 0, as that will return the most likely output, which is likely to be more precise.\nIn essence, this is a more advanced version of the text predictor on your smartphone. That’s why you can’t trust that its output is the truth, though it often is. It is just the statistically most likely word based on the existing text.\nWhile this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting."
   },
   {
     "objectID": "city/index.html#who-am-i",
@@ -1215,7 +1215,7 @@
     "href": "sources/academic.html",
     "title": "Academic Data Sources",
     "section": "",
-    "text": "Data Sources\n    \n  \n  \n    \n      Academic Sources\n    \n  \n  \n    \n      Data Calendar\nThis is a small guide on how to use academic papers for your data journalism needs."
+    "text": "This is a small guide on how to use academic papers for your data journalism needs."
   },
   {
     "objectID": "sources/academic.html#where-to-find-papers",
@@ -1243,7 +1243,7 @@
     "href": "sources/index.html",
     "title": "Data Sources",
     "section": "",
-    "text": "Data Sources\n    \n  \n  \n    \n      Academic Sources\n    \n  \n  \n    \n      Data Calendar\nThis is not meant to be an exhaustive list of all data sources, as that would be impossible to put on a page. However, it should give you a starting point and might spark a few ideas."
+    "text": "This is not meant to be an exhaustive list of all data sources, as that would be impossible to put on a page. However, it should give you a starting point and might spark a few ideas."
   },
   {
     "objectID": "sources/index.html#united-kingdom",

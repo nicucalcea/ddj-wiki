@@ -24,7 +24,7 @@ export default {
         },
         {
           "name": "Data Calendar",
-          "path": "sources/data-calendar.html"
+          "path": "sources/calendar.html"
         }
       ]
     },

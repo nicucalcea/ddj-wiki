@@ -26,7 +26,7 @@ website:
             href: sources/academic.qmd
           - text: "Data Calendar"
             icon: "calendar-week"
-            href: sources/data-calendar.qmd
+            href: sources/calendar.qmd
       - section: "AI"
         # icon: "robot"
         contents:
