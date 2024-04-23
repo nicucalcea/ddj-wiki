@@ -20,6 +20,7 @@ output_json = {
     "output": "../" + output_dir,
     "cleanUrls": False,
     "theme": "midnight",
+    "style": "/src/style.css",
     "pages": [],
     "footer": page_footer
 }

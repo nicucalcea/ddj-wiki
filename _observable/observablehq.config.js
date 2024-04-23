@@ -4,6 +4,7 @@ export default {
   "output": "../docs",
   "cleanUrls": false,
   "theme": "midnight",
+  "style": "/src/style.css",
   "pages": [
     {
       "name": "Home",
