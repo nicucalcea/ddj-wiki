@@ -101,7 +101,7 @@ Inputs.table(lmsys_cost, {
 ```js
 function sparkbar(max) {
   return (x) => htl.html`<div style="
-    background: var(--theme-green);
+    background: var(--accent);
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font: 10px/1.6 var(--sans-serif);
