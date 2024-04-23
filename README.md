@@ -1,6 +1,6 @@
 This is a website with some resources for the **Introduction to Data Journalism** course at **City, University of London**.
 
-It is built with [Quarto](https://quarto.org/) and hosted on GitHub Pages. It uses [Reveal.js](https://revealjs.com/) for slides and [Observable Framework](https://observablehq.com/framework/) for interactive visualisations.
+It is built with [Quarto](https://quarto.org/) and hosted on GitHub Pages. It uses [Reveal.js](https://revealjs.com/) for slides and [Observable Framework](https://observablehq.com/framework/) for interactive pages.
 
 ## Integrating Observable
 
@@ -43,5 +43,5 @@ npm run build
 Run `quarto render`. If it's all set up correctly, the Observable build step will run just after the Quarto render, and you will have content from both in the same site.
 
 ## To-do
-- [ ] Add Observable pages to sitemap?
+- [ ] Add Observable pages to sitemap and search
 - [ ] Share CSS between Quarto and Observable for more consistent styling
