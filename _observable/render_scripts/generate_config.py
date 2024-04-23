@@ -11,7 +11,8 @@ with open("_quarto.yml", 'r') as stream:
 # Extract the required data
 title = config['website']['title']
 output_dir = config['project']['output-dir']
-navbar_left = config['website']['navbar']['left']
+sidebar = config['website']['sidebar']['contents']
+page_footer = config['website']['page-footer']
 
 # Create the JSON structure
 output_json = {
@@ -19,27 +20,31 @@ output_json = {
     "output": "../" + output_dir,
     "cleanUrls": False,
     "theme": "midnight",
-    "pages": []
+    "pages": [],
+    "footer": page_footer
 }
 
 # Populate the pages data
-for nav_item in navbar_left:
-    page = {
-        "name": nav_item['text'],
-    }
-
-    if 'menu' in nav_item:
+for sidebar_item in sidebar:
+    
+    if 'section' in sidebar_item:
+        page = {
+            "name": sidebar_item['section'],
+        }
         page['open'] = True
         page['pages'] = []
 
-        for sub_item in nav_item['menu']:
+        for sub_item in sidebar_item['contents']:
             path = sub_item['href'].replace('.qmd', '.html')
             page['pages'].append({
                 "name": sub_item['text'],
                 "path": path
             })
     else:
-        path = nav_item['href'].replace('.qmd', '.html')
+        page = {
+            "name": sidebar_item['text'],
+        }
+        path = sidebar_item['href'].replace('.qmd', '.html')
         page['path'] = path
 
     output_json['pages'].append(page)

@@ -13,7 +13,7 @@ However, some of those extensions charge extra fees and the way they work is opa
 
 I wrote a very simple Google Sheets script that provides most of the same functionality without sending your data or charging a subscription. Follow the instructions in the link below to install it.
 
-[!(https://gh-card.dev/repos/nicucalcea/sheets-llm.svg)](https://github.com/nicucalcea/sheets-llm){target="_blank"}
+[![nicucalcea/sheets-llm](https://gh-card.dev/repos/nicucalcea/sheets-llm.svg)](https://github.com/nicucalcea/sheets-llm)
 
 Note that you will still need an OpenAI API key, which does have a cost. This key is different from ChatGPT Plus. You don't need the latter to get an API key.
 

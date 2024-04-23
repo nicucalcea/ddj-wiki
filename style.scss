@@ -1,0 +1,134 @@
+/*-- scss:defaults --*/
+
+// Inspired by: https://docs.double.bot/
+
+// Custom colours
+// add accent colour
+$accent: rgb(234, 88, 12) !default;
+$accent-dark: #261105 !default;
+$accent-light: rgb(249,115,22);
+
+$gray-100: rgb(245, 241, 238) !default;
+$gray-200: rgb(230, 226, 223) !default;
+$gray-300: rgb(213, 209, 206) !default;
+$gray-400: rgb(166, 162, 159) !default;
+
+// General
+$body-bg: #100905 !default;
+$body-color: rgb(166, 162, 159) !default;
+$link-color: rgb(250, 246, 243) !default;
+$input-bg: $gray-100 !default;
+$footer-fg: $gray-300 !default;
+
+// Sidebar
+$sidebar-fg: $gray-300 !default;
+// $sidebar-hl: red !default;
+
+// Table of contents
+$toc-color: $accent !default;
+
+
+// make all links bold
+a {
+  font-weight: bold;
+}
+
+p a {
+  text-decoration: none;
+  border-bottom: 1px solid $accent;
+}
+
+p a:hover {
+  color: $link-color;
+  border-bottom: 2px solid $accent;
+}
+
+// title
+// .sidebar-title a {
+//   color: red;
+// }
+
+// subtitle
+.subtitle {
+  color: $accent;
+}
+
+// SIDEBAR
+.menu-text {
+  color: $gray-400;
+}
+
+.sidebar-item-container {
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
+// change sidebar colours on hover
+.sidebar-item-container:hover {
+  background-color: #1b1511;
+}
+
+.sidebar-item-container:hover span, .sidebar-item-container:hover .bi {
+  color: $gray-300;
+}
+
+// active sidebar item
+.sidebar-item-container:has(.active) {
+  background-color: $accent-dark;
+}
+
+.sidebar-item-container .active span, .sidebar-item-container .active .bi {
+  color: $accent;
+}
+
+// add margin to sidebar icon
+.bi {
+  margin-right: .1rem;
+}
+
+// bottom nav links
+.pagination-link {
+  background-color: $accent-dark;
+  padding: 0 .5rem;
+  border: 1px solid $accent;
+  border-radius: 9999px;
+}
+
+.pagination-link span, .pagination-link .bi {
+  color: $accent;
+  font-weight: normal;
+}
+
+.pagination-link:hover {
+  border-color: $accent-light;
+}
+
+.pagination-link:hover span, .pagination-link:hover .bi {
+  color: $accent-light;
+}
+
+// .nav-page-text, .bi {
+//   color: $gray-200;
+// }
+
+
+// .nav-page-text:hover, .bi:hover {
+//   color: $gray-100;
+// }
+
+
+// quotes
+blockquote p {
+  color: $gray-400;
+}
+
+// footer
+.nav-footer div a {
+  text-decoration: none;
+  color: $gray-400;
+}
+
+.nav-footer div a:hover {
+  color: #000;
+  color: $gray-300;
+}

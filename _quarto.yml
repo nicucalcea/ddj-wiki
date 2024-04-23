@@ -8,14 +8,16 @@ project:
 website:
   title: "Data Journalism Wiki"
   favicon: favicon.png
-  navbar:
-    left:
+  page-navigation: true
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
       - text: Home
-        icon: "house"
         href: index.qmd
-      - text: "Data Sources"
-        icon: "table"
-        menu:
+      - section: "Data Sources"
+        # icon: "table"
+        contents:
           - text: "Data Sources"
             icon: "table"
             href: sources/index.qmd
@@ -25,9 +27,9 @@ website:
           - text: "Data Calendar"
             icon: "calendar-week"
             href: sources/data-calendar.qmd
-      - text: "AI"
-        icon: "robot"
-        menu:
+      - section: "AI"
+        # icon: "robot"
+        contents:
           - text: "AI for journalists"
             icon: "robot"
             href: ai/index.qmd
@@ -36,31 +38,25 @@ website:
             href: ai/google-sheets.qmd
           - text: "LLM comparison"
             icon: "currency-dollar"
-            href: ai/llm.html
+            href: ai/llm-comparison.html
       - text: Toolbox
         icon: "tools"
         href: toolbox/index.qmd
       - text: Awards
         icon: "trophy"
         href: awards/index.qmd
-    tools:
-      - icon: c-circle
-        href: https://nicu.md/
-      - icon: github
-        menu:
-          - text: Source Code
-            url:  https://github.com/nicucalcea/ddj-wiki
-          - text: Report an Issue
-            url:  https://github.com/nicucalcea/ddj-wiki/issues
   repo-url: https://github.com/nicucalcea/ddj-wiki
   repo-actions: [edit, issue]
   site-url: https://ddj.nicu.md/
-  page-footer: "Copyright 2024, <a href='https://nicu.md/' target='_blank'>Nicu Calcea</a>."
+  page-footer: "<a href='https://nicu.md/' target='_blank'>Copyright 2024, Nicu Calcea</a>."
 
 format:
   html:
-    theme: darkly
+    theme:
+      - cyborg
+      - style.scss
     toc: true
+    code-overflow: wrap
 
 editor: source
 

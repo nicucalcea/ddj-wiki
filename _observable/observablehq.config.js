@@ -41,7 +41,7 @@ export default {
         },
         {
           "name": "LLM comparison",
-          "path": "ai/llm.html"
+          "path": "ai/llm-comparison.html"
         }
       ]
     },
@@ -53,5 +53,6 @@ export default {
       "name": "Awards",
       "path": "awards/index.html"
     }
-  ]
+  ],
+  "footer": "<a href='https://nicu.md/' target='_blank'>Copyright 2024, Nicu Calcea</a>."
 }
