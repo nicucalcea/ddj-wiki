@@ -36,6 +36,9 @@ website:
           - text: "AI in Google Sheets"
             icon: "file-earmark-spreadsheet"
             href: ai/google-sheets.qmd
+          - text: "AI classification in Python"
+            icon: "filetype-py"
+            href: ai/python-classification.qmd
           - text: "LLM comparison"
             icon: "currency-dollar"
             href: ai/llm-comparison.html
@@ -57,6 +60,9 @@ format:
       - style.scss
     toc: true
     code-overflow: wrap
+
+execute:
+  cache: true
 
 editor: source
 

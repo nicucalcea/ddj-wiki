@@ -41,6 +41,10 @@ export default {
           "path": "ai/google-sheets.html"
         },
         {
+          "name": "AI classification in Python",
+          "path": "ai/python-classification.html"
+        },
+        {
           "name": "LLM comparison",
           "path": "ai/llm-comparison.html"
         }

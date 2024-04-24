@@ -1,5 +1,5 @@
 ---
-title: "Using AI in Google Sheets"
+title: "AI in Google Sheets"
 href: google-sheets
 ---
 
