@@ -1396,5 +1396,12 @@
       "Data Sources",
       "Data Sources"
     ]
+  },
+  {
+    "objectID": "ai/python-validation.html",
+    "href": "ai/python-validation.html",
+    "title": "Data validation in Python",
+    "section": "",
+    "text": "Note\n\n\n\nThese notes are mostly inspired from the Practical AI for (investigative) journalism sessions."
   }
 ]

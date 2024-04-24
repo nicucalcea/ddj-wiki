@@ -24,7 +24,7 @@ Create a new folder for your project somewhere on your computer and navigate to 
 
 We'll need a Claude API key to communicate with the model. Once you [have your key](https://console.anthropic.com/), run the following command in your terminal:
 
-```{.powershell filename="Terminal"}
+```{.bash filename="Terminal"}
 pip install python-dotenv
 ```
 
@@ -38,7 +38,7 @@ The reason we do this is because it's generally a bad idea to store passwords, k
 
 Since we're here, let's also install the Claude library:
 
-```{.powershell filename="Terminal"}
+```{.bash filename="Terminal"}
 pip install anthropic
 ```
 
