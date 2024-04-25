@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ddj.nicu.md/toolbox/index.html</loc>
-    <lastmod>2024-04-18T10:38:51.118Z</lastmod>
+    <lastmod>2024-04-25T21:43:08.048Z</lastmod>
   </url>
   <url>
     <loc>https://ddj.nicu.md/sources/calendar.html</loc>
-    <lastmod>2024-04-24T14:34:15.042Z</lastmod>
+    <lastmod>2024-04-25T21:43:07.267Z</lastmod>
   </url>
   <url>
     <loc>https://ddj.nicu.md/index.html</loc>
-    <lastmod>2024-04-18T10:38:51.115Z</lastmod>
+    <lastmod>2024-04-25T21:43:06.581Z</lastmod>
   </url>
   <url>
     <loc>https://ddj.nicu.md/awards/index.html</loc>
-    <lastmod>2024-04-18T10:38:50.692Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ddj.nicu.md/ai/index.html</loc>
-    <lastmod>2024-04-24T19:44:47.570Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ddj.nicu.md/ai/google-sheets.html</loc>
-    <lastmod>2024-04-24T14:38:31.668Z</lastmod>
+    <lastmod>2024-04-25T21:43:04.740Z</lastmod>
   </url>
   <url>
     <loc>https://ddj.nicu.md/ai/python-classification.html</loc>
-    <lastmod>2024-04-24T17:37:01.162Z</lastmod>
+    <lastmod>2024-04-25T21:43:04.213Z</lastmod>
   </url>
   <url>
-    <loc>https://ddj.nicu.md/city/index.html</loc>
-    <lastmod>2024-04-18T10:38:50.696Z</lastmod>
+    <loc>https://ddj.nicu.md/ai/google-sheets.html</loc>
+    <lastmod>2024-04-25T21:43:01.903Z</lastmod>
   </url>
   <url>
-    <loc>https://ddj.nicu.md/sources/academic.html</loc>
-    <lastmod>2024-04-24T14:34:15.041Z</lastmod>
-  </url>
-  <url>
-    <loc>https://ddj.nicu.md/sources/index.html</loc>
-    <lastmod>2024-04-24T14:34:15.056Z</lastmod>
+    <loc>https://ddj.nicu.md/ai/index.html</loc>
+    <lastmod>2024-04-25T21:43:02.255Z</lastmod>
   </url>
   <url>
     <loc>https://ddj.nicu.md/ai/python-validation.html</loc>
-    <lastmod>2024-04-24T19:42:48.269Z</lastmod>
+    <lastmod>2024-04-25T21:43:04.486Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ddj.nicu.md/city/index.html</loc>
+    <lastmod>2024-04-25T21:43:06.264Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ddj.nicu.md/sources/academic.html</loc>
+    <lastmod>2024-04-25T21:43:06.900Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ddj.nicu.md/sources/index.html</loc>
+    <lastmod>2024-04-25T21:43:07.694Z</lastmod>
   </url>
 </urlset>

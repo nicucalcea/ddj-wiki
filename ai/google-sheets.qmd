@@ -148,6 +148,6 @@ In the `summary` column, paste the following formula:
 Drag the formula down and take a look at the results. You'll notice that all of the summaries are in English, even if the original article was not.
 
 ::: {.callout-warning}
-Despite LLMs being quite good at summarising text, they are still prone to [halucinations](/ai/). Double-check the results or don't use them for critical stuff.
+Despite LLMs being quite good at summarising text, they are [still prone to halucinations](https://www.nytimes.com/2023/11/06/technology/chatbots-hallucination-rates.html). Double-check the results or don't use them for critical stuff.
 :::
 

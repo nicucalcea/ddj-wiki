@@ -27,6 +27,13 @@ $sidebar-fg: $gray-300 !default;
 // Table of contents
 $toc-color: $accent !default;
 
+// Callouts
+// $callout-border-width: 1 !default;
+$callout-border-colour: rgba(16, 185, 129, 0.3) !default;
+$callout-border-colour-left: #1cc35f !default;
+$callout-note-bg: #0f1b11 !default;
+$callout-note-text: rgb(167, 243, 208) !default;
+
 
 // make all links bold
 a {
@@ -38,7 +45,7 @@ main a {
   border-bottom: 1px solid $accent;
 }
 
-p a:hover {
+main a:hover {
   color: $link-color;
   border-bottom: 2px solid $accent;
 }
@@ -56,6 +63,10 @@ p a:hover {
 // SIDEBAR
 .menu-text {
   color: $gray-400;
+}
+
+.sidebar-title {
+  color: $gray-200;
 }
 
 .sidebar-item-container {
@@ -89,9 +100,10 @@ p a:hover {
 // bottom nav links
 .pagination-link {
   background-color: $accent-dark;
-  padding: 0 .5rem;
+  padding: .5rem;
   border: 1px solid $accent;
   border-radius: 9999px;
+  line-height: 1.3;
 }
 
 .pagination-link span, .pagination-link .bi {
@@ -107,19 +119,35 @@ p a:hover {
   color: $accent-light;
 }
 
-// .nav-page-text, .bi {
-//   color: $gray-200;
-// }
+.nav-page-previous {
+  margin-right: .3rem;
+}
 
+.nav-page-next {
+  margin-left: .3rem;
+}
 
-// .nav-page-text:hover, .bi:hover {
-//   color: $gray-100;
-// }
-
+.nav-page-text {
+  border-bottom: none;
+}
 
 // quotes
 blockquote p {
   color: $gray-400;
+}
+
+// code
+code:not(.sourceCode) {
+  color: $accent-light;
+}
+
+// callouts
+.callout-title-container {
+  color: white;
+}
+
+.callout, .callout-body {
+  background-color: black;
 }
 
 // footer
