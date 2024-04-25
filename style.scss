@@ -15,7 +15,7 @@ $gray-400: rgb(166, 162, 159) !default;
 
 // General
 $body-bg: #100905 !default;
-$body-color: rgb(166, 162, 159) !default;
+$body-color: $gray-200 !default;
 $link-color: rgb(250, 246, 243) !default;
 $input-bg: $gray-100 !default;
 $footer-fg: $gray-300 !default;
