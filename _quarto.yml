@@ -39,6 +39,9 @@ website:
           - text: "AI classification in Python"
             icon: "filetype-py"
             href: ai/python-classification.qmd
+          - text: "Data validation in Python"
+            icon: "filetype-py"
+            href: ai/python-validation.qmd
           - text: "LLM comparison"
             icon: "currency-dollar"
             href: ai/llm-comparison.html

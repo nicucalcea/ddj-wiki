@@ -45,6 +45,10 @@ export default {
           "path": "ai/python-classification.html"
         },
         {
+          "name": "Data validation in Python",
+          "path": "ai/python-validation.html"
+        },
+        {
           "name": "LLM comparison",
           "path": "ai/llm-comparison.html"
         }
