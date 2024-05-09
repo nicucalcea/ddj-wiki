@@ -29,6 +29,16 @@ export default {
       ]
     },
     {
+      "name": "Dataviz",
+      "open": true,
+      "pages": [
+        {
+          "name": "Patching Datawrapper",
+          "path": "viz/patching-datawrapper.html"
+        }
+      ]
+    },
+    {
       "name": "AI",
       "open": true,
       "pages": [

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Patching Datawrapper | Data Journalism Wiki</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_import/src/style.6ce5ff67.css">
+<link rel="preload" as="style" href="../_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_import/src/style.6ce5ff67.css">
+<link rel="stylesheet" type="text/css" href="../_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/src/datawrapper.a68bd098.js">
+<link rel="modulepreload" href="../_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="../_npm/isoformat@0.2.1/_esm.js">
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+
+define({id: "84a4f95c", outputs: ["DataWrapper"], body: async () => {
+const {DataWrapper} = await import("../_import/src/datawrapper.a68bd098.js");
+
+return {DataWrapper};
+}});
+
+define({id: "a476afaf", inputs: ["DataWrapper"], outputs: ["DATAWRAPPER_ID","dataWrapper"], body: (DataWrapper) => {
+const DATAWRAPPER_ID = 'hhddC';
+const dataWrapper = new DataWrapper(DATAWRAPPER_ID);
+return {DATAWRAPPER_ID,dataWrapper};
+}});
+
+define({id: "ddc4040d", inputs: ["countrySelect","dataWrapper"], body: (countrySelect,dataWrapper) => {
+if (countrySelect) {
+    dataWrapper.updateViz(`metadata.visualize.add-labels`, [countrySelect]);
+    dataWrapper.updateViz(`title`, `Income vs life expectancy in ${countrySelect}`);
+    }
+}});
+
+define({id: "e3872129", inputs: ["view","Inputs"], outputs: ["countrySelect"], body: (view,Inputs) => {
+const countrySelect = view(
+  Inputs.select(
+    [
+      "Afghanistan", "Albania", "Algeria", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Cote d'Ivoire", "Croatia", "Curacao", "Cyprus", "Czechia", "Democratic Republic of Congo", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Egypt", "Equatorial Guinea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Jordan", "Kenya", "Kiribati", "Kyrgyzstan", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Lithuania", "Luxembourg", "Macao", "Madagascar", "Malawi", "Mali", "Malta", "Marshall Islands", "Mauritius", "Micronesia (country)", "Moldova", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vietnam", "Zambia", "Zimbabwe", "Japan", "Kazakhstan", "Mexico", "Norway", "Armenia", "Azerbaijan", "Cyprus", "Laos", "Russia", "Turkey", "East Timor", "Ecuador", "El Salvador", "Georgia", "Germany", "Haiti", "Honduras", "Iran", "Kazakhstan", "Malaysia", "Maldives", "Mauritania", "Poland", "Puerto Rico", "Samoa", "Serbia", "Switzerland", "Georgia"
+    ],
+    {label: "Country: "}
+  )
+);
+return {countrySelect};
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">Data Journalism Wiki</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="../">Home</a></li></ol>
+    <details open>
+      <summary>Data Sources</summary>
+      <ol>
+    <li class="observablehq-link"><a href="../sources/">Data Sources</a></li>
+    <li class="observablehq-link"><a href="../sources/academic.html">Academic Sources</a></li>
+    <li class="observablehq-link"><a href="../sources/calendar.html">Data Calendar</a></li>
+      </ol>
+    </details>
+    <details open class="observablehq-section-active">
+      <summary>Dataviz</summary>
+      <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./patching-datawrapper.html">Patching Datawrapper</a></li>
+      </ol>
+    </details>
+    <details open>
+      <summary>AI</summary>
+      <ol>
+    <li class="observablehq-link"><a href="../ai/">AI for journalists</a></li>
+    <li class="observablehq-link"><a href="../ai/google-sheets.html">AI in Google Sheets</a></li>
+    <li class="observablehq-link"><a href="../ai/python-classification.html">AI classification in Python</a></li>
+    <li class="observablehq-link"><a href="../ai/python-validation.html">Data validation in Python</a></li>
+    <li class="observablehq-link"><a href="../ai/llm-comparison.html">LLM comparison</a></li>
+      </ol>
+    </details>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="../toolbox/">Toolbox</a></li>
+    <li class="observablehq-link"><a href="../awards/">Awards</a></li>
+  </ol>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p>You can set up Datawrapper to update a chart based on some in-browser triggers.</p>
+<p>Let's take a simple scatterplot.</p>
+<div style="min-height:436px"><script type="text/javascript" defer="" src="https://datawrapper.dwcdn.net/hhddC/embed.js?v=11" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/hhddC/full.png" alt=""></noscript></div>
+<p>While this is nice and tells a story, it's not ideal for exploring data. Can you easily find your country in the chart? Can you change one of the axis? Can you see how the data changes over time?</p>
+<h1 id="patching-datawrapper" tabindex="-1"><a class="observablehq-header-anchor" href="#patching-datawrapper">Patching Datawrapper</a></h1>
+<p>Instead of the traditional iframes, you can <a href="https://blog.datawrapper.de/web-component-embedding/" target="_blank" rel="noopener noreferrer">embed Datawrapper charts with Web Components</a>. This has several advantages, mainly in terms of performance, but for the purposes of this tutorial, it allows us to make changes to the chart based on user input.</p>
+<p>First, we'll load some JS code that makes everything possible. Add the following to your HTML file:</p>
+<div id="cell-84a4f95c" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">DataWrapper</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/datawrapper.js'</span>;
+</code></pre>
+<p>Next, we add the ID of our Datawrapper chart and import it. We'll display the chart later.</p>
+<div id="cell-a476afaf" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> <span class="hljs-variable constant_">DATAWRAPPER_ID</span> = <span class="hljs-string">'hhddC'</span>;
+<span class="hljs-keyword">const</span> dataWrapper = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DataWrapper</span>(<span class="hljs-variable constant_">DATAWRAPPER_ID</span>);
+</code></pre>
+<p>We'll need some input. I'm using the <code>Inputs</code> Observable module to create a nice dropdown menu, but you can crate it with whatever framework you like or in vanilla JS.</p>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> <span class="hljs-title class_">Inputs</span> <span class="hljs-keyword">from</span> <span class="hljs-string">"npm:@observablehq/inputs"</span>;
+
+<span class="hljs-keyword">const</span> countrySelect = <span class="hljs-title function_">view</span>(
+  <span class="hljs-title class_">Inputs</span>.<span class="hljs-title function_">select</span>(
+    [
+      <span class="hljs-string">"Afghanistan"</span>, <span class="hljs-string">"Albania"</span>, <span class="hljs-string">"Algeria"</span>, <span class="hljs-string">"Angola"</span>, <span class="hljs-string">"Antigua and Barbuda"</span>, <span class="hljs-string">"Argentina"</span>, <span class="hljs-string">"Armenia"</span>, <span class="hljs-string">"Aruba"</span>, <span class="hljs-string">"Australia"</span>, <span class="hljs-string">"Austria"</span>, <span class="hljs-string">"Azerbaijan"</span>, <span class="hljs-string">"Bahamas"</span>, <span class="hljs-string">"Bahrain"</span>, <span class="hljs-string">"Bangladesh"</span>, <span class="hljs-string">"Barbados"</span>, <span class="hljs-string">"Belarus"</span>, <span class="hljs-string">"Belgium"</span>, <span class="hljs-string">"Belize"</span>, <span class="hljs-string">"Benin"</span>, <span class="hljs-string">"Bermuda"</span>, <span class="hljs-string">"Bhutan"</span>, <span class="hljs-string">"Bolivia"</span>, <span class="hljs-string">"Bosnia and Herzegovina"</span>, <span class="hljs-string">"Botswana"</span>, <span class="hljs-string">"Brazil"</span>, <span class="hljs-string">"Brunei"</span>, <span class="hljs-string">"Bulgaria"</span>, <span class="hljs-string">"Burkina Faso"</span>, <span class="hljs-string">"Burundi"</span>, <span class="hljs-string">"Cambodia"</span>, <span class="hljs-string">"Cameroon"</span>, <span class="hljs-string">"Canada"</span>, <span class="hljs-string">"Cape Verde"</span>, <span class="hljs-string">"Cayman Islands"</span>, <span class="hljs-string">"Central African Republic"</span>, <span class="hljs-string">"Chad"</span>, <span class="hljs-string">"Chile"</span>, <span class="hljs-string">"China"</span>, <span class="hljs-string">"Colombia"</span>, <span class="hljs-string">"Comoros"</span>, <span class="hljs-string">"Congo"</span>, <span class="hljs-string">"Costa Rica"</span>, <span class="hljs-string">"Cote d'Ivoire"</span>, <span class="hljs-string">"Croatia"</span>, <span class="hljs-string">"Curacao"</span>, <span class="hljs-string">"Cyprus"</span>, <span class="hljs-string">"Czechia"</span>, <span class="hljs-string">"Democratic Republic of Congo"</span>, <span class="hljs-string">"Denmark"</span>, <span class="hljs-string">"Djibouti"</span>, <span class="hljs-string">"Dominica"</span>, <span class="hljs-string">"Dominican Republic"</span>, <span class="hljs-string">"Egypt"</span>, <span class="hljs-string">"Equatorial Guinea"</span>, <span class="hljs-string">"Estonia"</span>, <span class="hljs-string">"Eswatini"</span>, <span class="hljs-string">"Ethiopia"</span>, <span class="hljs-string">"Fiji"</span>, <span class="hljs-string">"Finland"</span>, <span class="hljs-string">"France"</span>, <span class="hljs-string">"Gabon"</span>, <span class="hljs-string">"Gambia"</span>, <span class="hljs-string">"Ghana"</span>, <span class="hljs-string">"Greece"</span>, <span class="hljs-string">"Grenada"</span>, <span class="hljs-string">"Guatemala"</span>, <span class="hljs-string">"Guinea"</span>, <span class="hljs-string">"Guinea-Bissau"</span>, <span class="hljs-string">"Guyana"</span>, <span class="hljs-string">"Hong Kong"</span>, <span class="hljs-string">"Hungary"</span>, <span class="hljs-string">"Iceland"</span>, <span class="hljs-string">"India"</span>, <span class="hljs-string">"Indonesia"</span>, <span class="hljs-string">"Iraq"</span>, <span class="hljs-string">"Ireland"</span>, <span class="hljs-string">"Israel"</span>, <span class="hljs-string">"Italy"</span>, <span class="hljs-string">"Jamaica"</span>, <span class="hljs-string">"Jordan"</span>, <span class="hljs-string">"Kenya"</span>, <span class="hljs-string">"Kiribati"</span>, <span class="hljs-string">"Kyrgyzstan"</span>, <span class="hljs-string">"Latvia"</span>, <span class="hljs-string">"Lebanon"</span>, <span class="hljs-string">"Lesotho"</span>, <span class="hljs-string">"Liberia"</span>, <span class="hljs-string">"Libya"</span>, <span class="hljs-string">"Lithuania"</span>, <span class="hljs-string">"Luxembourg"</span>, <span class="hljs-string">"Macao"</span>, <span class="hljs-string">"Madagascar"</span>, <span class="hljs-string">"Malawi"</span>, <span class="hljs-string">"Mali"</span>, <span class="hljs-string">"Malta"</span>, <span class="hljs-string">"Marshall Islands"</span>, <span class="hljs-string">"Mauritius"</span>, <span class="hljs-string">"Micronesia (country)"</span>, <span class="hljs-string">"Moldova"</span>, <span class="hljs-string">"Mongolia"</span>, <span class="hljs-string">"Montenegro"</span>, <span class="hljs-string">"Morocco"</span>, <span class="hljs-string">"Mozambique"</span>, <span class="hljs-string">"Myanmar"</span>, <span class="hljs-string">"Namibia"</span>, <span class="hljs-string">"Nauru"</span>, <span class="hljs-string">"Nepal"</span>, <span class="hljs-string">"Netherlands"</span>, <span class="hljs-string">"New Zealand"</span>, <span class="hljs-string">"Nicaragua"</span>, <span class="hljs-string">"Niger"</span>, <span class="hljs-string">"Nigeria"</span>, <span class="hljs-string">"North Macedonia"</span>, <span class="hljs-string">"Oman"</span>, <span class="hljs-string">"Pakistan"</span>, <span class="hljs-string">"Palau"</span>, <span class="hljs-string">"Panama"</span>, <span class="hljs-string">"Papua New Guinea"</span>, <span class="hljs-string">"Paraguay"</span>, <span class="hljs-string">"Peru"</span>, <span class="hljs-string">"Philippines"</span>, <span class="hljs-string">"Portugal"</span>, <span class="hljs-string">"Qatar"</span>, <span class="hljs-string">"Romania"</span>, <span class="hljs-string">"Russia"</span>, <span class="hljs-string">"Rwanda"</span>, <span class="hljs-string">"Saint Kitts and Nevis"</span>, <span class="hljs-string">"Saint Lucia"</span>, <span class="hljs-string">"Saint Vincent and the Grenadines"</span>, <span class="hljs-string">"Sao Tome and Principe"</span>, <span class="hljs-string">"Saudi Arabia"</span>, <span class="hljs-string">"Senegal"</span>, <span class="hljs-string">"Seychelles"</span>, <span class="hljs-string">"Sierra Leone"</span>, <span class="hljs-string">"Singapore"</span>, <span class="hljs-string">"Slovakia"</span>, <span class="hljs-string">"Slovenia"</span>, <span class="hljs-string">"Solomon Islands"</span>, <span class="hljs-string">"Somalia"</span>, <span class="hljs-string">"South Africa"</span>, <span class="hljs-string">"South Korea"</span>, <span class="hljs-string">"Spain"</span>, <span class="hljs-string">"Sri Lanka"</span>, <span class="hljs-string">"Sudan"</span>, <span class="hljs-string">"Suriname"</span>, <span class="hljs-string">"Sweden"</span>, <span class="hljs-string">"Tajikistan"</span>, <span class="hljs-string">"Tanzania"</span>, <span class="hljs-string">"Thailand"</span>, <span class="hljs-string">"Togo"</span>, <span class="hljs-string">"Tonga"</span>, <span class="hljs-string">"Trinidad and Tobago"</span>, <span class="hljs-string">"Tunisia"</span>, <span class="hljs-string">"Turkey"</span>, <span class="hljs-string">"Turks and Caicos Islands"</span>, <span class="hljs-string">"Tuvalu"</span>, <span class="hljs-string">"Uganda"</span>, <span class="hljs-string">"Ukraine"</span>, <span class="hljs-string">"United Arab Emirates"</span>, <span class="hljs-string">"United Kingdom"</span>, <span class="hljs-string">"United States"</span>, <span class="hljs-string">"Uruguay"</span>, <span class="hljs-string">"Uzbekistan"</span>, <span class="hljs-string">"Vanuatu"</span>, <span class="hljs-string">"Vietnam"</span>, <span class="hljs-string">"Zambia"</span>, <span class="hljs-string">"Zimbabwe"</span>, <span class="hljs-string">"Japan"</span>, <span class="hljs-string">"Kazakhstan"</span>, <span class="hljs-string">"Mexico"</span>, <span class="hljs-string">"Norway"</span>, <span class="hljs-string">"Armenia"</span>, <span class="hljs-string">"Azerbaijan"</span>, <span class="hljs-string">"Cyprus"</span>, <span class="hljs-string">"Laos"</span>, <span class="hljs-string">"Russia"</span>, <span class="hljs-string">"Turkey"</span>, <span class="hljs-string">"East Timor"</span>, <span class="hljs-string">"Ecuador"</span>, <span class="hljs-string">"El Salvador"</span>, <span class="hljs-string">"Georgia"</span>, <span class="hljs-string">"Germany"</span>, <span class="hljs-string">"Haiti"</span>, <span class="hljs-string">"Honduras"</span>, <span class="hljs-string">"Iran"</span>, <span class="hljs-string">"Kazakhstan"</span>, <span class="hljs-string">"Malaysia"</span>, <span class="hljs-string">"Maldives"</span>, <span class="hljs-string">"Mauritania"</span>, <span class="hljs-string">"Poland"</span>, <span class="hljs-string">"Puerto Rico"</span>, <span class="hljs-string">"Samoa"</span>, <span class="hljs-string">"Serbia"</span>, <span class="hljs-string">"Switzerland"</span>, <span class="hljs-string">"Georgia"</span>
+    ],
+    {<span class="hljs-attr">label</span>: <span class="hljs-string">"Country: "</span>}
+  )
+);
+</code></pre>
+<p>We also need a bit of code that listens to changes in the dropdown menu and pushes changes to the chart.</p>
+<div id="cell-ddc4040d" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">if</span> (countrySelect) {
+    dataWrapper.<span class="hljs-title function_">updateViz</span>(<span class="hljs-string">`metadata.visualize.add-labels`</span>, [countrySelect]);
+    dataWrapper.<span class="hljs-title function_">updateViz</span>(<span class="hljs-string">`title`</span>, <span class="hljs-string">`Income vs life expectancy in <span class="hljs-subst">${countrySelect}</span>`</span>);
+    }
+</code></pre>
+<p>Finally, let's add a <code>container</code> div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the <code>countrySelect</code> dropdown menu again.</p>
+<pre><code>&lt;div id="container"&gt;&lt;/div&gt;
+</code></pre>
+<div id="cell-e3872129" class="observablehq observablehq--block"></div>
+<div id="container"></div>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="../sources/calendar.html"><span>Data Calendar</span></a><a rel="next" href="../ai/"><span>AI for journalists</span></a></nav>
+<div><a href="https://nicu.md/" target="_blank" rel="noopener noreferrer">Copyright 2024, Nicu Calcea</a>.</div>
+</footer>
+</div>

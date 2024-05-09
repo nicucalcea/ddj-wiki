@@ -42,7 +42,7 @@ Let's break it down.
 You can then drag the formula down to repeat the categorisation for each row.
 
 ::: {.callout-tip}
-Because Google Sheets tends to recalculate cells at times, it may try to rerun your formula, which means you may incur additional charges. You can select your `LLM` cells, copy (`Ctrl + C`) and paste them as values (`Ctrl + Shift + C`) to overwrite the formulas with static text.
+Because Google Sheets tends to recalculate cells at times, it may try to rerun your formula, which means you may incur additional charges. You can select your `LLM` cells, copy (`Ctrl + C`) and paste them as values (`Ctrl + Shift + V`) to overwrite the formulas with static text.
 :::
 
 

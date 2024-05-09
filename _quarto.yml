@@ -27,6 +27,11 @@ website:
           - text: "Data Calendar"
             icon: "calendar-week"
             href: sources/calendar.qmd
+      - section: "Dataviz"
+        contents:
+          - text: "Patching Datawrapper"
+            icon: "bar-chart-steps"
+            href: viz/patching-datawrapper.html
       - section: "AI"
         # icon: "robot"
         contents:
