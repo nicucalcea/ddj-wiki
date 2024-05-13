@@ -3,7 +3,9 @@ title: Extending Datawrapper
 toc: true
 ---
 
-# Update Datawrapper charts with user input
+There are ways to extend Datawrapper charts so they can interact with the page around them.
+
+## Update charts with user input
 
 <div class="note">These notes are mostly inspired from the <a href="https://youtu.be/uKMVKarlgI4?feature=shared&t=10688" target="_blank">How we ditched D3 and mostly used Datawrapper</a> talk.</div>
 
@@ -111,7 +113,7 @@ Theoretically, you can use this method to create scrollable stories or animated 
 
 
 
-# Listening to chart interactions
+## Listening to chart interactions
 
 Similarly to how you can update a chart based on user input outside the chart, you can also listen to interactions within the chart to update other parts of the page.
 

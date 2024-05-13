@@ -143,13 +143,15 @@ return {tooltip};
 <nav>
 <div>Contents</div>
 <ol>
+<li class="observablehq-secondary-link"><a href="#update-charts-with-user-input">Update charts with user input</a></li>
 <li class="observablehq-secondary-link"><a href="#listening-to-chart-interactions">Listening to chart interactions</a></li>
 </ol>
 </nav>
 </aside>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
-<h1 id="update-datawrapper-charts-with-user-input" tabindex="-1"><a class="observablehq-header-anchor" href="#update-datawrapper-charts-with-user-input">Update Datawrapper charts with user input</a></h1>
+<p>There are ways to extend Datawrapper charts so they can interact with the page around them.</p>
+<h2 id="update-charts-with-user-input" tabindex="-1"><a class="observablehq-header-anchor" href="#update-charts-with-user-input">Update charts with user input</a></h2>
 <div class="note">These notes are mostly inspired from the <a href="https://youtu.be/uKMVKarlgI4?feature=shared&amp;t=10688" target="_blank" rel="noopener noreferrer">How we ditched D3 and mostly used Datawrapper</a> talk.</div>
 <p>Let's take a simple scatterplot.</p>
 <div style="min-height:436px"><script type="text/javascript" defer="" src="https://datawrapper.dwcdn.net/hhddC/embed.js?v=11" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/hhddC/full.png" alt=""></noscript></div>
@@ -191,7 +193,7 @@ return {tooltip};
 <div id="scatter-plot-updateable"></div>
 <p>You can find a list of updateable properties <a href="https://developer.datawrapper.de/docs/chart-properties" target="_blank" rel="noopener noreferrer">on the Datawrapper website</a> or <a href="https://api.datawrapper.de/v3/charts/hhddC" target="_blank" rel="noopener noreferrer">see the properties of your own chart here</a> (replace the ID with your chart ID).</p>
 <p>Theoretically, you can use this method to create scrollable stories or animated charts.</p>
-<h1 id="listening-to-chart-interactions" tabindex="-1"><a class="observablehq-header-anchor" href="#listening-to-chart-interactions">Listening to chart interactions</a></h1>
+<h2 id="listening-to-chart-interactions" tabindex="-1"><a class="observablehq-header-anchor" href="#listening-to-chart-interactions">Listening to chart interactions</a></h2>
 <p>Similarly to how you can update a chart based on user input outside the chart, you can also listen to interactions within the chart to update other parts of the page.</p>
 <p>If you haven't already done so, import the necessary code.</p>
 <pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Datawrapper</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/datawrapper.js'</span>;
