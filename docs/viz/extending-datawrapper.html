@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Patching Datawrapper | Data Journalism Wiki</title>
+<title>Extending Datawrapper | Data Journalism Wiki</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="../_import/src/style.6ce5ff67.css">
@@ -12,7 +12,7 @@
 <link rel="modulepreload" href="../_observablehq/client.js">
 <link rel="modulepreload" href="../_observablehq/runtime.js">
 <link rel="modulepreload" href="../_observablehq/stdlib.js">
-<link rel="modulepreload" href="../_import/src/datawrapper.7b375187.js">
+<link rel="modulepreload" href="../_import/src/datawrapper.334ff22c.js">
 <link rel="modulepreload" href="../_observablehq/stdlib/inputs.js">
 <link rel="modulepreload" href="../_npm/htl@0.3.1/_esm.js">
 <link rel="modulepreload" href="../_npm/isoformat@0.2.1/_esm.js">
@@ -20,22 +20,22 @@
 
 import {define} from "../_observablehq/client.js";
 
-define({id: "84a4f95c", outputs: ["DataWrapper"], body: async () => {
-const {DataWrapper} = await import("../_import/src/datawrapper.7b375187.js");
+define({id: "c0a3eecc", outputs: ["Datawrapper"], body: async () => {
+const {Datawrapper} = await import("../_import/src/datawrapper.334ff22c.js");
 
-return {DataWrapper};
+return {Datawrapper};
 }});
 
-define({id: "5e6d1d18", inputs: ["DataWrapper"], outputs: ["scatterId","scatter"], body: (DataWrapper) => {
+define({id: "c981b40a", inputs: ["Datawrapper"], outputs: ["scatterId","scatter"], body: (Datawrapper) => {
 const scatterId = 'hhddC';
-const scatter = new DataWrapper(scatterId, 'scatter-plot-1');
+const scatter = new Datawrapper(scatterId, 'scatter-plot-updateable');
 return {scatterId,scatter};
 }});
 
-define({id: "93fee0c6", inputs: ["countrySelect","scatter"], body: (countrySelect,scatter) => {
+define({id: "c23063af", inputs: ["countrySelect","scatter"], body: (countrySelect,scatter) => {
 if (countrySelect) {
     scatter.updateViz(`metadata.visualize.add-labels`, [countrySelect]);
-    scatter.updateViz(`title`, `Income vs life expectancy in ${countrySelect}`);
+    scatter.updateViz(`title`, `Income vs life expectancy in ${countrySelect} in 2021`);
     }
 }});
 
@@ -79,28 +79,23 @@ const countrySelect = view(
 return {countrySelect};
 }});
 
-define({id: "b9877027", inline: true, inputs: ["timeSlider","display"], body: async (timeSlider,display) => {
-display(await(
-timeSlider
-))
+define({id: "0896b115", inputs: ["Datawrapper","scatterId"], outputs: ["scatterTooltips"], body: (Datawrapper,scatterId) => {
+const scatterTooltips = new Datawrapper(scatterId, 'scatter-plot-tooltips');
+return {scatterTooltips};
 }});
 
-define({id: "b9877027-1", inline: true, inputs: ["timeSlider","display"], body: async (timeSlider,display) => {
-display(await(
-timeSlider
-))
-}});
+define({id: "d5b8099f", inputs: ["scatterTooltips"], outputs: ["tooltip"], body: (scatterTooltips) => {
+const tooltip = document.querySelector('#tooltip');
 
-define({id: "b9877027-2", inline: true, inputs: ["timeSlider","display"], body: async (timeSlider,display) => {
-display(await(
-timeSlider
-))
-}});
+scatterTooltips.on('symbol.mouseenter', (data) => {
+  tooltip.innerHTML = `<h3>Country: ${data.data.country}</h3>GDP per capita: ${data.data.gdp_per_capita_current_2021}<br>Life expectancy: ${data.data.life_expectancy_2021}`;
+          tooltip.style.display = 'block';
+});
 
-define({id: "b9877027-3", inline: true, inputs: ["timeSlider","display"], body: async (timeSlider,display) => {
-display(await(
-timeSlider
-))
+scatterTooltips.on('symbol.mouseleave', (data) => {
+  tooltip.style.display = 'none';
+});
+return {tooltip};
 }});
 
 </script>
@@ -124,7 +119,7 @@ timeSlider
     <details open class="observablehq-section-active">
       <summary>Dataviz</summary>
       <ol>
-    <li class="observablehq-link observablehq-link-active"><a href="./patching-datawrapper.html">Patching Datawrapper</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./extending-datawrapper.html">Extending Datawrapper</a></li>
       </ol>
     </details>
     <details open>
@@ -144,24 +139,33 @@ timeSlider
   </ol>
 </nav>
 <script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#listening-to-chart-interactions">Listening to chart interactions</a></li>
+</ol>
+</nav>
+</aside>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
-<p>You can set up Datawrapper to update a chart based on some in-browser triggers.</p>
+<h1 id="update-datawrapper-charts-with-user-input" tabindex="-1"><a class="observablehq-header-anchor" href="#update-datawrapper-charts-with-user-input">Update Datawrapper charts with user input</a></h1>
+<div class="note">These notes are mostly inspired from the <a href="https://youtu.be/uKMVKarlgI4?feature=shared&amp;t=10688" target="_blank" rel="noopener noreferrer">How we ditched D3 and mostly used Datawrapper</a> talk.</div>
 <p>Let's take a simple scatterplot.</p>
 <div style="min-height:436px"><script type="text/javascript" defer="" src="https://datawrapper.dwcdn.net/hhddC/embed.js?v=11" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/hhddC/full.png" alt=""></noscript></div>
 <p>While this is nice and tells a story, it's not ideal for exploring data. Can you easily find your country in the chart? Can you change one of the axis? Can you see how the data changes over time?</p>
-<h1 id="patching-datawrapper" tabindex="-1"><a class="observablehq-header-anchor" href="#patching-datawrapper">Patching Datawrapper</a></h1>
-<p>Instead of the traditional iframes, you can <a href="https://blog.datawrapper.de/web-component-embedding/" target="_blank" rel="noopener noreferrer">embed Datawrapper charts with Web Components</a>. This has several advantages, mainly in terms of performance, but for the purposes of this tutorial, it allows us to make changes to the chart based on user input.</p>
-<p>First, we'll load some JS code that makes everything possible. Add the following to your HTML file (you can find the full code <a href="../src/datawrapper.js">here</a>):</p>
-<div id="cell-84a4f95c" class="observablehq observablehq--block"></div>
-<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">DataWrapper</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/datawrapper.js'</span>;
+<p>While it's a virtually undocumented feature, you can set up Datawrapper to update a chart based on some in-browser triggers, like a button or dropwdown menu.</p>
+<p>Instead of the traditional iframes, you need to <a href="https://blog.datawrapper.de/web-component-embedding/" target="_blank" rel="noopener noreferrer">embed Datawrapper charts with Web Components</a>. This has several advantages, mainly in terms of performance, but for the purposes of this tutorial, it allows us to make changes to the chart based on user input.</p>
+<p>First, we'll load some JS code that makes everything possible. Add the following to your HTML file (you can <a href="https://gist.github.com/nicucalcea/576bb8c351d3c0337942432ccb6dda8f" target="_blank" rel="noopener noreferrer">find the full code here</a>):</p>
+<div id="cell-c0a3eecc" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Datawrapper</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/datawrapper.js'</span>;
 </code></pre>
-<p>Next, we add the ID of our Datawrapper chart and import it. We'll display the chart later.</p>
-<div id="cell-5e6d1d18" class="observablehq observablehq--block"></div>
+<p>Next, we add the ID of our Datawrapper chart and create it. We'll display the chart later.</p>
+<div id="cell-c981b40a" class="observablehq observablehq--block"></div>
 <pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> scatterId = <span class="hljs-string">'hhddC'</span>;
-<span class="hljs-keyword">const</span> scatter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DataWrapper</span>(scatterId, <span class="hljs-string">'scatter-plot-1'</span>);
+<span class="hljs-keyword">const</span> scatter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Datawrapper</span>(scatterId, <span class="hljs-string">'scatter-plot-updateable'</span>);
 </code></pre>
-<p>We'll need some input. I'm using the <code>Inputs</code> Observable module to create a nice dropdown menu, but you can crate it with whatever framework you like or in vanilla JS.</p>
+<p>We'll need some form of an input. I'm using the <code>Inputs</code> Observable module to create a nice dropdown menu, but you can crate it with whatever framework you like or in vanilla JS.</p>
 <pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> <span class="hljs-title class_">Inputs</span> <span class="hljs-keyword">from</span> <span class="hljs-string">"npm:@observablehq/inputs"</span>;
 
 <span class="hljs-keyword">const</span> countrySelect = <span class="hljs-title function_">view</span>(
@@ -174,51 +178,48 @@ timeSlider
 );
 </code></pre>
 <p>We also need a bit of code that listens to changes in the dropdown menu and pushes changes to the chart.</p>
-<div id="cell-93fee0c6" class="observablehq observablehq--block"></div>
+<div id="cell-c23063af" class="observablehq observablehq--block"></div>
 <pre data-language="js"><code class="language-js"><span class="hljs-keyword">if</span> (countrySelect) {
     scatter.<span class="hljs-title function_">updateViz</span>(<span class="hljs-string">`metadata.visualize.add-labels`</span>, [countrySelect]);
-    scatter.<span class="hljs-title function_">updateViz</span>(<span class="hljs-string">`title`</span>, <span class="hljs-string">`Income vs life expectancy in <span class="hljs-subst">${countrySelect}</span>`</span>);
+    scatter.<span class="hljs-title function_">updateViz</span>(<span class="hljs-string">`title`</span>, <span class="hljs-string">`Income vs life expectancy in <span class="hljs-subst">${countrySelect}</span> in 2021`</span>);
     }
 </code></pre>
-<p>Finally, let's add a <code>scatter-plot-1</code> div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the <code>countrySelect</code> dropdown menu again.</p>
-<pre><code>&lt;div id="scatter-plot-1"&gt;&lt;/div&gt;
+<p>Finally, let's add a <code>scatter-plot-updateable</code> div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the <code>countrySelect</code> dropdown menu again.</p>
+<pre><code>&lt;div id="scatter-plot-updateable"&gt;&lt;/div&gt;
 </code></pre>
 <div id="cell-3fc0e826" class="observablehq observablehq--block"></div>
-<div id="scatter-plot-1"></div>
+<div id="scatter-plot-updateable"></div>
 <p>You can find a list of updateable properties <a href="https://developer.datawrapper.de/docs/chart-properties" target="_blank" rel="noopener noreferrer">on the Datawrapper website</a> or <a href="https://api.datawrapper.de/v3/charts/hhddC" target="_blank" rel="noopener noreferrer">see the properties of your own chart here</a> (replace the ID with your chart ID).</p>
-<!-- # Animating charts in Datawrapper
+<p>Theoretically, you can use this method to create scrollable stories or animated charts.</p>
+<h1 id="listening-to-chart-interactions" tabindex="-1"><a class="observablehq-header-anchor" href="#listening-to-chart-interactions">Listening to chart interactions</a></h1>
+<p>Similarly to how you can update a chart based on user input outside the chart, you can also listen to interactions within the chart to update other parts of the page.</p>
+<p>If you haven't already done so, import the necessary code.</p>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Datawrapper</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/datawrapper.js'</span>;
+</code></pre>
+<p>And as before, we'll add the ID of our Datawrapper chart and display it. We'll also add a tooltip div, which I'll explain below.</p>
+<div id="cell-0896b115" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> scatterTooltips = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Datawrapper</span>(scatterId, <span class="hljs-string">'scatter-plot-tooltips'</span>);
+</code></pre>
+<pre><code>&lt;div id="scatter-plot-tooltips"&gt;&lt;/div&gt;
+&lt;div id="tooltip"&gt;&lt;/div&gt;
+</code></pre>
+<div id="scatter-plot-tooltips"></div>
+<div id="tooltip" class="tip">Tooltips will show up here.</div>
+<p>Now, we'll add a bit of code that listens for mouse events on the chart and displays a tooltip with data from the chart.</p>
+<div id="cell-d5b8099f" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> tooltip = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'#tooltip'</span>);
 
-Let's build on the previous example.
+scatterTooltips.<span class="hljs-title function_">on</span>(<span class="hljs-string">'symbol.mouseenter'</span>, <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+  tooltip.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">`&lt;h3&gt;Country: <span class="hljs-subst">${data.data.country}</span>&lt;/h3&gt;GDP per capita: <span class="hljs-subst">${data.data.gdp_per_capita_current_2021}</span>&lt;br&gt;Life expectancy: <span class="hljs-subst">${data.data.life_expectancy_2021}</span>`</span>;
+          tooltip.<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">'block'</span>;
+});
 
-First, let's build a slider.
-
-<div id="time-slider">
-</div>
-
-```js echo
-let timeSlider = view(Inputs.range([1960, 2021], {step: 1, value: 1960}));
-```
-
-```js echo
-const scatterAnimated = new DataWrapper('hhddC', 'scatter-plot-2');
-```
-
-Finally, let's add a `scatter-plot-2` div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the `countrySelect` dropdown menu again.
-
-``` 
-<div id="scatter-plot-2"></div>
-```
-
-<div id="scatter-plot-2"></div>
-
-```js echo
-if (timeSlider) {
-    scatterAnimated.updateViz(`title`, `Income vs life expectancy in <span id="cell-b9877027" class="observablehq--loading"></span>`);
-    scatterAnimated.updateViz('metadata.axes.x',  `gdp_per_capita_current_<span id="cell-b9877027-1" class="observablehq--loading"></span>`);
-    scatterAnimated.updateViz('metadata.axes.y',  `life_expectancy_<span id="cell-b9877027-2" class="observablehq--loading"></span>`);
-    scatterAnimated.updateViz('metadata.axes.size',  `population_<span id="cell-b9877027-3" class="observablehq--loading"></span>`);
-    }
-``` -->
+scatterTooltips.<span class="hljs-title function_">on</span>(<span class="hljs-string">'symbol.mouseleave'</span>, <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+  tooltip.<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">'none'</span>;
+});
+</code></pre>
+<p>Now, when you hover over a scatterplot point, you should see a tooltip with the country name, GDP per capita, and life expectancy.</p>
+<p>You can combine the two methods explained above to create a more interactive experience using just Datawrapper charts and a little bit of JavaScript.</p>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="../sources/calendar.html"><span>Data Calendar</span></a><a rel="next" href="../ai/"><span>AI for journalists</span></a></nav>

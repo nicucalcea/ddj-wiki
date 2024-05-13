@@ -29,9 +29,9 @@ website:
             href: sources/calendar.qmd
       - section: "Dataviz"
         contents:
-          - text: "Patching Datawrapper"
+          - text: "Extending Datawrapper"
             icon: "bar-chart-steps"
-            href: viz/patching-datawrapper.html
+            href: viz/extending-datawrapper.html
       - section: "AI"
         # icon: "robot"
         contents:

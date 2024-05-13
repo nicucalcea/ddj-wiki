@@ -13,7 +13,7 @@ format:
 filters:
   - filters/newpagelink.lua
   - quarto
-  - filters/speaker-notes.lua
+  # - filters/speaker-notes.lua
 href: city
 ---
 

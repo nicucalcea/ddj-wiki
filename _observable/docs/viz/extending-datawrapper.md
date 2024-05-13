@@ -1,9 +1,11 @@
 ---
-title: Patching Datawrapper
-toc: false
+title: Extending Datawrapper
+toc: true
 ---
 
-You can set up Datawrapper to update a chart based on some in-browser triggers.
+# Update Datawrapper charts with user input
+
+<div class="note">These notes are mostly inspired from the <a href="https://youtu.be/uKMVKarlgI4?feature=shared&t=10688" target="_blank">How we ditched D3 and mostly used Datawrapper</a> talk.</div>
 
 Let's take a simple scatterplot.
 
@@ -11,24 +13,24 @@ Let's take a simple scatterplot.
 
 While this is nice and tells a story, it's not ideal for exploring data. Can you easily find your country in the chart? Can you change one of the axis? Can you see how the data changes over time?
 
-# Patching Datawrapper
+While it's a virtually undocumented feature, you can set up Datawrapper to update a chart based on some in-browser triggers, like a button or dropwdown menu.
 
-Instead of the traditional iframes, you can [embed Datawrapper charts with Web Components](https://blog.datawrapper.de/web-component-embedding/). This has several advantages, mainly in terms of performance, but for the purposes of this tutorial, it allows us to make changes to the chart based on user input.
+Instead of the traditional iframes, you need to [embed Datawrapper charts with Web Components](https://blog.datawrapper.de/web-component-embedding/). This has several advantages, mainly in terms of performance, but for the purposes of this tutorial, it allows us to make changes to the chart based on user input.
 
-First, we'll load some JS code that makes everything possible. Add the following to your HTML file (you can find the full code [here](../src/datawrapper.js)):
+First, we'll load some JS code that makes everything possible. Add the following to your HTML file (you can [find the full code here](https://gist.github.com/nicucalcea/576bb8c351d3c0337942432ccb6dda8f)):
 
 ```js echo
-import {DataWrapper} from '../src/datawrapper.js';
+import {Datawrapper} from '../src/datawrapper.js';
 ```
 
-Next, we add the ID of our Datawrapper chart and import it. We'll display the chart later.
+Next, we add the ID of our Datawrapper chart and create it. We'll display the chart later.
 
 ```js echo
 const scatterId = 'hhddC';
-const scatter = new DataWrapper(scatterId, 'scatter-plot-1');
+const scatter = new Datawrapper(scatterId, 'scatter-plot-updateable');
 ```
 
-We'll need some input. I'm using the `Inputs` Observable module to create a nice dropdown menu, but you can crate it with whatever framework you like or in vanilla JS.
+We'll need some form of an input. I'm using the `Inputs` Observable module to create a nice dropdown menu, but you can crate it with whatever framework you like or in vanilla JS.
 
 ```js echo run=false
 import * as Inputs from "npm:@observablehq/inputs";
@@ -48,14 +50,14 @@ We also need a bit of code that listens to changes in the dropdown menu and push
 ```js echo
 if (countrySelect) {
     scatter.updateViz(`metadata.visualize.add-labels`, [countrySelect]);
-    scatter.updateViz(`title`, `Income vs life expectancy in ${countrySelect}`);
+    scatter.updateViz(`title`, `Income vs life expectancy in ${countrySelect} in 2021`);
     }
 ```
 
-Finally, let's add a `scatter-plot-1` div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the `countrySelect` dropdown menu again.
+Finally, let's add a `scatter-plot-updateable` div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the `countrySelect` dropdown menu again.
 
 ``` 
-<div id="scatter-plot-1"></div>
+<div id="scatter-plot-updateable"></div>
 ```
 
 ```js
@@ -97,40 +99,58 @@ const countrySelect = view(
 );
 ```
 
-<div id="scatter-plot-1"></div>
+<div id="scatter-plot-updateable"></div>
 
 You can find a list of updateable properties [on the Datawrapper website](https://developer.datawrapper.de/docs/chart-properties) or [see the properties of your own chart here](https://api.datawrapper.de/v3/charts/hhddC) (replace the ID with your chart ID).
 
-<!-- # Animating charts in Datawrapper
+Theoretically, you can use this method to create scrollable stories or animated charts.
 
-Let's build on the previous example.
 
-First, let's build a slider.
 
-<div id="time-slider">
-</div>
 
-```js echo
-let timeSlider = view(Inputs.range([1960, 2021], {step: 1, value: 1960}));
+
+
+
+# Listening to chart interactions
+
+Similarly to how you can update a chart based on user input outside the chart, you can also listen to interactions within the chart to update other parts of the page.
+
+If you haven't already done so, import the necessary code.
+
+```js echo run=false
+import {Datawrapper} from '../src/datawrapper.js';
 ```
 
-```js echo
-const scatterAnimated = new DataWrapper('hhddC', 'scatter-plot-2');
-```
-
-Finally, let's add a `scatter-plot-2` div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the `countrySelect` dropdown menu again.
-
-``` 
-<div id="scatter-plot-2"></div>
-```
-
-<div id="scatter-plot-2"></div>
+And as before, we'll add the ID of our Datawrapper chart and display it. We'll also add a tooltip div, which I'll explain below.
 
 ```js echo
-if (timeSlider) {
-    scatterAnimated.updateViz(`title`, `Income vs life expectancy in ${timeSlider}`);
-    scatterAnimated.updateViz('metadata.axes.x',  `gdp_per_capita_current_${timeSlider}`);
-    scatterAnimated.updateViz('metadata.axes.y',  `life_expectancy_${timeSlider}`);
-    scatterAnimated.updateViz('metadata.axes.size',  `population_${timeSlider}`);
-    }
-``` -->
+const scatterTooltips = new Datawrapper(scatterId, 'scatter-plot-tooltips');
+```
+
+```
+<div id="scatter-plot-tooltips"></div>
+<div id="tooltip"></div>
+```
+
+<div id="scatter-plot-tooltips"></div>
+
+<div id="tooltip" class="tip">Tooltips will show up here.</div>
+
+Now, we'll add a bit of code that listens for mouse events on the chart and displays a tooltip with data from the chart.
+
+```js echo
+const tooltip = document.querySelector('#tooltip');
+
+scatterTooltips.on('symbol.mouseenter', (data) => {
+  tooltip.innerHTML = `<h3>Country: ${data.data.country}</h3>GDP per capita: ${data.data.gdp_per_capita_current_2021}<br>Life expectancy: ${data.data.life_expectancy_2021}`;
+          tooltip.style.display = 'block';
+});
+
+scatterTooltips.on('symbol.mouseleave', (data) => {
+  tooltip.style.display = 'none';
+});
+```
+
+Now, when you hover over a scatterplot point, you should see a tooltip with the country name, GDP per capita, and life expectancy.
+
+You can combine the two methods explained above to create a more interactive experience using just Datawrapper charts and a little bit of JavaScript.

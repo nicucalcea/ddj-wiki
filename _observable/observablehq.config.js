@@ -33,8 +33,8 @@ export default {
       "open": true,
       "pages": [
         {
-          "name": "Patching Datawrapper",
-          "path": "viz/patching-datawrapper.html"
+          "name": "Extending Datawrapper",
+          "path": "viz/extending-datawrapper.html"
         }
       ]
     },
