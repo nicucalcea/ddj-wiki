@@ -9,7 +9,7 @@ import * as Plot from "npm:@observablehq/plot";
 
 There are many Large Language Models out there, with varying capabilities and costs. This page aims to provide a comparison of some of the most popular models.
 
-*Data valid as of 2024-04-18.*
+*Data valid as of 2024-08-19.*
 
 ```js
 const lmsys = await FileAttachment("data/lmsys.csv").csv({ typed: true });
