@@ -81,8 +81,8 @@ pip install pydantic
 
 # you need to install each validator separately
 guardrails hub install hub://guardrails/valid_choices
-guardrails hub install hub://guardrails/valid_length
-guardrails hub install hub://guardrails/uppercase
+# guardrails hub install hub://guardrails/valid_length
+# guardrails hub install hub://guardrails/uppercase
 ```
 
 Let's load the libraries.
