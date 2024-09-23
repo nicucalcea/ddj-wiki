@@ -312,14 +312,14 @@ Shows percentage change.
 ::: columns
 ::: {.column width="50%"}
 :::  {.fragment}
-##### [2018]
+##### 2018
 ![](media/daily-mail-1.png)
 :::
 :::
 
 ::: {.column width="50%"}
 :::  {.fragment}
-##### [2019]
+##### 2019
 ![](media/daily-mail-2.png)
 :::
 :::

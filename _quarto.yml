@@ -3,7 +3,7 @@ project:
   output-dir: docs
   post-render: 
     - _observable/render_scripts/generate_config.py
-    - _observable/render_scripts/build.bat
+    - _observable/render_scripts/build.py
 
 website:
   title: "Data Journalism Wiki"

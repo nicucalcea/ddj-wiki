@@ -19,12 +19,12 @@ In your `_quarto.yml` file, add the following lines:
 ```yaml
 post-render: 
     - _observable/render_scripts/generate_config.py
-    - _observable/render_scripts/build.bat
+    - _observable/render_scripts/build.py
 ```
 
 ### Step 3: Create the build scripts
 
-In `_observable`, create a new folder called `render-scripts`. In this folder, create two files: `generate_config.py` and `build.bat`.
+In `_observable`, create a new folder called `render-scripts`. In this folder, create two files: `generate_config.py` and `build.py`.
 
 The first file will generate a new configuration file for the Observable project. This will ensure the title and navigation bar are the same as the Quarto site.
 

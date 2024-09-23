@@ -1,12 +1,19 @@
 /*-- scss:defaults --*/
 
-// Inspired by: https://docs.double.bot/
+@import url(https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Roboto&display=swap);
+
+// Fonts
+$font-family-sans-serif: "Domine", sans-serif !default;
+
+
+
 
 // Custom colours
 // add accent colour
-$accent: rgb(234, 88, 12) !default;
-$accent-dark: #261105 !default;
-$accent-light: rgb(249,115,22);
+$accent: #f4f4f5 !default;
+$accent-dark: #27272a80 !default;
+$accent-light: #27272a80;
 
 $gray-100: rgb(245, 241, 238) !default;
 $gray-200: rgb(230, 226, 223) !default;
@@ -14,7 +21,7 @@ $gray-300: rgb(213, 209, 206) !default;
 $gray-400: rgb(166, 162, 159) !default;
 
 // General
-$body-bg: #100905 !default;
+$body-bg: #18181b !default;
 $body-color: $gray-200 !default;
 $link-color: rgb(250, 246, 243) !default;
 $input-bg: $gray-100 !default;
