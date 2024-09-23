@@ -1,0 +1,37 @@
+/**
+ * nicu.md custom theme
+ *
+ * Copyright (C) Nicu Calcea
+ */
+
+/*-- scss:defaults --*/
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Roboto&display=swap);
+
+// Override theme settings
+$body-bg: #18181b !default;
+$body-color: #f4f4f5 !default; // from settings.scss
+
+$font-family-sans-serif: "Roboto", sans-serif !default;
+$presentation-heading-font: "Domine", sans-serif !default;
+$presentation-heading-text-shadow: none !default;
+$presentation-heading-letter-spacing: -0.03em !default;
+$presentation-heading-text-transform: none !default;
+$selection-bg: #f4f4f5 !default;
+
+// Change text colors against light slide backgrounds
+$light-bg-text-color: #222 !default;
+
+// input panel
+$input-panel-bg: rgba(233, 236, 239, 0.2) !default;
+
+// code blocks
+$code-block-bg: transparent !default;
+
+// links
+$link-color: #f4f4f5 !default;
+a {
+    text-decoration: underline !important;
+  }

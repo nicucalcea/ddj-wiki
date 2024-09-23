@@ -3,13 +3,13 @@ title: "Intro to Data Journalism"
 subtitle: "City, University of London<br><a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>"
 format:
   revealjs:
-    # theme: [night, css/custom.scss]
-    theme: [default, css/sf.scss]
+    theme: [default, css/nicu.scss]
+    # theme: [default, css/sf.scss]
     multiplex: true
     chalkboard: 
       buttons: false
-    header-includes:
-    - "<script defer src='src/bg-change.js'></script>"
+    # header-includes:
+    # - "<script defer src='src/bg-change.js'></script>"
 filters:
   - filters/newpagelink.lua
   - quarto
@@ -17,7 +17,7 @@ filters:
 href: city
 ---
 
-# [👋]{.wave} Welcome to Introduction to Data Journalism
+# [👋]{.wave} Welcome to Data Journalism
 
 ```{=html}
 <style>
@@ -50,53 +50,61 @@ href: city
 
 My name is **Nicu Calcea**.
 
-I'm a **data journalist** and City University alumnus, originally from Moldova, currently based in London.
+I'm a **data investigative journalist** and City University alumnus.
 
-I work as a data journalist at **BBC News**, previously Data Projects Editor at the **New Statesman**.
+I work at **[Global Witness](https://www.globalwitness.org/en/)**, and I was previously doing data journalism at **BBC News** and the **New Statesman**.
 
 ## Some stories
 
+- [The UK government met with oil lobbyists every day last year](https://www.globalwitness.org/en/campaigns/fossil-gas/uk-government-met-oil-lobbyists-every-day-last-year/)
 - [Eight out of ten firms pay men more than women](https://www.bbc.co.uk/news/business-65179430)
 - [How much territory does Ukraine control? Use this interactive map to find out](https://www.newstatesman.com/world/europe/ukraine/2022/06/how-occupied-ukraine-territory-interactive-map)
 - [Tory MPs would be over £1m worse off in six months with Boris Johnson’s second job ban](https://www.newstatesman.com/politics/uk-politics/2021/11/exclusive-tory-mps-would-be-over-1m-worse-off-in-six-months-with-boris-johnsons-second-job-ban)
 
 ::: notes
 I graduated 4 years ago and did this module 5 years ago.
-
-You can email me with any questions about these slides, examples I've given, assignments, etc.
-
-I do have a full time job, so for any administrative or urgent queries, please contact Glyn.
 :::
 
 ::: footer
 My personal website: [nicu.md](https://nicu.md/)
 :::
 
-## Who are you?
+## Get in touch
 
--   What's your name?
--   What course are you in?
--   Do you have any experience in data journalism?
--   Why did you choose this module?
+- [Ion.Calcea.2@city.ac.uk](mailto:Ion.Calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 ::: notes
-Sorry if I mispronounce all of your names and also sorry if I don't remember everyone's name. I will do my best.
+You can email me with any questions about these slides, examples I've given, assignments, etc.
+
+I do have a full time job, so for any administrative or urgent queries, please contact James Morris.
+:::
+
+## Who are you?
+
+- What's your name?
+- What course are you in?
+- Do you have any experience in data journalism?
+- Why did you choose this module?
+
+::: notes
+Sorry if I mispronounce any or all of your names and also sorry if I don't remember everyone's name. I will do my best.
 
 I understand we are at different levels of experience. You have access to datacamp which will let you move ahead if you want to get a bit more from this module.
 :::
 
-## Plan {.smaller}
+## The plan {.smaller}
 
 ::: {.incremental}
--   Week 1: Introduction
--   Weeks 2-3: Analysis
--   Week 4: Cleaning
--   Week 5: Stories
--   Week 6: Visualisation
--   Week 7: Maps
--   Week 8: Projects
--   Week 9: Scraping
--   Week 10: Conclusions
+- Week 1: Introduction
+- Weeks 2-3: Analysis
+- Week 4: Cleaning
+- Week 5: Stories
+- Week 6: Visualisation
+- Week 7: Maps
+- Week 8: Projects
+- Week 9: Scraping
+- Week 10: Conclusions
 :::
 
 
@@ -124,32 +132,11 @@ Some people even have their own beats. I have data journalist colleagues who foc
 Data can be hard and complex, you'll always want to reach out to experts who can explain things for you. Energy consumption map as an example.
 :::
 
-## History of Data Journalism
+## History
 
 ```{=html}
 <div class="flourish-embed flourish-timeline" data-src="visualisation/14307302?1293534"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 ```
-## Job trends {.smaller}
-
-::: columns
-::: {.column width="33.33%"}
-Since the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions.
-:::
-
-::: {.column width="33.33%"}
-New(-ish) platforms like **Datawrapper** and **Flourish** allow journalists to create and visualise data stories easier and without much technical expertise.
-:::
-
-::: {.column width="33.33%"}
-However, the increased supply of data journalists from courses like this means there are higher entry requirements (**R**, **Python**, **SQL**).
-:::
-:::
-
-::: notes
-Data teams like the one at the FT and the BBC are now so big they need to be split into two teams.
-
-There are R, Python and SQL courses on Datacamp, which you have access to for free.
-:::
 
 ## Why do we need data journalism? {.title-slide}
 
@@ -163,7 +150,7 @@ An increasing amount of human activity is recorded with data. This means there i
 
 ::: {.column width="33.33%"}
 ##### Be more efficient
-We tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.
+We tell some stories every year, month or day. We can greatly simplify or automate stories, giving us more time to focus on in-depth reporting.
 :::
 
 ::: {.column width="33.33%"}
@@ -183,8 +170,31 @@ Make readers invested in a story by personalising it to their postcode, age or s
 
 ::: {.column width="33.33%"}
 ##### New audiences
-Data journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks.
+Data journalism is exciting (I hope). The pandemic has shown that readers will reward publishers with their clicks.
 :::
+:::
+
+
+## Job trends {.smaller}
+
+::: columns
+::: {.column width="33.33%"}
+Since the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions.
+:::
+
+::: {.column width="33.33%"}
+New(-ish) platforms like **Datawrapper** and **Flourish** allow journalists to create and visualise data stories easier and without much technical expertise.
+:::
+
+::: {.column width="33.33%"}
+However, the increased supply of data journalists from courses like this means there are higher entry requirements (**R**, **Python**, **SQL**).
+:::
+:::
+
+::: notes
+Data teams like the one at the FT and the BBC are now so big they need to be split into several smaller teams.
+
+There are R, Python and SQL courses on Datacamp, which you have access to for free.
 :::
 
 ## The process
@@ -193,7 +203,7 @@ Data journalism is exciting (I hope). The pandemic has shown that readers like c
 ::: {.column width="33.33%"}
 :::  {.fragment}
 ##### Question
-As is the case with all journalism, data journalism starts with a question that the reporter wants to answer.
+As with all journalism, data journalism starts with a question that the reporter wants to answer.
 :::
 :::
 
@@ -223,23 +233,23 @@ How do you find the answer to your question in the data?
 ::: {.column width="33.33%"}
 :::  {.fragment}
 ##### Review
-While data doesn’t lie, data publishers do. Do your findings make sense? Can you verify using other sources? Have you made any mistakes?
+While data doesn’t lie, data publishers do. Do your findings make sense? Can you verify them?
 :::
 :::
 
 ::: {.column width="33.33%"}
 :::  {.fragment}
 ##### Present results
-Communicate data in the most suitable way. Usually, you will visualise your findings, but that is not always necessary.
+Communicate data in the most suitable way. Usually, but not always, you will visualise your findings.
 :::
 :::
 :::
 
 ::: notes
-Analyse data: be platform antagonistic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives.
+Analyse data: be platform agnostic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives.
 :::
 
-## The lifecycle of a data release
+## 
 
 ![](media/lifecycle-of-data-release.png)
 
@@ -249,7 +259,7 @@ Source: [Paul Bradshaw](https://twitter.com/paulbradshaw/status/1445015559742050
 
 ## Baby names
 
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1GatzEY5cl3JmdVOpJKsF9ME-SSHNNi8dVfqm54ZONYA/copy) and pick one tab to work in. Data from the ([ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996)).
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1GatzEY5cl3JmdVOpJKsF9ME-SSHNNi8dVfqm54ZONYA/copy) and pick one tab to work in. Data from [the ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996).
 2. The [ yellow cells ]{style="background:#e3b341;color:black;"} indicate where you need to fill in formulas.
 3. What are some other potential stories that you can think of? Are there more babies named after the royals? What about Game of Thrones characters? What are the most popular gender-neutral names? Long-term trends?
 
@@ -320,7 +330,7 @@ Shows percentage change.
 
 ::: columns
 ::: {.column width="50%"}
-##### [Critique a data journalism project]
+##### Critique a data journalism project
 - A 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.
 - 500-word group reflection, with appropriate references.
 - A 200-word reflection on your own learning.
@@ -330,7 +340,7 @@ Shows percentage change.
 :::
 
 ::: {.column width="50%"}
-##### [Data journalism portfolio]
+##### Data journalism portfolio
 - One news story (400 words).
 - One EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.
 - A 200 word reflective blog-post style log on you own learning journey.
@@ -348,10 +358,10 @@ No plagiarism, careful with AI.
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 
-# Week 2
+<!-- # Week 2
 
 Introduction to [Data Journalism]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -557,13 +567,13 @@ Same as =XLOOKUP() but more flexible and easier to grasp.
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
 
-# Week 3
+<!-- # Week 3 -->
 
 <!-- Pad this week out, add more content (about 25%) -->
 
-Introduction to [Data Journalism]<br>
+<!-- Introduction to [Data Journalism]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 ## {fullscreen=true}
@@ -578,11 +588,6 @@ Source: [The New York Times](https://www.nytimes.com/interactive/2023/10/16/us/c
 Source: [Urban Complexity Lab](https://uclab.fh-potsdam.de/projects/klimakarten/)
 :::
 
-<!-- ## {fullscreen=true} -->
-<!-- <iframe class="stretch" data-src="https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/"></iframe> -->
-<!-- ::: footer -->
-<!-- Source: [The Washington Post](https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/) -->
-<!-- ::: -->
 
 ## {fullscreen=true}
 <iframe class="stretch" data-src="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/"></iframe>
@@ -668,10 +673,10 @@ Sum all the values and divide by the number of records.
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
 
 
-# Week 4
+<!-- # Week 4
 
 Data [Cleaning]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -855,10 +860,10 @@ Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
 
 
-# Week 5
+<!-- # Week 5
 
 Data [Stories]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -1000,7 +1005,8 @@ Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vo
 
 ## IMDb exercise {.smaller}
 
-<!-- Upload this somewhere so students don't have to log in -->
+TODO: Upload this somewhere so students don't have to log in
+
 1. Make a copy of the [IMDb data](https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies).
 2. Working in groups, think of stories to tell based on this data.
 3. What would you visualise to support your story/stories?
@@ -1011,14 +1017,14 @@ Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vo
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 ::: notes
 Please make Flourish and Datawrapper accounts
-:::
+::: -->
 
 
-# Week 6
+<!-- # Week 6
 
 Data [Visualisation]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -1240,9 +1246,9 @@ Source: [Reddit](https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
 
-# Week 7
+<!-- # Week 7
 
 [Maps]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -1289,7 +1295,6 @@ Source: [The New York Times](https://www.nytimes.com/interactive/2023/11/16/worl
 Source: [Washington Post](https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/)
 :::
 
-<!-- https://blog.datawrapper.de/pigeon-internet-speed/ -->
 
 ## {fullscreen=true}
 <iframe class="stretch" data-src="https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/"></iframe>
@@ -1340,7 +1345,6 @@ Hex maps standardise administrative units into same-sizes hexagons, squares or t
 
 ![](https://geographical.co.uk/wp-content/uploads/UK-general-election-2019.jpeg)
 
-<!-- https://www.dailykos.com/stories/2023/11/8/2204458/-A-majority-of-America-will-have-access-to-legal-marijuana-following-Ohio-election -->
 
 ## Not always the right choice
 
@@ -1417,12 +1421,12 @@ This is the data that will be placed in the shapes on your map. Normally contain
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
 
 
 
 
-# Week 8
+<!-- # Week 8
 
 Data [Projects]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -1598,7 +1602,7 @@ Source: BBC News
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 # Week 9
 
@@ -1761,4 +1765,4 @@ Students will receive feedback on their responses but we do need a sufficient nu
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [Glyn.Mottershead@city.ac.uk](mailto:glyn.mottershead@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->

@@ -29,71 +29,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-      }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-    div.sourceCode
-      { color: #f8f8f2;  }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #f8f8f2; } /* Normal */
-    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
-    code span.an { color: #d4d0ab; } /* Annotation */
-    code span.at { color: #00e0e0; } /* Attribute */
-    code span.bn { color: #d4d0ab; } /* BaseN */
-    code span.bu { color: #abe338; } /* BuiltIn */
-    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #abe338; } /* Char */
-    code span.cn { color: #ffd700; } /* Constant */
-    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
-    code span.cv { color: #ffd700; } /* CommentVar */
-    code span.do { color: #f8f8f2; } /* Documentation */
-    code span.dt { color: #ffa07a; } /* DataType */
-    code span.dv { color: #d4d0ab; } /* DecVal */
-    code span.er { color: #f07178; text-decoration: underline; } /* Error */
-    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
-    code span.fl { color: #d4d0ab; } /* Float */
-    code span.fu { color: #ffa07a; } /* Function */
-    code span.im { color: #abe338; } /* Import */
-    code span.in { color: #d4d0ab; } /* Information */
-    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
-    code span.op { color: #ffa07a; } /* Operator */
-    code span.ot { color: #00e0e0; } /* Other */
-    code span.pp { color: #dcc6e0; } /* Preprocessor */
-    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
-    code span.sc { color: #abe338; } /* SpecialChar */
-    code span.ss { color: #abe338; } /* SpecialString */
-    code span.st { color: #abe338; } /* String */
-    code span.va { color: #00e0e0; } /* Variable */
-    code span.vs { color: #abe338; } /* VerbatimString */
-    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -387,7 +322,6 @@
       margin-right: 0; 
     }
   </style>
-  <script defer="" src="src/bg-change.js"></script>
 </head>
 <body class="quarto-dark">
   <div class="reveal">
@@ -402,8 +336,8 @@
 
 </section>
 <section>
-<section id="welcome-to-introduction-to-data-journalism" class="title-slide slide level1 center">
-<h1><span class="wave">👋</span> Welcome to Introduction to Data Journalism</h1>
+<section id="welcome-to-data-journalism" class="title-slide slide level1 center">
+<h1><span class="wave">👋</span> Welcome to Data Journalism</h1>
 <style>
   .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -431,20 +365,19 @@
 <section id="who-am-i" class="slide level2">
 <h2>Who am I?</h2>
 <p>My name is <strong>Nicu Calcea</strong>.</p>
-<p>I’m a <strong>data journalist</strong> and City University alumnus, originally from Moldova, currently based in London.</p>
-<p>I work as a data journalist at <strong>BBC News</strong>, previously Data Projects Editor at the <strong>New Statesman</strong>.</p>
+<p>I’m a <strong>data investigative journalist</strong> and City University alumnus.</p>
+<p>I work at <strong><a href="https://www.globalwitness.org/en/" target="_blank">Global Witness</a></strong>, and I was previously doing data journalism at <strong>BBC News</strong> and the <strong>New Statesman</strong>.</p>
 </section>
 <section id="some-stories" class="slide level2">
 <h2>Some stories</h2>
 <ul>
+<li><a href="https://www.globalwitness.org/en/campaigns/fossil-gas/uk-government-met-oil-lobbyists-every-day-last-year/" target="_blank">The UK government met with oil lobbyists every day last year</a></li>
 <li><a href="https://www.bbc.co.uk/news/business-65179430" target="_blank">Eight out of ten firms pay men more than women</a></li>
 <li><a href="https://www.newstatesman.com/world/europe/ukraine/2022/06/how-occupied-ukraine-territory-interactive-map" target="_blank">How much territory does Ukraine control? Use this interactive map to find out</a></li>
 <li><a href="https://www.newstatesman.com/politics/uk-politics/2021/11/exclusive-tory-mps-would-be-over-1m-worse-off-in-six-months-with-boris-johnsons-second-job-ban" target="_blank">Tory MPs would be over £1m worse off in six months with Boris Johnson’s second job ban</a></li>
 </ul>
 <aside class="notes">
 <p>I graduated 4 years ago and did this module 5 years ago.</p>
-<p>You can email me with any questions about these slides, examples I’ve given, assignments, etc.</p>
-<p>I do have a full time job, so for any administrative or urgent queries, please contact Glyn.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -460,6 +393,27 @@
 <p>My personal website: <a href="https://nicu.md/" target="_blank">nicu.md</a></p>
 </div>
 </section>
+<section id="get-in-touch" class="slide level2">
+<h2>Get in touch</h2>
+<ul>
+<li><a href="mailto:Ion.Calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
+<li><a href="mailto:James.Morris@city.ac.uk" target="_blank">James.Morris@city.ac.uk</a></li>
+</ul>
+<aside class="notes">
+<p>You can email me with any questions about these slides, examples I’ve given, assignments, etc.</p>
+<p>I do have a full time job, so for any administrative or urgent queries, please contact James Morris.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="who-are-you" class="slide level2">
 <h2>Who are you?</h2>
 <ul>
@@ -469,7 +423,7 @@
 <li>Why did you choose this module?</li>
 </ul>
 <aside class="notes">
-<p>Sorry if I mispronounce all of your names and also sorry if I don’t remember everyone’s name. I will do my best.</p>
+<p>Sorry if I mispronounce any or all of your names and also sorry if I don’t remember everyone’s name. I will do my best.</p>
 <p>I understand we are at different levels of experience. You have access to datacamp which will let you move ahead if you want to get a bit more from this module.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -483,8 +437,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="plan" class="slide level2 smaller">
-<h2>Plan</h2>
+<section id="the-plan" class="slide level2 smaller">
+<h2>The plan</h2>
 <div>
 <ul>
 <li class="fragment">Week 1: Introduction</li>
@@ -543,9 +497,35 @@
       }</style></aside>
 </div>
 </section>
-<section id="history-of-data-journalism" class="slide level2">
-<h2>History of Data Journalism</h2>
+<section id="history" class="slide level2">
+<h2>History</h2>
 <div class="flourish-embed flourish-timeline" data-src="visualisation/14307302?1293534"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+</section>
+<section id="why-do-we-need-data-journalism" class="slide level2 title-slide center">
+<h2>Why do we need data journalism?</h2>
+</section>
+<section id="why-we-need-ddj" class="slide level2 smaller" data-menu-title="Why we need data journalism">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:33.33%;">
+<h5 id="tell-richer-stories">Tell richer stories</h5>
+<p>An increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="be-more-efficient">Be more efficient</h5>
+<p>We tell some stories every year, month or day. We can greatly simplify or automate stories, giving us more time to focus on in-depth reporting.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="be-more-accurate">Be more accurate</h5>
+<p>Though not without data quality issues and ethical considerations, accuracy is central to data journalism.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="unique-angles">Unique angles</h5>
+<p>There are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="personalise-news">Personalise news</h5>
+<p>Make readers invested in a story by personalising it to their postcode, age or socio-economic status.</p>
+</div><div class="column" style="width:33.33%;">
+<h5 id="new-audiences">New audiences</h5>
+<p>Data journalism is exciting (I hope). The pandemic has shown that readers will reward publishers with their clicks.</p>
+</div></div>
 </section>
 <section id="job-trends" class="slide level2 smaller">
 <h2>Job trends</h2>
@@ -558,7 +538,7 @@
 <p>However, the increased supply of data journalists from courses like this means there are higher entry requirements (<strong>R</strong>, <strong>Python</strong>, <strong>SQL</strong>).</p>
 </div></div>
 <aside class="notes">
-<p>Data teams like the one at the FT and the BBC are now so big they need to be split into two teams.</p>
+<p>Data teams like the one at the FT and the BBC are now so big they need to be split into several smaller teams.</p>
 <p>There are R, Python and SQL courses on Datacamp, which you have access to for free.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -572,32 +552,6 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="why-do-we-need-data-journalism" class="slide level2 title-slide center">
-<h2>Why do we need data journalism?</h2>
-</section>
-<section id="why-we-need-ddj" class="slide level2 smaller" data-menu-title="Why we need data journalism">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:33.33%;">
-<h5 id="tell-richer-stories">Tell richer stories</h5>
-<p>An increasing amount of human activity is recorded with data. This means there is a data angle for almost any subject.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="be-more-efficient">Be more efficient</h5>
-<p>We tell some stories every year, month or day. We can greatly simplify or even automate those stories, giving us more time to focus on in-depth reporting.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="be-more-accurate">Be more accurate</h5>
-<p>Though not without data quality issues and ethical considerations, accuracy is central to data journalism.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="unique-angles">Unique angles</h5>
-<p>There are now stories where a data angle is the only or main angle. By using data, journalists can create news instead of covering them.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="personalise-news">Personalise news</h5>
-<p>Make readers invested in a story by personalising it to their postcode, age or socio-economic status.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="new-audiences">New audiences</h5>
-<p>Data journalism is exciting (I hope). The pandemic has shown that readers like clear, beautiful data stories and will reward publishers with their clicks.</p>
-</div></div>
-</section>
 <section id="the-process" class="slide level2">
 <h2>The process</h2>
 <div class="columns">
@@ -605,7 +559,7 @@
 <div class="fragment">
 <!-- -->
 <h5 id="question">Question</h5>
-<p>As is the case with all journalism, data journalism starts with a question that the reporter wants to answer.</p>
+<p>As with all journalism, data journalism starts with a question that the reporter wants to answer.</p>
 </div>
 </div><div class="column" style="width:33.33%;">
 <div class="fragment">
@@ -631,17 +585,17 @@
 <div class="fragment">
 <!-- -->
 <h5 id="review">Review</h5>
-<p>While data doesn’t lie, data publishers do. Do your findings make sense? Can you verify using other sources? Have you made any mistakes?</p>
+<p>While data doesn’t lie, data publishers do. Do your findings make sense? Can you verify them?</p>
 </div>
 </div><div class="column" style="width:33.33%;">
 <div class="fragment">
 <!-- -->
 <h5 id="present-results">Present results</h5>
-<p>Communicate data in the most suitable way. Usually, you will visualise your findings, but that is not always necessary.</p>
+<p>Communicate data in the most suitable way. Usually, but not always, you will visualise your findings.</p>
 </div>
 </div></div>
 <aside class="notes">
-<p>Analyse data: be platform antagonistic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives.</p>
+<p>Analyse data: be platform agnostic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -654,8 +608,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="the-lifecycle-of-a-data-release" class="slide level2">
-<h2>The lifecycle of a data release</h2>
+<section id="section" class="slide level2">
+<h2></h2>
 
 <img data-src="media/lifecycle-of-data-release.png" class="r-stretch"><div class="footer">
 <p>Source: <a href="https://twitter.com/paulbradshaw/status/1445015559742050312" target="_blank">Paul Bradshaw</a></p>
@@ -664,7 +618,7 @@
 <section id="baby-names" class="slide level2">
 <h2>Baby names</h2>
 <ol type="1">
-<li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1GatzEY5cl3JmdVOpJKsF9ME-SSHNNi8dVfqm54ZONYA/copy" target="_blank">this spreadsheet</a> and pick one tab to work in. Data from the (<a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996" target="_blank">ONS</a>).</li>
+<li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1GatzEY5cl3JmdVOpJKsF9ME-SSHNNi8dVfqm54ZONYA/copy" target="_blank">this spreadsheet</a> and pick one tab to work in. Data from <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesinenglandandwalesfrom1996" target="_blank">the ONS</a>.</li>
 <li>The <span style="background:#e3b341;color:black;">yellow cells</span> indicate where you need to fill in formulas.</li>
 <li>What are some other potential stories that you can think of? Are there more babies named after the royals? What about Game of Thrones characters? What are the most popular gender-neutral names? Long-term trends?</li>
 </ol>
@@ -697,10 +651,10 @@
 <h5 id="sum">[=SUM()]</h5>
 <p>Returns the sum of a series of numbers and/or cells.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="average"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
+<h5 id="average">[=AVERAGE()]</h5>
 <p>Returns the numerical average value in a dataset, ignoring text.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="median"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
+<h5 id="median">[=MEDIAN()]</h5>
 <p>Returns the median value in a numeric dataset.</p>
 </div><div class="column" style="width:33.33%;">
 <h5 id="new-oldold">[=(NEW-OLD)/OLD]</h5>
@@ -713,13 +667,13 @@
 <div class="column" style="width:50%;">
 <div class="fragment">
 <!-- -->
-<h5 id="section">[2018]</h5>
+<h5 id="section-1">[2018]</h5>
 <p><img data-src="media/daily-mail-1.png"></p>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="fragment">
 <!-- -->
-<h5 id="section-1">[2019]</h5>
+<h5 id="section-2">[2019]</h5>
 <p><img data-src="media/daily-mail-2.png"></p>
 </div>
 </div></div>
@@ -728,7 +682,7 @@
 <h2>Assignments</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<h5 id="critique-a-data-journalism-project">[Critique a data journalism project]</h5>
+<h5 id="critique-a-data-journalism-project">Critique a data journalism project</h5>
 <ul>
 <li>A 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.</li>
 <li>500-word group reflection, with appropriate references.</li>
@@ -736,7 +690,7 @@
 </ul>
 <p><strong>Deadline</strong>: Friday, December 10, 4pm <strong>Marking</strong>: 40% of your final mark</p>
 </div><div class="column" style="width:50%;">
-<h5 id="data-journalism-portfolio">[Data journalism portfolio]</h5>
+<h5 id="data-journalism-portfolio">Data journalism portfolio</h5>
 <ul>
 <li>One news story (400 words).</li>
 <li>One EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.</li>
@@ -762,1512 +716,1399 @@
 <h2>Contact</h2>
 <ul>
 <li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
+<li><a href="mailto:James.Morris@city.ac.uk" target="_blank">James.Morris@city.ac.uk</a></li>
 </ul>
-</section></section>
-<section>
-<section id="week-2" class="title-slide slide level1 center">
-<h1>Week 2</h1>
-<p>Introduction to [Data Journalism]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="section-2" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.reuters.com/graphics/ISRAEL-PALESTINIANS/MAPS/movajdladpa/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.reuters.com/graphics/ISRAEL-PALESTINIANS/MAPS/movajdladpa/" target="_blank">Reuters</a></p>
-</div>
-</section>
-<section id="section-3" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.ft.com/content/7b618433-ba5f-4e92-a3e0-d5d41d6d17f8">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.ft.com/content/7b618433-ba5f-4e92-a3e0-d5d41d6d17f8" target="_blank">FT</a></p>
-</div>
-</section>
-<section id="section-4" class="slide level2">
-<h2></h2>
-<p><img data-src="https://blog.datawrapper.de/wp-content/uploads/2023/10/image27.png" class="absolute" style="height: 700px; "></p>
-<div class="footer">
-<p>Source: <a href="https://www.zeit.de/politik/ausland/israel-gazastreifen-krieg-karten" target="_blank">Die Zeit</a></p>
-</div>
-</section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-<p><img data-src="https://blog.datawrapper.de/wp-content/uploads/2023/10/image2-2.png" class="absolute" style="height: 700px; "></p>
-<div class="footer">
-<p>Source: <a href="https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html" target="_blank">The New York Times</a></p>
-</div>
-</section>
-<section id="section-6" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html" target="_blank">Wyborcza</a></p>
-</div>
-</section>
-<section id="section-7" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://pudding.cool/2023/10/romance-covers/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://pudding.cool/2023/10/romance-covers/" target="_blank">The Pudding</a></p>
-</div>
-</section>
-<section id="sourcing-data" class="slide level2 smaller">
-<h2>Sourcing data</h2>
-<div class="fragment">
-<h4 id="open-data">Open Data</h4>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>UK
-<ul>
-<li><a href="https://www.ons.gov.uk/" target="_blank">ONS</a></li>
-<li><a href="https://www.gov.uk/search/research-and-statistics" target="_blank">GOV.UK</a></li>
-<li><a href="https://www.nomisweb.co.uk/" target="_blank">Nomis (labour stats)</a></li>
-<li><a href="https://digital.nhs.uk/search?sort=date&amp;area=data&amp;searchTab=data&amp;contentSearch=false" target="_blank">NHS Digital</a></li>
-<li><a href="https://coronavirus.data.gov.uk/" target="_blank">Covid dashboard</a></li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Other nations
-<ul>
-<li><a href="https://www.data.gov/" target="_blank">US gov</a></li>
-<li><a href="https://ec.europa.eu/eurostat/web/main/home" target="_blank">Eurostat</a></li>
-</ul></li>
-<li>International
-<ul>
-<li><a href="https://data.worldbank.org/" target="_blank">World Bank</a></li>
-<li><a href="http://data.un.org/" target="_blank">United Nations</a></li>
-<li><a href="https://data.oecd.org/" target="_blank">OECD</a></li>
-<li><a href="https://ourworldindata.org/" target="_blank">Our World in Data</a></li>
-</ul></li>
-</ul>
-</div></div>
-<div class="footer">
-<p>More sources: <a href="https://ddj.nicu.md/sources/" target="_blank">ddj.nicu.md</a></p>
-</div>
-</div>
-</section>
-<section id="plan-ahead" class="slide level2">
-<h2>Plan ahead</h2>
-<iframe class="stretch" data-src="https://ddj.nicu.md/sources/data-calendar.html">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://ddj.nicu.md/sources/data-calendar.html" target="_blank">ddj.nicu.md</a></p>
-</div>
-</section>
-<section id="closed-data" class="slide level2">
-<h2>Closed data</h2>
+<!-- # Week 2
 
-<img data-src="media/closed-data.png" class="r-stretch"></section>
-<section id="fois" class="slide level2">
-<h2>FOIs</h2>
+Introduction to [Data Journalism]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-<img data-src="media/foi.png" class="r-stretch"><aside class="notes">
-<p>WhatDoTheyKnow</p>
-<p>Be as specific as possible or you might get the “too much work” excuse, specify the format or you’ll get a PDF</p>
-<p>Likelihood they’ll refuse (they refused my locations of CCTV cameras locations on national security grounds)</p>
-<p>If you want to use FOIs, do it as soon as possible.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="scraping" class="slide level2">
-<h2>Scraping</h2>
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.reuters.com/graphics/ISRAEL-PALESTINIANS/MAPS/movajdladpa/"></iframe>
+::: footer
+Source: [Reuters](https://www.reuters.com/graphics/ISRAEL-PALESTINIANS/MAPS/movajdladpa/)
+:::
 
-<img data-src="media/scraping.png" class="r-stretch"><aside class="notes">
-<p>Scraping (week 9)</p>
-<p>pre-scraped data like Inside Airbnb</p>
-<p>Parsehub, browser extensions, R/Python/Node</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="census-exercise" class="slide level2">
-<h2>Census exercise</h2>
-<ol type="1">
-<li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1wbCYpp-5-2nZCaTdMcnNWSYtsUabQ0MDG_l4FGrZDwg/copy" target="_blank">this spreadsheet</a> (here’s <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021" target="_blank">the original data</a>).</li>
-<li>Before you do anything else, what are some questions you would like to answer?</li>
-<li>Free first row, filter the table to the region you’re from (or London)</li>
-<li>Fill in the columns at the end</li>
-<li>What are some other potential stories that you can think of?</li>
-</ol>
-<aside class="notes">
-<ol type="1">
-<li>Concatenate title =CONCATENATE(A2,“,”,B2, ” (“, C2,”)“)</li>
-<li>Conditional formatting on success column</li>
-</ol>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="basic-excel-formulas-1-recap" class="slide level2" data-menu-title="Basic Excel Formulas Recap">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:33.33%;">
-<h5 id="a1a2-1">[=A1+A2]</h5>
-<p>Returns one number added (+) or subtracting (*) another.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="a1b1-1">[=A1/B$1]</h5>
-<p>Returns one number divided (/) or multiplied (*) by another.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="sum-1">[=SUM()]</h5>
-<p>Returns the sum of a series of numbers and/or cells.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="average-1"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
-<p>Returns the numerical average value in a dataset, ignoring text.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="median-1"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
-<p>Returns the median value in a numeric dataset.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="new-oldold-1">[=(NEW-OLD)/OLD]</h5>
-<p>Shows percentage change.</p>
-</div></div>
-</section>
-<section id="basic-excel-formulas-2" class="slide level2" data-menu-title="Basic Excel Formulas 2">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:33.33%;">
-<h5 id="if">[=IF()]</h5>
-<p>Returns one value if the result is true, another if it’s false.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="countif">[=COUNTIF()]</h5>
-<p>Count all the cells that match a condition.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="sumif">[=SUMIF()]</h5>
-<p>Sum all the cells that match a condition.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="concatenate">[=CONCATENATE()]</h5>
-<p>Combine multiple bits of text together. Use =SPLIT() for the opposite.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="vlookup">[=VLOOKUP()]</h5>
-<p>Match the values in a cell with the corresponding row in another dataset.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="xlookup">[=XLOOKUP()]</h5>
-<p>Same as =XLOOKUP() but more flexible and easier to grasp.</p>
-</div></div>
-</section>
-<section id="contact-1" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
-</section></section>
-<section>
-<section id="week-3" class="title-slide slide level1 center">
-<h1>Week 3</h1>
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.ft.com/content/7b618433-ba5f-4e92-a3e0-d5d41d6d17f8"></iframe>
+::: footer
+Source: [FT](https://www.ft.com/content/7b618433-ba5f-4e92-a3e0-d5d41d6d17f8)
+:::
+
+##
+![](https://blog.datawrapper.de/wp-content/uploads/2023/10/image27.png){.absolute height="700"}
+
+::: footer
+Source: [Die Zeit](https://www.zeit.de/politik/ausland/israel-gazastreifen-krieg-karten)
+:::
+
+
+##
+![](https://blog.datawrapper.de/wp-content/uploads/2023/10/image2-2.png){.absolute height="700"}
+
+::: footer
+Source: [The New York Times](https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html"></iframe>
+::: footer
+Source: [Wyborcza](https://biqdata.wyborcza.pl/biqdata/7,159116,30304365,frekwencja-wyborcza-o-17-00.html)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://pudding.cool/2023/10/romance-covers/"></iframe>
+::: footer
+Source: [The Pudding](https://pudding.cool/2023/10/romance-covers/)
+:::
+
+
+## Sourcing data {.smaller}
+
+. . .
+
+#### Open Data
+
+::: columns
+::: {.column width="50%"}
+- UK
+  - [ONS](https://www.ons.gov.uk/)
+  - [GOV.UK](https://www.gov.uk/search/research-and-statistics)
+  - [Nomis (labour stats)](https://www.nomisweb.co.uk/)
+  - [NHS Digital](https://digital.nhs.uk/search?sort=date&area=data&searchTab=data&contentSearch=false)
+  - [Covid dashboard](https://coronavirus.data.gov.uk/)
+
+:::
+
+::: {.column width="50%"}
+- Other nations
+  - [US gov](https://www.data.gov/)
+  - [Eurostat](https://ec.europa.eu/eurostat/web/main/home)
+- International
+  - [World Bank](https://data.worldbank.org/)
+  - [United Nations](http://data.un.org/)
+  - [OECD](https://data.oecd.org/)
+  - [Our World in Data](https://ourworldindata.org/)
+
+:::
+:::
+
+::: footer
+More sources: [ddj.nicu.md](https://ddj.nicu.md/sources/)
+:::
+
+
+## Plan ahead
+
+<iframe class="stretch" data-src="https://ddj.nicu.md/sources/data-calendar.html"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/sources/data-calendar.html)
+:::
+
+## Closed data
+
+![](media/closed-data.png)
+
+## FOIs
+
+![](media/foi.png)
+
+::: notes
+WhatDoTheyKnow
+
+Be as specific as possible or you might get the “too much work” excuse, specify the format or you’ll get a PDF
+
+Likelihood they’ll refuse (they refused my locations of CCTV cameras locations on national security grounds)
+
+If you want to use FOIs, do it as soon as possible.
+:::
+
+## Scraping
+
+![](media/scraping.png)
+
+::: notes
+Scraping (week 9)
+
+pre-scraped data like Inside Airbnb
+
+Parsehub, browser extensions, R/Python/Node
+:::
+
+
+## Census exercise
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1wbCYpp-5-2nZCaTdMcnNWSYtsUabQ0MDG_l4FGrZDwg/copy) (here’s [the original data](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021)).
+2. Before you do anything else, what are some questions you would like to answer?
+3. Free first row, filter the table to the region you’re from (or London)
+4. Fill in the columns at the end
+5. What are some other potential stories that you can think of?
+
+::: notes
+1) Concatenate title =CONCATENATE(A2,", ",B2, " (", C2,")")
+2) Conditional formatting on success column
+:::
+
+##  {#basic-excel-formulas-1-recap data-menu-title="Basic Excel Formulas Recap"}
+
+::: columns
+::: {.column width="33.33%"}
+##### [=A1+A2]
+Returns one number added (+) or subtracting (*) another.
+:::
+
+::: {.column width="33.33%"}
+##### [=A1/B$1]
+Returns one number divided (/) or multiplied (*) by another.
+:::
+
+::: {.column width="33.33%"}
+##### [=SUM()]
+Returns the sum of a series of numbers and/or cells.
+:::
+
+::: {.column width="33.33%"}
+##### [=AVERAGE()]
+Returns the numerical average value in a dataset, ignoring text.
+:::
+
+::: {.column width="33.33%"}
+##### [=MEDIAN()]
+Returns the median value in a numeric dataset.
+:::
+
+::: {.column width="33.33%"}
+##### [=(NEW-OLD)/OLD]
+Shows percentage change.
+:::
+:::
+
+
+##  {#basic-excel-formulas-2 data-menu-title="Basic Excel Formulas 2"}
+
+::: columns
+::: {.column width="33.33%"}
+##### [=IF()]
+Returns one value if the result is true, another if it’s false.
+:::
+
+::: {.column width="33.33%"}
+##### [=COUNTIF()]
+Count all the cells that match a condition.
+:::
+
+::: {.column width="33.33%"}
+##### [=SUMIF()]
+Sum all the cells that match a condition.
+:::
+
+::: {.column width="33.33%"}
+##### [=CONCATENATE()]
+Combine multiple bits of text together.
+Use =SPLIT() for the opposite.
+:::
+
+::: {.column width="33.33%"}
+##### [=VLOOKUP()]
+Match the values in a cell with the corresponding row in another dataset.
+:::
+
+::: {.column width="33.33%"}
+##### [=XLOOKUP()]
+Same as =XLOOKUP() but more flexible and easier to grasp.
+:::
+:::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+<!-- # Week 3 -->
 <!-- Pad this week out, add more content (about 25%) -->
-<p>Introduction to [Data Journalism]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="section-8" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html" target="_blank">The New York Times</a></p>
-</div>
-</section>
-<section id="section-9" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://uclab.fh-potsdam.de/projects/klimakarten/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://uclab.fh-potsdam.de/projects/klimakarten/" target="_blank">Urban Complexity Lab</a></p>
-</div>
-<!-- ## {fullscreen=true} -->
-<!-- <iframe class="stretch" data-src="https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/"></iframe> -->
-<!-- ::: footer -->
-<!-- Source: [The Washington Post](https://www.washingtonpost.com/climate-environment/interactive/2023/map-illegal-fishing/) -->
-<!-- ::: -->
-</section>
-<section id="section-10" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/" target="_blank">The Register</a></p>
-</div>
-</section>
-<section id="section-11" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://thedivtagguy.com/tidytuesday/taylor-swift/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://thedivtagguy.com/tidytuesday/taylor-swift/" target="_blank">Aman Bhargava</a></p>
-</div>
-</section>
-<section id="bloomberg-jobs" class="slide level2">
-<h2>Bloomberg jobs</h2>
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
-<p lang="en" dir="ltr">
-Bloomberg is expanding its data journalism and visualization teams globally by hiring approximately 40 new data journalists, data visualization reporters, editors and engineers.<br><br>a thread 🧵… <a href="https://t.co/kQklY9cyPf">pic.twitter.com/kQklY9cyPf</a>
-</p>
-— Bloomberg Graphics (<span class="citation" data-cites="BBGVisualData">@BBGVisualData</span>) <a href="https://twitter.com/BBGVisualData/status/1717253500827021384?ref_src=twsrc%5Etfw">October 25, 2023</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<aside class="notes">
-<p>https://nitter.net/martinstabe/status/1717507555360920055#m</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="toolbox" class="slide level2">
-<h2>Toolbox</h2>
-<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://ddj.nicu.md/toolbox/" target="_blank">ddj.nicu.md</a></p>
-</div>
-</section>
-<section id="xlookup-1" class="slide level2">
-<h2>XLOOKUP</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource scala number-lines code-with-copy"><code class="sourceCode scala"><span id="cb1-1"><a></a><span class="op">=</span><span class="fu">XLOOKUP</span><span class="op">(</span>search_term<span class="op">,</span> col_to_search<span class="op">,</span> col_to_return<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- Introduction to [Data Journalism]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-<img data-src="media/xlookup.png" class="r-stretch"></section>
-<section id="pivot-tables" class="slide level2 smaller">
-<h2>Pivot Tables</h2>
-<p>Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.</p>
-<p>You can calculate averages, counts, max/min values or sums for numbers in a group.</p>
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html"></iframe>
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html)
+:::
 
-<img data-src="media/pivot-recipe.png" class="r-stretch"></section>
-<section id="averages" class="slide level2 smaller">
-<h2>Averages</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="media/mean-median.svg" height="600"></p>
-</div><div class="column" style="width:50%;">
-<h3 id="mode">=MODE()</h3>
-<p>Finds the most common value in a range.</p>
-<p>&nbsp; &nbsp;</p>
-<h3 id="median-2">=MEDIAN()</h3>
-<p>Finds the value that’s right in the middle of a dataset.</p>
-<p>&nbsp; &nbsp;</p>
-<h3 id="average-2">=AVERAGE()</h3>
-<p>Sum all the values and divide by the number of records.</p>
-</div></div>
-</section>
-<section id="census-exercise-v2" class="slide level2">
-<h2>Census exercise v2</h2>
-<ol type="1">
-<li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1dhkZApmrXbdySBjOESNWgBT9bdzUdIDrfmU12nZgFHc/copy" target="_blank">this spreadsheet</a>.</li>
-<li>Fill in the empty columns with formulas we learned last time.</li>
-<li><iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameborder="0" class="giphy-embed" allowfullscreen="">
-</iframe></li>
-</ol>
-<aside class="notes">
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://uclab.fh-potsdam.de/projects/klimakarten/"></iframe>
+::: footer
+Source: [Urban Complexity Lab](https://uclab.fh-potsdam.de/projects/klimakarten/)
+:::
 
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="contact-2" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
-</section></section>
-<section>
-<section id="week-4" class="title-slide slide level1 center">
-<h1>Week 4</h1>
-<p>Data [Cleaning]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="section-12" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<p><img data-src="media/bbc-wages.png" class="absolute" style="height: 700px; "></p>
-<div class="footer">
-<p>Source: <a href="https://www.bbc.co.uk/news/business-67278269" target="_blank">BBC</a></p>
-</div>
-</section>
-<section id="section-13" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://oct7map.com/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://oct7map.com/" target="_blank">October 7th Geo-visualization Project</a></p>
-</div>
-</section>
-<section id="section-14" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<video autoplay="" loop="" muted="" src="https://blog.datawrapper.de/wp-content/uploads/2023/10/CleanShot-2023-10-30-at-17.04.24.mp4" class="thin-grey-border">
-</video>
-<div class="footer">
-<p>Source: <a href="https://www.washingtonpost.com/nation/interactive/mass-shootings/" target="_blank">The Washington Post</a></p>
-</div>
-</section>
-<section id="section-15" class="slide level2">
-<h2></h2>
 
-<img data-src="media/nyt-neighbourhoods.png" class="r-stretch"><div class="footer">
-<p>Source: <a href="https://www.nytimes.com/interactive/2023/upshot/extremely-detailed-nyc-neighborhood-map.html" target="_blank">The New York Times</a></p>
-</div>
-</section>
-<section id="section-16" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/" target="_blank">Bloomberg</a></p>
-</div>
-</section>
-<section id="dirty-data" class="slide level2 smaller" data-menu-title="Dirty Data">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:33.33%;">
-<h5 id="missing-data">[Missing data]</h5>
-<p>Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="duplicated-data">[Duplicated data]</h5>
-<p>Records can be repeated, either due to technical mishaps or due to repeated input.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="misspellings">[Misspellings]</h5>
-<p>Humans make mistakes. Assume any dataset manually created by humans to have missspelings.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="poor-formatting">[Poor formatting]</h5>
-<p>Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="parsing-errors">[Parsing errors]</h5>
-<p>Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.</p>
-</div><div class="column" style="width:33.33%;">
-<h5 id="inconsistent-data">[Inconsistent data]</h5>
-<p>A column can have different unites, spell categories differently or record different methodologies.</p>
-</div></div>
-</section>
-<section id="the-guide-to-bad-data" class="slide level2">
-<h2>The guide to bad data</h2>
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/"></iframe>
+::: footer
+Source: [The Register](https://www.theregister.com/2023/10/20/royal_college_excel_blunder/)
+:::
 
-<img data-src="media/guide-bad-data.png" class="r-stretch"><div class="footer">
-<p>Source: <a href="https://qz.com/572338/the-quartz-guide-to-bad-data" target="_blank">Quartz</a> (also on <a href="https://github.com/Quartz/bad-data-guide" target="_blank">GitHub</a>)</p>
-</div>
-</section>
-<section id="data-prep" class="slide level2">
-<h2>Data prep</h2>
-<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets" target="_blank">Datawrapper</a></p>
-</div>
-</section>
-<section id="inflation-screenshot" class="slide level2 smaller" data-menu-title="ONS inflation data">
-<h2></h2>
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://thedivtagguy.com/tidytuesday/taylor-swift/"></iframe>
+::: footer
+Source: [Aman Bhargava](https://thedivtagguy.com/tidytuesday/taylor-swift/)
+:::
 
-<img data-src="media/inflation-ons-screenshot.png" class="r-stretch"><div class="footer">
-<p>Source: <a href="https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation" target="_blank">ONS</a></p>
-</div>
-</section>
-<section id="baby-names-exercise" class="slide level2">
-<h2>Baby names exercise</h2>
-<ol type="1">
-<li>Download the <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021/relateddata" target="_blank">Baby names for girls/boys in England and Wales file</a>.</li>
-<li>Upload the spreadsheet to Google Drive and open it in Google Sheets.</li>
-<li>Find and clean Table 1.</li>
-<li>Read about <a href="https://www.thecourier.co.uk/fp/courier-investigations/3168365/baby-name-rules-scotland/" target="_blank">Shart</a>.</li>
-</ol>
-<p>Also check last year’s tables: <a href="https://docs.google.com/spreadsheets/d/1V88_N_jJHh9rrT16IYEBAGddtD_t_LpoBNvG9DY056g/edit" target="_blank">here</a>.</p>
-</section>
-<section id="openrefine" class="slide level2">
-<h2>OpenRefine</h2>
+## Bloomberg jobs
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Bloomberg is expanding its data journalism and visualization teams globally by hiring approximately 40 new data journalists, data visualization reporters, editors and engineers.<br><br>a thread 🧵… <a href="https://t.co/kQklY9cyPf">pic.twitter.com/kQklY9cyPf</a></p>&mdash; Bloomberg Graphics (@BBGVisualData) <a href="https://twitter.com/BBGVisualData/status/1717253500827021384?ref_src=twsrc%5Etfw">October 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<img data-src="media/open-refine-guardian.png" class="r-stretch"><div class="footer">
-<p>Source: <a href="https://www.theguardian.com/politics/2021/oct/25/tories-received-13m-from-fossil-fuel-interests-and-climate-sceptics-since-2019" target="_blank">The Guardian</a></p>
-</div>
-</section>
-<section id="download-openrefine" class="slide level2">
-<h2>Download OpenRefine</h2>
-<iframe class="stretch" data-src="https://openrefine.org/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://openrefine.org/" target="_blank">OpenRefine</a></p>
-</div>
-<aside class="notes">
-<p>https://search.electoralcommission.org.uk/</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="food-hygiene-data" class="slide level2">
-<h2>Food hygiene data</h2>
-<iframe class="stretch" data-src="https://ratings.food.gov.uk/open-data">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://ratings.food.gov.uk/open-data" target="_blank">Food Standards Agency</a></p>
-</div>
-</section>
-<section id="food-hygiene-exercise" class="slide level2 smaller">
-<h2>Food hygiene exercise</h2>
-<ul>
-<li>Make a copy of the <a href="https://docs.google.com/spreadsheets/d/1eNZZlAL3pYEd31Ge56qdkc3tko42fAGvEv8VARdwCr8/copy" target="_blank">food hygiene ratings data</a>.</li>
-<li>Answer these questions:
-<ol type="1">
-<li>What kind of establishments are the best rated in Islington?</li>
-<li>What establishment with a rating of 0-1 is due a follow-up visit?</li>
-<li>How many establishments received a 5-star rating this month?</li>
-<li>What is the cleanest hotspots (highest average hygiene with 10+ ratings)?</li>
-<li>Any other interesting angles?</li>
-</ol></li>
-</ul>
-<aside class="notes">
-<p>N7 6NJ. Use Google Sheets filter instead of pivot for 10+ ratings</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="group-assignment" class="slide level2 smaller">
-<h2>Group assignment</h2>
-<p>You will be split into teams of four to create a narrated PowerPoint presentation critiquing a data project featured in the <a href="https://sigmaawards.org/projects/" target="_blank">Sigma Awards</a>. You can choose a winner or a short-listed project (at the bottom of the page).</p>
-<p>&nbsp; &nbsp;</p>
-<p>Deadline: <strong>Friday, December 8, 4pm</strong></p>
-<p>&nbsp; &nbsp;</p>
-<p>Deliverables</p>
-<ul>
-<li>A 20-25 minute long <a href="https://support.microsoft.com/en-us/office/record-audio-narration-for-your-powerpoint-presentation-232d5fec-fc90-4abb-9332-c469d336d947" target="_blank">narrated PowerPoint presentation</a>.</li>
-<li>A 500-word group reflection, with appropriate references (Harvard and I suggest using Zotero as citation manager).</li>
-<li>Fill in <a href="https://docs.google.com/spreadsheets/d/1_OVgO5ExbH_Xe8FOipb0LAAh4DUbMZ4RI9G3ZxgVfI0/edit#gid=0" target="_blank">this spreadsheet</a> with your name and the project you’re working on.</li>
-</ul>
-</section>
-<section id="section-17" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/" target="_blank">Joe Murphy</a></p>
-</div>
-</section>
-<section id="contact-3" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
-</section></section>
-<section>
-<section id="week-5" class="title-slide slide level1 center">
-<h1>Week 5</h1>
-<p>Data [Stories]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="day-challenge-erwan" class="slide level2" data-fullscreen="true">
-<h2>30-day challenge (Erwan)</h2>
-<p><img data-src="https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg" class="absolute" style="height: 600px; "></p>
-<div class="footer">
-<p>Source: <a href="https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1" target="_blank">Erwan Rivault</a></p>
-</div>
-</section>
-<section id="day-challenge-jana" class="slide level2" data-fullscreen="true">
-<h2>30-day challenge (Jana)</h2>
-<p><img data-src="https://blog.datawrapper.de/wp-content/uploads/2023/11/F-G8R9ZW0AAso94.jpeg" class="absolute" style="height: 600px; "></p>
-<div class="footer">
-<p>Source: <a href="https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1" target="_blank">Jana Tauschinski</a></p>
-</div>
-</section>
-<section id="section-18" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<p><img data-src="https://blog.datawrapper.de/wp-content/uploads/2023/11/image6.png" class="absolute" style="height: 700px; "></p>
-<div class="footer">
-<p>Source: <a href="https://www.ft.com/content/ed739236-7430-4dc1-95f5-4a23534d8841" target="_blank">FT</a></p>
-</div>
-</section>
-<section id="why-do-we-visualise-data" class="slide level2" data-background-color="#e9e9e9">
-<h2>Why do we visualise data?</h2>
-<p>Summarising data, like we did in previous lessons, is not always enough to reveal pattern or trends.</p>
-<p>Visualising it can provide insight we’d otherwise lose out on.</p>
-<p><img data-src="https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif" class="absolute" style="width: 700px; "></p>
-</section>
-<section id="what-can-we-visualise" class="slide level2 smaller" data-background-color="white">
-<h2>What can we visualise?</h2>
-<p>Position <img data-src="https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-<div class="fragment">
-<p>Size</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Width <img data-src="https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Horizontal-600x600.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-</div>
-<div class="fragment">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Height <img data-src="https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical-600x600.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-</div>
-<div class="fragment">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Area <img data-src="https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart-600x600.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-</div>
-<div class="fragment">
-<p>Colour</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Fill <img data-src="https://datavizproject.com/wp-content/uploads/types/Pictorial-Stacked-Chart-600x600.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-</div>
-<div class="fragment">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Colour <img data-src="https://datavizproject.com/wp-content/uploads/types/Cluster-Analysis-600x600.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-</div>
-<div class="fragment">
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Opacity</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Pattern</p>
-<p>Shape <img data-src="https://datavizproject.com/wp-content/uploads/types/Matrix-Diagram--600x600.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-</div>
-<div class="fragment">
-<p>Location <img data-src="https://datavizproject.com/wp-content/uploads/types/Choropleth-Map-600x600.png" class="absolute" style="top: 100px; right: 50px; width: 500px; height: 500px; "></p>
-</div>
-</section>
-<section id="people-suck-at-sizes" class="slide level2" data-background-color="white">
-<h2>People suck at sizes</h2>
-<iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/@mizinov/area-comparison?cell=*">
-</iframe>
-</section>
-<section id="what-visual-encoding-can-you-find-in-this-chart" class="slide level2" data-background-color="#fff1e0">
-<h2>What visual encoding can you find in this chart?</h2>
-<p><img data-src="media/ft/scatter-5.gif" class="absolute" style="height: 500px; "></p>
-</section>
-<section id="the-fts-scatter-plot" class="slide level2" data-background-color="#fff1e0">
-<h2>The FT’s scatter plot</h2>
-<div class="fragment fade-in-then-out">
-<p>Standard scatter plot <img data-src="media/ft/scatter-1.avif" class="absolute" style="top: 100px; right: 20px; height: 450px; "></p>
-</div>
-<div class="fragment fade-in-then-out">
-<p>Change scale to log <img data-src="media/ft/scatter-2.avif" class="absolute" style="top: 100px; right: 20px; height: 450px; "></p>
-</div>
-<div class="fragment fade-in-then-out">
-<p>Size by population <img data-src="media/ft/scatter-3.avif" class="absolute" style="top: 100px; right: 20px; height: 450px; "></p>
-</div>
-<div class="fragment fade-in-then-out">
-<p>Colour by continent <img data-src="media/ft/scatter-4.avif" class="absolute" style="top: 100px; right: 20px; height: 450px; "></p>
-</div>
-<div class="fragment">
-<p>Animate over time <img data-src="media/ft/scatter-5.gif" class="absolute" style="top: 100px; right: 20px; height: 450px; "></p>
-</div>
-<aside class="notes">
-<p>https://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="ft-vocabulary" class="slide level2">
-<h2>FT Vocabulary</h2>
-<p><img data-src="https://raw.githubusercontent.com/Financial-Times/chart-doctor/main/visual-vocabulary/poster.png" class="absolute" style="top: 0px; left: 0px; height: 800px; "></p>
-<div class="footer">
-<p>Source: <a href="https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary" target="_blank">FT</a></p>
-</div>
-</section>
-<section id="many-types-of-charts" class="slide level2">
-<h2>Many types of charts</h2>
-<ul>
-<li><a href="https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary" target="_blank">FT Vocabulary</a></li>
-<li><a href="https://datavizproject.com/" target="_blank">Data Viz Project</a></li>
-<li><a href="https://www.data-to-viz.com/" target="_blank">Data to Viz</a></li>
-<li><a href="https://datavizcatalogue.com/" target="_blank">Data Visualisation Catalogue</a></li>
-</ul>
-</section>
-<section id="gapminder" class="slide level2">
-<h2>Gapminder</h2>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class="embed-container">
-<iframe src="https://www.youtube.com/embed/hVimVzgtD6w" frameborder="0" allowfullscreen="">
-</iframe>
-</div>
-</section>
-<section id="gapminder-exercise" class="slide level2 smaller">
-<h2>Gapminder exercise</h2>
-<ol type="1">
-<li>Make a copy of the <a href="https://www.gapminder.org/data/" target="_blank">Gapminder data</a>.</li>
-<li>Working in groups, think of stories to tell based on this data.</li>
-<li>What would you visualise to support your story/stories?</li>
-<li>Would you look for any other datasets you can combine with this?</li>
-<li>Scout out your visualisation ideas either on pen &amp; paper, using Google Sheets charts or using a platform like <a href="https://www.datawrapper.de/" target="_blank">Datawrapper</a> or <a href="https://flourish.studio/" target="_blank">Flourish</a>.</li>
-<li>If you have time left, discuss plans for the group assignment.</li>
-</ol>
-</section>
-<section id="gapminder-exercise-1" class="slide level2">
-<h2>Gapminder exercise</h2>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class="embed-container">
-<iframe src="https://www.gapminder.org/tools/" frameborder="0" allowfullscreen="">
-</iframe>
-</div>
-</section>
-<section id="imdb-exercise" class="slide level2 smaller">
-<h2>IMDb exercise</h2>
-<!-- Upload this somewhere so students don't have to log in -->
-<ol type="1">
-<li>Make a copy of the <a href="https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies" target="_blank">IMDb data</a>.</li>
-<li>Working in groups, think of stories to tell based on this data.</li>
-<li>What would you visualise to support your story/stories?</li>
-<li>Would you look for any other datasets you can combine with this?</li>
-<li>Scout out your visualisation ideas either on pen &amp; paper, using Google Sheets charts or using a platform like <a href="https://www.datawrapper.de/" target="_blank">Datawrapper</a> or <a href="https://flourish.studio/" target="_blank">Flourish</a>.</li>
-<li>If you have time left, discuss plans for the group assignment.</li>
-</ol>
-</section>
-<section id="contact-4" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
-<aside class="notes">
-<p>Please make Flourish and Datawrapper accounts</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section>
-<section id="week-6" class="title-slide slide level1 center">
-<h1>Week 6</h1>
-<p>Data [Visualisation]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="section-19" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/" target="_blank">Reuters</a></p>
-</div>
-</section>
-<section id="section-20" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/" target="_blank">Bloomberg</a></p>
-</div>
-</section>
-<section id="section-21" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/" target="_blank">Washington Post</a></p>
-</div>
-</section>
-<section id="dataviz-toolbox" class="slide level2">
-<h2>Dataviz Toolbox</h2>
-<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#visualisation">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://ddj.nicu.md/toolbox/#visualisation" target="_blank">ddj.nicu.md</a></p>
-</div>
-</section>
-<section id="barcolumn-charts" class="slide level2" data-background-color="white">
-<h2>Bar/column charts</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Horizontal or vertical rectangles with lengths proportional to the values that they represent. <br><br> Good for comparing across different values or showing a trend over time.</p>
-</div></div>
-</section>
-<section id="line-chart" class="slide level2" data-background-color="white">
-<h2>Line chart</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Line-Graph.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Shows values on a continuous scale. Similar to a scatter plot, except all dots are connected. <br><br> Good for showing trends over time.</p>
-</div></div>
-</section>
-<section id="area-chart" class="slide level2" data-background-color="white">
-<h2>Area chart</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Similar to a line chart but the area underneath the line is coloured in. When stacked, it can show multiple data series as well as their cumulative trend. <br><br> Good for showing trends over time.</p>
-</div></div>
-</section>
-<section id="scatter-plot" class="slide level2" data-background-color="white">
-<h2>Scatter plot</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Plots a dataset across two continuous dimensions, each on a different axis (X and Y). <br><br> Good for showing correlation between different data series.</p>
-</div></div>
-</section>
-<section id="map" class="slide level2" data-background-color="white">
-<h2>Map</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Only works with geographical data (duh!). <br><br> Even with geographical data, other charts can often be a better choice.</p>
-</div></div>
-</section>
-<section id="anatomy-of-a-chart" class="slide level2" data-background-color="white">
-<h2>Anatomy of a chart</h2>
+::: notes
+https://nitter.net/martinstabe/status/1717507555360920055#m
+:::
 
-<img data-src="https://c.files.bbci.co.uk/13899/production/_128352008_optimised-debt-ceiling-nc.png" class="r-stretch"><aside class="notes">
-<ul>
-<li>Title</li>
-<li>Subtitle / description</li>
-<li>Series</li>
-<li>Labels</li>
-<li>Gridlines</li>
-<li>x-axix</li>
-<li>y-axis</li>
-<li>Legend/key</li>
-<li>Source</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="colour-scales" class="slide level2" data-background-color="white">
-<h2>Colour scales</h2>
 
-<img data-src="https://blog.datawrapper.de/wp-content/uploads/2021/03/200801_colorscale-intro-f-1.png" class="r-stretch"><aside class="notes">
-<p>Sequential: Colours (of the same hue) that go from light to dark or the other way around. Usually, darker means higher value.</p>
-<p>Diverging: Similar to sequential, but they have a light middle colour that turns darker on both ends of the scale. Useful when you have both positive and negative values.</p>
-<p>Categorical: For values that aren’t on a numeric scale or don’t have an intrinsic order. Useful when none of the colours are more important than others.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="colour-toolbox" class="slide level2">
-<h2>Colour Toolbox</h2>
-<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#colours">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://ddj.nicu.md/toolbox/#colours" target="_blank">ddj.nicu.md</a></p>
-</div>
-</section>
-<section id="dataviz-fonts" class="slide level2" data-background-color="white">
-<h2>Dataviz Fonts</h2>
-<iframe class="stretch" data-src="https://blog.datawrapper.de/fonts-for-data-visualization/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://blog.datawrapper.de/fonts-for-data-visualization/" target="_blank">Datawrapper</a></p>
-</div>
-</section>
-<section id="bad-charts-daily-mail" class="slide level2">
-<h2>Bad charts: Daily Mail</h2>
+## Toolbox
 
-<img data-src="media/bad-charts/daily-fail-2.jpg" class="r-stretch"><div class="footer">
-<p>Source: <a href="https://www.dailymail.co.uk/news/article-8028565/EU-leaders-argue-early-hours-bruising-budget-talks.html" target="_blank">Daily Mail</a></p>
-</div>
-</section>
-<section id="bad-charts-the-sun" class="slide level2">
-<h2>Bad charts: The Sun</h2>
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/)
+:::
 
-<img data-src="media/bad-charts/the-s-n.webp" class="r-stretch"><div class="footer">
-<p>Source: The Sun</p>
-</div>
-</section>
-<section id="bad-charts-reuters" class="slide level2">
-<h2>Bad charts: Reuters</h2>
-<p><img data-src="media/bad-charts/gun-deaths.webp" class="absolute" style="top: 90px; left: 0px; height: 500px; "></p>
-<div class="fragment">
-<p><img data-src="media/bad-charts/gun-deaths-2.webp" class="absolute" style="top: 90px; left: 0px; height: 456px; "></p>
-</div>
-<div class="footer">
-<p>Source: Reuters</p>
-</div>
-</section>
-<section id="bad-charts-cbs-news" class="slide level2">
-<h2>Bad charts: CBS News</h2>
+## XLOOKUP
 
-<img data-src="media/bad-charts/cbsn.jpg" class="r-stretch"><div class="footer">
-<p>Source: CBS News</p>
-</div>
-</section>
-<section id="wtf-visualizations" class="slide level2">
-<h2>WTF Visualizations</h2>
-<iframe class="stretch" data-src="https://viz.wtf/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://viz.wtf/" target="_blank">WTF Visualizations</a></p>
-</div>
-</section>
-<section id="covid-exercise" class="slide level2">
-<h2>Covid exercise</h2>
-<ol type="1">
-<li>Download a copy of the <a href="https://github.com/owid/covid-19-data/blob/master/public/data/latest/owid-covid-latest.csv" target="_blank">Covid-19 data</a>.</li>
-<li>Filter it to only the deaths and vaccination rates in Europe.</li>
-<li>Copy the data into Datawrapper.</li>
-<li>Create a scatter plot.</li>
-<li>Customise axis labels, colours, size, tooltips, title, description and source.</li>
-<li>Add annotations.</li>
-<li>Publish or download the chart.</li>
-</ol>
-</section>
-<section id="covid-exercise---example" class="slide level2" data-background-color="white">
-<h2>Covid exercise - example</h2>
-<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/AyGb7/1/">
-</iframe>
-</section>
-<section id="taxis-vs-uber-exercise" class="slide level2" data-background-color="white">
-<h2>Taxis vs Uber exercise</h2>
-<ol type="1">
-<li>Copy <a href="https://docs.google.com/spreadsheets/d/1wf3qDM9Ew8lDeDpTHNz22S83ri8rDspnRycDG9m657Q/copy" target="_blank">this spreadsheet</a>.</li>
-<li>Copy the data into Flourish.</li>
-<li>Create a bar chart race.</li>
-<li>Customise axis labels, colours, size, title, description and source.</li>
-<li>Add annotations (optionally).</li>
-<li>Publish or download the chart.</li>
-</ol>
-</section>
-<section id="taxis-vs-uber-exercise---example" class="slide level2">
-<h2>Taxis vs Uber exercise - example</h2>
-<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/11775147">
-<script src="https://public.flourish.studio/resources/embed.js"></script>
-</div>
-<div class="footer">
-<p>Source: <a href="https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how_uber_took_over_new_york_city/" target="_blank">Reddit</a></p>
-</div>
-</section>
-<section id="contact-5" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
-</section></section>
-<section>
-<section id="week-7" class="title-slide slide level1 center">
-<h1>Week 7</h1>
-<p>[Maps]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="section-22" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://blog.datawrapper.de/how-to-get-started-with-data-visualization/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://blog.datawrapper.de/how-to-get-started-with-data-visualization/" target="_blank">Datawrapper</a></p>
-</div>
-</section>
-<section id="section-23" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.bbc.co.uk/news/business-67489975">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.bbc.co.uk/news/business-67489975" target="_blank">BBC</a></p>
-</div>
-</section>
-<section id="section-24" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.ons.gov.uk/visualisations/censusorigindestination/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.ons.gov.uk/visualisations/censusorigindestination/" target="_blank">ONS</a></p>
-</div>
-</section>
-<section id="section-25" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://honzaap.github.io/Pathfinding/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://honzaap.github.io/Pathfinding/" target="_blank">Jan Pánek</a></p>
-</div>
-</section>
-<section id="section-26" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/" target="_blank">Bloomberg</a></p>
-</div>
-</section>
-<section id="section-27" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html" target="_blank">The New York Times</a></p>
-</div>
-</section>
-<section id="section-28" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/" target="_blank">Washington Post</a></p>
-</div>
-<!-- https://blog.datawrapper.de/pigeon-internet-speed/ -->
-</section>
-<section id="section-29" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/" target="_blank">openDemocracy</a></p>
-</div>
-</section>
-<section id="choropleth" class="slide level2" data-background-color="white">
-<h2>Choropleth</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Pre-defined areas such as countries, regions or districts are coloured (either sequential, diverging or categorical) in proportion to values in a dataset.</p>
-</div></div>
-</section>
-<section id="bubblesymbol-map" class="slide level2" data-background-color="white">
-<h2>Bubble/symbol map</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Bubble-Map.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Circles are drawn on top of a map, with their size or colour proportional to values in a dataset.</p>
-</div></div>
-</section>
-<section id="cartogram-hex-map" class="slide level2" data-background-color="white">
-<h2>Cartogram / hex map</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p><img data-src="https://datavizproject.com/wp-content/uploads/types/Cartogram.png"></p>
-</div><div class="column" style="width:40%;">
-<p>Cartograms resize regions in proportion to a variable in your dataset, such as population. <br><br> Hex maps standardise administrative units into same-sizes hexagons, squares or triangles.</p>
-</div></div>
-</section>
-<section id="the-2019-general-election" class="slide level2" data-background-color="white">
-<h2>The 2019 general election</h2>
+``` scala
+=XLOOKUP(search_term, col_to_search, col_to_return)
+```
 
-<!-- https://www.dailykos.com/stories/2023/11/8/2204458/-A-majority-of-America-will-have-access-to-legal-marijuana-following-Ohio-election -->
-<img data-src="https://geographical.co.uk/wp-content/uploads/UK-general-election-2019.jpeg" class="r-stretch"></section>
-<section id="not-always-the-right-choice" class="slide level2">
-<h2>Not always the right choice</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="https://imgs.xkcd.com/comics/heatmap_2x.png"></p>
-</div><div class="column" style="width:50%;">
-<p>Try to only use maps when there’s a geographical pattern to your data. <br><br> Don’t make a map if it’s going to basically be a population map.</p>
-</div></div>
-<div class="footer">
-<p>Source: <a href="https://xkcd.com/1138/" target="_blank">xkcd</a></p>
-</div>
-</section>
-<section id="what-data-youll-need" class="slide level2 smaller" data-background-color="#f9f9f9">
-<h2>What data you’ll need</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="media/geo-data-1.png"></p>
-<h4 id="geographical-data">Geographical data</h4>
-<p>This can be polygons (areas), lines or points. Some tools have a few options by default, or you can get additional ones from the ONS, Natural Earth or ArcGIS.</p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="media/geo-data-2.png"></p>
-<h4 id="numerical-or-categorical-data">Numerical or categorical data</h4>
-<p>This is the data that will be placed in the shapes on your map. Normally contains region IDs or coordinates (latitude and longitude).</p>
-</div></div>
-</section>
-<section id="internet-speed-exercise" class="slide level2">
-<h2>Internet speed exercise</h2>
-<ol type="1">
-<li>Make a copy of the <a href="https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy" target="_blank">internet speed in Europe data</a>.</li>
-<li>Create a choropleth map (NUTS3, 2021).</li>
-<li>Copy the data in.</li>
-<li>Customise colours, title, description and source.</li>
-<li>Add annotations.</li>
-<li>Publish or download the chart.</li>
-</ol>
-</section>
-<section id="internet-speed---example" class="slide level2 smaller" data-background-color="#1c1b22">
-<h2>Internet speed - example</h2>
-<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/uJ92E/">
-</iframe>
-</section>
-<section id="students-exercise" class="slide level2">
-<h2>Students exercise</h2>
-<ol type="1">
-<li>Go to the international students tab in <a href="https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy" target="_blank">the spreadsheet you’ve copied earlier</a>.</li>
-<li>Create a 3D globe flow map in Flourish.</li>
-<li>Copy the data in.</li>
-<li>Customise colours, title, description and source.</li>
-<li>Publish or download the chart.</li>
-</ol>
-</section>
-<section id="missing-migrants-exercise" class="slide level2">
-<h2>Missing migrants exercise</h2>
-<ol type="1">
-<li>Go to the missing migrants tab in the spreadsheet you’ve copied earlier.</li>
-<li>Copy the data into Datawrapper or Flourish.</li>
-<li>Create a symbol map.</li>
-<li>Customise it (colour, size, opacity, etc).</li>
-</ol>
-</section>
-<section id="missing-migrants---example" class="slide level2">
-<h2>Missing migrants - example</h2>
-<div class="flourish-embed flourish-map" data-src="visualisation/6268496">
-<script src="https://public.flourish.studio/resources/embed.js"></script>
-</div>
-</section>
-<section id="contact-6" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
-</section></section>
-<section>
-<section id="week-8" class="title-slide slide level1 center">
-<h1>Week 8</h1>
-<p>Data [Projects]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="section-30" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined" target="_blank">Friends of the Earth</a></p>
-</div>
-</section>
-<section id="section-31" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html" target="_blank">The New York Times</a></p>
-</div>
-</section>
-<section id="section-32" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://ig.ft.com/china-mosques/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://ig.ft.com/china-mosques/" target="_blank">Financial Times</a></p>
-</div>
-</section>
-<section id="section-33" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html&quot;">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html" target="_blank">AP</a></p>
-</div>
-</section>
-<section id="section-34" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.wsj.com/personal-finance/income-raise-happiness-06a70900">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.wsj.com/personal-finance/income-raise-happiness-06a70900" target="_blank">Wall Street Journal</a></p>
-</div>
-</section>
-<section id="section-35" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/" target="_blank">Bloomberg</a></p>
-</div>
-</section>
-<section id="section-36" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://texty.org.ua/projects/111159/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://texty.org.ua/projects/111159/" target="_blank">Texty</a></p>
-</div>
-</section>
-<section id="section-37" class="slide level2 smaller">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:33.33%;">
-<p><img data-src="media/projects-1.png" style="width:100.0%"></p>
-<p>Often, the best narratives warrant going further than simple graphics.</p>
-</div><div class="column" style="width:33.33%;">
-<p><img data-src="media/projects-2.png" style="width:100.0%"></p>
-<p>Tailored visualisations designed specifically for a story will almost always be the best way to tell a story.</p>
-</div><div class="column" style="width:33.33%;">
-<p><img data-src="media/projects-3.png" style="width:100.0%"></p>
-<p>Interactivity can sometimes help portray the intricacies of a story better.</p>
-</div></div>
-</section>
-<section id="the-martini-glass-principle" class="slide level2" data-background-color="#f2f2f2">
-<h2>The Martini Glass principle</h2>
+![](media/xlookup.png)
 
-<img data-src="https://miro.medium.com/v2/1*Jca05UCRvx-iJ96zGIFQkw.jpeg" style="width:100.0%" class="r-stretch"><aside class="notes">
-<p>Kicker This is the top line you want to tell your audience. What does the data say? What will people share on Twitter?</p>
-<p>Explanation Guide your reader through your story, exposing different facets of your data.</p>
-<p>Exploration Let your readers explore the data on their own to find the stories that are relevant to them.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-38" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html" target="_blank">Gurman Bhatia</a></p>
-</div>
-</section>
-<section id="section-39" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/" target="_blank">Masters of Media</a></p>
-</div>
-</section>
-<section id="trackers" class="slide level2 smaller" data-fullscreen="true" data-background-color="white">
-<h2>Trackers</h2>
-<div class="columns">
-<div class="column" style="width:66.66%;">
-<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class="embed-container">
-<iframe src="https://nsmg-projects-public.s3.eu-west-2.amazonaws.com/live/nsmg-031/index.html" frameborder="0" allowfullscreen="">
-</iframe>
-</div>
-</div><div class="column" style="width:33.33%;">
-<p>Trackers are data visualisations connected to a data source that is periodically updated. <br><br> Examples include <a href="https://projects.fivethirtyeight.com/biden-approval-rating/" target="_blank">FiveThirtyEight’s Biden approval rating tracker</a>, <a href="https://www.bloomberg.com/graphics/pret-index/" target="_blank">Bloomberg’s Pret Index</a> and <a href="https://www.newstatesman.com/science-tech/2021/11/uk-covid-tracker-latest-data-local-authority" target="_blank">the New Statesman’s Covid-19 tracker</a>.</p>
-</div></div>
-<div class="footer">
-<p>Source: <a href="https://www.newstatesman.com/science-tech/2021/12/uk-covid-tracker-latest-data-local-authority" target="_blank">New Statesman</a></p>
-</div>
-</section>
-<section id="calculators" class="slide level2 smaller" data-fullscreen="true" data-background-color="white">
-<h2>Calculators</h2>
-<div class="columns">
-<div class="column" style="width:66.66%;">
-<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class="embed-container">
-<iframe src="https://flo.uri.sh/visualisation/15816210/embed" frameborder="0" allowfullscreen="">
-</iframe>
-</div>
-</div><div class="column" style="width:33.33%;">
-<p>Calculators allow readers to input their own data and receive a result. <br><br> Examples include the <a href="https://ig.ft.com/how-much-is-your-personal-data-worth/" target="_blank">FT personal data worth calculator</a>, <a href="https://www.newstatesman.com/politics/elections/2021/08/election-win-calculator" target="_blank">the New Statesman election calculator</a> and <a href="https://www.bbc.co.uk/news/business-67489975" target="_blank">the BBC’s energy calculator</a>.</p>
-</div></div>
-<div class="footer">
-<p>Source: <a href="https://www.bbc.co.uk/news/business-67489975" target="_blank">BBC News</a></p>
-</div>
-</section>
-<section id="scrollable-stories" class="slide level2 smaller" data-fullscreen="true" data-background-color="#222222">
-<h2>Scrollable stories</h2>
-<div class="columns">
-<div class="column" style="width:66.66%;">
-<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-<div class="embed-container">
-<iframe src="https://news.test.files.bbci.co.uk/include/vjneareast/1230-critical-minerals/develop/english/app/test--full-width.html" frameborder="0" allowfullscreen="">
-</iframe>
-</div>
-</div><div class="column" style="width:33.33%;">
-<p>Scrollytelling is the use of a browser’s scrolling functionality to interactively tell a data story. <br><br> Examples include <a href="https://xujunjiejack.github.io/" target="_blank">The Impatient List</a>, <a href="https://www.nytimes.com/interactive/2021/08/12/science/covid-delta-breakthrough.html" target="_blank">the New York Times delta variant story</a> and <a href="https://www.newstatesman.com/world/uk/2021/04/exclusive-covid-19-robbed-decade-life-average-victim-england-and-wales" target="_blank">the New Statesman million years lost investigation</a>.</p>
-</div></div>
-<div class="footer">
-<p>Source: BBC News</p>
-</div>
-</section>
-<section id="section-40" class="slide level2">
-<h2></h2>
-<blockquote>
-<p>Information visualisation is meant to clarify data, but too much interactivity hinders understanding by transferring responsibility from the designer to the reader to work out the important points. — <strong><a href="https://www.ft.com/content/c62b21c6-7feb-11e6-8e50-8ec15fb462f4" target="_blank">Martin Stabe (FT)</a></strong></p>
-</blockquote>
-<div class="fragment">
-<blockquote>
-<p>Readers just want to scroll, […] if you make the reader click or do anything other than scroll, something spectacular has to happen. — <strong><a href="https://raw.githubusercontent.com/archietse/malofiej-2016/master/tse-malofiej-2016-slides.pdf" target="_blank">Archie Tse (NYT)</a></strong></p>
-</blockquote>
-</div>
-</section>
-<section id="section-41" class="slide level2">
-<h2></h2>
-<blockquote>
-<p>Interactive graphics are not just a fun addition but can actually increase the transparency of our work, open us for criticism, and thereby, hopefully, help re-build some trust in journalism. — <strong><a href="https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/" target="_blank">Gregor Aisch (Datawrapper)</a></strong></p>
-</blockquote>
-</section>
-<section id="lets-hear-from-you" class="slide level2">
-<h2>Let’s hear from you</h2>
-</section>
-<section id="contact-7" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
-</section></section>
-<section>
-<section id="week-9" class="title-slide slide level1 center">
-<h1>Week 9</h1>
-<p><a href="#/scraping" target="_blank">Scraping</a><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
-</section>
-<section id="section-42" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://usafacts.org/data-projects/christmas-decorating-injuries">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://usafacts.org/data-projects/christmas-decorating-injuries" target="_blank">USAFacts</a></p>
-</div>
-</section>
-<section id="section-43" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-inflation-economy-cost-of-living/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.bloomberg.com/graphics/2023-inflation-economy-cost-of-living/" target="_blank">Bloomberg</a></p>
-</div>
-</section>
-<section id="section-44" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/" target="_blank">CNN</a></p>
-</div>
-</section>
-<section id="section-45" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://bbycroft.net/llm">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://bbycroft.net/llm" target="_blank">Brendan Bycroft</a></p>
-</div>
-</section>
-<section id="section-46" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states" target="_blank">McKinsey</a></p>
-</div>
-</section>
-<section id="section-47" class="slide level2" data-fullscreen="true">
-<h2></h2>
-<iframe class="stretch" data-src="https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html" target="_blank">Le Monde</a></p>
-</div>
-</section>
-<section id="section-48" class="slide level2">
-<h2></h2>
-<blockquote>
-<p>Data scraping, in its most general form, refers to a technique in which a computer program extracts data from output generated from another program. — <strong><a href="https://www.cloudflare.com/en-gb/learning/bots/what-is-data-scraping/" target="_blank">Cloudflare</a></strong></p>
-</blockquote>
-</section>
-<section id="data-can-be-stuck-behind-inaccessible-formats" class="slide level2 smaller">
-<h2>Data can be stuck behind inaccessible formats</h2>
-<div class="columns">
-<div class="column" style="width:33.33%;">
-<h3 id="pdfs">PDFs</h3>
-<p>Many organisations still publish data in PDFs, a proprietary format that is difficult to work with. Sometimes, they even do it on purpose.</p>
-</div><div class="column" style="width:33.33%;">
-<h3 id="images">Images</h3>
-<p>If you can’t find the data behind a chart, ask the author. If you can’t do that either, read it from the image.</p>
-</div><div class="column" style="width:33.33%;">
-<h3 id="websites">Websites</h3>
-<p>If you’ve got structured information on your page, you’ll most likely be able to download in a format that you can analyse.</p>
-</div></div>
-</section>
-<section id="use-tabula-to-scrape-pdf-tables" class="slide level2" data-fullscreen="true">
-<h2>Use Tabula to scrape PDF tables</h2>
-<iframe class="stretch" data-src="https://tabula.technology/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://tabula.technology/" target="_blank">Tabula</a></p>
-</div>
-<aside class="notes">
-<p>Show an example.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="digitise-image-charts" class="slide level2" data-fullscreen="true">
-<h2>Digitise image charts</h2>
-<iframe class="stretch" data-src="https://apps.automeris.io/wpd/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://apps.automeris.io/wpd/" target="_blank">WebPlotDigitizer</a></p>
-</div>
-<aside class="notes">
-<p>Screenshot and digitize: https://www.ft.com/content/7e32dfb1-2282-40fa-9b10-181c01272ba3</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="digitise-maps" class="slide level2" data-fullscreen="true">
-<h2>Digitise maps</h2>
-<iframe class="stretch" data-src="https://mapster.me/map-digitizer/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://mapster.me/map-digitizer/" target="_blank">Map Digitizer</a></p>
-</div>
-<aside class="notes">
-<p>Digitize: https://www.bbc.co.uk/bitesize/guides/zgrh7yc/revision/4</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="scrape-online-charts" class="slide level2" data-fullscreen="true">
-<h2>Scrape online charts</h2>
-<iframe class="stretch" data-src="https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/" target="_blank">Online Journalism Blog</a></p>
-</div>
-</section>
-<section id="hidden-apis" class="slide level2" data-fullscreen="true">
-<h2>Hidden APIs</h2>
-<iframe class="stretch" data-src="https://inspectelement.org/">
-</iframe>
-<div class="footer">
-<p>Source: <a href="https://inspectelement.org/" target="_blank">Inspect Element</a></p>
-</div>
-</section>
-<section id="import-html-tables-into-sheets" class="slide level2">
-<h2>Import HTML tables into Sheets</h2>
-<ol type="1">
-<li>Create a new Google Sheets document.</li>
-<li>Open <a href="https://en.wikipedia.org/wiki/List_of_countries_by_wealth_per_adult" target="_blank">this Wikipedia page</a> in another tab.</li>
-<li>Use the <code>=IMPORTHTML()</code> formula to import one of the tables.</li>
-</ol>
-</section>
-<section id="missing-persons-exercise" class="slide level2">
-<h2>Missing persons exercise</h2>
-<ol type="1">
-<li>Download and install the <a href="https://webscraper.io/" target="_blank">Web Scraper</a> browser extension.</li>
-<li>Navigate to the <a href="https://missingpersons.police.uk/en-gb/case-search" target="_blank">Missing Persons website</a>.</li>
-<li>Scrape it.</li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource json code-overflow-wrap number-lines code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a></a><span class="fu">{</span><span class="dt">"_id"</span><span class="fu">:</span><span class="st">"missingpersons"</span><span class="fu">,</span><span class="dt">"startUrl"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"https://missingpersons.police.uk/en-gb/case-search/?page=[1-10]&amp;orderBy=dateDesc"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"selectors"</span><span class="fu">:</span><span class="ot">[</span><span class="fu">{</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"gender-age"</span><span class="fu">,</span><span class="dt">"parentSelectors"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"case"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"SelectorText"</span><span class="fu">,</span><span class="dt">"selector"</span><span class="fu">:</span><span class="st">"a:nth-of-type(7) div:nth-of-type(1) div"</span><span class="fu">,</span><span class="dt">"multiple"</span><span class="fu">:</span><span class="kw">false</span><span class="fu">,</span><span class="dt">"regex"</span><span class="fu">:</span><span class="st">""</span><span class="fu">}</span><span class="ot">,</span><span class="fu">{</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"reference"</span><span class="fu">,</span><span class="dt">"parentSelectors"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"case"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"SelectorText"</span><span class="fu">,</span><span class="dt">"selector"</span><span class="fu">:</span><span class="st">"div.Detail:nth-of-type(2) div"</span><span class="fu">,</span><span class="dt">"multiple"</span><span class="fu">:</span><span class="kw">false</span><span class="fu">,</span><span class="dt">"regex"</span><span class="fu">:</span><span class="st">""</span><span class="fu">}</span><span class="ot">,</span><span class="fu">{</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"location"</span><span class="fu">,</span><span class="dt">"parentSelectors"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"case"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"SelectorText"</span><span class="fu">,</span><span class="dt">"selector"</span><span class="fu">:</span><span class="st">"div.Detail:nth-of-type(3) div"</span><span class="fu">,</span><span class="dt">"multiple"</span><span class="fu">:</span><span class="kw">false</span><span class="fu">,</span><span class="dt">"regex"</span><span class="fu">:</span><span class="st">""</span><span class="fu">}</span><span class="ot">,</span><span class="fu">{</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"case"</span><span class="fu">,</span><span class="dt">"parentSelectors"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"_root"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"SelectorElement"</span><span class="fu">,</span><span class="dt">"selector"</span><span class="fu">:</span><span class="st">"a.CaseThumbnail"</span><span class="fu">,</span><span class="dt">"multiple"</span><span class="fu">:</span><span class="kw">true</span><span class="fu">}</span><span class="ot">,</span><span class="fu">{</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"link"</span><span class="fu">,</span><span class="dt">"parentSelectors"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"case"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"SelectorLink"</span><span class="fu">,</span><span class="dt">"selector"</span><span class="fu">:</span><span class="st">"_parent_"</span><span class="fu">,</span><span class="dt">"multiple"</span><span class="fu">:</span><span class="kw">false</span><span class="fu">}</span><span class="ot">,</span><span class="fu">{</span><span class="dt">"id"</span><span class="fu">:</span><span class="st">"ethnicity"</span><span class="fu">,</span><span class="dt">"parentSelectors"</span><span class="fu">:</span><span class="ot">[</span><span class="st">"link"</span><span class="ot">]</span><span class="fu">,</span><span class="dt">"type"</span><span class="fu">:</span><span class="st">"SelectorText"</span><span class="fu">,</span><span class="dt">"selector"</span><span class="fu">:</span><span class="st">"div.Entry:nth-of-type(3) div.Value"</span><span class="fu">,</span><span class="dt">"multiple"</span><span class="fu">:</span><span class="kw">false</span><span class="fu">,</span><span class="dt">"regex"</span><span class="fu">:</span><span class="st">""</span><span class="fu">}</span><span class="ot">]</span><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="the-gazette-exercise" class="slide level2">
-<h2>The Gazette exercise</h2>
-<ol type="1">
-<li>Go to the <a href="https://m.thegazette.co.uk/insolvency?categorycode=G205010000&amp;results-page=1" target="_blank">the Gazette website</a></li>
-<li>Scrape company names, notice IDs, types, company IDs, date, etc.</li>
-</ol>
-</section>
-<section id="module-evaluation-survey" class="slide level2">
-<h2>Module Evaluation Survey</h2>
-<p>Take part in the <a href="https://city.surveys.evasysplus.co.uk/" target="_blank">module evaluation survey</a>.</p>
-<p><img data-src="media/survey-qr.png" class="absolute" style="height: 500px; "></p>
-<aside class="notes">
-<p>Notes for staff:</p>
-<p>We recommend that you use this slide in class and when module evaluation surveys for your module are open. This is usually in week 9 of the term for ‘standard’ modules but if you are unsure your School contact will know (see Section 4 of the Guidance document - https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice)</p>
-<p>Once a survey opens, students will receive an email containing a link to the individual module survey. This email will also include a link to the Student Survey Portal (linked to on this slide) which is a static link to show students all open surveys. Individual module survey links will take students directly to the survey. To access the Student Survey Portal students will need to sign in using their University credentials.</p>
-<p>Students will receive feedback on their responses but we do need a sufficient number of students to submit a response to enable us to do this. See the Guidance document and Module Leader FAQs for more on feedback https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="contact-8" class="slide level2">
-<h2>Contact</h2>
-<ul>
-<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
-<li><a href="mailto:glyn.mottershead@city.ac.uk" target="_blank">Glyn.Mottershead@city.ac.uk</a></li>
-</ul>
+## Pivot Tables {.smaller}
+
+Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.
+
+You can calculate averages, counts, max/min values or sums for numbers in a group.
+
+![](media/pivot-recipe.png)
+
+## Averages {.smaller}
+
+::: columns
+::: {.column width="50%"}
+![](media/mean-median.svg){height="600"}
+:::
+
+::: {.column width="50%"}
+### =MODE()
+
+Finds the most common value in a range.
+
+&nbsp;
+&nbsp;
+
+### =MEDIAN()
+
+Finds the value that’s right in the middle of a dataset.
+
+&nbsp;
+&nbsp;
+
+### =AVERAGE()
+
+Sum all the values and divide by the number of records.
+
+:::
+:::
+
+## Census exercise v2
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1dhkZApmrXbdySBjOESNWgBT9bdzUdIDrfmU12nZgFHc/copy).
+2. Fill in the empty columns with formulas we learned last time.
+3. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+::: notes
+:::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+<!-- # Week 4
+
+Data [Cleaning]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+
+## {fullscreen=true}
+![](media/bbc-wages.png){.absolute height="700"}
+
+::: footer
+Source: [BBC](https://www.bbc.co.uk/news/business-67278269)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://oct7map.com/"></iframe>
+
+::: footer
+Source: [October 7th Geo-visualization Project](https://oct7map.com/)
+:::
+
+## {fullscreen=true}
+<video autoplay="" loop="" muted="" src="https://blog.datawrapper.de/wp-content/uploads/2023/10/CleanShot-2023-10-30-at-17.04.24.mp4" class="thin-grey-border"></video>
+
+::: footer
+Source: [The Washington Post](https://www.washingtonpost.com/nation/interactive/mass-shootings/)
+:::
+
+
+##
+![](media/nyt-neighbourhoods.png)
+
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/upshot/extremely-detailed-nyc-neighborhood-map.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/"></iframe>
+
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/)
+:::
+
+
+
+## {#dirty-data data-menu-title="Dirty Data" .smaller}
+
+::: columns
+::: {.column width="33.33%"}
+##### [Missing data]
+Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.
+:::
+
+::: {.column width="33.33%"}
+##### [Duplicated data]
+Records can be repeated, either due to technical mishaps or due to repeated input.
+:::
+
+::: {.column width="33.33%"}
+##### [Misspellings]
+Humans make mistakes. Assume any dataset manually created by humans to have missspelings.
+:::
+
+::: {.column width="33.33%"}
+##### [Poor formatting]
+Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.
+:::
+
+::: {.column width="33.33%"}
+##### [Parsing errors]
+Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.
+:::
+
+::: {.column width="33.33%"}
+##### [Inconsistent data]
+A column can have different unites, spell categories differently or record different methodologies.
+:::
+:::
+
+## The guide to bad data
+
+![](media/guide-bad-data.png)
+
+::: footer
+Source: [Quartz](https://qz.com/572338/the-quartz-guide-to-bad-data) (also on [GitHub](https://github.com/Quartz/bad-data-guide))
+:::
+
+
+## Data prep
+
+<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
+
+::: footer
+Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
+:::
+
+## {#inflation-screenshot data-menu-title="ONS inflation data" .smaller}
+
+![](media/inflation-ons-screenshot.png)
+
+::: footer
+Source: [ONS](https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation)
+:::
+
+## Baby names exercise
+
+1. Download the [Baby names for girls/boys in England and Wales file](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021/relateddata).
+2. Upload the spreadsheet to Google Drive and open it in Google Sheets.
+3. Find and clean Table 1.
+4. Read about [Shart](https://www.thecourier.co.uk/fp/courier-investigations/3168365/baby-name-rules-scotland/).
+
+Also check last year’s tables: [here](https://docs.google.com/spreadsheets/d/1V88_N_jJHh9rrT16IYEBAGddtD_t_LpoBNvG9DY056g/edit).
+
+## OpenRefine
+
+![](media/open-refine-guardian.png)
+
+::: footer
+Source: [The Guardian](https://www.theguardian.com/politics/2021/oct/25/tories-received-13m-from-fossil-fuel-interests-and-climate-sceptics-since-2019)
+:::
+
+## Download OpenRefine
+
+<iframe class="stretch" data-src="https://openrefine.org/"></iframe>
+
+::: footer
+Source: [OpenRefine](https://openrefine.org/)
+:::
+
+::: notes
+https://search.electoralcommission.org.uk/
+:::
+
+## Food hygiene data
+
+<iframe class="stretch" data-src="https://ratings.food.gov.uk/open-data"></iframe>
+
+::: footer
+Source: [Food Standards Agency](https://ratings.food.gov.uk/open-data)
+:::
+
+## Food hygiene exercise {.smaller}
+
+- Make a copy of the [food hygiene ratings data](https://docs.google.com/spreadsheets/d/1eNZZlAL3pYEd31Ge56qdkc3tko42fAGvEv8VARdwCr8/copy).
+- Answer these questions:
+    1. What kind of establishments are the best rated in Islington?
+    2. What establishment with a rating of 0-1 is due a follow-up visit?
+    3. How many establishments received a 5-star rating this month?
+    4. What is the cleanest hotspots (highest average hygiene with 10+ ratings)?
+    5. Any other interesting angles?
+
+::: notes
+N7 6NJ. Use Google Sheets filter instead of pivot for 10+ ratings
+:::
+
+## Group assignment {.smaller}
+
+You will be split into teams of four to create a narrated PowerPoint presentation critiquing a data project featured in the [Sigma Awards](https://sigmaawards.org/projects/). You can choose a winner or a short-listed project (at the bottom of the page).
+
+&nbsp;
+&nbsp;
+
+Deadline: **Friday, December 8, 4pm**
+
+&nbsp;
+&nbsp;
+
+Deliverables
+
+- A 20-25 minute long [narrated PowerPoint presentation](https://support.microsoft.com/en-us/office/record-audio-narration-for-your-powerpoint-presentation-232d5fec-fc90-4abb-9332-c469d336d947).
+- A 500-word group reflection, with appropriate references (Harvard and I suggest using Zotero as citation manager).
+- Fill in [this spreadsheet](https://docs.google.com/spreadsheets/d/1_OVgO5ExbH_Xe8FOipb0LAAh4DUbMZ4RI9G3ZxgVfI0/edit#gid=0) with your name and the project you're working on.
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/"></iframe>
+
+::: footer
+Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/)
+:::
+
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+<!-- # Week 5
+
+Data [Stories]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+
+## 30-day challenge (Erwan) {fullscreen=true}
+![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg){.absolute height="600"}
+
+::: footer
+Source: [Erwan Rivault](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
+:::
+
+## 30-day challenge (Jana) {fullscreen=true}
+![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-G8R9ZW0AAso94.jpeg){.absolute height="600"}
+
+::: footer
+Source: [Jana Tauschinski](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
+:::
+
+## {fullscreen=true}
+![](https://blog.datawrapper.de/wp-content/uploads/2023/11/image6.png){.absolute height="700"}
+
+::: footer
+Source: [FT](https://www.ft.com/content/ed739236-7430-4dc1-95f5-4a23534d8841)
+:::
+
+## Why do we visualise data? {background-color="#e9e9e9"}
+
+Summarising data, like we did in previous lessons, is not always enough to reveal pattern or trends.
+
+Visualising it can provide insight we’d otherwise lose out on.
+
+![](https://blog.revolutionanalytics.com/downloads/DataSaurus%20Dozen.gif){.absolute width="700"}
+
+
+## What can we visualise? {.smaller background-color="white"}
+
+Position ![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png){.absolute top=100 right=50 width="500" height="500"}
+
+::: {.fragment}
+Size
+
+&nbsp;&nbsp;&nbsp;&nbsp;Width ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Horizontal-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Height ![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Area ![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+Colour
+
+&nbsp;&nbsp;&nbsp;&nbsp;Fill ![](https://datavizproject.com/wp-content/uploads/types/Pictorial-Stacked-Chart-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Colour ![](https://datavizproject.com/wp-content/uploads/types/Cluster-Analysis-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+&nbsp;&nbsp;&nbsp;&nbsp;Opacity
+
+&nbsp;&nbsp;&nbsp;&nbsp;Pattern
+
+Shape ![](https://datavizproject.com/wp-content/uploads/types/Matrix-Diagram--600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+::: {.fragment}
+Location ![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map-600x600.png){.absolute top=100 right=50 width="500" height="500"}
+:::
+
+## People suck at sizes {background-color="white"}
+<iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/@mizinov/area-comparison?cell=*"></iframe>
+
+
+## What visual encoding can you find in this chart? {background-color="#fff1e0"}
+
+![](media/ft/scatter-5.gif){.absolute height="500"}
+
+## The FT's scatter plot {background-color="#fff1e0"}
+
+::: {.fragment .fade-in-then-out}
+Standard scatter plot ![](media/ft/scatter-1.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Change scale to log ![](media/ft/scatter-2.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Size by population ![](media/ft/scatter-3.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment .fade-in-then-out}
+Colour by continent ![](media/ft/scatter-4.avif){.absolute top=100 right=20 height="450"}
+:::
+
+::: {.fragment}
+Animate over time ![](media/ft/scatter-5.gif){.absolute top=100 right=20 height="450"}
+:::
+
+::: notes
+https://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655
+:::
+
+## FT Vocabulary
+
+![](https://raw.githubusercontent.com/Financial-Times/chart-doctor/main/visual-vocabulary/poster.png){.absolute top=0 left=0 height="800"}
+
+::: footer
+Source: [FT](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
+:::
+
+## Many types of charts
+
+- [FT Vocabulary](https://github.com/Financial-Times/chart-doctor/tree/main/visual-vocabulary)
+- [Data Viz Project](https://datavizproject.com/)
+- [Data to Viz](https://www.data-to-viz.com/)
+- [Data Visualisation Catalogue](https://datavizcatalogue.com/)
+
+## Gapminder
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/hVimVzgtD6w' frameborder='0' allowfullscreen></iframe></div>
+
+## Gapminder exercise {.smaller}
+
+1. Make a copy of the [Gapminder data](https://www.gapminder.org/data/).
+2. Working in groups, think of stories to tell based on this data.
+3. What would you visualise to support your story/stories?
+4. Would you look for any other datasets you can combine with this?
+5. Scout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like [Datawrapper](https://www.datawrapper.de/) or [Flourish](https://flourish.studio/).
+6. If you have time left, discuss plans for the group assignment.
+
+## Gapminder exercise
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.gapminder.org/tools/' frameborder='0' allowfullscreen></iframe></div>
+
+## IMDb exercise {.smaller}
+
+TODO: Upload this somewhere so students don't have to log in
+
+1. Make a copy of the [IMDb data](https://www.kaggle.com/datasets/yehorkorzh/imdb-top-250-movies).
+2. Working in groups, think of stories to tell based on this data.
+3. What would you visualise to support your story/stories?
+4. Would you look for any other datasets you can combine with this?
+5. Scout out your visualisation ideas either on pen & paper, using Google Sheets charts or using a platform like [Datawrapper](https://www.datawrapper.de/) or [Flourish](https://flourish.studio/).
+6. If you have time left, discuss plans for the group assignment.
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
+
+::: notes
+Please make Flourish and Datawrapper accounts
+::: -->
+<!-- # Week 6
+
+Data [Visualisation]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/"></iframe>
+::: footer
+Source: [Reuters](https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/"></iframe>
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/"></iframe>
+::: footer
+Source: [Washington Post](https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/)
+:::
+
+## Dataviz Toolbox
+
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#visualisation"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/#visualisation)
+:::
+
+
+## Bar/column charts { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Bar-Chart-Vertical.png)
+:::
+
+::: {.column width="40%"}
+Horizontal or vertical rectangles with lengths proportional to the values that they represent.
+<br><br>
+Good for comparing across different values or showing a trend over time.
+:::
+:::
+
+## Line chart { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Line-Graph.png)
+:::
+
+::: {.column width="40%"}
+Shows values on a continuous scale. Similar to a scatter plot, except all dots are connected.
+<br><br>
+Good for showing trends over time.
+:::
+:::
+
+
+## Area chart { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Stacked-Area-Chart.png)
+:::
+
+::: {.column width="40%"}
+Similar to a line chart but the area underneath the line is coloured in. When stacked, it can show multiple data series as well as their cumulative trend.
+<br><br>
+Good for showing trends over time.
+:::
+:::
+
+## Scatter plot { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Scatter-Plot.png)
+:::
+
+::: {.column width="40%"}
+Plots a dataset across two continuous dimensions, each on a different axis (X and Y).
+<br><br>
+Good for showing correlation between different data series.
+:::
+:::
+
+## Map { background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
+:::
+
+::: {.column width="40%"}
+Only works with geographical data (duh!).
+<br><br>
+Even with geographical data, other charts can often be a better choice.
+:::
+:::
+
+
+## Anatomy of a chart {background-color="white"}
+
+![](https://c.files.bbci.co.uk/13899/production/_128352008_optimised-debt-ceiling-nc.png)
+
+::: notes
+- Title
+- Subtitle / description
+- Series
+- Labels
+- Gridlines
+- x-axix
+- y-axis
+- Legend/key
+- Source
+:::
+
+## Colour scales {background-color="white"}
+
+![](https://blog.datawrapper.de/wp-content/uploads/2021/03/200801_colorscale-intro-f-1.png)
+
+::: notes
+Sequential: Colours (of the same hue) that go from light to dark or the other way around. Usually, darker means higher value.
+
+Diverging: Similar to sequential, but they have a light middle colour that turns darker on both ends of the scale. Useful when you have both positive and negative values.
+
+Categorical: For values that aren’t on a numeric scale or don’t have an intrinsic order. Useful when none of the colours are more important than others.
+:::
+
+
+## Colour Toolbox
+
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#colours"></iframe>
+::: footer
+Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/#colours)
+:::
+
+
+## Dataviz Fonts {background-color="white"}
+
+<iframe class="stretch" data-src="https://blog.datawrapper.de/fonts-for-data-visualization/"></iframe>
+::: footer
+Source: [Datawrapper](https://blog.datawrapper.de/fonts-for-data-visualization/)
+:::
+
+## Bad charts: Daily Mail
+![](media/bad-charts/daily-fail-2.jpg)
+
+::: footer
+Source: [Daily Mail](https://www.dailymail.co.uk/news/article-8028565/EU-leaders-argue-early-hours-bruising-budget-talks.html)
+:::
+
+## Bad charts: The Sun
+![](media/bad-charts/the-s-n.webp)
+
+::: footer
+Source: The Sun
+:::
+
+## Bad charts: Reuters
+![](media/bad-charts/gun-deaths.webp){.absolute top=90 left=0 height="500"}
+
+::: fragment
+![](media/bad-charts/gun-deaths-2.webp){.absolute top=90 left=0 height="456"}
+:::
+
+::: footer
+Source: Reuters
+:::
+
+## Bad charts: CBS News
+![](media/bad-charts/cbsn.jpg)
+
+::: footer
+Source: CBS News
+:::
+
+## WTF Visualizations
+
+<iframe class="stretch" data-src="https://viz.wtf/"></iframe>
+::: footer
+Source: [WTF Visualizations](https://viz.wtf/)
+:::
+
+## Covid exercise
+
+1. Download a copy of the [Covid-19 data](https://github.com/owid/covid-19-data/blob/master/public/data/latest/owid-covid-latest.csv).
+2. Filter it to only the deaths and vaccination rates in Europe.
+3. Copy the data into Datawrapper.
+4. Create a scatter plot.
+5. Customise axis labels, colours, size, tooltips, title, description and source.
+6. Add annotations.
+7. Publish or download the chart.
+
+## Covid exercise - example {background-color="white"}
+
+<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/AyGb7/1/"></iframe>
+
+## Taxis vs Uber exercise {background-color="white"}
+
+1. Copy [this spreadsheet](https://docs.google.com/spreadsheets/d/1wf3qDM9Ew8lDeDpTHNz22S83ri8rDspnRycDG9m657Q/copy).
+2. Copy the data into Flourish.
+3. Create a bar chart race.
+4. Customise axis labels, colours, size, title, description and source.
+5. Add annotations (optionally).
+6. Publish or download the chart.
+
+## Taxis vs Uber exercise - example
+
+<div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/11775147"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+::: footer
+Source: [Reddit](https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how_uber_took_over_new_york_city/)
+:::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+<!-- # Week 7
+
+[Maps]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://blog.datawrapper.de/how-to-get-started-with-data-visualization/"></iframe>
+::: footer
+Source: [Datawrapper](https://blog.datawrapper.de/how-to-get-started-with-data-visualization/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bbc.co.uk/news/business-67489975"></iframe>
+::: footer
+Source: [BBC](https://www.bbc.co.uk/news/business-67489975)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.ons.gov.uk/visualisations/censusorigindestination/"></iframe>
+::: footer
+Source: [ONS](https://www.ons.gov.uk/visualisations/censusorigindestination/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://honzaap.github.io/Pathfinding/"></iframe>
+::: footer
+Source: [Jan Pánek](https://honzaap.github.io/Pathfinding/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/"></iframe>
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html"></iframe>
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/"></iframe>
+::: footer
+Source: [Washington Post](https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/"></iframe>
+::: footer
+Source: [openDemocracy](https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/)
+:::
+
+## Choropleth {background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Choropleth-Map.png)
+:::
+
+::: {.column width="40%"}
+Pre-defined areas such as countries, regions or districts are coloured (either sequential, diverging or categorical) in proportion to values in a dataset.
+:::
+:::
+
+## Bubble/symbol map {background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Bubble-Map.png)
+:::
+
+::: {.column width="40%"}
+Circles are drawn on top of a map, with their size or colour proportional to values in a dataset.
+:::
+:::
+
+## Cartogram / hex map {background-color="white"}
+
+::: columns
+::: {.column width="60%"}
+![](https://datavizproject.com/wp-content/uploads/types/Cartogram.png)
+:::
+
+::: {.column width="40%"}
+Cartograms resize regions in proportion to a variable in your dataset, such as population.
+<br><br>
+Hex maps standardise administrative units into same-sizes hexagons, squares or triangles.
+:::
+:::
+
+
+## The 2019 general election {background-color="white"}
+
+![](https://geographical.co.uk/wp-content/uploads/UK-general-election-2019.jpeg)
+
+
+## Not always the right choice
+
+::: columns
+::: {.column width="50%"}
+![](https://imgs.xkcd.com/comics/heatmap_2x.png)
+:::
+
+::: {.column width="50%"}
+Try to only use maps when there’s a geographical pattern to your data.
+<br><br>
+Don’t make a map if it’s going to basically be a population map.
+:::
+:::
+
+::: footer
+Source: [xkcd](https://xkcd.com/1138/)
+:::
+
+## What data you'll need {.smaller background-color="#f9f9f9"}
+
+::: columns
+::: {.column width="50%"}
+![](media/geo-data-1.png)
+
+#### Geographical data
+
+This can be polygons (areas), lines or points. Some tools have a few options by default, or you can get additional ones from the ONS, Natural Earth or ArcGIS.
+
+:::
+
+::: {.column width="50%"}
+![](media/geo-data-2.png)
+
+#### Numerical or categorical data
+
+This is the data that will be placed in the shapes on your map. Normally contains region IDs or coordinates (latitude and longitude).
+
+:::
+:::
+
+## Internet speed exercise
+
+1. Make a copy of the [internet speed in Europe data](https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy).
+2. Create a choropleth map (NUTS3, 2021).
+3. Copy the data in.
+4. Customise colours, title, description and source.
+5. Add annotations.
+6. Publish or download the chart.
+
+## Internet speed - example {.smaller background-color="#1c1b22"}
+
+<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/uJ92E/"></iframe>
+
+## Students exercise
+
+1. Go to the international students tab in [the spreadsheet you’ve copied earlier](https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy).
+2. Create a 3D globe flow map in Flourish.
+3. Copy the data in.
+4. Customise colours, title, description and source.
+5. Publish or download the chart.
+
+## Missing migrants exercise
+
+1. Go to the missing migrants tab in the spreadsheet you’ve copied earlier.
+2. Copy the data into Datawrapper or Flourish.
+3. Create a symbol map.
+4. Customise it (colour, size, opacity, etc).
+
+## Missing migrants - example
+
+<div class="flourish-embed flourish-map" data-src="visualisation/6268496"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+<!-- # Week 8
+
+Data [Projects]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined"></iframe>
+::: footer
+Source: [Friends of the Earth](https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html"></iframe>
+::: footer
+Source: [The New York Times](https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://ig.ft.com/china-mosques/"></iframe>
+::: footer
+Source: [Financial Times](https://ig.ft.com/china-mosques/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src=https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html"></iframe>
+::: footer
+Source: [AP](https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.wsj.com/personal-finance/income-raise-happiness-06a70900"></iframe>
+::: footer
+Source: [Wall Street Journal](https://www.wsj.com/personal-finance/income-raise-happiness-06a70900)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/"></iframe>
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://texty.org.ua/projects/111159/"></iframe>
+::: footer
+Source: [Texty](https://texty.org.ua/projects/111159/)
+:::
+
+
+## {.smaller}
+
+::: columns
+::: {.column width="33.33%"}
+![](media/projects-1.png){width="100%"}
+
+Often, the best narratives warrant going further than simple graphics.
+:::
+
+::: {.column width="33.33%"}
+![](media/projects-2.png){width="100%"}
+
+Tailored visualisations designed specifically for a story will almost always be the best way to tell a story.
+:::
+
+::: {.column width="33.33%"}
+![](media/projects-3.png){width="100%"}
+
+Interactivity can sometimes help portray the intricacies of a story better.
+:::
+:::
+
+## The Martini Glass principle {background-color="#f2f2f2"}
+
+![](https://miro.medium.com/v2/1*Jca05UCRvx-iJ96zGIFQkw.jpeg){width="100%"}
+
+::: notes
+Kicker
+This is the top line you want to tell your audience. What does the data say? What will people share on Twitter?
+
+Explanation
+Guide your reader through your story, exposing different facets of your data.
+
+Exploration
+Let your readers explore the data on their own to find the stories that are relevant to them.
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html"></iframe>
+::: footer
+Source: [Gurman Bhatia](https://www.gurmanbhatia.com/talk/2021/03/09/stories-structure.html)
+:::
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/"></iframe>
+::: footer
+Source: [Masters of Media](https://mastersofmedia.hum.uva.nl/blog/2011/05/03/narrative-structures-in-data-visualizations-to-improve-storytelling/)
+:::
+
+
+## Trackers {fullscreen=true .smaller background-color="white"}
+
+::: columns
+::: {.column width="66.66%"}
+<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://nsmg-projects-public.s3.eu-west-2.amazonaws.com/live/nsmg-031/index.html' frameborder='0' allowfullscreen></iframe></div>
+:::
+
+::: {.column width="33.33%"}
+Trackers are data visualisations connected to a data source that is periodically updated.
+<br><br>
+Examples include [FiveThirtyEight’s Biden approval rating tracker](https://projects.fivethirtyeight.com/biden-approval-rating/), [Bloomberg’s Pret Index](https://www.bloomberg.com/graphics/pret-index/) and [the New Statesman’s Covid-19 tracker](https://www.newstatesman.com/science-tech/2021/11/uk-covid-tracker-latest-data-local-authority).
+:::
+:::
+
+::: footer
+Source: [New Statesman](https://www.newstatesman.com/science-tech/2021/12/uk-covid-tracker-latest-data-local-authority)
+:::
+
+
+## Calculators {fullscreen=true .smaller background-color="white"}
+
+::: columns
+::: {.column width="66.66%"}
+<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://flo.uri.sh/visualisation/15816210/embed' frameborder='0' allowfullscreen></iframe></div>
+:::
+
+::: {.column width="33.33%"}
+Calculators allow readers to input their own data and receive a result.
+<br><br>
+Examples include the [FT personal data worth calculator](https://ig.ft.com/how-much-is-your-personal-data-worth/), [the New Statesman election calculator](https://www.newstatesman.com/politics/elections/2021/08/election-win-calculator) and [the BBC's energy calculator](https://www.bbc.co.uk/news/business-67489975).
+:::
+:::
+
+::: footer
+Source: [BBC News](https://www.bbc.co.uk/news/business-67489975)
+:::
+
+
+## Scrollable stories {fullscreen=true .smaller background-color="#222222"}
+
+::: columns
+::: {.column width="66.66%"}
+<style>.embed-container { position: relative; padding-bottom: 80%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://news.test.files.bbci.co.uk/include/vjneareast/1230-critical-minerals/develop/english/app/test--full-width.html' frameborder='0' allowfullscreen></iframe></div>
+:::
+
+::: {.column width="33.33%"}
+Scrollytelling is the use of a browser’s scrolling functionality to interactively tell a data story.
+<br><br>
+Examples include [The Impatient List](https://xujunjiejack.github.io/), [the New York Times delta variant story](https://www.nytimes.com/interactive/2021/08/12/science/covid-delta-breakthrough.html) and [the New Statesman million years lost investigation](https://www.newstatesman.com/world/uk/2021/04/exclusive-covid-19-robbed-decade-life-average-victim-england-and-wales).
+:::
+:::
+
+::: footer
+Source: BBC News
+:::
+
+
+##
+
+> Information visualisation is meant to clarify data, but too much interactivity hinders understanding by transferring responsibility from the designer to the reader to work out the important points. --- **[Martin Stabe (FT)](https://www.ft.com/content/c62b21c6-7feb-11e6-8e50-8ec15fb462f4)**
+
+. . .
+
+> Readers just want to scroll, […] if you make the reader click or do anything other than scroll, something spectacular has to happen. --- **[Archie Tse (NYT)](https://raw.githubusercontent.com/archietse/malofiej-2016/master/tse-malofiej-2016-slides.pdf)**
+
+
+##
+
+> Interactive graphics are not just a fun addition but can actually increase the transparency of our work, open us for criticism, and thereby, hopefully, help re-build some trust in journalism. --- **[Gregor Aisch (Datawrapper)](https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/)**
+
+
+## Let’s hear from you
+
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
+
+# Week 9
+
+[Scraping]<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://usafacts.org/data-projects/christmas-decorating-injuries"></iframe>
+::: footer
+Source: [USAFacts](https://usafacts.org/data-projects/christmas-decorating-injuries)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-inflation-economy-cost-of-living/"></iframe>
+::: footer
+Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-inflation-economy-cost-of-living/)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/"></iframe>
+::: footer
+Source: [CNN](https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://bbycroft.net/llm"></iframe>
+::: footer
+Source: [Brendan Bycroft](https://bbycroft.net/llm)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states"></iframe>
+::: footer
+Source: [McKinsey](https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states)
+:::
+
+
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html"></iframe>
+::: footer
+Source: [Le Monde](https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html)
+:::
+
+
+##
+
+> Data scraping, in its most general form, refers to a technique in which a computer program extracts data from output generated from another program. --- **[Cloudflare](https://www.cloudflare.com/en-gb/learning/bots/what-is-data-scraping/)**
+
+## Data can be stuck behind inaccessible formats {.smaller}
+
+::: columns
+::: {.column width="33.33%"}
+### PDFs
+
+Many organisations still publish data in PDFs, a proprietary format that is difficult to work with. Sometimes, they even do it on purpose.
+:::
+
+::: {.column width="33.33%"}
+### Images
+
+If you can’t find the data behind a chart, ask the author. If you can’t do that either, read it from the image.
+:::
+
+::: {.column width="33.33%"}
+### Websites
+
+If you’ve got structured information on your page, you’ll most likely be able to download in a format that you can analyse.
+:::
+:::
+
+
+## Use Tabula to scrape PDF tables {fullscreen=true}
+<iframe class="stretch" data-src="https://tabula.technology/"></iframe>
+::: footer
+Source: [Tabula](https://tabula.technology/)
+:::
+
+::: notes
+Show an example.
+:::
+
+
+
+## Digitise image charts {fullscreen=true}
+<iframe class="stretch" data-src="https://apps.automeris.io/wpd/"></iframe>
+::: footer
+Source: [WebPlotDigitizer](https://apps.automeris.io/wpd/)
+:::
+
+::: notes
+Screenshot and digitize: https://www.ft.com/content/7e32dfb1-2282-40fa-9b10-181c01272ba3
+:::
+
+## Digitise maps {fullscreen=true}
+<iframe class="stretch" data-src="https://mapster.me/map-digitizer/"></iframe>
+::: footer
+Source: [Map Digitizer](https://mapster.me/map-digitizer/)
+:::
+
+::: notes
+Digitize: https://www.bbc.co.uk/bitesize/guides/zgrh7yc/revision/4
+:::
+
+## Scrape online charts {fullscreen=true}
+<iframe class="stretch" data-src="https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/"></iframe>
+::: footer
+Source: [Online Journalism Blog](https://onlinejournalismblog.com/2017/05/10/how-to-find-data-behind-chart-map-using-inspector/)
+:::
+
+## Hidden APIs {fullscreen=true}
+<iframe class="stretch" data-src="https://inspectelement.org/"></iframe>
+::: footer
+Source: [Inspect Element](https://inspectelement.org/)
+:::
+
+
+## Import HTML tables into Sheets
+
+1. Create a new Google Sheets document.
+2. Open [this Wikipedia page](https://en.wikipedia.org/wiki/List_of_countries_by_wealth_per_adult) in another tab.
+3. Use the `=IMPORTHTML()` formula to import one of the tables.
+
+## Missing persons exercise
+
+1. Download and install the [Web Scraper](https://webscraper.io/) browser extension.
+2. Navigate to the [Missing Persons website](https://missingpersons.police.uk/en-gb/case-search).
+3. Scrape it.
+
+```{.json .code-overflow-wrap}
+{"_id":"missingpersons","startUrl":["https://missingpersons.police.uk/en-gb/case-search/?page=[1-10]&orderBy=dateDesc"],"selectors":[{"id":"gender-age","parentSelectors":["case"],"type":"SelectorText","selector":"a:nth-of-type(7) div:nth-of-type(1) div","multiple":false,"regex":""},{"id":"reference","parentSelectors":["case"],"type":"SelectorText","selector":"div.Detail:nth-of-type(2) div","multiple":false,"regex":""},{"id":"location","parentSelectors":["case"],"type":"SelectorText","selector":"div.Detail:nth-of-type(3) div","multiple":false,"regex":""},{"id":"case","parentSelectors":["_root"],"type":"SelectorElement","selector":"a.CaseThumbnail","multiple":true},{"id":"link","parentSelectors":["case"],"type":"SelectorLink","selector":"_parent_","multiple":false},{"id":"ethnicity","parentSelectors":["link"],"type":"SelectorText","selector":"div.Entry:nth-of-type(3) div.Value","multiple":false,"regex":""}]}
+```
+
+
+## The Gazette exercise
+
+1. Go to the [the Gazette website](https://m.thegazette.co.uk/insolvency?categorycode=G205010000&results-page=1)
+2. Scrape company names, notice IDs, types, company IDs, date, etc.
+
+## Module Evaluation Survey
+
+Take part in the [module evaluation survey](https://city.surveys.evasysplus.co.uk/).
+
+![](media/survey-qr.png){.absolute height="500"}
+
+::: notes
+Notes for staff:
+
+We recommend that you use this slide in class and when module evaluation surveys for your module are open. This is usually in week 9 of the term for ‘standard’ modules but if you are unsure your School contact will know (see Section 4 of the Guidance document - https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice)
+
+Once a survey opens, students will receive an email containing a link to the individual module survey. This email will also include a link to the Student Survey Portal (linked to on this slide) which is a static link to show students all open surveys. Individual module survey links will take students directly to the survey. To access the Student Survey Portal students will need to sign in using their University credentials.
+
+Students will receive feedback on their responses but we do need a sufficient number of students to submit a response to enable us to do this. See the Guidance document and Module Leader FAQs for more on feedback https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice
+:::
+
+## Contact
+
+- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
