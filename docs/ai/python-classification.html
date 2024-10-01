@@ -341,7 +341,7 @@ Note
 </div>
 <p>Now, create a new Python file in your project folder and name it <code>classify.py</code>. We’ll write our code in this file.</p>
 <p>In your <code>classify.py</code> file, add the following code to load some libraries we need:</p>
-<div id="39e0135b" class="cell" data-execution_count="2">
+<div id="0ee07b19" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load system libraries</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
@@ -352,7 +352,7 @@ Note
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> Anthropic()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can now talk to Claude directly from Python.</p>
-<div id="1a6de4fc" class="cell" data-execution_count="3">
+<div id="58b3805f" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> client.messages.create(</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    max_tokens<span class="op">=</span><span class="dv">1024</span>,</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    messages<span class="op">=</span>[</span>
@@ -366,14 +366,14 @@ Note
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(message.content[<span class="dv">0</span>].text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Hello! How can I assist you today?</code></pre>
+<pre><code>Hello! It's nice to meet you. How can I assist you today?</code></pre>
 </div>
 </div>
 </section>
 <section id="classifying-documents" class="level2">
 <h2 class="anchored" data-anchor-id="classifying-documents">Classifying documents</h2>
 <p>We can use a similar approach to classify documents as we did in the <a href="../ai/google-sheets.html">Google Sheets tutorial</a>.</p>
-<div id="92331fbd" class="cell" data-execution_count="4">
+<div id="5219a9e7" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># first, build a prompt template</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="st">"""</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">Below is the text to a piece of legislation. Classify it as one of the following categories:</span></span>
@@ -556,7 +556,7 @@ Note
 <div class="cell-output cell-output-stderr">
 <pre><code>&lt;&gt;:19: SyntaxWarning: invalid escape sequence '\*'
 &lt;&gt;:19: SyntaxWarning: invalid escape sequence '\*'
-C:\Users\NicuCalcea\AppData\Local\Temp\ipykernel_15468\1971032123.py:19: SyntaxWarning: invalid escape sequence '\*'
+C:\Users\NicuCalcea\AppData\Local\Temp\ipykernel_40840\1971032123.py:19: SyntaxWarning: invalid escape sequence '\*'
   legisation = """</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
@@ -565,7 +565,7 @@ C:\Users\NicuCalcea\AppData\Local\Temp\ipykernel_15468\1971032123.py:19: SyntaxW
 </div>
 <p>Doing it one piece of text at a time isn’t particularly useful. You can use Python to read a spreadsheet of documents and classify them all at once.</p>
 <p>Let’s read in the spreadsheet of bills from the <a href="../ai/google-sheets.html">Google Sheets exercise</a>.</p>
-<div id="77c64a55" class="cell" data-execution_count="5">
+<div id="fec4c746" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>bills <span class="op">=</span> pd.read_csv(<span class="st">"https://docs.google.com/spreadsheets/d/e/2PACX-1vRly_QUcMdN_iIcwKdx6YZvGu8tuP9JU7DnCWUFT9nfLFloRzzxS8aSf4gTdKbU6kf47DFm05nVygrN/pub?gid=0&amp;single=true&amp;output=csv"</span>)</span>
@@ -646,7 +646,7 @@ C:\Users\NicuCalcea\AppData\Local\Temp\ipykernel_15468\1971032123.py:19: SyntaxW
 </div>
 </div>
 <p>We’re now going to write a function that takes a piece of text and classifies it using Claude.</p>
-<div id="d33f055f" class="cell" data-execution_count="6">
+<div id="2f43b8d6" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cache results to avoid having to reclassify</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> joblib <span class="im">import</span> Memory</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>memory <span class="op">=</span> Memory(<span class="st">"cachedir"</span>, verbose<span class="op">=</span><span class="dv">0</span>)</span>
@@ -687,7 +687,7 @@ C:\Users\NicuCalcea\AppData\Local\Temp\ipykernel_15468\1971032123.py:19: SyntaxW
 <span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>    })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now, let’s apply this function to our bills dataframe.</p>
-<div id="a4f15315" class="cell" data-execution_count="7">
+<div id="b23a5e14" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># run the function</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>bills[<span class="st">'ai_category'</span>] <span class="op">=</span> bills.<span class="bu">apply</span>(classify, axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
