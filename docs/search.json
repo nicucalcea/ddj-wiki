@@ -380,6 +380,69 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk"
   },
   {
+    "objectID": "city/index.html#sourcing-data",
+    "href": "city/index.html#sourcing-data",
+    "title": "Intro to Data Journalism",
+    "section": "Sourcing data",
+    "text": "Sourcing data\nOpen Data\n\n\n\nUK\n\nONS\nGOV.UK\nNomis (labour stats)\nNHS Digital\nCovid dashboard\n\n\n\n\nOther nations\n\nUS gov\nEurostat\n\nInternational\n\nWorld Bank\nUnited Nations\nOECD\nOur World in Data\n\n\n\n\nMore sources: ddj.nicu.md"
+  },
+  {
+    "objectID": "city/index.html#plan-ahead",
+    "href": "city/index.html#plan-ahead",
+    "title": "Intro to Data Journalism",
+    "section": "Plan ahead",
+    "text": "Plan ahead\n\n\n\nSource: ddj.nicu.md"
+  },
+  {
+    "objectID": "city/index.html#closed-data",
+    "href": "city/index.html#closed-data",
+    "title": "Intro to Data Journalism",
+    "section": "Closed data",
+    "text": "Closed data"
+  },
+  {
+    "objectID": "city/index.html#fois",
+    "href": "city/index.html#fois",
+    "title": "Intro to Data Journalism",
+    "section": "FOIs",
+    "text": "FOIs\n\n\nWhatDoTheyKnow\nBe as specific as possible or you might get the “too much work” excuse, specify the format or you’ll get a PDF\nLikelihood they’ll refuse (they refused my locations of CCTV cameras locations on national security grounds)\nIf you want to use FOIs, do it as soon as possible."
+  },
+  {
+    "objectID": "city/index.html#scraping",
+    "href": "city/index.html#scraping",
+    "title": "Intro to Data Journalism",
+    "section": "Scraping",
+    "text": "Scraping\n\n\nScraping (week 9)\npre-scraped data like Inside Airbnb\nParsehub, browser extensions, R/Python/Node\nWe’ll maybe talk about AI? as well?"
+  },
+  {
+    "objectID": "city/index.html#census-exercise",
+    "href": "city/index.html#census-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Census exercise",
+    "text": "Census exercise\n\nMake a copy of this spreadsheet (here’s the original data).\nBefore you do anything else, what are some questions you would like to answer?\nFree first row, filter the table to the region you’re from (or London)\nFill in the columns at the end\nWhat are some other potential stories that you can think of?\n\n\n\nConcatenate title =CONCATENATE(A2,“,”,B2, ” (“, C2,”)“)\nConditional formatting on success column"
+  },
+  {
+    "objectID": "city/index.html#basic-excel-formulas-1-recap",
+    "href": "city/index.html#basic-excel-formulas-1-recap",
+    "title": "Intro to Data Journalism",
+    "section": "",
+    "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n[=AVERAGE()]\nReturns the numerical average value in a dataset, ignoring text.\n\n[=MEDIAN()]\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
+  },
+  {
+    "objectID": "city/index.html#basic-excel-formulas-2",
+    "href": "city/index.html#basic-excel-formulas-2",
+    "title": "Intro to Data Journalism",
+    "section": "",
+    "text": "[=IF()]\nReturns one value if the result is true, another if it’s false.\n\n[=COUNTIF()]\nCount all the cells that match a condition.\n\n[=SUMIF()]\nSum all the cells that match a condition.\n\n[=CONCATENATE()]\nCombine multiple bits of text together. Use =SPLIT() for the opposite.\n\n[=VLOOKUP()]\nMatch the values in a cell with the corresponding row in another dataset.\n\n[=XLOOKUP()]\nSame as =XLOOKUP() but more flexible and easier to grasp."
+  },
+  {
+    "objectID": "city/index.html#contact-1",
+    "href": "city/index.html#contact-1",
+    "title": "Intro to Data Journalism",
+    "section": "Contact",
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk"
+  },
+  {
     "objectID": "sources/academic.html",
     "href": "sources/academic.html",
     "title": "Academic Data Sources",
