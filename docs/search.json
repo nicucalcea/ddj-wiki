@@ -188,6 +188,28 @@
     ]
   },
   {
+    "objectID": "ai/index.html",
+    "href": "ai/index.html",
+    "title": "AI for journalists",
+    "section": "",
+    "text": "Note\n\n\n\nThese notes are mostly inspired from the Practical AI for (investigative) journalism sessions.\nThere are many excellent uses for AI in journalism. You can find some of them on the Journalist’s Toolbox website.\nHowever, there is one important thing to keep in mind. AI tools are machines that generate text (or other forms of media), not facts.\nLet’s look at an example. I asked Claude to tell me Who is Nicu Calcea?.\nClaude seems to be very confident and gives a pretty detailed response. However, every single one of the “key facts” on that list is false. I know, because I am Nicu Calcea, and there is no Romanian politician with the same name.\nIn the context of Large Language Models (LLMs), these falsehoods are called “hallucinations”.\nWhy does this happen?",
+    "crumbs": [
+      "AI",
+      "AI for journalists"
+    ]
+  },
+  {
+    "objectID": "ai/index.html#how-ai-works",
+    "href": "ai/index.html#how-ai-works",
+    "title": "AI for journalists",
+    "section": "How AI works",
+    "text": "How AI works\nLet’s assume I ask you to guess the next word in this sentence: I'm .... The answer could be hungry, Nicu, confused, or anything else.\nWhat about if we say I haven't eaten since yesteday, I'm .... Then, the answer is likely to be hungry or starving.\nLet’s take yet another example: Dearest friend, I daresay I have not partaken of food in ages. I'm positively.... Based on the style of the sentence, a better fit would be famished.\nWhat we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a Large Language Model (LLM) works.\nYou can see this in action in the OpenAI Playground. Copy the last sentence in the text box, make sure you have the Show probabilities box ticked on and click Submit to let the LLM complete it.\nYou’ll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next “token”, or group of letters. In our example, there was a 91.38% chance that the sentence Dearest friend, I daresay I have not partaken of food in ages. I'm positively would be followed by fam, which had a 99.87% change of being followed by ished, and so on.\n\n\n\nThe OpenAI Playground\n\n\nTo keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.\nYou can adjust the Temperature slider in the Playground to control that degree of randomness, where a lower number makes the reply more precise and predictable, while the higher one makes it more creative. For journalism, you’ll normally want to set the temperature to 0, as that will return the most likely output, which is likely to be more precise.\nIn essence, this is a more advanced version of the text predictor on your smartphone. That’s why you can’t trust that its output is the truth, though it often is. It is just the statistically most likely word based on the existing text.\nWhile this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting.",
+    "crumbs": [
+      "AI",
+      "AI for journalists"
+    ]
+  },
+  {
     "objectID": "ai/google-sheets.html",
     "href": "ai/google-sheets.html",
     "title": "AI in Google Sheets",
@@ -210,25 +232,69 @@
     ]
   },
   {
-    "objectID": "ai/index.html",
-    "href": "ai/index.html",
-    "title": "AI for journalists",
+    "objectID": "ai/python-classification-rag.html",
+    "href": "ai/python-classification-rag.html",
+    "title": "Identifying fossil fuel lobbyists with AI",
     "section": "",
-    "text": "Note\n\n\n\nThese notes are mostly inspired from the Practical AI for (investigative) journalism sessions.\nThere are many excellent uses for AI in journalism. You can find some of them on the Journalist’s Toolbox website.\nHowever, there is one important thing to keep in mind. AI tools are machines that generate text (or other forms of media), not facts.\nLet’s look at an example. I asked Claude to tell me Who is Nicu Calcea?.\nClaude seems to be very confident and gives a pretty detailed response. However, every single one of the “key facts” on that list is false. I know, because I am Nicu Calcea, and there is no Romanian politician with the same name.\nIn the context of Large Language Models (LLMs), these falsehoods are called “hallucinations”.\nWhy does this happen?",
+    "text": "Without looking it up, would you know if the “Clean Resource Innovation Network” is an oil and gas lobbying organisation? Lobbyists often hide under unintuitive or misleading affiliations that obscure their origins. The work of uncovering their identities can be time-consuming and challenging.\nThis workshop will outline an approach to using web scraping and Large Language Models (LLMs), like those powering ChatGPT, to systematically identify organisations that are affiliated with the fossil fuel industry. These techniques could also be adapted to other climate projects, such as identifying climate misinformation.\nThe tutorial will:",
     "crumbs": [
       "AI",
-      "AI for journalists"
+      "Identifying fossil fuel lobbyists"
     ]
   },
   {
-    "objectID": "ai/index.html#how-ai-works",
-    "href": "ai/index.html#how-ai-works",
-    "title": "AI for journalists",
-    "section": "How AI works",
-    "text": "How AI works\nLet’s assume I ask you to guess the next word in this sentence: I'm .... The answer could be hungry, Nicu, confused, or anything else.\nWhat about if we say I haven't eaten since yesteday, I'm .... Then, the answer is likely to be hungry or starving.\nLet’s take yet another example: Dearest friend, I daresay I have not partaken of food in ages. I'm positively.... Based on the style of the sentence, a better fit would be famished.\nWhat we did is we looked at all the words that came before and filled in the most appropriate choice. This is similar to how a Large Language Model (LLM) works.\nYou can see this in action in the OpenAI Playground. Copy the last sentence in the text box, make sure you have the Show probabilities box ticked on and click Submit to let the LLM complete it.\nYou’ll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next “token”, or group of letters. In our example, there was a 91.38% chance that the sentence Dearest friend, I daresay I have not partaken of food in ages. I'm positively would be followed by fam, which had a 99.87% change of being followed by ished, and so on.\n\n\n\nThe OpenAI Playground\n\n\nTo keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.\nYou can adjust the Temperature slider in the Playground to control that degree of randomness, where a lower number makes the reply more precise and predictable, while the higher one makes it more creative. For journalism, you’ll normally want to set the temperature to 0, as that will return the most likely output, which is likely to be more precise.\nIn essence, this is a more advanced version of the text predictor on your smartphone. That’s why you can’t trust that its output is the truth, though it often is. It is just the statistically most likely word based on the existing text.\nWhile this is less of an issue for some uses, like creative writing or poetry, journalism is about facts. AI tools are still very bad at reporting.",
+    "objectID": "ai/python-classification-rag.html#install-and-load-libraries",
+    "href": "ai/python-classification-rag.html#install-and-load-libraries",
+    "title": "Identifying fossil fuel lobbyists with AI",
+    "section": "Install and load libraries",
+    "text": "Install and load libraries\n\n%pip install duckduckgo_search\n# %pip install --upgrade duckduckgo-search\n%pip install trafilatura\n%pip install openai\n%pip install pydantic\n%pip install pandas\n\n\nimport requests\nimport pandas as pd\nfrom duckduckgo_search import DDGS\nfrom trafilatura import extract\nfrom enum import Enum\nfrom pydantic import BaseModel, Field\nfrom openai import OpenAI\nimport json",
     "crumbs": [
       "AI",
-      "AI for journalists"
+      "Identifying fossil fuel lobbyists"
+    ]
+  },
+  {
+    "objectID": "ai/python-classification-rag.html#prep-data",
+    "href": "ai/python-classification-rag.html#prep-data",
+    "title": "Identifying fossil fuel lobbyists with AI",
+    "section": "Prep data",
+    "text": "Prep data\nThe UNFCCC website published an Excel sheet of COP28 participants. Let’s download it to our local project.\n\nheaders = {\n    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0'\n}\n\nurl = \"https://unfccc.int/sites/default/files/resource/PLOP%20COP28_on-site.xlsx\"\n\nresponse = requests.get(url, headers=headers)\n\ncop_file = '../data/plop28.xlsx'\n\nif response.status_code == 200:\n    with open(\"../data/plop28.xlsx\", \"wb\") as file:\n        file.write(response.content)\n    print(\"File downloaded successfully.\")\nelse:\n    print(f\"Failed to download file. Status code: {response.status_code}\")\n\nFile downloaded successfully.\n\n\nThe participants are spread across multiple sheets, let’s read in the data and bind them together.\n\n# Create an empty list to store the dataframes from each sheet\ncop_participans = []\n\n# Read the Excel file\nxls = pd.ExcelFile(cop_file)\n\n# Iterate through the sheets and append the dataframes to the list\nfor sheet_name in xls.sheet_names:\n  df = pd.read_excel(cop_file, sheet_name=sheet_name)\n  cop_participans.append(df)\n\n# Concatenate the dataframes into a single dataframe\ncop_participans = pd.concat(cop_participans, ignore_index=True)\n\n\ncop_participans.head()\n\n\n\n\n\n\n\n\nnominator\nname\nfunc_title\ndepartment\norganization\nrelation\n\n\n\n\n0\nAlbania\nH.E. Mr. Edi Rama\nPrime Minister\nPrime Minister Office\nPrime Minister Office\nChoose not to disclose\n\n\n1\nAlbania\nH.E. Ms. Mirela Furxhi\nMinister of Tourism and Environment\nMinistry of Tourism and Environment\nMinistry of Tourism and Environment\nChoose not to disclose\n\n\n2\nAlbania\nH.E. Ms. Belinda Balluku\nDeputy Prime Minister and Minister of Infrastr...\nMinistry of Infrastructure and Energy\nMinistry of Infrastructure and Energy\nChoose not to disclose\n\n\n3\nAlbania\nMs. Lindita Rama\nSpouse of the Prime Minister\nNot applicable\nNot applicable\nChoose not to disclose\n\n\n4\nAlbania\nH.E. Mr. Ridi Kurtezi\nAmbassador of the Republic of Albania to the UAE\nAlbanian Embassy in United Arab Emirates\nAlbanian Embassy in United Arab Emirates\nChoose not to disclose\n\n\n\n\n\n\n\nThis list contains all participants registered to attend the 2023 United Nations Climate Change Conference or Conference of the Parties (COP28).\nWe’re not interested in the individuals, just the organisations they represent. Let’s extract those.\n\ncop_orgs = cop_participans[['nominator', 'organization']].drop_duplicates().sample(20)\ncop_orgs\n\n\n\n\n\n\n\n\nnominator\norganization\n\n\n\n\n54467\nWorld Bank Group\nVelliv\n\n\n79373\nHimal Media\nwww.ukaalo.com\n\n\n68015\nThe Association of Commonwealth Universities\nSouth Eastern University of Sri Lanka\n\n\n44364\nSweden\nThe Church of Sweden\n\n\n44553\nThailand\nOKLIN (THAILAND) CO., LTD.",
+    "crumbs": [
+      "AI",
+      "Identifying fossil fuel lobbyists"
+    ]
+  },
+  {
+    "objectID": "ai/python-classification-rag.html#search",
+    "href": "ai/python-classification-rag.html#search",
+    "title": "Identifying fossil fuel lobbyists with AI",
+    "section": "Search",
+    "text": "Search\nLarge Language Models are prone to hallucinations.\nIf you ask an LLM a question it doesn’t know the answer to, it will confidently make up a plausible-sounding answer that is completely wrong.\nOne way to help with that issue is to provide the AI with some additional context for the question you’re asking.\nFor our case, we’ll provide it with relevant search results related to our organisation so that it knows who we’re asking about.\nWe’ll use DuckDuckGo because it has a free API. For better results, you can use the Google API or a SERP API.\nLet’s search for the organisation and nominator and extract the first 5 results.\n\norg = cop_orgs['organization'].iloc[0]\nnominator = cop_orgs['nominator'].iloc[0]\n\nsearch = f'(\"{org}\" {nominator}) OR (\"{org}\") OR ({org})'\nsearch += ' oil OR gas OR coal'\nprint(search)\n\nresults = DDGS().text(search, max_results=5)\nresults\n\n(\"PRESIDENCIA DE LA REPUBLICA\" Colombia) OR (\"PRESIDENCIA DE LA REPUBLICA\") OR (PRESIDENCIA DE LA REPUBLICA) oil OR gas OR coal\n\n\n[{'title': 'presidencia.gov.co',\n  'href': 'http://presidencia.gov.co/',\n  'body': 'Presidencia es el sitio web oficial de la Presidencia de Colombia. Aquí podrá conocer las acciones y propuestas del gobierno, así como los canales de participación y comunicación ciudadana.'},\n {'title': 'Presidencia de la República - Colombia - YouTube',\n  'href': 'https://www.youtube.com/@infopresidencia',\n  'body': 'Share your videos with friends, family, and the world'},\n {'title': \"Colombian electoral authorities investigating president's 2022 campaign ...\",\n  'href': 'https://www.latimes.com/world-nation/story/2024-10-08/colombian-electoral-authorities-open-investigation-against-president-petros-2022-campaign',\n  'body': 'BOGOTA, Colombia — Electoral authorities in Colombia on Tuesday ruled in favor of investigating financial misconduct allegations against the 2022 campaign that got President Gustavo Petro elected.'},\n {'title': 'Presidente de Colombia - Wikipedia, la enciclopedia libre',\n  'href': 'https://es.wikipedia.org/wiki/Presidente_de_Colombia',\n  'body': 'petro.presidencia.gov.co. [editar datos en Wikidata] El presidente de la República de Colombia es el jefe de Estado y de Gobierno, suprema autoridad administrativa de Colombia y comandante en jefe de la Fuerza Pública (Fuerzas Militares y Policía Nacional). Además, ostenta el título de gran maestre de la Orden de Boyacá.'},\n {'title': '10 Ways to Get Rid of Gas Pains and Bloating - Healthline',\n  'href': 'https://www.healthline.com/health/digestive-health/get-rid-of-gas-pains-and-bloating',\n  'body': 'Drink right before meals or up to three times daily as long as needed to reduce symptoms. 5. Physical activity. Exercise can help release trapped gas and gas pain. Try walking after meals as a way ...'}]",
+    "crumbs": [
+      "AI",
+      "Identifying fossil fuel lobbyists"
+    ]
+  },
+  {
+    "objectID": "ai/python-classification-rag.html#scrape-search-results",
+    "href": "ai/python-classification-rag.html#scrape-search-results",
+    "title": "Identifying fossil fuel lobbyists with AI",
+    "section": "Scrape search results",
+    "text": "Scrape search results\nNow, we want to extract the text from each of those URLs. We’ll use Trafilatura, which will help us extract the main text without headers, footers and other irrelevant text.\n\n# Define function to scrape data\ndef extract_text(urls):\n    results = []\n\n    for url in urls:\n        print(f\"Scraping {url}...\")\n        try:\n            response = requests.get(url, timeout=30, verify=False)  # Note: verify=False is not recommended for production use\n            response.raise_for_status()  # Raises an HTTPError for bad responses\n            extracted_text = extract(response.text, output_format=\"markdown\")\n            results.append((url, extracted_text))\n        except requests.RequestException as e:\n            print(f\"Error scraping {url}: {str(e)}\")\n            results.append((url, f\"Error: {str(e)}\"))\n\n    return results\n\n\n# Run the function\ntexts = extract_text([result['href'] for result in results if 'href' in result])\ntexts = [(url, text) for url, text in texts if text is not None] # remove empty scrapes\n\nScraping http://presidencia.gov.co/...\nScraping https://www.youtube.com/@infopresidencia...\nScraping https://www.latimes.com/world-nation/story/2024-10-08/colombian-electoral-authorities-open-investigation-against-president-petros-2022-campaign...\nError scraping https://www.latimes.com/world-nation/story/2024-10-08/colombian-electoral-authorities-open-investigation-against-president-petros-2022-campaign: 403 Client Error: Forbidden for url: https://www.latimes.com/world-nation/story/2024-10-08/colombian-electoral-authorities-open-investigation-against-president-petros-2022-campaign\nScraping https://es.wikipedia.org/wiki/Presidente_de_Colombia...\nScraping https://www.healthline.com/health/digestive-health/get-rid-of-gas-pains-and-bloating...\n\n\n\n# Paste text together\nstitched_text = \"\\n\\n\".join(f\"URL: {url}\\n{text}\" for url, text in texts).strip()\n\n\nprompt_system = f'''\n## Instructions\n\nYou are a researcher investigating whether \"{org}\" is a fossil fuel organization.\n\nA fossil fuel organization:\n- Aims to influence policy or legislation in the interests of fossil fuel companies and shareholders.\n- Has significant business activities in exploration, extraction, refining, trading, specialized transportation of oil, gas, coal, or blue hydrogen, or sale of electricity derived from them.\n- Publicly declares involvement in fossil fuels or promotes significant investments in such companies.\n- Can be an NGO, foundation, think tank, or lobbying group funded by fossil fuel companies or their executives.\n- May include larger companies that own fossil fuel subsidiaries (e.g., BASF owning Wintershall).\n- Includes companies selling energy from fossil fuels (e.g., Octopus Energy).\n- Companies that currently produce or sell fossil fuels, regardless of their plans to divest in the future.\n\nA fossil fuel organization is NOT:\n- NGOs campaigning AGAINST fossil fuels (e.g., Greenpeace).\n- Investors, pension funds, universities, or banks that invest in fossil fuel companies.\n- Consulting companies that work with a wide range of clients which may include fossil fuel companies.\n- Governments that benefit from fossil fuel production.\n- Government departments facilitating, regulating or taxing fossil fuel companies.\n- Media organisations that report on the activities of fossil fuel companies.\n\nAnalyze the following text extracted from an internet search for \"{org}\" to determine if it is a fossil fuel organization. Use common sense and respond only in English, even if the original content is not in English.\n'''",
+    "crumbs": [
+      "AI",
+      "Identifying fossil fuel lobbyists"
+    ]
+  },
+  {
+    "objectID": "ai/python-classification-rag.html#send-request-to-llm",
+    "href": "ai/python-classification-rag.html#send-request-to-llm",
+    "title": "Identifying fossil fuel lobbyists with AI",
+    "section": "Send request to LLM",
+    "text": "Send request to LLM\nWe’ll use OpenAI’s gpt-4o-mini for this classification.\nOne advantage of this particular model is its support for Structured Outputs. This means you can force the response to follow a certain set of rules.\nLet’s define what we want the output to be.\n\n# Define OpenAI Structured Outputs rules\nclass OrgType(str, Enum):\n    company = \"company\"\n    ngo = \"NGO/non-profit\"\n    government = \"government\"\n    media = \"media\"\n    other = \"other\"\n\nclass Classification(BaseModel):\n    fossil_fuel_link: bool = Field(description = \"Is this a fossil fuel organization?\")\n    org_type: OrgType\n    explanation: str = Field(description = \"A brief explanation of your decision, in English\")\n    source: str = Field(description = \"A link to the SINGLE most relevant source that supports your classification\")\n\nNow, let’s make the request to OpenAI. First, we define a function.\n\ndef make_request_openai(prompt_system: str, prompt_user: str, model: str = \"gpt-4o-mini\", **kwargs) -&gt; str:\n    \"\"\"Make a request to OpenAI models that support structured outputs.\"\"\"\n    client = OpenAI(\n        # api_key\n        )\n    response = client.beta.chat.completions.parse(\n        model=model,\n        temperature=0,\n        messages=[\n            {\"role\": \"system\", \"content\": prompt_system},\n            {\"role\": \"user\", \"content\": prompt_user}\n        ],\n        response_format=Classification\n    )\n    return response.choices[0].message.content\n\nNow, let’s run the function on our example.\n\nopenai_response = make_request_openai(prompt_system, stitched_text)\nprint(openai_response)\n\n{\"fossil_fuel_link\":false,\"org_type\":\"government\",\"explanation\":\"The 'PRESIDENCIA DE LA REPUBLICA' refers to the office of the President of Colombia, which is a government entity. It does not operate as a fossil fuel organization, as it does not engage in exploration, extraction, or any business activities related to fossil fuels. Instead, it is responsible for the administration of the country and its policies, which may include energy policy but does not directly involve fossil fuel operations.\",\"source\":\"https://es.wikipedia.org/wiki/Presidente_de_Colombia\"}",
+    "crumbs": [
+      "AI",
+      "Identifying fossil fuel lobbyists"
     ]
   },
   {

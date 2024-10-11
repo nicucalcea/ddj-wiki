@@ -55,6 +55,10 @@ export default {
           "path": "ai/python-classification.html"
         },
         {
+          "name": "Identifying fossil fuel lobbyists",
+          "path": "ai/python-classification-rag.ipynb"
+        },
+        {
           "name": "Data validation in Python",
           "path": "ai/python-validation.html"
         },
