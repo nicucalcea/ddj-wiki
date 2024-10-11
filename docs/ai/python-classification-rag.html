@@ -283,7 +283,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#scrape-search-results" id="toc-scrape-search-results" class="nav-link" data-scroll-target="#scrape-search-results">Scrape search results</a></li>
   <li><a href="#send-request-to-llm" id="toc-send-request-to-llm" class="nav-link" data-scroll-target="#send-request-to-llm">Send request to LLM</a></li>
   <li><a href="#scale-up" id="toc-scale-up" class="nav-link" data-scroll-target="#scale-up">Scale up</a></li>
-  <li><a href="#what-to-improve" id="toc-what-to-improve" class="nav-link" data-scroll-target="#what-to-improve">What to improve?</a></li>
+  <li><a href="#what-next" id="toc-what-next" class="nav-link" data-scroll-target="#what-next">What next?</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.dev/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -331,13 +331,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div id="cell-5" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> duckduckgo_search <span class="im">import</span> DDGS</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> trafilatura <span class="im">import</span> extract</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> enum <span class="im">import</span> Enum</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openai <span class="im">import</span> OpenAI</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> duckduckgo_search <span class="im">import</span> DDGS</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> trafilatura <span class="im">import</span> extract</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> enum <span class="im">import</span> Enum</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openai <span class="im">import</span> OpenAI</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="prep-data" class="level2">
@@ -352,14 +353,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url, headers<span class="op">=</span>headers)</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>cop_file <span class="op">=</span> <span class="st">'../data/plop28.xlsx'</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>cop_file <span class="op">=</span> <span class="st">'data/plop28.xlsx'</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="st">"../data/plop28.xlsx"</span>, <span class="st">"wb"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">file</span>.write(response.content)</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"File downloaded successfully."</span>)</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Failed to download file. Status code: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if the 'data' folder exists, create it if it doesn't</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> os.path.exists(<span class="st">"data"</span>):</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>        os.makedirs(<span class="st">"data"</span>)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/plop28.xlsx"</span>, <span class="st">"wb"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>        <span class="bu">file</span>.write(response.content)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"File downloaded successfully."</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Failed to download file. Status code: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>File downloaded successfully.</code></pre>
 </div>
@@ -503,7 +508,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="search" class="level2">
 <h2 class="anchored" data-anchor-id="search">Search</h2>
 <p>Large Language Models are prone to <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinations</a>.</p>
-<p>If you ask an LLM a question it doesn’t know the answer to, it will confidently make up a plausible-sounding answer that is completely wrong.</p>
+<p>If you ask an LLM a question it doesn’t know the answer to, <a href="https://ddj.nicu.md/ai/">it will confidently make up a plausible-sounding answer</a> that is completely wrong.</p>
 <p>One way to help with that issue is to provide the AI with some additional context for the question you’re asking.</p>
 <p>For our case, we’ll provide it with relevant search results related to our organisation so that it knows who we’re asking about.</p>
 <p>We’ll use DuckDuckGo because it has a free API. For better results, you can use the Google API or a <a href="https://developers.oxylabs.io/scraper-apis/serp-scraper-api/google/search">SERP API</a>.</p>
@@ -865,11 +870,11 @@ Error scraping https://thenovicechefblog.com/homemade-tamales/: 403 Client Error
 </div>
 </div>
 <div id="cell-39" class="cell" data-outputid="8d1f14dd-efd3-4a44-dbd8-5c3c81d905d2" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified.to_csv(<span class="st">'../data/cop_orgs_classified.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified.to_csv(<span class="st">'data/cop_orgs_classified.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="what-to-improve" class="level1">
-<h1>What to improve?</h1>
+<section id="what-next" class="level1">
+<h1>What next?</h1>
 <p>There are lots of things we can improve about this process. Here are some ideas:</p>
 <ul>
 <li>DuckDuckGo is free and good to use. However, their API isn’t meant to be used to this way and will often deny requests. It also doesn’t return the best results. I recomment switching to Google.</li>
@@ -877,7 +882,7 @@ Error scraping https://thenovicechefblog.com/homemade-tamales/: 403 Client Error
 <li>If you use other models without Structured Output support, you can use Guardrails to <a href="https://ddj.nicu.md/ai/python-validation.html">validate their output</a>.</li>
 <li>Cache things! Don’t start over if something goes wrong, save the search results, scrapes and LLM outputs and continue where you left off.</li>
 <li>You can use Python’s <a href="https://docs.python.org/3/library/threading.html">multithreading</a> to run multiple classifications in parallel, significantly speeding up the process.</li>
-<li>LLMs are still dumb and shouldn’t be trusted. Manually verify the classifications if you’re going to publish the results.</li>
+<li>LLMs are still dumb and shouldn’t be trusted. Manually verify the classifications if you’re going to publish the results!</li>
 </ul>
 
 
