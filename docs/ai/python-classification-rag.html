@@ -630,7 +630,7 @@ Scraping https://www.healthline.com/health/digestive-health/get-rid-of-gas-pains
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_request_openai(prompt_system: <span class="bu">str</span>, prompt_user: <span class="bu">str</span>, model: <span class="bu">str</span> <span class="op">=</span> <span class="st">"gpt-4o-mini"</span>, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Make a request to OpenAI models that support structured outputs."""</span></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># api_key</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># api_key = ''</span></span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>        )</span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> client.beta.chat.completions.parse(</span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>        model<span class="op">=</span>model,</span>
@@ -715,7 +715,7 @@ Scraping https://www.healthline.com/health/digestive-health/get-rid-of-gas-pains
 <span id="cb20-57"><a href="#cb20-57" aria-hidden="true" tabindex="-1"></a><span class="ss">'''</span></span>
 <span id="cb20-58"><a href="#cb20-58" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-59"><a href="#cb20-59" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
-<span id="cb20-60"><a href="#cb20-60" aria-hidden="true" tabindex="-1"></a>        <span class="co"># api_key</span></span>
+<span id="cb20-60"><a href="#cb20-60" aria-hidden="true" tabindex="-1"></a>        <span class="co"># api_key = ''</span></span>
 <span id="cb20-61"><a href="#cb20-61" aria-hidden="true" tabindex="-1"></a>        )</span>
 <span id="cb20-62"><a href="#cb20-62" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> client.beta.chat.completions.parse(</span>
 <span id="cb20-63"><a href="#cb20-63" aria-hidden="true" tabindex="-1"></a>        model<span class="op">=</span>model,</span>
