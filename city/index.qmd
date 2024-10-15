@@ -313,6 +313,36 @@ Shows percentage change.
 :::
 
 
+## Averages {.smaller}
+
+::: columns
+::: {.column width="50%"}
+![](media/mean-median.svg){height="600"}
+:::
+
+::: {.column width="50%"}
+### =MODE()
+
+Finds the most common value in a range.
+
+&nbsp;
+&nbsp;
+
+### =MEDIAN()
+
+Finds the value that's right in the middle of a dataset.
+
+&nbsp;
+&nbsp;
+
+### =AVERAGE()
+
+Sum all the values and divide by the number of records.
+
+:::
+:::
+
+
 ## How did the Mail do it?
 
 ::: columns
@@ -533,12 +563,12 @@ Same as =XLOOKUP() but more flexible and easier to grasp.
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
-# Week 3
 
-<!-- Pad this week out, add more content (about 25%) -->
+# Week 3
 
 Introduction to [Data Journalism]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
 
 ## Toolbox
 
@@ -546,6 +576,7 @@ Introduction to [Data Journalism]<br>
 ::: footer
 Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/)
 :::
+
 
 ## XLOOKUP
 
@@ -555,6 +586,13 @@ Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/)
 
 ![](media/xlookup.png)
 
+
+## XLOOKUP exercise
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1FwMl1kJGsIqKe0K0L0V-zIPh_uk9C3fqDka6A5G1CBY/copy).
+2. Fill in the empty columns with formulas we learned last time.
+
+
 ## Pivot Tables {.smaller}
 
 Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.
@@ -562,6 +600,15 @@ Pivot tables are extra tables in your spreadsheet, in which you can summarise da
 You can calculate averages, counts, max/min values or sums for numbers in a group.
 
 ![](media/pivot-recipe.png)
+
+
+## Pivot table exercise
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1-Jk4Zo5pTgGwXIeBEgzxn00IBjrxlxbmuf-ICW-4Am8/copy).
+2. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+Bonus points: Grab a CSV from [police.uk](https://data.police.uk/data/) and do it yourself.
+
 
 ## Averages {.smaller}
 
@@ -592,20 +639,6 @@ Sum all the values and divide by the number of records.
 :::
 :::
 
-## XLOOKUP exercise
-
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1FwMl1kJGsIqKe0K0L0V-zIPh_uk9C3fqDka6A5G1CBY/copy).
-2. Fill in the empty columns with formulas we learned last time.
-
-## Pivot table exercise
-
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1-Jk4Zo5pTgGwXIeBEgzxn00IBjrxlxbmuf-ICW-4Am8/copy).
-2. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-Bonus points: Grab a CSV from [police.uk](https://data.police.uk/data/) and do it yourself.
-
-::: notes
-:::
 
 ## Contact
 
@@ -807,27 +840,6 @@ Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring
 Data [Stories]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-
-## 30-day challenge (Erwan) {fullscreen=true}
-![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg){.absolute height="600"}
-
-::: footer
-Source: [Erwan Rivault](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
-:::
-
-## 30-day challenge (Jana) {fullscreen=true}
-![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-G8R9ZW0AAso94.jpeg){.absolute height="600"}
-
-::: footer
-Source: [Jana Tauschinski](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
-:::
-
-## {fullscreen=true}
-![](https://blog.datawrapper.de/wp-content/uploads/2023/11/image6.png){.absolute height="700"}
-
-::: footer
-Source: [FT](https://www.ft.com/content/ed739236-7430-4dc1-95f5-4a23534d8841)
-:::
 
 ## Why do we visualise data? {background-color="#e9e9e9"}
 

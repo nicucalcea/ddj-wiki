@@ -733,6 +733,22 @@
 <p>Shows percentage change.</p>
 </div></div>
 </section>
+<section id="averages" class="slide level2 smaller">
+<h2>Averages</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="media/mean-median.svg" height="600"></p>
+</div><div class="column" style="width:50%;">
+<h3 id="mode">=MODE()</h3>
+<p>Finds the most common value in a range.</p>
+<p>&nbsp; &nbsp;</p>
+<h3 id="median-1">=MEDIAN()</h3>
+<p>Finds the value that’s right in the middle of a dataset.</p>
+<p>&nbsp; &nbsp;</p>
+<h3 id="average-1">=AVERAGE()</h3>
+<p>Sum all the values and divide by the number of records.</p>
+</div></div>
+</section>
 <section id="how-did-the-mail-do-it" class="slide level2">
 <h2>How did the Mail do it?</h2>
 <div class="columns">
@@ -922,10 +938,10 @@
 <h5 id="sum-1">[=SUM()]</h5>
 <p>Returns the sum of a series of numbers and/or cells.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="average-1"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
+<h5 id="average-2"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
 <p>Returns the numerical average value in a dataset, ignoring text.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="median-1"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
+<h5 id="median-2"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
 <p>Returns the median value in a numeric dataset.</p>
 </div><div class="column" style="width:33.33%;">
 <h5 id="new-oldold-1">[=(NEW-OLD)/OLD]</h5>
@@ -965,7 +981,6 @@
 <section>
 <section id="week-3" class="title-slide slide level1 center">
 <h1>Week 3</h1>
-<!-- Pad this week out, add more content (about 25%) -->
 <p>Introduction to [Data Journalism]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="toolbox" class="slide level2">
@@ -981,28 +996,6 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource scala number-lines code-with-copy"><code class="sourceCode scala"><span id="cb1-1"><a></a><span class="op">=</span><span class="fu">XLOOKUP</span><span class="op">(</span>search_term<span class="op">,</span> col_to_search<span class="op">,</span> col_to_return<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <img data-src="media/xlookup.png" class="r-stretch"></section>
-<section id="pivot-tables" class="slide level2 smaller">
-<h2>Pivot Tables</h2>
-<p>Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.</p>
-<p>You can calculate averages, counts, max/min values or sums for numbers in a group.</p>
-
-<img data-src="media/pivot-recipe.png" class="r-stretch"></section>
-<section id="averages" class="slide level2 smaller">
-<h2>Averages</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="media/mean-median.svg" height="600"></p>
-</div><div class="column" style="width:50%;">
-<h3 id="mode">=MODE()</h3>
-<p>Finds the most common value in a range.</p>
-<p>&nbsp; &nbsp;</p>
-<h3 id="median-2">=MEDIAN()</h3>
-<p>Finds the value that’s right in the middle of a dataset.</p>
-<p>&nbsp; &nbsp;</p>
-<h3 id="average-2">=AVERAGE()</h3>
-<p>Sum all the values and divide by the number of records.</p>
-</div></div>
-</section>
 <section id="xlookup-exercise" class="slide level2">
 <h2>XLOOKUP exercise</h2>
 <ol type="1">
@@ -1010,6 +1003,12 @@
 <li>Fill in the empty columns with formulas we learned last time.</li>
 </ol>
 </section>
+<section id="pivot-tables" class="slide level2 smaller">
+<h2>Pivot Tables</h2>
+<p>Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.</p>
+<p>You can calculate averages, counts, max/min values or sums for numbers in a group.</p>
+
+<img data-src="media/pivot-recipe.png" class="r-stretch"></section>
 <section id="pivot-table-exercise" class="slide level2">
 <h2>Pivot table exercise</h2>
 <ol type="1">
@@ -1018,19 +1017,22 @@
 </iframe></li>
 </ol>
 <p>Bonus points: Grab a CSV from <a href="https://data.police.uk/data/" target="_blank">police.uk</a> and do it yourself.</p>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+</section>
+<section id="averages-1" class="slide level2 smaller">
+<h2>Averages</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="media/mean-median.svg" height="600"></p>
+</div><div class="column" style="width:50%;">
+<h3 id="mode-1">=MODE()</h3>
+<p>Finds the most common value in a range.</p>
+<p>&nbsp; &nbsp;</p>
+<h3 id="median-3">=MEDIAN()</h3>
+<p>Finds the value that’s right in the middle of a dataset.</p>
+<p>&nbsp; &nbsp;</p>
+<h3 id="average-3">=AVERAGE()</h3>
+<p>Sum all the values and divide by the number of records.</p>
+</div></div>
 </section>
 <section id="contact-2" class="slide level2">
 <h2>Contact</h2>
@@ -2163,7 +2165,7 @@ Students will receive feedback on their responses but we do need a sufficient nu
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":false},
-'multiplex': {"secret":null,"id":"89b9c27c037a8fa0","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"1deeebffbf7f704f","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner

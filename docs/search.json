@@ -432,6 +432,13 @@
     "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n=AVERAGE()\nReturns the numerical average value in a dataset, ignoring text.\n\n=MEDIAN()\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
   },
   {
+    "objectID": "city/index.html#averages",
+    "href": "city/index.html#averages",
+    "title": "Intro to Data Journalism",
+    "section": "Averages",
+    "text": "Averages\n\n\n\n\n=MODE()\nFinds the most common value in a range.\n   \n=MEDIAN()\nFinds the value that’s right in the middle of a dataset.\n   \n=AVERAGE()\nSum all the values and divide by the number of records."
+  },
+  {
     "objectID": "city/index.html#how-did-the-mail-do-it",
     "href": "city/index.html#how-did-the-mail-do-it",
     "title": "Intro to Data Journalism",
@@ -530,20 +537,6 @@
     "text": "XLOOKUP\n=XLOOKUP(search_term, col_to_search, col_to_return)"
   },
   {
-    "objectID": "city/index.html#pivot-tables",
-    "href": "city/index.html#pivot-tables",
-    "title": "Intro to Data Journalism",
-    "section": "Pivot Tables",
-    "text": "Pivot Tables\nPivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.\nYou can calculate averages, counts, max/min values or sums for numbers in a group."
-  },
-  {
-    "objectID": "city/index.html#averages",
-    "href": "city/index.html#averages",
-    "title": "Intro to Data Journalism",
-    "section": "Averages",
-    "text": "Averages\n\n\n\n\n=MODE()\nFinds the most common value in a range.\n   \n=MEDIAN()\nFinds the value that’s right in the middle of a dataset.\n   \n=AVERAGE()\nSum all the values and divide by the number of records."
-  },
-  {
     "objectID": "city/index.html#xlookup-exercise",
     "href": "city/index.html#xlookup-exercise",
     "title": "Intro to Data Journalism",
@@ -551,11 +544,25 @@
     "text": "XLOOKUP exercise\n\nMake a copy of this spreadsheet.\nFill in the empty columns with formulas we learned last time."
   },
   {
+    "objectID": "city/index.html#pivot-tables",
+    "href": "city/index.html#pivot-tables",
+    "title": "Intro to Data Journalism",
+    "section": "Pivot Tables",
+    "text": "Pivot Tables\nPivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.\nYou can calculate averages, counts, max/min values or sums for numbers in a group."
+  },
+  {
     "objectID": "city/index.html#pivot-table-exercise",
     "href": "city/index.html#pivot-table-exercise",
     "title": "Intro to Data Journalism",
     "section": "Pivot table exercise",
     "text": "Pivot table exercise\n\nMake a copy of this spreadsheet.\n\n\n\nBonus points: Grab a CSV from police.uk and do it yourself."
+  },
+  {
+    "objectID": "city/index.html#averages-1",
+    "href": "city/index.html#averages-1",
+    "title": "Intro to Data Journalism",
+    "section": "Averages",
+    "text": "Averages\n\n\n\n\n=MODE()\nFinds the most common value in a range.\n   \n=MEDIAN()\nFinds the value that’s right in the middle of a dataset.\n   \n=AVERAGE()\nSum all the values and divide by the number of records."
   },
   {
     "objectID": "city/index.html#contact-2",
