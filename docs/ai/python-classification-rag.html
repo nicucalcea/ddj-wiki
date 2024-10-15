@@ -343,14 +343,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openai <span class="im">import</span> OpenAI</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>You will need an API key <a href="https://platform.openai.com/account/api-keys">from OpenAI</a> or another provider.</p>
+<p><span hidden="">Get a <a href="https://static.globalwitness.org/openai-api-key.txt" target="_blank">temporary API key here</a>.</span></p>
 </section>
 <section id="prep-data" class="level2">
 <h2 class="anchored" data-anchor-id="prep-data">Prep data</h2>
 <p>The <a href="https://unfccc.int/documents/634503">UNFCCC website</a> published an Excel sheet of COP28 participants. Let’s download it to our local project.</p>
-<div id="cell-9" class="cell" data-execution_count="2">
+<div id="cell-10" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>cop_file <span class="op">=</span> <span class="st">'data/plop28.xlsx'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-10" class="cell">
+<div id="cell-11" class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>headers <span class="op">=</span> {</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'User-Agent'</span>: <span class="st">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0'</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span>
@@ -371,7 +373,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Failed to download file. Status code: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The participants are spread across multiple sheets, we need to read them in sparately and bind them together.</p>
-<div id="cell-12" class="cell" data-execution_count="3">
+<div id="cell-13" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list to store the dataframes from each sheet</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>cop_participants <span class="op">=</span> []</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -386,7 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Concatenate the dataframes into a single dataframe</span></span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>cop_participants <span class="op">=</span> pd.concat(cop_participants, ignore_index<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-13" class="cell" data-outputid="798f38f8-f733-4f4a-a948-978b1734eb19" data-execution_count="24">
+<div id="cell-14" class="cell" data-outputid="798f38f8-f733-4f4a-a948-978b1734eb19" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cop_participants.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <div>
@@ -459,7 +461,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This list contains all participants registered to attend the 2023 United Nations Climate Change Conference or Conference of the Parties (COP28).</p>
 <p>We’re not interested in the individuals, just the organisations they represent. Classifying individuals is a much more complex task that doesn’t work well with this process. Additionally, it would be too difficult to verify the results.</p>
 <p>Let’s extract the organisations. We’ll only keep a random 20 rows for this example, you can remove the <code>sample</code> function to process the entire dataset.</p>
-<div id="cell-15" class="cell" data-outputid="4263dd80-f0a1-4365-fa4e-949651d32f8d" data-execution_count="22">
+<div id="cell-16" class="cell" data-outputid="4263dd80-f0a1-4365-fa4e-949651d32f8d" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cop_orgs <span class="op">=</span> cop_participants[[<span class="st">'organization'</span>]].drop_duplicates().sample(<span class="dv">5</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>cop_orgs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
@@ -505,10 +507,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="search">Search</h2>
 <p>Large Language Models are prone to <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinations</a>. If you ask an LLM a question it doesn’t know the answer to, <a href="https://ddj.nicu.md/ai/">it will confidently make up a plausible-sounding answer</a> that is completely wrong. This is particularly the case with less known organisations that wouldn’t feature promionently in the training data.</p>
 <p>Let’s ask ChatGPT if “Clean Resource Innovation Network” is a fossil fuel organisation or not.</p>
-<div id="cell-18" class="cell" data-execution_count="23">
+<div id="cell-19" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>org <span class="op">=</span> <span class="st">"Clean Resource Innovation Network"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-19" class="cell" data-execution_count="7">
+<div id="cell-20" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_request_openai_simple(prompt_system: <span class="bu">str</span>, prompt_user: <span class="bu">str</span>, model: <span class="bu">str</span> <span class="op">=</span> <span class="st">"gpt-4o-mini"</span>, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="co"># api_key = ''</span></span>
@@ -523,7 +525,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.choices[<span class="dv">0</span>].message.content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-20" class="cell" data-execution_count="8">
+<div id="cell-21" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>make_request_openai_simple(prompt_system<span class="op">=</span><span class="st">"You are an AI whose job it is to help researchers identify fossil fuel organisations"</span>,</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                           prompt_user<span class="op">=</span><span class="ss">f"Is $</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss"> a fossil fuel organisation? Respond with YES or NO"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
@@ -535,7 +537,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In our case, we’ll provide the AI with relevant search results related to our organisation so that it knows who we’re asking about.</p>
 <p>We’ll use DuckDuckGo because it has a free API. For better results, you can use the Google API or a <a href="https://developers.oxylabs.io/scraper-apis/serp-scraper-api/google/search">SERP API</a>.</p>
 <p>Let’s search for the organisation and extract the first 5 results.</p>
-<div id="cell-23" class="cell" data-outputid="9e761841-40d6-4b70-c874-2c99f9e925d0" data-execution_count="9">
+<div id="cell-24" class="cell" data-outputid="9e761841-40d6-4b70-c874-2c99f9e925d0" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>search <span class="op">=</span> <span class="ss">f'"</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" oil gas coal'</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(search)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -566,7 +568,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="scrape-search-results" class="level2">
 <h2 class="anchored" data-anchor-id="scrape-search-results">Scrape search results</h2>
 <p>Now, we want to extract the text from each of those URLs. We’ll use <a href="https://github.com/adbar/trafilatura">Trafilatura</a>, a library that will help us extract the main text without headers, footers and other irrelevant text.</p>
-<div id="cell-26" class="cell" data-execution_count="10">
+<div id="cell-27" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_text(urls):</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> []</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -583,7 +585,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-27" class="cell" data-outputid="00496a96-727a-4bca-afbf-c0c8cde94754" data-execution_count="11">
+<div id="cell-28" class="cell" data-outputid="00496a96-727a-4bca-afbf-c0c8cde94754" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the function</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>texts <span class="op">=</span> extract_text([result[<span class="st">'href'</span>] <span class="cf">for</span> result <span class="kw">in</span> results <span class="cf">if</span> <span class="st">'href'</span> <span class="kw">in</span> result])</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>texts <span class="op">=</span> [(url, text) <span class="cf">for</span> url, text <span class="kw">in</span> texts <span class="cf">if</span> text <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>] <span class="co"># remove empty scrapes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -597,11 +599,11 @@ Error scraping https://energynow.ca/2022/01/new-technologies-identified-for-fund
 Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activity-7231359278865952768-q2m_...</code></pre>
 </div>
 </div>
-<div id="cell-28" class="cell" data-execution_count="12">
+<div id="cell-29" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Paste text together</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>prompt_documents <span class="op">=</span> <span class="st">"</span><span class="ch">\n\n</span><span class="st">"</span>.join(<span class="ss">f"URL: </span><span class="sc">{</span>url<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>text<span class="sc">}</span><span class="ss">"</span> <span class="cf">for</span> url, text <span class="kw">in</span> texts).strip()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-29" class="cell" data-execution_count="13">
+<div id="cell-30" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>prompt_system <span class="op">=</span> <span class="st">'You will be provided with a collection of documents collected from Google search results. Your task is to determine whether an organization is a fossil fuel company or lobbying group or not.'</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>prompt_instructions<span class="op">=</span> <span class="ss">f'''</span></span>
@@ -634,14 +636,14 @@ Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activit
 </ul>
 <p>We’ll use OpenAI’s gpt-4o-mini for this classification. One advantage of this particular model is its support for <a href="https://openai.com/index/introducing-structured-outputs-in-the-api/">Structured Outputs</a>. This means you can force the response to follow a certain set of rules.</p>
 <p>Let’s define what we want the output to be.</p>
-<div id="cell-33" class="cell" data-execution_count="15">
+<div id="cell-34" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Classification(BaseModel):</span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    fossil_fuel_link: <span class="bu">bool</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"Is this a fossil fuel organization?"</span>)</span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    explanation: <span class="bu">str</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"A brief explanation of your decision, in English"</span>)</span>
 <span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    source: <span class="bu">str</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"A link to the SINGLE most relevant source that supports your classification"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now, let’s make the request to OpenAI. First, we define a function like we did before, with a few tweaks.</p>
-<div id="cell-35" class="cell" data-execution_count="16">
+<div id="cell-36" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_request_openai(prompt_system: <span class="bu">str</span>, prompt_instructions: <span class="bu">str</span>, prompt_documents: <span class="bu">str</span>, model: <span class="bu">str</span> <span class="op">=</span> <span class="st">"gpt-4o-mini"</span>, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Make a request to OpenAI models that support structured outputs."""</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
@@ -659,7 +661,7 @@ Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activit
 <span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.choices[<span class="dv">0</span>].message.content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now, let’s run the function on our example.</p>
-<div id="cell-37" class="cell" data-execution_count="17">
+<div id="cell-38" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>openai_response <span class="op">=</span> make_request_openai(prompt_system, prompt_instructions, prompt_documents)</span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(openai_response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -671,7 +673,7 @@ Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activit
 <h1>Scale</h1>
 <p>We’ve seen an example of how to classify one organisation. The advantage of using AI is that we can scale this to (hundreds of) thousands of operations.</p>
 <p>Let’s define a few functions to help us with this.</p>
-<div id="cell-40" class="cell" data-execution_count="25">
+<div id="cell-41" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> classify_org(org: <span class="bu">str</span>):</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    search <span class="op">=</span> <span class="ss">f'"</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" oil gas coal'</span></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -702,7 +704,7 @@ Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activit
 <span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> openai_response</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="cell-41" class="cell" data-execution_count="26">
+<div id="cell-42" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> apply_classify_org(df):</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'classification'</span>] <span class="op">=</span> df.<span class="bu">apply</span>(<span class="kw">lambda</span> row: classify_org(org <span class="op">=</span> row[<span class="st">'organization'</span>]), axis<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'classification'</span>] <span class="op">=</span> df[<span class="st">'classification'</span>].<span class="bu">apply</span>(json.loads)</span>
@@ -711,7 +713,7 @@ Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activit
 <span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now let’s run this on our sample of organisations.</p>
-<div id="cell-43" class="cell" data-outputid="87573f71-ee28-4b5b-97f9-23a86fd8ed88" data-execution_count="27">
+<div id="cell-44" class="cell" data-outputid="87573f71-ee28-4b5b-97f9-23a86fd8ed88" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified <span class="op">=</span> apply_classify_org(cop_orgs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Scraping https://climatereality.ph/reenergizeph/...
@@ -721,7 +723,7 @@ Scraping https://mirror.pia.gov.ph/news/2021/08/22/climate-reality-geop-a-potent
 Scraping https://www.facebook.com/climaterealityphilippines/posts/green-energy-option-program-a-potent-weapon-against-unreliable-coal-sourced-powe/4243220149098727/...</code></pre>
 </div>
 </div>
-<div id="cell-44" class="cell" data-execution_count="28">
+<div id="cell-45" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <div>
@@ -779,7 +781,7 @@ Scraping https://www.facebook.com/climaterealityphilippines/posts/green-energy-o
 </div>
 </div>
 </div>
-<div id="cell-45" class="cell" data-outputid="8d1f14dd-efd3-4a44-dbd8-5c3c81d905d2" data-execution_count="29">
+<div id="cell-46" class="cell" data-outputid="8d1f14dd-efd3-4a44-dbd8-5c3c81d905d2" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified.to_csv(<span class="st">'data/cop_orgs_classified.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>

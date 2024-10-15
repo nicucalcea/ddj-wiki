@@ -247,7 +247,7 @@
     "href": "ai/python-classification-rag.html#install-and-load-libraries",
     "title": "Identifying fossil fuel lobbyists with AI",
     "section": "Install and load libraries",
-    "text": "Install and load libraries\n\n%pip install duckduckgo_search\n%pip install trafilatura\n%pip install openai\n%pip install pydantic\n%pip install pandas\n\n\n# %pip install --upgrade duckduckgo-search\n\n\nimport requests\nimport os\nimport pandas as pd\nfrom duckduckgo_search import DDGS\nfrom trafilatura import extract\nfrom enum import Enum\nfrom pydantic import BaseModel, Field\nfrom openai import OpenAI\nimport json",
+    "text": "Install and load libraries\n\n%pip install duckduckgo_search\n%pip install trafilatura\n%pip install openai\n%pip install pydantic\n%pip install pandas\n\n\n# %pip install --upgrade duckduckgo-search\n\n\nimport requests\nimport os\nimport pandas as pd\nfrom duckduckgo_search import DDGS\nfrom trafilatura import extract\nfrom enum import Enum\nfrom pydantic import BaseModel, Field\nfrom openai import OpenAI\nimport json\n\nYou will need an API key from OpenAI or another provider.\nGet a temporary API key here.",
     "crumbs": [
       "AI",
       "Identifying fossil fuel lobbyists"

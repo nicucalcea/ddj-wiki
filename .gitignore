@@ -1,4 +1,5 @@
 _environment
+openai-api-key.txt
 
 # History files
 .Rhistory
