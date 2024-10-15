@@ -16,15 +16,15 @@ export default {
       "pages": [
         {
           "name": "Data Sources",
-          "path": "sources/index.html"
+          "path": "sources/index.qmd"
         },
         {
           "name": "Academic Sources",
-          "path": "sources/academic.html"
+          "path": "sources/academic.qmd"
         },
         {
           "name": "Data Calendar",
-          "path": "sources/calendar.html"
+          "path": "sources/calendar.qmd"
         }
       ]
     },
@@ -44,23 +44,23 @@ export default {
       "pages": [
         {
           "name": "AI for journalists",
-          "path": "ai/index.html"
+          "path": "ai/index.qmd"
         },
         {
           "name": "AI in Google Sheets",
-          "path": "ai/google-sheets.html"
+          "path": "ai/google-sheets.qmd"
         },
         {
           "name": "AI classification in Python",
-          "path": "ai/python-classification.html"
+          "path": "ai/python-classification.qmd"
         },
         {
           "name": "Identifying fossil fuel lobbyists",
-          "path": "ai/python-classification-rag.ipynb"
+          "path": "ai/python-classification-rag.html"
         },
         {
           "name": "Data validation in Python",
-          "path": "ai/python-validation.html"
+          "path": "ai/python-validation.qmd"
         },
         {
           "name": "LLM comparison",

@@ -404,6 +404,13 @@
     "text": "The process\n\n\nAnalyse data\nHow do you find the answer to your question in the data?\n\n\n\nReview\nWhile data doesn’t lie, data publishers do. Do your findings make sense? Can you verify them?\n\n\n\n\nPresent results\nCommunicate data in the most suitable way. Usually, but not always, you will visualise your findings.\n\n\n\nAnalyse data: be platform agnostic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives."
   },
   {
+    "objectID": "city/index.html#the-process-2",
+    "href": "city/index.html#the-process-2",
+    "title": "Intro to Data Journalism",
+    "section": "The process",
+    "text": "The process\n\n\nSource: Paul Bradshaw"
+  },
+  {
     "objectID": "city/index.html#section",
     "href": "city/index.html#section",
     "title": "Intro to Data Journalism",
@@ -422,7 +429,7 @@
     "href": "city/index.html#basic-excel-formulas",
     "title": "Intro to Data Journalism",
     "section": "",
-    "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n[=AVERAGE()]\nReturns the numerical average value in a dataset, ignoring text.\n\n[=MEDIAN()]\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
+    "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n=AVERAGE()\nReturns the numerical average value in a dataset, ignoring text.\n\n=MEDIAN()\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
   },
   {
     "objectID": "city/index.html#how-did-the-mail-do-it",
@@ -492,7 +499,7 @@
     "href": "city/index.html#basic-excel-formulas-1-recap",
     "title": "Intro to Data Journalism",
     "section": "",
-    "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n[=AVERAGE()]\nReturns the numerical average value in a dataset, ignoring text.\n\n[=MEDIAN()]\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
+    "text": "[=A1+A2]\nReturns one number added (+) or subtracting (*) another.\n\n[=A1/B$1]\nReturns one number divided (/) or multiplied (*) by another.\n\n[=SUM()]\nReturns the sum of a series of numbers and/or cells.\n\n=AVERAGE()\nReturns the numerical average value in a dataset, ignoring text.\n\n=MEDIAN()\nReturns the median value in a numeric dataset.\n\n[=(NEW-OLD)/OLD]\nShows percentage change."
   },
   {
     "objectID": "city/index.html#basic-excel-formulas-2",
@@ -504,6 +511,55 @@
   {
     "objectID": "city/index.html#contact-1",
     "href": "city/index.html#contact-1",
+    "title": "Intro to Data Journalism",
+    "section": "Contact",
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk"
+  },
+  {
+    "objectID": "city/index.html#toolbox",
+    "href": "city/index.html#toolbox",
+    "title": "Intro to Data Journalism",
+    "section": "Toolbox",
+    "text": "Toolbox\n\n\n\nSource: ddj.nicu.md"
+  },
+  {
+    "objectID": "city/index.html#xlookup-1",
+    "href": "city/index.html#xlookup-1",
+    "title": "Intro to Data Journalism",
+    "section": "XLOOKUP",
+    "text": "XLOOKUP\n=XLOOKUP(search_term, col_to_search, col_to_return)"
+  },
+  {
+    "objectID": "city/index.html#pivot-tables",
+    "href": "city/index.html#pivot-tables",
+    "title": "Intro to Data Journalism",
+    "section": "Pivot Tables",
+    "text": "Pivot Tables\nPivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.\nYou can calculate averages, counts, max/min values or sums for numbers in a group."
+  },
+  {
+    "objectID": "city/index.html#averages",
+    "href": "city/index.html#averages",
+    "title": "Intro to Data Journalism",
+    "section": "Averages",
+    "text": "Averages\n\n\n\n\n=MODE()\nFinds the most common value in a range.\n   \n=MEDIAN()\nFinds the value that’s right in the middle of a dataset.\n   \n=AVERAGE()\nSum all the values and divide by the number of records."
+  },
+  {
+    "objectID": "city/index.html#xlookup-exercise",
+    "href": "city/index.html#xlookup-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "XLOOKUP exercise",
+    "text": "XLOOKUP exercise\n\nMake a copy of this spreadsheet.\nFill in the empty columns with formulas we learned last time."
+  },
+  {
+    "objectID": "city/index.html#pivot-table-exercise",
+    "href": "city/index.html#pivot-table-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Pivot table exercise",
+    "text": "Pivot table exercise\n\nMake a copy of this spreadsheet.\n\n\n\nBonus points: Grab a CSV from police.uk and do it yourself."
+  },
+  {
+    "objectID": "city/index.html#contact-2",
+    "href": "city/index.html#contact-2",
     "title": "Intro to Data Journalism",
     "section": "Contact",
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk"

@@ -4,7 +4,6 @@ subtitle: "City, University of London<br><a href='https://ddj.nicu.md/city/'>htt
 format:
   revealjs:
     theme: [default, css/nicu.scss]
-    # theme: [default, css/sf.scss]
     multiplex: true
     chalkboard: 
       buttons: false
@@ -13,7 +12,6 @@ format:
 filters:
   - filters/newpagelink.lua
   - quarto
-  # - filters/speaker-notes.lua
 href: city
 ---
 
@@ -247,6 +245,14 @@ Communicate data in the most suitable way. Usually, but not always, you will vis
 
 ::: notes
 Analyse data: be platform agnostic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives.
+:::
+
+## The process
+
+![](https://onlinejournalismblog.com/wp-content/uploads/2011/07/inverted-pyramid-of-journalism.jpg)
+
+::: footer
+Source: [Paul Bradshaw](https://onlinejournalismblog.com/2011/07/07/the-inverted-pyramid-of-data-journalism/)
 :::
 
 ## 
@@ -527,45 +533,12 @@ Same as =XLOOKUP() but more flexible and easier to grasp.
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
-<!-- # Week 3 -->
+# Week 3
 
 <!-- Pad this week out, add more content (about 25%) -->
 
-<!-- Introduction to [Data Journalism]<br>
+Introduction to [Data Journalism]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html"></iframe>
-::: footer
-Source: [The New York Times](https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://uclab.fh-potsdam.de/projects/klimakarten/"></iframe>
-::: footer
-Source: [Urban Complexity Lab](https://uclab.fh-potsdam.de/projects/klimakarten/)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/"></iframe>
-::: footer
-Source: [The Register](https://www.theregister.com/2023/10/20/royal_college_excel_blunder/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://thedivtagguy.com/tidytuesday/taylor-swift/"></iframe>
-::: footer
-Source: [Aman Bhargava](https://thedivtagguy.com/tidytuesday/taylor-swift/)
-:::
-
-## Bloomberg jobs
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Bloomberg is expanding its data journalism and visualization teams globally by hiring approximately 40 new data journalists, data visualization reporters, editors and engineers.<br><br>a thread 🧵… <a href="https://t.co/kQklY9cyPf">pic.twitter.com/kQklY9cyPf</a></p>&mdash; Bloomberg Graphics (@BBGVisualData) <a href="https://twitter.com/BBGVisualData/status/1717253500827021384?ref_src=twsrc%5Etfw">October 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-::: notes
-https://nitter.net/martinstabe/status/1717507555360920055#m
-:::
-
 
 ## Toolbox
 
@@ -619,11 +592,17 @@ Sum all the values and divide by the number of records.
 :::
 :::
 
-## Census exercise v2
+## XLOOKUP exercise
 
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1dhkZApmrXbdySBjOESNWgBT9bdzUdIDrfmU12nZgFHc/copy).
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1FwMl1kJGsIqKe0K0L0V-zIPh_uk9C3fqDka6A5G1CBY/copy).
 2. Fill in the empty columns with formulas we learned last time.
-3. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+## Pivot table exercise
+
+1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1-Jk4Zo5pTgGwXIeBEgzxn00IBjrxlxbmuf-ICW-4Am8/copy).
+2. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+Bonus points: Grab a CSV from [police.uk](https://data.police.uk/data/) and do it yourself.
 
 ::: notes
 :::
@@ -631,10 +610,12 @@ Sum all the values and divide by the number of records.
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 
 <!-- # Week 4
+
+add some stuff from here: https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit#slide=id.p
 
 Data [Cleaning]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>

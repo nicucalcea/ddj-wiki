@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -608,6 +673,13 @@
           display:block!important;
       }</style></aside>
 </section>
+<section id="the-process-2" class="slide level2">
+<h2>The process</h2>
+
+<img data-src="https://onlinejournalismblog.com/wp-content/uploads/2011/07/inverted-pyramid-of-journalism.jpg" class="r-stretch"><div class="footer">
+<p>Source: <a href="https://onlinejournalismblog.com/2011/07/07/the-inverted-pyramid-of-data-journalism/" target="_blank">Paul Bradshaw</a></p>
+</div>
+</section>
 <section id="section" class="slide level2">
 <h2></h2>
 
@@ -651,10 +723,10 @@
 <h5 id="sum">[=SUM()]</h5>
 <p>Returns the sum of a series of numbers and/or cells.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="average">[=AVERAGE()]</h5>
+<h5 id="average"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
 <p>Returns the numerical average value in a dataset, ignoring text.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="median">[=MEDIAN()]</h5>
+<h5 id="median"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
 <p>Returns the median value in a numeric dataset.</p>
 </div><div class="column" style="width:33.33%;">
 <h5 id="new-oldold">[=(NEW-OLD)/OLD]</h5>
@@ -850,10 +922,10 @@
 <h5 id="sum-1">[=SUM()]</h5>
 <p>Returns the sum of a series of numbers and/or cells.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="average-1">[=AVERAGE()]</h5>
+<h5 id="average-1"><a href="#/averages" target="_blank">=AVERAGE()</a></h5>
 <p>Returns the numerical average value in a dataset, ignoring text.</p>
 </div><div class="column" style="width:33.33%;">
-<h5 id="median-1">[=MEDIAN()]</h5>
+<h5 id="median-1"><a href="#/averages" target="_blank">=MEDIAN()</a></h5>
 <p>Returns the median value in a numeric dataset.</p>
 </div><div class="column" style="width:33.33%;">
 <h5 id="new-oldold-1">[=(NEW-OLD)/OLD]</h5>
@@ -889,110 +961,86 @@
 <li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
 <li><a href="mailto:James.Morris@city.ac.uk" target="_blank">James.Morris@city.ac.uk</a></li>
 </ul>
-<!-- # Week 3 -->
+</section></section>
+<section>
+<section id="week-3" class="title-slide slide level1 center">
+<h1>Week 3</h1>
 <!-- Pad this week out, add more content (about 25%) -->
-<!-- Introduction to [Data Journalism]<br>
-<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+<p>Introduction to [Data Journalism]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+</section>
+<section id="toolbox" class="slide level2">
+<h2>Toolbox</h2>
+<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/">
+</iframe>
+<div class="footer">
+<p>Source: <a href="https://ddj.nicu.md/toolbox/" target="_blank">ddj.nicu.md</a></p>
+</div>
+</section>
+<section id="xlookup-1" class="slide level2">
+<h2>XLOOKUP</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource scala number-lines code-with-copy"><code class="sourceCode scala"><span id="cb1-1"><a></a><span class="op">=</span><span class="fu">XLOOKUP</span><span class="op">(</span>search_term<span class="op">,</span> col_to_search<span class="op">,</span> col_to_return<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html"></iframe>
-::: footer
-Source: [The New York Times](https://www.nytimes.com/interactive/2023/10/16/us/census-race-ethnicity.html)
-:::
+<img data-src="media/xlookup.png" class="r-stretch"></section>
+<section id="pivot-tables" class="slide level2 smaller">
+<h2>Pivot Tables</h2>
+<p>Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.</p>
+<p>You can calculate averages, counts, max/min values or sums for numbers in a group.</p>
 
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://uclab.fh-potsdam.de/projects/klimakarten/"></iframe>
-::: footer
-Source: [Urban Complexity Lab](https://uclab.fh-potsdam.de/projects/klimakarten/)
-:::
+<img data-src="media/pivot-recipe.png" class="r-stretch"></section>
+<section id="averages" class="slide level2 smaller">
+<h2>Averages</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="media/mean-median.svg" height="600"></p>
+</div><div class="column" style="width:50%;">
+<h3 id="mode">=MODE()</h3>
+<p>Finds the most common value in a range.</p>
+<p>&nbsp; &nbsp;</p>
+<h3 id="median-2">=MEDIAN()</h3>
+<p>Finds the value that’s right in the middle of a dataset.</p>
+<p>&nbsp; &nbsp;</p>
+<h3 id="average-2">=AVERAGE()</h3>
+<p>Sum all the values and divide by the number of records.</p>
+</div></div>
+</section>
+<section id="xlookup-exercise" class="slide level2">
+<h2>XLOOKUP exercise</h2>
+<ol type="1">
+<li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1FwMl1kJGsIqKe0K0L0V-zIPh_uk9C3fqDka6A5G1CBY/copy" target="_blank">this spreadsheet</a>.</li>
+<li>Fill in the empty columns with formulas we learned last time.</li>
+</ol>
+</section>
+<section id="pivot-table-exercise" class="slide level2">
+<h2>Pivot table exercise</h2>
+<ol type="1">
+<li>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1-Jk4Zo5pTgGwXIeBEgzxn00IBjrxlxbmuf-ICW-4Am8/copy" target="_blank">this spreadsheet</a>.</li>
+<li><iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe></li>
+</ol>
+<p>Bonus points: Grab a CSV from <a href="https://data.police.uk/data/" target="_blank">police.uk</a> and do it yourself.</p>
+<aside class="notes">
 
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.theregister.com/2023/10/20/royal_college_excel_blunder/"></iframe>
-::: footer
-Source: [The Register](https://www.theregister.com/2023/10/20/royal_college_excel_blunder/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://thedivtagguy.com/tidytuesday/taylor-swift/"></iframe>
-::: footer
-Source: [Aman Bhargava](https://thedivtagguy.com/tidytuesday/taylor-swift/)
-:::
-
-## Bloomberg jobs
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Bloomberg is expanding its data journalism and visualization teams globally by hiring approximately 40 new data journalists, data visualization reporters, editors and engineers.<br><br>a thread 🧵… <a href="https://t.co/kQklY9cyPf">pic.twitter.com/kQklY9cyPf</a></p>&mdash; Bloomberg Graphics (@BBGVisualData) <a href="https://twitter.com/BBGVisualData/status/1717253500827021384?ref_src=twsrc%5Etfw">October 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-::: notes
-https://nitter.net/martinstabe/status/1717507555360920055#m
-:::
-
-
-## Toolbox
-
-<iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/"></iframe>
-::: footer
-Source: [ddj.nicu.md](https://ddj.nicu.md/toolbox/)
-:::
-
-## XLOOKUP
-
-``` scala
-=XLOOKUP(search_term, col_to_search, col_to_return)
-```
-
-![](media/xlookup.png)
-
-## Pivot Tables {.smaller}
-
-Pivot tables are extra tables in your spreadsheet, in which you can summarise data from your original table.
-
-You can calculate averages, counts, max/min values or sums for numbers in a group.
-
-![](media/pivot-recipe.png)
-
-## Averages {.smaller}
-
-::: columns
-::: {.column width="50%"}
-![](media/mean-median.svg){height="600"}
-:::
-
-::: {.column width="50%"}
-### =MODE()
-
-Finds the most common value in a range.
-
-&nbsp;
-&nbsp;
-
-### =MEDIAN()
-
-Finds the value that's right in the middle of a dataset.
-
-&nbsp;
-&nbsp;
-
-### =AVERAGE()
-
-Sum all the values and divide by the number of records.
-
-:::
-:::
-
-## Census exercise v2
-
-1. Make a copy of [this spreadsheet](https://docs.google.com/spreadsheets/d/1dhkZApmrXbdySBjOESNWgBT9bdzUdIDrfmU12nZgFHc/copy).
-2. Fill in the empty columns with formulas we learned last time.
-3. <iframe src="https://giphy.com/embed/oCjCwnuLpiWbfMb1UA" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-::: notes
-:::
-
-## Contact
-
-- [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="contact-2" class="slide level2">
+<h2>Contact</h2>
+<ul>
+<li><a href="mailto:ion.calcea.2@city.ac.uk" target="_blank">Ion.Calcea.2@city.ac.uk</a></li>
+<li><a href="mailto:James.Morris@city.ac.uk" target="_blank">James.Morris@city.ac.uk</a></li>
+</ul>
 <!-- # Week 4
+
+add some stuff from here: https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit#slide=id.p
 
 Data [Cleaning]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
@@ -2115,7 +2163,7 @@ Students will receive feedback on their responses but we do need a sufficient nu
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":false},
-'multiplex': {"secret":null,"id":"878b61b520b01c5a","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"89b9c27c037a8fa0","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta charset="utf-8"/>
-<meta content="quarto-1.5.56" name="generator"/>
-<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.56">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Identifying fossil fuel lobbyists with AI – Data Journalism Wiki</title>
 <style>
 code{white-space: pre-wrap;}
@@ -52,25 +55,27 @@ div.sourceCode
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
-<script crossorigin="anonymous" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta content="../" name="quarto:offset"/>
-<link href="../ai/python-validation.html" rel="next"/>
-<link href="../ai/python-classification.html" rel="prev"/>
-<link href="../favicon.png" rel="icon" type="image/png"/>
+<meta name="quarto:offset" content="../">
+<link href="../ai/python-validation.html" rel="next">
+<link href="../ai/python-classification.html" rel="prev">
+<link href="../favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet"/>
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
-<link data-mode="dark" href="../site_libs/bootstrap/bootstrap.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -98,271 +103,292 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script crossorigin="anonymous" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
 </head>
+
 <body class="nav-sidebar floating">
+
 <div id="quarto-search-results"></div>
-<header class="headroom fixed-top" id="quarto-header">
-<nav class="quarto-secondary-nav">
-<div class="container-fluid d-flex">
-<button aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" class="quarto-btn-toggle btn" data-bs-target=".quarto-sidebar-collapse-item" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="button" type="button">
-<i class="bi bi-layout-text-sidebar-reverse"></i>
-</button>
-<nav aria-label="breadcrumb" class="quarto-page-breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">AI</a></li><li class="breadcrumb-item"><a href="../ai/python-classification-rag.html">Identifying fossil fuel lobbyists</a></li></ol></nav>
-<a aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" class="flex-grow-1" data-bs-target=".quarto-sidebar-collapse-item" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="navigation">
-</a>
-<button aria-label="Search" class="btn quarto-search-button" onclick="window.quartoOpenSearch();" type="button">
-<i class="bi bi-search"></i>
-</button>
-</div>
-</nav>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">AI</a></li><li class="breadcrumb-item"><a href="../ai/python-classification-rag.html">Identifying fossil fuel lobbyists</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div class="quarto-container page-columns page-rows-contents page-layout-article" id="quarto-content">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-<nav class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" id="quarto-sidebar">
-<div class="pt-lg-2 mt-2 text-left sidebar-header">
-<div class="sidebar-title mb-0 py-0">
-<a href="../">Data Journalism Wiki</a>
-</div>
-</div>
-<div class="mt-2 flex-shrink-0 align-items-center">
-<div class="sidebar-search">
-<div class="" id="quarto-search" title="Search"></div>
-</div>
-</div>
-<div class="sidebar-menu-container">
-<ul class="list-unstyled mt-1">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../index.html">
-<span class="menu-text">Home</span></a>
-</div>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Data Journalism Wiki</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
 </li>
-<li class="sidebar-item sidebar-item-section">
-<div class="sidebar-item-container">
-<a aria-expanded="true" class="sidebar-item-text sidebar-link text-start" data-bs-target="#quarto-sidebar-section-1" data-bs-toggle="collapse" role="navigation">
-<span class="menu-text">Data Sources</span></a>
-<a aria-expanded="true" aria-label="Toggle section" class="sidebar-item-toggle text-start" data-bs-target="#quarto-sidebar-section-1" data-bs-toggle="collapse" role="navigation">
-<i class="bi bi-chevron-right ms-2"></i>
-</a>
-</div>
-<ul class="collapse list-unstyled sidebar-section depth1 show" id="quarto-sidebar-section-1">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../sources/index.html"><i class="bi bi-table" role="img">
-</i>
-<span class="menu-text">Data Sources</span></a>
-</div>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data Sources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sources/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-table" role="img">
+</i> 
+ <span class="menu-text">Data Sources</span></a>
+  </div>
 </li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../sources/academic.html"><i class="bi bi-mortarboard" role="img">
-</i>
-<span class="menu-text">Academic Sources</span></a>
-</div>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sources/academic.html" class="sidebar-item-text sidebar-link"><i class="bi bi-mortarboard" role="img">
+</i> 
+ <span class="menu-text">Academic Sources</span></a>
+  </div>
 </li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../sources/calendar.html"><i class="bi bi-calendar-week" role="img">
-</i>
-<span class="menu-text">Data Calendar</span></a>
-</div>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../sources/calendar.html" class="sidebar-item-text sidebar-link"><i class="bi bi-calendar-week" role="img">
+</i> 
+ <span class="menu-text">Data Calendar</span></a>
+  </div>
 </li>
-</ul>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Dataviz</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../viz/extending-datawrapper.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bar-chart-steps" role="img">
+</i> 
+ <span class="menu-text">Extending Datawrapper</span></a>
+  </div>
 </li>
-<li class="sidebar-item sidebar-item-section">
-<div class="sidebar-item-container">
-<a aria-expanded="true" class="sidebar-item-text sidebar-link text-start" data-bs-target="#quarto-sidebar-section-2" data-bs-toggle="collapse" role="navigation">
-<span class="menu-text">Dataviz</span></a>
-<a aria-expanded="true" aria-label="Toggle section" class="sidebar-item-toggle text-start" data-bs-target="#quarto-sidebar-section-2" data-bs-toggle="collapse" role="navigation">
-<i class="bi bi-chevron-right ms-2"></i>
-</a>
-</div>
-<ul class="collapse list-unstyled sidebar-section depth1 show" id="quarto-sidebar-section-2">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../viz/extending-datawrapper.html"><i class="bi bi-bar-chart-steps" role="img">
-</i>
-<span class="menu-text">Extending Datawrapper</span></a>
-</div>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-robot" role="img">
+</i> 
+ <span class="menu-text">AI for journalists</span></a>
+  </div>
 </li>
-</ul>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/google-sheets.html" class="sidebar-item-text sidebar-link"><i class="bi bi-file-earmark-spreadsheet" role="img">
+</i> 
+ <span class="menu-text">AI in Google Sheets</span></a>
+  </div>
 </li>
-<li class="sidebar-item sidebar-item-section">
-<div class="sidebar-item-container">
-<a aria-expanded="true" class="sidebar-item-text sidebar-link text-start" data-bs-target="#quarto-sidebar-section-3" data-bs-toggle="collapse" role="navigation">
-<span class="menu-text">AI</span></a>
-<a aria-expanded="true" aria-label="Toggle section" class="sidebar-item-toggle text-start" data-bs-target="#quarto-sidebar-section-3" data-bs-toggle="collapse" role="navigation">
-<i class="bi bi-chevron-right ms-2"></i>
-</a>
-</div>
-<ul class="collapse list-unstyled sidebar-section depth1 show" id="quarto-sidebar-section-3">
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../ai/index.html"><i class="bi bi-robot" role="img">
-</i>
-<span class="menu-text">AI for journalists</span></a>
-</div>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/python-classification.html" class="sidebar-item-text sidebar-link"><i class="bi bi-filetype-py" role="img">
+</i> 
+ <span class="menu-text">AI classification in Python</span></a>
+  </div>
 </li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../ai/google-sheets.html"><i class="bi bi-file-earmark-spreadsheet" role="img">
-</i>
-<span class="menu-text">AI in Google Sheets</span></a>
-</div>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/python-classification-rag.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-filetype-py" role="img">
+</i> 
+ <span class="menu-text">Identifying fossil fuel lobbyists</span></a>
+  </div>
 </li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../ai/python-classification.html"><i class="bi bi-filetype-py" role="img">
-</i>
-<span class="menu-text">AI classification in Python</span></a>
-</div>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/python-validation.html" class="sidebar-item-text sidebar-link"><i class="bi bi-filetype-py" role="img">
+</i> 
+ <span class="menu-text">Data validation in Python</span></a>
+  </div>
 </li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link active" href="../ai/python-classification-rag.html"><i class="bi bi-filetype-py" role="img">
-</i>
-<span class="menu-text">Identifying fossil fuel lobbyists</span></a>
-</div>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/llm-comparison.html" class="sidebar-item-text sidebar-link"><i class="bi bi-currency-dollar" role="img">
+</i> 
+ <span class="menu-text">LLM comparison</span></a>
+  </div>
 </li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../ai/python-validation.html"><i class="bi bi-filetype-py" role="img">
-</i>
-<span class="menu-text">Data validation in Python</span></a>
-</div>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../toolbox/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-tools" role="img">
+</i> 
+ <span class="menu-text">Toolbox</span></a>
+  </div>
 </li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../ai/llm-comparison.html"><i class="bi bi-currency-dollar" role="img">
-</i>
-<span class="menu-text">LLM comparison</span></a>
-</div>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../awards/index.html" class="sidebar-item-text sidebar-link"><i class="bi bi-trophy" role="img">
+</i> 
+ <span class="menu-text">Awards</span></a>
+  </div>
 </li>
-</ul>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../toolbox/index.html"><i class="bi bi-tools" role="img">
-</i>
-<span class="menu-text">Toolbox</span></a>
-</div>
-</li>
-<li class="sidebar-item">
-<div class="sidebar-item-container">
-<a class="sidebar-item-text sidebar-link" href="../awards/index.html"><i class="bi bi-trophy" role="img">
-</i>
-<span class="menu-text">Awards</span></a>
-</div>
-</li>
-</ul>
-</div>
+    </ul>
+    </div>
 </nav>
-<div class="quarto-sidebar-collapse-item" data-bs-target=".quarto-sidebar-collapse-item" data-bs-toggle="collapse" id="quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-<div class="sidebar margin-sidebar" id="quarto-margin-sidebar">
-<nav class="toc-active" id="TOC" role="doc-toc">
-<h2 id="toc-title">On this page</h2>
-<ul>
-<li><a class="nav-link active" data-scroll-target="#install-and-load-libraries" href="#install-and-load-libraries" id="toc-install-and-load-libraries">Install and load libraries</a></li>
-<li><a class="nav-link" data-scroll-target="#prep-data" href="#prep-data" id="toc-prep-data">Prep data</a></li>
-<li><a class="nav-link" data-scroll-target="#search" href="#search" id="toc-search">Search</a></li>
-<li><a class="nav-link" data-scroll-target="#scrape-search-results" href="#scrape-search-results" id="toc-scrape-search-results">Scrape search results</a></li>
-<li><a class="nav-link" data-scroll-target="#send-request-to-llm" href="#send-request-to-llm" id="toc-send-request-to-llm">Send request to LLM</a></li>
-<li><a class="nav-link" data-scroll-target="#scale" href="#scale" id="toc-scale">Scale</a></li>
-<li><a class="nav-link" data-scroll-target="#what-next" href="#what-next" id="toc-what-next">What next?</a></li>
-</ul>
-<div class="toc-actions"><ul><li><a class="toc-action" href="https://github.dev/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb"><i class="bi bi-github"></i>Edit this page</a></li><li><a class_="toc-action" data-original-href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb" href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb"><i class="bi bi-google"></i>Open In Colab</a></li><li><a class="toc-action" href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb"><i class="bi empty"></i>View source</a></li><li><a class="toc-action" href="https://github.com/nicucalcea/ddj-wiki/issues/new"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-</div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#install-and-load-libraries" id="toc-install-and-load-libraries" class="nav-link active" data-scroll-target="#install-and-load-libraries">Install and load libraries</a></li>
+  <li><a href="#prep-data" id="toc-prep-data" class="nav-link" data-scroll-target="#prep-data">Prep data</a></li>
+  <li><a href="#search" id="toc-search" class="nav-link" data-scroll-target="#search">Search</a></li>
+  <li><a href="#scrape-search-results" id="toc-scrape-search-results" class="nav-link" data-scroll-target="#scrape-search-results">Scrape search results</a></li>
+  <li><a href="#send-request-to-llm" id="toc-send-request-to-llm" class="nav-link" data-scroll-target="#send-request-to-llm">Send request to LLM</a></li>
+  <li><a href="#scale" id="toc-scale" class="nav-link" data-scroll-target="#scale">Scale</a></li>
+  <li><a href="#what-next" id="toc-what-next" class="nav-link" data-scroll-target="#what-next">What next?</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.dev/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb" target="_blank"><i class="bi bi-download"></i>Download notebook</a></li><li><a href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb" target="_blank"><i class="bi bi-google"></i>Open in Google Colab</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
-<header class="quarto-title-block default" id="title-block-header"><nav aria-label="breadcrumb" class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">AI</a></li><li class="breadcrumb-item"><a href="../ai/python-classification-rag.html">Identifying fossil fuel lobbyists</a></li></ol></nav>
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">AI</a></li><li class="breadcrumb-item"><a href="../ai/python-classification-rag.html">Identifying fossil fuel lobbyists</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Identifying fossil fuel lobbyists with AI</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
-</div>
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
+
 <p>Without looking it up, would you know if the “Clean Resource Innovation Network” is an oil and gas lobbying organisation? Lobbyists often hide under unintuitive or misleading affiliations that obscure their origins. The work of uncovering their identities can be time-consuming and challenging.</p>
 <p>Kick Big Polluters Out (of which Global Witness is a member) have been doing this work every year. We <a href="https://kickbigpollutersout.org/articles/release-record-number-fossil-fuel-lobbyists-attend-cop28">found 2,456 fossil fuel lobbyists</a> who have been granted access to the COP28 summit in Dubai last year.</p>
 <p>This kind of work involves a lot of research and manual work. Are there ways to speed this work up?</p>
 <p>This workshop will outline an approach to using web scraping and Large Language Models (LLMs), like those powering ChatGPT, to systematically identify organisations that are affiliated with the fossil fuel industry. These techniques could also be adapted to other climate projects, such as identifying climate disinformation.</p>
 <p>You can <a href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb">download the notebook</a> and run it yourself, or you can <a href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb">run it in the cloud using Google Colab</a>. Both links also in the sidebar to the right, or at the bottom of the page on mobile.</p>
-<section class="level2" id="install-and-load-libraries">
+<section id="install-and-load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="install-and-load-libraries">Install and load libraries</h2>
-<div class="cell" id="cell-3">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="op">%</span>pip install duckduckgo_search</span>
-<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="op">%</span>pip install trafilatura</span>
-<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="op">%</span>pip install openai</span>
-<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="op">%</span>pip install pydantic</span>
-<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="op">%</span>pip install pandas</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-3" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install duckduckgo_search</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install trafilatura</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install openai</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pydantic</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pandas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" id="cell-4">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="co"># %pip install --upgrade duckduckgo-search</span></span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-4" class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># %pip install --upgrade duckduckgo-search</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="1" id="cell-5">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" href="#cb3-1" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb3-2"><a aria-hidden="true" href="#cb3-2" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb3-3"><a aria-hidden="true" href="#cb3-3" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb3-4"><a aria-hidden="true" href="#cb3-4" tabindex="-1"></a><span class="im">from</span> duckduckgo_search <span class="im">import</span> DDGS</span>
-<span id="cb3-5"><a aria-hidden="true" href="#cb3-5" tabindex="-1"></a><span class="im">from</span> trafilatura <span class="im">import</span> extract</span>
-<span id="cb3-6"><a aria-hidden="true" href="#cb3-6" tabindex="-1"></a><span class="im">from</span> enum <span class="im">import</span> Enum</span>
-<span id="cb3-7"><a aria-hidden="true" href="#cb3-7" tabindex="-1"></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
-<span id="cb3-8"><a aria-hidden="true" href="#cb3-8" tabindex="-1"></a><span class="im">from</span> openai <span class="im">import</span> OpenAI</span>
-<span id="cb3-9"><a aria-hidden="true" href="#cb3-9" tabindex="-1"></a><span class="im">import</span> json</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-5" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> duckduckgo_search <span class="im">import</span> DDGS</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> trafilatura <span class="im">import</span> extract</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> enum <span class="im">import</span> Enum</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel, Field</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openai <span class="im">import</span> OpenAI</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You will need an API key <a href="https://platform.openai.com/account/api-keys">from OpenAI</a> or another provider.</p>
 <p><span hidden="">Get a <a href="https://static.globalwitness.org/openai-api-key.txt" target="_blank">temporary API key here</a>.</span></p>
 </section>
-<section class="level2" id="prep-data">
+<section id="prep-data" class="level2">
 <h2 class="anchored" data-anchor-id="prep-data">Prep data</h2>
 <p>The <a href="https://unfccc.int/documents/634503">UNFCCC website</a> published an Excel sheet of COP28 participants. Let’s download it to our local project.</p>
-<div class="cell" data-execution_count="2" id="cell-9">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a aria-hidden="true" href="#cb4-1" tabindex="-1"></a>cop_file <span class="op">=</span> <span class="st">'data/plop28.xlsx'</span></span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-9" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>cop_file <span class="op">=</span> <span class="st">'data/plop28.xlsx'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" id="cell-10">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a aria-hidden="true" href="#cb5-1" tabindex="-1"></a>headers <span class="op">=</span> {</span>
-<span id="cb5-2"><a aria-hidden="true" href="#cb5-2" tabindex="-1"></a>    <span class="st">'User-Agent'</span>: <span class="st">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0'</span></span>
-<span id="cb5-3"><a aria-hidden="true" href="#cb5-3" tabindex="-1"></a>}</span>
-<span id="cb5-4"><a aria-hidden="true" href="#cb5-4" tabindex="-1"></a></span>
-<span id="cb5-5"><a aria-hidden="true" href="#cb5-5" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://unfccc.int/sites/default/files/resource/PLOP%20COP28_on-site.xlsx"</span></span>
-<span id="cb5-6"><a aria-hidden="true" href="#cb5-6" tabindex="-1"></a></span>
-<span id="cb5-7"><a aria-hidden="true" href="#cb5-7" tabindex="-1"></a>response <span class="op">=</span> requests.get(url, headers<span class="op">=</span>headers)</span>
-<span id="cb5-8"><a aria-hidden="true" href="#cb5-8" tabindex="-1"></a></span>
-<span id="cb5-9"><a aria-hidden="true" href="#cb5-9" tabindex="-1"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
-<span id="cb5-10"><a aria-hidden="true" href="#cb5-10" tabindex="-1"></a>    <span class="co"># Check if the 'data' folder exists, create it if it doesn't</span></span>
-<span id="cb5-11"><a aria-hidden="true" href="#cb5-11" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> os.path.exists(<span class="st">"data"</span>):</span>
-<span id="cb5-12"><a aria-hidden="true" href="#cb5-12" tabindex="-1"></a>        os.makedirs(<span class="st">"data"</span>)</span>
-<span id="cb5-13"><a aria-hidden="true" href="#cb5-13" tabindex="-1"></a>    </span>
-<span id="cb5-14"><a aria-hidden="true" href="#cb5-14" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/plop28.xlsx"</span>, <span class="st">"wb"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb5-15"><a aria-hidden="true" href="#cb5-15" tabindex="-1"></a>        <span class="bu">file</span>.write(response.content)</span>
-<span id="cb5-16"><a aria-hidden="true" href="#cb5-16" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"File downloaded successfully."</span>)</span>
-<span id="cb5-17"><a aria-hidden="true" href="#cb5-17" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb5-18"><a aria-hidden="true" href="#cb5-18" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Failed to download file. Status code: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-10" class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>headers <span class="op">=</span> {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'User-Agent'</span>: <span class="st">'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0'</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://unfccc.int/sites/default/files/resource/PLOP%20COP28_on-site.xlsx"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url, headers<span class="op">=</span>headers)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if the 'data' folder exists, create it if it doesn't</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> os.path.exists(<span class="st">"data"</span>):</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        os.makedirs(<span class="st">"data"</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/plop28.xlsx"</span>, <span class="st">"wb"</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        <span class="bu">file</span>.write(response.content)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"File downloaded successfully."</span>)</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Failed to download file. Status code: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The participants are spread across multiple sheets, we need to read them in sparately and bind them together.</p>
-<div class="cell" data-execution_count="3" id="cell-12">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a aria-hidden="true" href="#cb6-1" tabindex="-1"></a><span class="co"># Create an empty list to store the dataframes from each sheet</span></span>
-<span id="cb6-2"><a aria-hidden="true" href="#cb6-2" tabindex="-1"></a>cop_participants <span class="op">=</span> []</span>
-<span id="cb6-3"><a aria-hidden="true" href="#cb6-3" tabindex="-1"></a></span>
-<span id="cb6-4"><a aria-hidden="true" href="#cb6-4" tabindex="-1"></a><span class="co"># Read the Excel file</span></span>
-<span id="cb6-5"><a aria-hidden="true" href="#cb6-5" tabindex="-1"></a>xls <span class="op">=</span> pd.ExcelFile(cop_file)</span>
-<span id="cb6-6"><a aria-hidden="true" href="#cb6-6" tabindex="-1"></a></span>
-<span id="cb6-7"><a aria-hidden="true" href="#cb6-7" tabindex="-1"></a><span class="co"># Iterate through the sheets and append the dataframes to the list</span></span>
-<span id="cb6-8"><a aria-hidden="true" href="#cb6-8" tabindex="-1"></a><span class="cf">for</span> sheet_name <span class="kw">in</span> xls.sheet_names:</span>
-<span id="cb6-9"><a aria-hidden="true" href="#cb6-9" tabindex="-1"></a>  df <span class="op">=</span> pd.read_excel(cop_file, sheet_name<span class="op">=</span>sheet_name)</span>
-<span id="cb6-10"><a aria-hidden="true" href="#cb6-10" tabindex="-1"></a>  cop_participants.append(df)</span>
-<span id="cb6-11"><a aria-hidden="true" href="#cb6-11" tabindex="-1"></a></span>
-<span id="cb6-12"><a aria-hidden="true" href="#cb6-12" tabindex="-1"></a><span class="co"># Concatenate the dataframes into a single dataframe</span></span>
-<span id="cb6-13"><a aria-hidden="true" href="#cb6-13" tabindex="-1"></a>cop_participants <span class="op">=</span> pd.concat(cop_participants, ignore_index<span class="op">=</span><span class="va">True</span>)</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-12" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list to store the dataframes from each sheet</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>cop_participants <span class="op">=</span> []</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the Excel file</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>xls <span class="op">=</span> pd.ExcelFile(cop_file)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Iterate through the sheets and append the dataframes to the list</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sheet_name <span class="kw">in</span> xls.sheet_names:</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  df <span class="op">=</span> pd.read_excel(cop_file, sheet_name<span class="op">=</span>sheet_name)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  cop_participants.append(df)</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Concatenate the dataframes into a single dataframe</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>cop_participants <span class="op">=</span> pd.concat(cop_participants, ignore_index<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="24" data-outputid="798f38f8-f733-4f4a-a948-978b1734eb19" id="cell-13">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a aria-hidden="true" href="#cb7-1" tabindex="-1"></a>cop_participants.head()</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-13" class="cell" data-outputid="798f38f8-f733-4f4a-a948-978b1734eb19" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cop_participants.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="24">
 <div>
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1" data-quarto-postprocess="true">
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -422,18 +448,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+
 </div>
 </div>
 </div>
 <p>This list contains all participants registered to attend the 2023 United Nations Climate Change Conference or Conference of the Parties (COP28).</p>
 <p>We’re not interested in the individuals, just the organisations they represent. Classifying individuals is a much more complex task that doesn’t work well with this process. Additionally, it would be too difficult to verify the results.</p>
 <p>Let’s extract the organisations. We’ll only keep a random 20 rows for this example, you can remove the <code>sample</code> function to process the entire dataset.</p>
-<div class="cell" data-execution_count="22" data-outputid="4263dd80-f0a1-4365-fa4e-949651d32f8d" id="cell-15">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a aria-hidden="true" href="#cb8-1" tabindex="-1"></a>cop_orgs <span class="op">=</span> cop_participants[[<span class="st">'organization'</span>]].drop_duplicates().sample(<span class="dv">5</span>)</span>
-<span id="cb8-2"><a aria-hidden="true" href="#cb8-2" tabindex="-1"></a>cop_orgs</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-15" class="cell" data-outputid="4263dd80-f0a1-4365-fa4e-949651d32f8d" data-execution_count="22">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cop_orgs <span class="op">=</span> cop_participants[[<span class="st">'organization'</span>]].drop_duplicates().sample(<span class="dv">5</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>cop_orgs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="22">
 <div>
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1" data-quarto-postprocess="true">
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -463,35 +492,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
+
 </div>
 </div>
 </div>
 </section>
-<section class="level2" id="search">
+<section id="search" class="level2">
 <h2 class="anchored" data-anchor-id="search">Search</h2>
 <p>Large Language Models are prone to <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinations</a>. If you ask an LLM a question it doesn’t know the answer to, <a href="https://ddj.nicu.md/ai/">it will confidently make up a plausible-sounding answer</a> that is completely wrong. This is particularly the case with less known organisations that wouldn’t feature promionently in the training data.</p>
 <p>Let’s ask ChatGPT if “Clean Resource Innovation Network” is a fossil fuel organisation or not.</p>
-<div class="cell" data-execution_count="23" id="cell-18">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a aria-hidden="true" href="#cb9-1" tabindex="-1"></a>org <span class="op">=</span> <span class="st">"Clean Resource Innovation Network"</span></span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-18" class="cell" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>org <span class="op">=</span> <span class="st">"Clean Resource Innovation Network"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="7" id="cell-19">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a aria-hidden="true" href="#cb10-1" tabindex="-1"></a><span class="kw">def</span> make_request_openai_simple(prompt_system: <span class="bu">str</span>, prompt_user: <span class="bu">str</span>, model: <span class="bu">str</span> <span class="op">=</span> <span class="st">"gpt-4o-mini"</span>, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
-<span id="cb10-2"><a aria-hidden="true" href="#cb10-2" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
-<span id="cb10-3"><a aria-hidden="true" href="#cb10-3" tabindex="-1"></a>        <span class="co"># api_key = ''</span></span>
-<span id="cb10-4"><a aria-hidden="true" href="#cb10-4" tabindex="-1"></a>        )</span>
-<span id="cb10-5"><a aria-hidden="true" href="#cb10-5" tabindex="-1"></a>    response <span class="op">=</span> client.beta.chat.completions.parse(</span>
-<span id="cb10-6"><a aria-hidden="true" href="#cb10-6" tabindex="-1"></a>        model<span class="op">=</span>model,</span>
-<span id="cb10-7"><a aria-hidden="true" href="#cb10-7" tabindex="-1"></a>        temperature<span class="op">=</span><span class="dv">0</span>,</span>
-<span id="cb10-8"><a aria-hidden="true" href="#cb10-8" tabindex="-1"></a>        messages<span class="op">=</span>[</span>
-<span id="cb10-9"><a aria-hidden="true" href="#cb10-9" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: prompt_system},</span>
-<span id="cb10-10"><a aria-hidden="true" href="#cb10-10" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: prompt_user}</span>
-<span id="cb10-11"><a aria-hidden="true" href="#cb10-11" tabindex="-1"></a>        ]</span>
-<span id="cb10-12"><a aria-hidden="true" href="#cb10-12" tabindex="-1"></a>    )</span>
-<span id="cb10-13"><a aria-hidden="true" href="#cb10-13" tabindex="-1"></a>    <span class="cf">return</span> response.choices[<span class="dv">0</span>].message.content</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-19" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_request_openai_simple(prompt_system: <span class="bu">str</span>, prompt_user: <span class="bu">str</span>, model: <span class="bu">str</span> <span class="op">=</span> <span class="st">"gpt-4o-mini"</span>, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="co"># api_key = ''</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> client.beta.chat.completions.parse(</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        model<span class="op">=</span>model,</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        temperature<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        messages<span class="op">=</span>[</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: prompt_system},</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: prompt_user}</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>        ]</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.choices[<span class="dv">0</span>].message.content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="8" id="cell-20">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a aria-hidden="true" href="#cb11-1" tabindex="-1"></a>make_request_openai_simple(prompt_system<span class="op">=</span><span class="st">"You are an AI whose job it is to help researchers identify fossil fuel organisations"</span>,</span>
-<span id="cb11-2"><a aria-hidden="true" href="#cb11-2" tabindex="-1"></a>                           prompt_user<span class="op">=</span><span class="ss">f"Is $</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss"> a fossil fuel organisation? Respond with YES or NO"</span>)</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-20" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>make_request_openai_simple(prompt_system<span class="op">=</span><span class="st">"You are an AI whose job it is to help researchers identify fossil fuel organisations"</span>,</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>                           prompt_user<span class="op">=</span><span class="ss">f"Is $</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss"> a fossil fuel organisation? Respond with YES or NO"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <pre><code>'NO'</code></pre>
 </div>
@@ -501,12 +531,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In our case, we’ll provide the AI with relevant search results related to our organisation so that it knows who we’re asking about.</p>
 <p>We’ll use DuckDuckGo because it has a free API. For better results, you can use the Google API or a <a href="https://developers.oxylabs.io/scraper-apis/serp-scraper-api/google/search">SERP API</a>.</p>
 <p>Let’s search for the organisation and extract the first 5 results.</p>
-<div class="cell" data-execution_count="9" data-outputid="9e761841-40d6-4b70-c874-2c99f9e925d0" id="cell-23">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a aria-hidden="true" href="#cb13-1" tabindex="-1"></a>search <span class="op">=</span> <span class="ss">f'"</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" oil gas coal'</span></span>
-<span id="cb13-2"><a aria-hidden="true" href="#cb13-2" tabindex="-1"></a><span class="bu">print</span>(search)</span>
-<span id="cb13-3"><a aria-hidden="true" href="#cb13-3" tabindex="-1"></a></span>
-<span id="cb13-4"><a aria-hidden="true" href="#cb13-4" tabindex="-1"></a>results <span class="op">=</span> DDGS().text(search, max_results<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb13-5"><a aria-hidden="true" href="#cb13-5" tabindex="-1"></a>results</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-23" class="cell" data-outputid="9e761841-40d6-4b70-c874-2c99f9e925d0" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>search <span class="op">=</span> <span class="ss">f'"</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" oil gas coal'</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(search)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> DDGS().text(search, max_results<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>"Clean Resource Innovation Network" oil gas coal</code></pre>
 </div>
@@ -529,30 +559,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section class="level2" id="scrape-search-results">
+<section id="scrape-search-results" class="level2">
 <h2 class="anchored" data-anchor-id="scrape-search-results">Scrape search results</h2>
 <p>Now, we want to extract the text from each of those URLs. We’ll use <a href="https://github.com/adbar/trafilatura">Trafilatura</a>, a library that will help us extract the main text without headers, footers and other irrelevant text.</p>
-<div class="cell" data-execution_count="10" id="cell-26">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a aria-hidden="true" href="#cb16-1" tabindex="-1"></a><span class="kw">def</span> extract_text(urls):</span>
-<span id="cb16-2"><a aria-hidden="true" href="#cb16-2" tabindex="-1"></a>    results <span class="op">=</span> []</span>
-<span id="cb16-3"><a aria-hidden="true" href="#cb16-3" tabindex="-1"></a></span>
-<span id="cb16-4"><a aria-hidden="true" href="#cb16-4" tabindex="-1"></a>    <span class="cf">for</span> url <span class="kw">in</span> urls:</span>
-<span id="cb16-5"><a aria-hidden="true" href="#cb16-5" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Scraping </span><span class="sc">{</span>url<span class="sc">}</span><span class="ss">..."</span>)</span>
-<span id="cb16-6"><a aria-hidden="true" href="#cb16-6" tabindex="-1"></a>        <span class="cf">try</span>:</span>
-<span id="cb16-7"><a aria-hidden="true" href="#cb16-7" tabindex="-1"></a>            response <span class="op">=</span> requests.get(url, timeout<span class="op">=</span><span class="dv">30</span>, verify<span class="op">=</span><span class="va">False</span>)  <span class="co"># Note: verify=False is not recommended for production use</span></span>
-<span id="cb16-8"><a aria-hidden="true" href="#cb16-8" tabindex="-1"></a>            response.raise_for_status()  <span class="co"># Raises an HTTPError for bad responses</span></span>
-<span id="cb16-9"><a aria-hidden="true" href="#cb16-9" tabindex="-1"></a>            extracted_text <span class="op">=</span> extract(response.text, output_format<span class="op">=</span><span class="st">"markdown"</span>)</span>
-<span id="cb16-10"><a aria-hidden="true" href="#cb16-10" tabindex="-1"></a>            results.append((url, extracted_text))</span>
-<span id="cb16-11"><a aria-hidden="true" href="#cb16-11" tabindex="-1"></a>        <span class="cf">except</span> requests.RequestException <span class="im">as</span> e:</span>
-<span id="cb16-12"><a aria-hidden="true" href="#cb16-12" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"Error scraping </span><span class="sc">{</span>url<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb16-13"><a aria-hidden="true" href="#cb16-13" tabindex="-1"></a>            results.append((url, <span class="ss">f"Error: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>))</span>
-<span id="cb16-14"><a aria-hidden="true" href="#cb16-14" tabindex="-1"></a></span>
-<span id="cb16-15"><a aria-hidden="true" href="#cb16-15" tabindex="-1"></a>    <span class="cf">return</span> results</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-26" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_text(urls):</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> []</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> url <span class="kw">in</span> urls:</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Scraping </span><span class="sc">{</span>url<span class="sc">}</span><span class="ss">..."</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> requests.get(url, timeout<span class="op">=</span><span class="dv">30</span>, verify<span class="op">=</span><span class="va">False</span>)  <span class="co"># Note: verify=False is not recommended for production use</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>            response.raise_for_status()  <span class="co"># Raises an HTTPError for bad responses</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>            extracted_text <span class="op">=</span> extract(response.text, output_format<span class="op">=</span><span class="st">"markdown"</span>)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>            results.append((url, extracted_text))</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.RequestException <span class="im">as</span> e:</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f"Error scraping </span><span class="sc">{</span>url<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>            results.append((url, <span class="ss">f"Error: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>))</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="11" data-outputid="00496a96-727a-4bca-afbf-c0c8cde94754" id="cell-27">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a aria-hidden="true" href="#cb17-1" tabindex="-1"></a><span class="co"># Run the function</span></span>
-<span id="cb17-2"><a aria-hidden="true" href="#cb17-2" tabindex="-1"></a>texts <span class="op">=</span> extract_text([result[<span class="st">'href'</span>] <span class="cf">for</span> result <span class="kw">in</span> results <span class="cf">if</span> <span class="st">'href'</span> <span class="kw">in</span> result])</span>
-<span id="cb17-3"><a aria-hidden="true" href="#cb17-3" tabindex="-1"></a>texts <span class="op">=</span> [(url, text) <span class="cf">for</span> url, text <span class="kw">in</span> texts <span class="cf">if</span> text <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>] <span class="co"># remove empty scrapes</span></span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-27" class="cell" data-outputid="00496a96-727a-4bca-afbf-c0c8cde94754" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run the function</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>texts <span class="op">=</span> extract_text([result[<span class="st">'href'</span>] <span class="cf">for</span> result <span class="kw">in</span> results <span class="cf">if</span> <span class="st">'href'</span> <span class="kw">in</span> result])</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>texts <span class="op">=</span> [(url, text) <span class="cf">for</span> url, text <span class="kw">in</span> texts <span class="cf">if</span> text <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>] <span class="co"># remove empty scrapes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Scraping https://www.cleanresourceinnovation.com/...
 Scraping https://energynow.ca/2022/03/17-new-technologies-funded-by-crin-competition-to-address-economic-challenges-of-canadas-oil-and-gas-industry/...
@@ -563,32 +593,32 @@ Error scraping https://energynow.ca/2022/01/new-technologies-identified-for-fund
 Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activity-7231359278865952768-q2m_...</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="12" id="cell-28">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a aria-hidden="true" href="#cb19-1" tabindex="-1"></a><span class="co"># Paste text together</span></span>
-<span id="cb19-2"><a aria-hidden="true" href="#cb19-2" tabindex="-1"></a>prompt_documents <span class="op">=</span> <span class="st">"</span><span class="ch">\n\n</span><span class="st">"</span>.join(<span class="ss">f"URL: </span><span class="sc">{</span>url<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>text<span class="sc">}</span><span class="ss">"</span> <span class="cf">for</span> url, text <span class="kw">in</span> texts).strip()</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-28" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Paste text together</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>prompt_documents <span class="op">=</span> <span class="st">"</span><span class="ch">\n\n</span><span class="st">"</span>.join(<span class="ss">f"URL: </span><span class="sc">{</span>url<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>text<span class="sc">}</span><span class="ss">"</span> <span class="cf">for</span> url, text <span class="kw">in</span> texts).strip()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="13" id="cell-29">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a aria-hidden="true" href="#cb20-1" tabindex="-1"></a>prompt_system <span class="op">=</span> <span class="st">'You will be provided with a collection of documents collected from Google search results. Your task is to determine whether an organization is a fossil fuel company or lobbying group or not.'</span></span>
-<span id="cb20-2"><a aria-hidden="true" href="#cb20-2" tabindex="-1"></a></span>
-<span id="cb20-3"><a aria-hidden="true" href="#cb20-3" tabindex="-1"></a>prompt_instructions<span class="op">=</span> <span class="ss">f'''</span></span>
-<span id="cb20-4"><a aria-hidden="true" href="#cb20-4" tabindex="-1"></a><span class="ss">## Instructions</span></span>
-<span id="cb20-5"><a aria-hidden="true" href="#cb20-5" tabindex="-1"></a></span>
-<span id="cb20-6"><a aria-hidden="true" href="#cb20-6" tabindex="-1"></a><span class="ss">You are a researcher investigating whether "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" is a fossil fuel organization.</span></span>
-<span id="cb20-7"><a aria-hidden="true" href="#cb20-7" tabindex="-1"></a></span>
-<span id="cb20-8"><a aria-hidden="true" href="#cb20-8" tabindex="-1"></a><span class="ss">A fossil fuel organization:</span></span>
-<span id="cb20-9"><a aria-hidden="true" href="#cb20-9" tabindex="-1"></a><span class="ss">- Aims to influence policy or legislation in the interests of fossil fuel companies and shareholders.</span></span>
-<span id="cb20-10"><a aria-hidden="true" href="#cb20-10" tabindex="-1"></a><span class="ss">- Has significant business activities in exploration, extraction, refining, trading, specialized transportation of oil, gas, coal, or blue hydrogen, or sale of electricity derived from them.</span></span>
-<span id="cb20-11"><a aria-hidden="true" href="#cb20-11" tabindex="-1"></a><span class="ss">- Publicly declares involvement in fossil fuels or promotes significant investments in such companies.</span></span>
-<span id="cb20-12"><a aria-hidden="true" href="#cb20-12" tabindex="-1"></a><span class="ss">- Can be an NGO, foundation, think tank, or lobbying group funded by fossil fuel companies or their executives.</span></span>
-<span id="cb20-13"><a aria-hidden="true" href="#cb20-13" tabindex="-1"></a><span class="ss">- May include larger companies that own fossil fuel subsidiaries (e.g., BASF owning Wintershall).</span></span>
-<span id="cb20-14"><a aria-hidden="true" href="#cb20-14" tabindex="-1"></a><span class="ss">- Includes companies selling energy from fossil fuels (e.g., Octopus Energy).</span></span>
-<span id="cb20-15"><a aria-hidden="true" href="#cb20-15" tabindex="-1"></a><span class="ss">- Companies that currently produce or sell fossil fuels, regardless of their plans to divest in the future.</span></span>
-<span id="cb20-16"><a aria-hidden="true" href="#cb20-16" tabindex="-1"></a></span>
-<span id="cb20-17"><a aria-hidden="true" href="#cb20-17" tabindex="-1"></a><span class="ss">Analyze the text above, which was extracted from an internet search for "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">", to determine if it is a fossil fuel organization. Use common sense and respond only in English, even if the original content is not in English.</span></span>
-<span id="cb20-18"><a aria-hidden="true" href="#cb20-18" tabindex="-1"></a><span class="ss">'''</span></span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-29" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>prompt_system <span class="op">=</span> <span class="st">'You will be provided with a collection of documents collected from Google search results. Your task is to determine whether an organization is a fossil fuel company or lobbying group or not.'</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>prompt_instructions<span class="op">=</span> <span class="ss">f'''</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="ss">## Instructions</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="ss">You are a researcher investigating whether "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" is a fossil fuel organization.</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="ss">A fossil fuel organization:</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- Aims to influence policy or legislation in the interests of fossil fuel companies and shareholders.</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- Has significant business activities in exploration, extraction, refining, trading, specialized transportation of oil, gas, coal, or blue hydrogen, or sale of electricity derived from them.</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- Publicly declares involvement in fossil fuels or promotes significant investments in such companies.</span></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- Can be an NGO, foundation, think tank, or lobbying group funded by fossil fuel companies or their executives.</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- May include larger companies that own fossil fuel subsidiaries (e.g., BASF owning Wintershall).</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- Includes companies selling energy from fossil fuels (e.g., Octopus Energy).</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- Companies that currently produce or sell fossil fuels, regardless of their plans to divest in the future.</span></span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a><span class="ss">Analyze the text above, which was extracted from an internet search for "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">", to determine if it is a fossil fuel organization. Use common sense and respond only in English, even if the original content is not in English.</span></span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a><span class="ss">'''</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section class="level2" id="send-request-to-llm">
+<section id="send-request-to-llm" class="level2">
 <h2 class="anchored" data-anchor-id="send-request-to-llm">Send request to LLM</h2>
 <p>There are <a href="https://ddj.nicu.md/ai/llm-comparison.html">various LLMs available</a>, each with different capabilities and costs.</p>
 <p>For our task, there are a few things we need to consider:</p>
@@ -600,85 +630,85 @@ Scraping https://www.linkedin.com/posts/crin_oil-gas-cleantech-challenge-activit
 </ul>
 <p>We’ll use OpenAI’s gpt-4o-mini for this classification. One advantage of this particular model is its support for <a href="https://openai.com/index/introducing-structured-outputs-in-the-api/">Structured Outputs</a>. This means you can force the response to follow a certain set of rules.</p>
 <p>Let’s define what we want the output to be.</p>
-<div class="cell" data-execution_count="15" id="cell-33">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a aria-hidden="true" href="#cb21-1" tabindex="-1"></a><span class="kw">class</span> Classification(BaseModel):</span>
-<span id="cb21-2"><a aria-hidden="true" href="#cb21-2" tabindex="-1"></a>    fossil_fuel_link: <span class="bu">bool</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"Is this a fossil fuel organization?"</span>)</span>
-<span id="cb21-3"><a aria-hidden="true" href="#cb21-3" tabindex="-1"></a>    explanation: <span class="bu">str</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"A brief explanation of your decision, in English"</span>)</span>
-<span id="cb21-4"><a aria-hidden="true" href="#cb21-4" tabindex="-1"></a>    source: <span class="bu">str</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"A link to the SINGLE most relevant source that supports your classification"</span>)</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-33" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Classification(BaseModel):</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    fossil_fuel_link: <span class="bu">bool</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"Is this a fossil fuel organization?"</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    explanation: <span class="bu">str</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"A brief explanation of your decision, in English"</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    source: <span class="bu">str</span> <span class="op">=</span> Field(description <span class="op">=</span> <span class="st">"A link to the SINGLE most relevant source that supports your classification"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now, let’s make the request to OpenAI. First, we define a function like we did before, with a few tweaks.</p>
-<div class="cell" data-execution_count="16" id="cell-35">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a aria-hidden="true" href="#cb22-1" tabindex="-1"></a><span class="kw">def</span> make_request_openai(prompt_system: <span class="bu">str</span>, prompt_instructions: <span class="bu">str</span>, prompt_documents: <span class="bu">str</span>, model: <span class="bu">str</span> <span class="op">=</span> <span class="st">"gpt-4o-mini"</span>, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
-<span id="cb22-2"><a aria-hidden="true" href="#cb22-2" tabindex="-1"></a>    <span class="co">"""Make a request to OpenAI models that support structured outputs."""</span></span>
-<span id="cb22-3"><a aria-hidden="true" href="#cb22-3" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
-<span id="cb22-4"><a aria-hidden="true" href="#cb22-4" tabindex="-1"></a>        <span class="co"># api_key = ''</span></span>
-<span id="cb22-5"><a aria-hidden="true" href="#cb22-5" tabindex="-1"></a>        )</span>
-<span id="cb22-6"><a aria-hidden="true" href="#cb22-6" tabindex="-1"></a>    response <span class="op">=</span> client.beta.chat.completions.parse(</span>
-<span id="cb22-7"><a aria-hidden="true" href="#cb22-7" tabindex="-1"></a>        model<span class="op">=</span>model,</span>
-<span id="cb22-8"><a aria-hidden="true" href="#cb22-8" tabindex="-1"></a>        temperature<span class="op">=</span><span class="dv">0</span>,</span>
-<span id="cb22-9"><a aria-hidden="true" href="#cb22-9" tabindex="-1"></a>        messages<span class="op">=</span>[</span>
-<span id="cb22-10"><a aria-hidden="true" href="#cb22-10" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: prompt_system},</span>
-<span id="cb22-11"><a aria-hidden="true" href="#cb22-11" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="ss">f'$</span><span class="sc">{</span>prompt_documents<span class="sc">}</span><span class="ch">\n\n</span><span class="ss">$</span><span class="sc">{</span>prompt_instructions<span class="sc">}</span><span class="ss">'</span>}</span>
-<span id="cb22-12"><a aria-hidden="true" href="#cb22-12" tabindex="-1"></a>        ],</span>
-<span id="cb22-13"><a aria-hidden="true" href="#cb22-13" tabindex="-1"></a>        response_format<span class="op">=</span>Classification</span>
-<span id="cb22-14"><a aria-hidden="true" href="#cb22-14" tabindex="-1"></a>    )</span>
-<span id="cb22-15"><a aria-hidden="true" href="#cb22-15" tabindex="-1"></a>    <span class="cf">return</span> response.choices[<span class="dv">0</span>].message.content</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-35" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> make_request_openai(prompt_system: <span class="bu">str</span>, prompt_instructions: <span class="bu">str</span>, prompt_documents: <span class="bu">str</span>, model: <span class="bu">str</span> <span class="op">=</span> <span class="st">"gpt-4o-mini"</span>, <span class="op">**</span>kwargs) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Make a request to OpenAI models that support structured outputs."""</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    client <span class="op">=</span> OpenAI(</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># api_key = ''</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> client.beta.chat.completions.parse(</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>        model<span class="op">=</span>model,</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>        temperature<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>        messages<span class="op">=</span>[</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"system"</span>, <span class="st">"content"</span>: prompt_system},</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>            {<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: <span class="ss">f'$</span><span class="sc">{</span>prompt_documents<span class="sc">}</span><span class="ch">\n\n</span><span class="ss">$</span><span class="sc">{</span>prompt_instructions<span class="sc">}</span><span class="ss">'</span>}</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>        ],</span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>        response_format<span class="op">=</span>Classification</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> response.choices[<span class="dv">0</span>].message.content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now, let’s run the function on our example.</p>
-<div class="cell" data-execution_count="17" id="cell-37">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a aria-hidden="true" href="#cb23-1" tabindex="-1"></a>openai_response <span class="op">=</span> make_request_openai(prompt_system, prompt_instructions, prompt_documents)</span>
-<span id="cb23-2"><a aria-hidden="true" href="#cb23-2" tabindex="-1"></a><span class="bu">print</span>(openai_response)</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-37" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>openai_response <span class="op">=</span> make_request_openai(prompt_system, prompt_instructions, prompt_documents)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(openai_response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>{"fossil_fuel_link":true,"explanation":"The Clean Resource Innovation Network (CRIN) is focused on enabling cleaner energy development specifically for the oil and gas industry. It supports projects that aim to improve the environmental performance of this sector, which indicates a direct involvement with fossil fuels. The organization is dedicated to commercializing technologies that benefit the oil and gas industry, which aligns with the characteristics of a fossil fuel organization.","source":"https://www.cleanresourceinnovation.com/"}</code></pre>
 </div>
 </div>
 </section>
-<section class="level1" id="scale">
+<section id="scale" class="level1">
 <h1>Scale</h1>
 <p>We’ve seen an example of how to classify one organisation. The advantage of using AI is that we can scale this to (hundreds of) thousands of operations.</p>
 <p>Let’s define a few functions to help us with this.</p>
-<div class="cell" data-execution_count="25" id="cell-40">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a aria-hidden="true" href="#cb25-1" tabindex="-1"></a><span class="kw">def</span> classify_org(org: <span class="bu">str</span>):</span>
-<span id="cb25-2"><a aria-hidden="true" href="#cb25-2" tabindex="-1"></a>    search <span class="op">=</span> <span class="ss">f'"</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" oil gas coal'</span></span>
-<span id="cb25-3"><a aria-hidden="true" href="#cb25-3" tabindex="-1"></a></span>
-<span id="cb25-4"><a aria-hidden="true" href="#cb25-4" tabindex="-1"></a>    results <span class="op">=</span> DDGS().text(search, max_results<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb25-5"><a aria-hidden="true" href="#cb25-5" tabindex="-1"></a></span>
-<span id="cb25-6"><a aria-hidden="true" href="#cb25-6" tabindex="-1"></a>    texts <span class="op">=</span> extract_text([result[<span class="st">'href'</span>] <span class="cf">for</span> result <span class="kw">in</span> results <span class="cf">if</span> <span class="st">'href'</span> <span class="kw">in</span> result])</span>
-<span id="cb25-7"><a aria-hidden="true" href="#cb25-7" tabindex="-1"></a>    texts <span class="op">=</span> [(url, text) <span class="cf">for</span> url, text <span class="kw">in</span> texts <span class="cf">if</span> text <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>] <span class="co"># remove empty scrapes</span></span>
-<span id="cb25-8"><a aria-hidden="true" href="#cb25-8" tabindex="-1"></a></span>
-<span id="cb25-9"><a aria-hidden="true" href="#cb25-9" tabindex="-1"></a>    prompt_documents <span class="op">=</span> <span class="st">"</span><span class="ch">\n\n</span><span class="st">"</span>.join(<span class="ss">f"URL: </span><span class="sc">{</span>url<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>text<span class="sc">}</span><span class="ss">"</span> <span class="cf">for</span> url, text <span class="kw">in</span> texts).strip()</span>
-<span id="cb25-10"><a aria-hidden="true" href="#cb25-10" tabindex="-1"></a>    prompt_instructions<span class="op">=</span> <span class="ss">f'''</span></span>
-<span id="cb25-11"><a aria-hidden="true" href="#cb25-11" tabindex="-1"></a><span class="ss">## Instructions</span></span>
-<span id="cb25-12"><a aria-hidden="true" href="#cb25-12" tabindex="-1"></a></span>
-<span id="cb25-13"><a aria-hidden="true" href="#cb25-13" tabindex="-1"></a><span class="ss">You are a researcher investigating whether "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" is a fossil fuel organization.</span></span>
-<span id="cb25-14"><a aria-hidden="true" href="#cb25-14" tabindex="-1"></a></span>
-<span id="cb25-15"><a aria-hidden="true" href="#cb25-15" tabindex="-1"></a><span class="ss">A fossil fuel organization:</span></span>
-<span id="cb25-16"><a aria-hidden="true" href="#cb25-16" tabindex="-1"></a><span class="ss">- Aims to influence policy or legislation in the interests of fossil fuel companies and shareholders.</span></span>
-<span id="cb25-17"><a aria-hidden="true" href="#cb25-17" tabindex="-1"></a><span class="ss">- Has significant business activities in exploration, extraction, refining, trading, specialized transportation of oil, gas, coal, or blue hydrogen, or sale of electricity derived from them.</span></span>
-<span id="cb25-18"><a aria-hidden="true" href="#cb25-18" tabindex="-1"></a><span class="ss">- Publicly declares involvement in fossil fuels or promotes significant investments in such companies.</span></span>
-<span id="cb25-19"><a aria-hidden="true" href="#cb25-19" tabindex="-1"></a><span class="ss">- Can be an NGO, foundation, think tank, or lobbying group funded by fossil fuel companies or their executives.</span></span>
-<span id="cb25-20"><a aria-hidden="true" href="#cb25-20" tabindex="-1"></a><span class="ss">- May include larger companies that own fossil fuel subsidiaries (e.g., BASF owning Wintershall).</span></span>
-<span id="cb25-21"><a aria-hidden="true" href="#cb25-21" tabindex="-1"></a><span class="ss">- Includes companies selling energy from fossil fuels (e.g., Octopus Energy).</span></span>
-<span id="cb25-22"><a aria-hidden="true" href="#cb25-22" tabindex="-1"></a><span class="ss">- Companies that currently produce or sell fossil fuels, regardless of their plans to divest in the future.</span></span>
-<span id="cb25-23"><a aria-hidden="true" href="#cb25-23" tabindex="-1"></a></span>
-<span id="cb25-24"><a aria-hidden="true" href="#cb25-24" tabindex="-1"></a><span class="ss">Analyze the text above, which was extracted from an internet search for "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">", to determine if it is a fossil fuel organization. Use common sense and respond only in English, even if the original content is not in English.</span></span>
-<span id="cb25-25"><a aria-hidden="true" href="#cb25-25" tabindex="-1"></a><span class="ss">'''</span></span>
-<span id="cb25-26"><a aria-hidden="true" href="#cb25-26" tabindex="-1"></a></span>
-<span id="cb25-27"><a aria-hidden="true" href="#cb25-27" tabindex="-1"></a>    openai_response <span class="op">=</span> make_request_openai(prompt_system, prompt_instructions, prompt_documents)</span>
-<span id="cb25-28"><a aria-hidden="true" href="#cb25-28" tabindex="-1"></a></span>
-<span id="cb25-29"><a aria-hidden="true" href="#cb25-29" tabindex="-1"></a>    <span class="cf">return</span> openai_response</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-40" class="cell" data-execution_count="25">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> classify_org(org: <span class="bu">str</span>):</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    search <span class="op">=</span> <span class="ss">f'"</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" oil gas coal'</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> DDGS().text(search, max_results<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    texts <span class="op">=</span> extract_text([result[<span class="st">'href'</span>] <span class="cf">for</span> result <span class="kw">in</span> results <span class="cf">if</span> <span class="st">'href'</span> <span class="kw">in</span> result])</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    texts <span class="op">=</span> [(url, text) <span class="cf">for</span> url, text <span class="kw">in</span> texts <span class="cf">if</span> text <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>] <span class="co"># remove empty scrapes</span></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    prompt_documents <span class="op">=</span> <span class="st">"</span><span class="ch">\n\n</span><span class="st">"</span>.join(<span class="ss">f"URL: </span><span class="sc">{</span>url<span class="sc">}</span><span class="ch">\n</span><span class="sc">{</span>text<span class="sc">}</span><span class="ss">"</span> <span class="cf">for</span> url, text <span class="kw">in</span> texts).strip()</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>    prompt_instructions<span class="op">=</span> <span class="ss">f'''</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="ss">## Instructions</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="ss">You are a researcher investigating whether "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">" is a fossil fuel organization.</span></span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a><span class="ss">A fossil fuel organization:</span></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- Aims to influence policy or legislation in the interests of fossil fuel companies and shareholders.</span></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- Has significant business activities in exploration, extraction, refining, trading, specialized transportation of oil, gas, coal, or blue hydrogen, or sale of electricity derived from them.</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- Publicly declares involvement in fossil fuels or promotes significant investments in such companies.</span></span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- Can be an NGO, foundation, think tank, or lobbying group funded by fossil fuel companies or their executives.</span></span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- May include larger companies that own fossil fuel subsidiaries (e.g., BASF owning Wintershall).</span></span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- Includes companies selling energy from fossil fuels (e.g., Octopus Energy).</span></span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- Companies that currently produce or sell fossil fuels, regardless of their plans to divest in the future.</span></span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a><span class="ss">Analyze the text above, which was extracted from an internet search for "</span><span class="sc">{</span>org<span class="sc">}</span><span class="ss">", to determine if it is a fossil fuel organization. Use common sense and respond only in English, even if the original content is not in English.</span></span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a><span class="ss">'''</span></span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>    openai_response <span class="op">=</span> make_request_openai(prompt_system, prompt_instructions, prompt_documents)</span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> openai_response</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="26" id="cell-41">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a aria-hidden="true" href="#cb26-1" tabindex="-1"></a><span class="kw">def</span> apply_classify_org(df):</span>
-<span id="cb26-2"><a aria-hidden="true" href="#cb26-2" tabindex="-1"></a>    df[<span class="st">'classification'</span>] <span class="op">=</span> df.<span class="bu">apply</span>(<span class="kw">lambda</span> row: classify_org(org <span class="op">=</span> row[<span class="st">'organization'</span>]), axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb26-3"><a aria-hidden="true" href="#cb26-3" tabindex="-1"></a>    df[<span class="st">'classification'</span>] <span class="op">=</span> df[<span class="st">'classification'</span>].<span class="bu">apply</span>(json.loads)</span>
-<span id="cb26-4"><a aria-hidden="true" href="#cb26-4" tabindex="-1"></a>    df <span class="op">=</span> pd.concat([df.drop([<span class="st">'classification'</span>], axis<span class="op">=</span><span class="dv">1</span>), df[<span class="st">'classification'</span>].<span class="bu">apply</span>(pd.Series)], axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb26-5"><a aria-hidden="true" href="#cb26-5" tabindex="-1"></a></span>
-<span id="cb26-6"><a aria-hidden="true" href="#cb26-6" tabindex="-1"></a>    <span class="cf">return</span> df</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-41" class="cell" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> apply_classify_org(df):</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'classification'</span>] <span class="op">=</span> df.<span class="bu">apply</span>(<span class="kw">lambda</span> row: classify_org(org <span class="op">=</span> row[<span class="st">'organization'</span>]), axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'classification'</span>] <span class="op">=</span> df[<span class="st">'classification'</span>].<span class="bu">apply</span>(json.loads)</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.concat([df.drop([<span class="st">'classification'</span>], axis<span class="op">=</span><span class="dv">1</span>), df[<span class="st">'classification'</span>].<span class="bu">apply</span>(pd.Series)], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Now let’s run this on our sample of organisations.</p>
-<div class="cell" data-execution_count="27" data-outputid="87573f71-ee28-4b5b-97f9-23a86fd8ed88" id="cell-43">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a aria-hidden="true" href="#cb27-1" tabindex="-1"></a>cop_orgs_classified <span class="op">=</span> apply_classify_org(cop_orgs)</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-43" class="cell" data-outputid="87573f71-ee28-4b5b-97f9-23a86fd8ed88" data-execution_count="27">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified <span class="op">=</span> apply_classify_org(cop_orgs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Scraping https://climatereality.ph/reenergizeph/...
 Scraping https://climatereality.ph/2021/08/21/climate-reality-ph-geop-a-potent-weapon-against-unreliable-coal-sourced-power/...
@@ -687,11 +717,13 @@ Scraping https://mirror.pia.gov.ph/news/2021/08/22/climate-reality-geop-a-potent
 Scraping https://www.facebook.com/climaterealityphilippines/posts/green-energy-option-program-a-potent-weapon-against-unreliable-coal-sourced-powe/4243220149098727/...</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="28" id="cell-44">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a aria-hidden="true" href="#cb29-1" tabindex="-1"></a>cop_orgs_classified</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-44" class="cell" data-execution_count="28">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="28">
 <div>
-<table class="dataframe caption-top table table-sm table-striped small" data-border="1" data-quarto-postprocess="true">
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -739,14 +771,15 @@ Scraping https://www.facebook.com/climaterealityphilippines/posts/green-energy-o
 </tr>
 </tbody>
 </table>
+
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="29" data-outputid="8d1f14dd-efd3-4a44-dbd8-5c3c81d905d2" id="cell-45">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a aria-hidden="true" href="#cb30-1" tabindex="-1"></a>cop_orgs_classified.to_csv(<span class="st">'data/cop_orgs_classified.csv'</span>)</span></code><button class="code-copy-button" title="Copy to Clipboard"><i class="bi"></i></button></pre></div>
+<div id="cell-45" class="cell" data-outputid="8d1f14dd-efd3-4a44-dbd8-5c3c81d905d2" data-execution_count="29">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>cop_orgs_classified.to_csv(<span class="st">'data/cop_orgs_classified.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section class="level1" id="what-next">
+<section id="what-next" class="level1">
 <h1>What next?</h1>
 <p>There are lots of things we can improve about this process. Here are some ideas:</p>
 <ul>
@@ -758,7 +791,10 @@ Scraping https://www.facebook.com/climaterealityphilippines/posts/green-energy-o
 <li><strong>Multithreading</strong>. You can use Python’s <a href="https://docs.python.org/3/library/threading.html">multithreading</a> to run multiple classifications in parallel, significantly speeding up the process.</li>
 <li><strong>Verify</strong>. LLMs are still dumb and shouldn’t be trusted. Manually verify the classifications if you’re going to publish the results!</li>
 </ul>
+
+
 </section>
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1181,29 +1217,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 <nav class="page-navigation">
-<div class="nav-page nav-page-previous">
-<a aria-label="AI classification in Python" class="pagination-link" href="../ai/python-classification.html">
-<i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI classification in Python</span>
-</a>
-</div>
-<div class="nav-page nav-page-next">
-<a aria-label="Data validation in Python" class="pagination-link" href="../ai/python-validation.html">
-<span class="nav-page-text">Data validation in Python</span> <i class="bi bi-arrow-right-short"></i>
-</a>
-</div>
+  <div class="nav-page nav-page-previous">
+      <a href="../ai/python-classification.html" class="pagination-link" aria-label="AI classification in Python">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI classification in Python</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../ai/python-validation.html" class="pagination-link" aria-label="Data validation in Python">
+        <span class="nav-page-text">Data validation in Python</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
-<div class="nav-footer">
-<div class="nav-footer-left">
-       
-    </div>
-<div class="nav-footer-center">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
 <p><a href="https://nicu.md/" target="_blank">Copyright 2024, Nicu Calcea</a>.</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a class="toc-action" href="https://github.dev/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb"><i class="bi bi-github"></i>Edit this page</a></li><li><a class_="toc-action" data-original-href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb" href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb"><i class="bi bi-google"></i>Open In Colab</a></li><li><a class="toc-action" href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb"><i class="bi empty"></i>View source</a></li><li><a class="toc-action" href="https://github.com/nicucalcea/ddj-wiki/issues/new"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-<div class="nav-footer-right">
-       
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.dev/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
     </div>
-</div>
+  </div>
 </footer>
+
+
+
+
 </body></html>

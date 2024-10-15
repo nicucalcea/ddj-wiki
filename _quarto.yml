@@ -2,9 +2,9 @@ project:
   type: website
   output-dir: docs
   post-render: 
-    - scripts/add_colab_link.py
-    - _observable/render_scripts/generate_config.py
-    - _observable/render_scripts/build.py
+    - scripts/move_speaker_notes.py
+    - scripts/generate_config.py
+    - scripts/build_observable.py
 
 website:
   title: "Data Journalism Wiki"
@@ -61,7 +61,7 @@ website:
         icon: "trophy"
         href: awards/index.qmd
   repo-url: https://github.com/nicucalcea/ddj-wiki
-  repo-actions: [edit, source, issue]
+  repo-actions: [edit, issue]
   site-url: https://ddj.nicu.md/
   page-footer: "<a href='https://nicu.md/' target='_blank'>Copyright 2024, Nicu Calcea</a>."
 
