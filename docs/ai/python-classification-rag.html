@@ -455,7 +455,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>This list contains all participants registered to attend the 2023 United Nations Climate Change Conference or Conference of the Parties (COP28).</p>
 <p>We’re not interested in the individuals, just the organisations they represent. Classifying individuals is a much more complex task that doesn’t work well with this process. Additionally, it would be too difficult to verify the results.</p>
-<p>Let’s extract the organisations. We’ll only keep a random 20 rows for this example, you can remove the <code>sample</code> function to process the entire dataset.</p>
+<p>Let’s extract the organisations. We’ll only keep a random 5 rows for this example, you can remove the <code>sample</code> function to process the entire dataset.</p>
 <div id="cell-15" class="cell" data-outputid="4263dd80-f0a1-4365-fa4e-949651d32f8d" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cop_orgs <span class="op">=</span> cop_participants[[<span class="st">'organization'</span>]].drop_duplicates().sample(<span class="dv">5</span>)</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>cop_orgs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

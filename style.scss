@@ -145,6 +145,10 @@ blockquote p {
 
 // code
 code:not(.sourceCode) {
+  color: $accent-light;
+}
+
+p code:not(.sourceCode) {
   color: $accent-dark;
 }
 
