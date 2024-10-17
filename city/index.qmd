@@ -566,7 +566,7 @@ Same as =XLOOKUP() but more flexible and easier to grasp.
 
 # Week 3
 
-Introduction to [Data Journalism]<br>
+Introduction to **Data Journalis**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
 
@@ -648,49 +648,33 @@ Sum all the values and divide by the number of records.
 
 <!-- # Week 4
 
-add some stuff from here: https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit#slide=id.p
-
-Data [Cleaning]<br>
+Introduction to **Data Journalis**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
+## Make your spreadsheets fact-checkable
 
-## {fullscreen=true}
-![](media/bbc-wages.png){.absolute height="700"}
+It's all about:
+- documentation
+  - keep the reference to the source data unaltered
+  - if needed add a data dictionary or write down what you did
+  - use sensible names for your columns (not "weight") and sheets (not "Sheet1")
+  - one question = one sheet
+- reproducibility
+  - do analysis on a new sheet, never on the original data
+  - use range or sheet protection
+  - back up often
 
-::: footer
-Source: [BBC](https://www.bbc.co.uk/news/business-67278269)
+::: notes
+https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit
 :::
 
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://oct7map.com/"></iframe>
+## Data prep
+
+<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
 
 ::: footer
-Source: [October 7th Geo-visualization Project](https://oct7map.com/)
+Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
 :::
-
-## {fullscreen=true}
-<video autoplay="" loop="" muted="" src="https://blog.datawrapper.de/wp-content/uploads/2023/10/CleanShot-2023-10-30-at-17.04.24.mp4" class="thin-grey-border"></video>
-
-::: footer
-Source: [The Washington Post](https://www.washingtonpost.com/nation/interactive/mass-shootings/)
-:::
-
-
-##
-![](media/nyt-neighbourhoods.png)
-
-::: footer
-Source: [The New York Times](https://www.nytimes.com/interactive/2023/upshot/extremely-detailed-nyc-neighborhood-map.html)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/"></iframe>
-
-::: footer
-Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/)
-:::
-
-
 
 ## {#dirty-data data-menu-title="Dirty Data" .smaller}
 
@@ -731,17 +715,9 @@ A column can have different unites, spell categories differently or record diffe
 ![](media/guide-bad-data.png)
 
 ::: footer
-Source: [Quartz](https://qz.com/572338/the-quartz-guide-to-bad-data) (also on [GitHub](https://github.com/Quartz/bad-data-guide))
+Source: [Quartz](https://github.com/Quartz/bad-data-guide)
 :::
 
-
-## Data prep
-
-<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
-
-::: footer
-Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
-:::
 
 ## {#inflation-screenshot data-menu-title="ONS inflation data" .smaller}
 

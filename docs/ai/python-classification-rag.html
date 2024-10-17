@@ -309,11 +309,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Without looking it up, would you know if the “Clean Resource Innovation Network” is an oil and gas lobbying organisation? Lobbyists often hide under unintuitive or misleading affiliations that obscure their origins. The work of uncovering their identities can be time-consuming and challenging.</p>
-<p>Kick Big Polluters Out (of which Global Witness is a member) have been doing this work every year. We <a href="https://kickbigpollutersout.org/articles/release-record-number-fossil-fuel-lobbyists-attend-cop28">found 2,456 fossil fuel lobbyists</a> who have been granted access to the COP28 summit in Dubai last year.</p>
-<p>This kind of work involves a lot of research and manual work. Are there ways to speed this work up?</p>
-<p>This workshop will outline an approach to using web scraping and Large Language Models (LLMs), like those powering ChatGPT, to systematically identify organisations that are affiliated with the fossil fuel industry. These techniques could also be adapted to other climate projects, such as identifying climate disinformation.</p>
-<p>You can <a href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb">download the notebook</a> and run it yourself, or you can <a href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb">run it in the cloud using Google Colab</a>. Both links also in the sidebar to the right, or at the bottom of the page on mobile.</p>
+<p>Without looking it up, would you know if the “Clean Resource Innovation Network” is an oil and gas lobbying organisation?</p>
+<p>These kinds of organisations are often present at events like the Bonn Climate Change Conference, the WEF in Davos, or the COP events. But it’s not always clear what interests they represent.</p>
+<p>The work of uncovering their identities can be time-consuming and challenging. At COP28 in Dubai in 2023, some 85,000 people registered to attend. Figuring out how many of them are there to push the fossil fuel industry’s agenda is a daunting task.</p>
+<p>Kick Big Polluters Out (of which Global Witness is a member) have been doing this work every year. We <a href="https://kickbigpollutersout.org/articles/release-record-number-fossil-fuel-lobbyists-attend-cop28">found 2,456 fossil fuel lobbyists</a> who have been granted access to COP28 last year.</p>
+<p>This workshop will outline an approach to using web scraping and Large Language Models (LLMs), like those powering ChatGPT, to help speed up this kind of work. These techniques could also be adapted to other climate projects, such as categorising meetings between lobbyists and politicians, or identifying climate disinformation campaigns.</p>
+<p>We will be looking at COP28 attendees and attempting to pick out the fossil fuel lobbyists. You can <a href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb">download the notebook</a> and run it yourself, or you can <a href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-rag.ipynb">run it in the cloud using Google Colab</a>. Both links also in the sidebar to the right, or at the bottom of the page on mobile.</p>
 <section id="install-and-load-libraries" class="level2">
 <h2 class="anchored" data-anchor-id="install-and-load-libraries">Install and load libraries</h2>
 <div id="cell-3" class="cell">
@@ -366,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Failed to download file. Status code: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>The participants are spread across multiple sheets, we need to read them in sparately and bind them together.</p>
+<p>The participants are spread across multiple sheets, we need to read them in separately and bind them together.</p>
 <div id="cell-12" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list to store the dataframes from each sheet</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>cop_participants <span class="op">=</span> []</span>

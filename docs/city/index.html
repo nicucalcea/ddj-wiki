@@ -981,7 +981,7 @@
 <section>
 <section id="week-3" class="title-slide slide level1 center">
 <h1>Week 3</h1>
-<p>Introduction to [Data Journalism]<br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
+<p>Introduction to <strong>Data Journalis</strong><br> <a href="https://ddj.nicu.md/city/">https://ddj.nicu.md/city/</a></p>
 </section>
 <section id="toolbox" class="slide level2">
 <h2>Toolbox</h2>
@@ -1042,49 +1042,33 @@
 </ul>
 <!-- # Week 4
 
-add some stuff from here: https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit#slide=id.p
-
-Data [Cleaning]<br>
+Introduction to **Data Journalis**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
+## Make your spreadsheets fact-checkable
 
-## {fullscreen=true}
-![](media/bbc-wages.png){.absolute height="700"}
+It's all about:
+- documentation
+  - keep the reference to the source data unaltered
+  - if needed add a data dictionary or write down what you did
+  - use sensible names for your columns (not "weight") and sheets (not "Sheet1")
+  - one question = one sheet
+- reproducibility
+  - do analysis on a new sheet, never on the original data
+  - use range or sheet protection
+  - back up often
 
-::: footer
-Source: [BBC](https://www.bbc.co.uk/news/business-67278269)
+::: notes
+https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit
 :::
 
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://oct7map.com/"></iframe>
+## Data prep
+
+<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
 
 ::: footer
-Source: [October 7th Geo-visualization Project](https://oct7map.com/)
+Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
 :::
-
-## {fullscreen=true}
-<video autoplay="" loop="" muted="" src="https://blog.datawrapper.de/wp-content/uploads/2023/10/CleanShot-2023-10-30-at-17.04.24.mp4" class="thin-grey-border"></video>
-
-::: footer
-Source: [The Washington Post](https://www.washingtonpost.com/nation/interactive/mass-shootings/)
-:::
-
-
-##
-![](media/nyt-neighbourhoods.png)
-
-::: footer
-Source: [The New York Times](https://www.nytimes.com/interactive/2023/upshot/extremely-detailed-nyc-neighborhood-map.html)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/"></iframe>
-
-::: footer
-Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-taylor-swift-net-worth-billionaire/)
-:::
-
-
 
 ## {#dirty-data data-menu-title="Dirty Data" .smaller}
 
@@ -1125,17 +1109,9 @@ A column can have different unites, spell categories differently or record diffe
 ![](media/guide-bad-data.png)
 
 ::: footer
-Source: [Quartz](https://qz.com/572338/the-quartz-guide-to-bad-data) (also on [GitHub](https://github.com/Quartz/bad-data-guide))
+Source: [Quartz](https://github.com/Quartz/bad-data-guide)
 :::
 
-
-## Data prep
-
-<iframe class="stretch" data-src="https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets"></iframe>
-
-::: footer
-Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-your-data-for-datawrapper-in-excel-or-google-sheets)
-:::
 
 ## {#inflation-screenshot data-menu-title="ONS inflation data" .smaller}
 
@@ -1232,27 +1208,6 @@ Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring
 Data [Stories]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-
-## 30-day challenge (Erwan) {fullscreen=true}
-![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-MswaAW0AAwFRP.jpeg){.absolute height="600"}
-
-::: footer
-Source: [Erwan Rivault](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
-:::
-
-## 30-day challenge (Jana) {fullscreen=true}
-![](https://blog.datawrapper.de/wp-content/uploads/2023/11/F-G8R9ZW0AAso94.jpeg){.absolute height="600"}
-
-::: footer
-Source: [Jana Tauschinski](https://twitter.com/ErwanRivault/status/1721275486687433026/photo/1)
-:::
-
-## {fullscreen=true}
-![](https://blog.datawrapper.de/wp-content/uploads/2023/11/image6.png){.absolute height="700"}
-
-::: footer
-Source: [FT](https://www.ft.com/content/ed739236-7430-4dc1-95f5-4a23534d8841)
-:::
 
 ## Why do we visualise data? {background-color="#e9e9e9"}
 
@@ -2165,7 +2120,7 @@ Students will receive feedback on their responses but we do need a sufficient nu
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":false},
-'multiplex': {"secret":null,"id":"1deeebffbf7f704f","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":null,"id":"c4d24143b3f6f62c","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
