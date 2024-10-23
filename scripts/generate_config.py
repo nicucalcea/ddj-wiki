@@ -36,8 +36,7 @@ for sidebar_item in sidebar:
         page['pages'] = []
 
         for sub_item in sidebar_item['contents']:
-            path = sub_item['href'].replace('.qmd', '.html')
-            path = sub_item['href'].replace('.ipynb', '.html')
+            path = sub_item['href'].replace('.qmd', '.html').replace('.ipynb', '.html')
             page['pages'].append({
                 "name": sub_item['text'],
                 "path": path

@@ -646,23 +646,34 @@ Sum all the values and divide by the number of records.
 - [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 
-<!-- # Week 4
+
+# Week 4
 
 Introduction to **Data Journalis**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-## Make your spreadsheets fact-checkable
+## Make your spreadsheets fact-checkable {.smaller}
 
 It's all about:
-- documentation
-  - keep the reference to the source data unaltered
-  - if needed add a data dictionary or write down what you did
-  - use sensible names for your columns (not "weight") and sheets (not "Sheet1")
-  - one question = one sheet
-- reproducibility
-  - do analysis on a new sheet, never on the original data
-  - use range or sheet protection
-  - back up often
+
+::: columns
+::: {.column width="50%"}
+Documentation
+
+- keep the reference to the source data unaltered
+- if needed add a data dictionary or write down what you did
+- use sensible names for your columns (not "weight") and sheets (not "Sheet1")
+- one question = one sheet
+:::
+
+::: {.column width="50%"}
+Reproducibility
+
+- do analysis on a new sheet, never on the original data
+- use range or sheet protection
+- back up often
+:::
+:::
 
 ::: notes
 https://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit
@@ -680,32 +691,38 @@ Source: [Datawrapper](https://academy.datawrapper.de/article/240-how-to-prepare-
 
 ::: columns
 ::: {.column width="33.33%"}
-##### [Missing data]
+##### Missing data
 Sometimes, records disappear or were never collected. It may not always be the obvious when that is the case.
 :::
 
 ::: {.column width="33.33%"}
-##### [Duplicated data]
+##### Duplicated data
 Records can be repeated, either due to technical mishaps or due to repeated input.
 :::
 
 ::: {.column width="33.33%"}
-##### [Misspellings]
+##### Misspellings
 Humans make mistakes. Assume any dataset manually created by humans to have missspelings.
 :::
 
 ::: {.column width="33.33%"}
-##### [Poor formatting]
+<br>
+
+##### Poor formatting
 Some spreadsheets are designed to be read by humans, not computers. We then need to teach software to read it correctly.
 :::
 
 ::: {.column width="33.33%"}
-##### [Parsing errors]
+<br>
+
+##### Parsing errors
 Wrong Excel formula? Üṅṛëċöġṅïṡëḋ characters? Old Excel version? These can all mess with your data.
 :::
 
 ::: {.column width="33.33%"}
-##### [Inconsistent data]
+<br>
+
+##### Inconsistent data
 A column can have different unites, spell categories differently or record different methodologies.
 :::
 :::
@@ -727,14 +744,18 @@ Source: [Quartz](https://github.com/Quartz/bad-data-guide)
 Source: [ONS](https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/consumerpriceinflation)
 :::
 
+
 ## Baby names exercise
 
-1. Download the [Baby names for girls/boys in England and Wales file](https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021/relateddata).
+1. Download the file with baby names in England and Wales for [girls](https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsboys/2021/2021boysnamesupdated1.xlsx) or [boys](https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/datasets/babynamesenglandandwalesbabynamesstatisticsgirls/2021/2021girlsnames.xlsx).
 2. Upload the spreadsheet to Google Drive and open it in Google Sheets.
 3. Find and clean Table 1.
 4. Read about [Shart](https://www.thecourier.co.uk/fp/courier-investigations/3168365/baby-name-rules-scotland/).
 
-Also check last year's tables: [here](https://docs.google.com/spreadsheets/d/1V88_N_jJHh9rrT16IYEBAGddtD_t_LpoBNvG9DY056g/edit).
+::: notes
+https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/babynamesenglandandwales/2021/relateddata
+:::
+
 
 ## OpenRefine
 
@@ -780,12 +801,12 @@ N7 6NJ. Use Google Sheets filter instead of pivot for 10+ ratings
 
 ## Group assignment {.smaller}
 
-You will be split into teams of four to create a narrated PowerPoint presentation critiquing a data project featured in the [Sigma Awards](https://sigmaawards.org/projects/). You can choose a winner or a short-listed project (at the bottom of the page).
+You will be split into teams of (tbd) to create a narrated PowerPoint presentation critiquing a data project featured in the [Sigma Awards](https://sigmaawards.org/). You can choose a winner or a [short-listed project](https://github.com/Sigma-Awards/shortlist-2024/blob/main/The%20Sigma%20Awards%202024-Shortlist.csv).
 
 &nbsp;
 &nbsp;
 
-Deadline: **Friday, December 8, 4pm**
+Deadline: **Friday, 13 December, 16:00**
 
 &nbsp;
 &nbsp;
@@ -797,18 +818,11 @@ Deliverables
 - Fill in [this spreadsheet](https://docs.google.com/spreadsheets/d/1_OVgO5ExbH_Xe8FOipb0LAAh4DUbMZ4RI9G3ZxgVfI0/edit#gid=0) with your name and the project you're working on.
 
 
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/"></iframe>
-
-::: footer
-Source: [Joe Murphy](https://joemurph.com/article/detail/what-i-look-when-hiring-junior-data-graphic-journalists/)
-:::
-
 
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 
 <!-- # Week 5
