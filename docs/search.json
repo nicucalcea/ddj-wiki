@@ -247,7 +247,7 @@
     "href": "ai/python-classification-rag.html#install-and-load-libraries",
     "title": "Identifying fossil fuel lobbyists with AI",
     "section": "Install and load libraries",
-    "text": "Install and load libraries\n\n%pip install duckduckgo_search\n%pip install trafilatura\n%pip install openai\n%pip install pydantic\n%pip install pandas\n\n\n# %pip install --upgrade duckduckgo-search\n\n\nimport requests\nimport os\nimport pandas as pd\nfrom duckduckgo_search import DDGS\nfrom trafilatura import extract\nfrom enum import Enum\nfrom pydantic import BaseModel, Field\nfrom openai import OpenAI\nimport json\n\nYou will need an API key from OpenAI or another provider.\nGet a temporary API key here.",
+    "text": "Install and load libraries\n\n%pip install duckduckgo_search\n%pip install trafilatura\n%pip install openai\n%pip install pydantic\n%pip install pandas\n\n\n# %pip install --upgrade duckduckgo-search\n\n\nimport requests\nimport os\nimport pandas as pd\nfrom duckduckgo_search import DDGS\nfrom trafilatura import extract\nfrom enum import Enum\nfrom pydantic import BaseModel, Field\nfrom openai import OpenAI\nimport json\n\nYou will need an API key from OpenAI or another provider.",
     "crumbs": [
       "AI",
       "Identifying fossil fuel lobbyists"
@@ -654,6 +654,90 @@
     "title": "Intro to Data Journalism",
     "section": "Contact",
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk"
+  },
+  {
+    "objectID": "city/index.html#why-do-we-visualise-data",
+    "href": "city/index.html#why-do-we-visualise-data",
+    "title": "Intro to Data Journalism",
+    "section": "Why do we visualise data?",
+    "text": "Why do we visualise data?\nSummarising data, like we did in previous lessons, is not always enough to reveal pattern or trends.\nVisualising it can provide insight we’d otherwise lose out on."
+  },
+  {
+    "objectID": "city/index.html#what-can-we-visualise",
+    "href": "city/index.html#what-can-we-visualise",
+    "title": "Intro to Data Journalism",
+    "section": "What can we visualise?",
+    "text": "What can we visualise?\nPosition \n\nSize\n    Width \n\n\n    Height \n\n\n    Area \n\n\nColour\n    Fill \n\n\n    Colour \n\n\n    Opacity\n    Pattern\nShape \n\n\nLocation"
+  },
+  {
+    "objectID": "city/index.html#people-suck-at-sizes",
+    "href": "city/index.html#people-suck-at-sizes",
+    "title": "Intro to Data Journalism",
+    "section": "People suck at sizes",
+    "text": "People suck at sizes"
+  },
+  {
+    "objectID": "city/index.html#what-visual-encoding-can-you-find-in-this-chart",
+    "href": "city/index.html#what-visual-encoding-can-you-find-in-this-chart",
+    "title": "Intro to Data Journalism",
+    "section": "What visual encoding can you find in this chart?",
+    "text": "What visual encoding can you find in this chart?"
+  },
+  {
+    "objectID": "city/index.html#the-fts-scatter-plot",
+    "href": "city/index.html#the-fts-scatter-plot",
+    "title": "Intro to Data Journalism",
+    "section": "The FT’s scatter plot",
+    "text": "The FT’s scatter plot\n\nStandard scatter plot \n\n\nChange scale to log \n\n\nSize by population \n\n\nColour by continent \n\n\nAnimate over time \n\n\nhttps://www.ft.com/content/e2eba288-ef83-11e6-930f-061b01e23655"
+  },
+  {
+    "objectID": "city/index.html#ft-vocabulary",
+    "href": "city/index.html#ft-vocabulary",
+    "title": "Intro to Data Journalism",
+    "section": "FT Vocabulary",
+    "text": "FT Vocabulary\n\n\nSource: FT"
+  },
+  {
+    "objectID": "city/index.html#many-types-of-charts",
+    "href": "city/index.html#many-types-of-charts",
+    "title": "Intro to Data Journalism",
+    "section": "Many types of charts",
+    "text": "Many types of charts\n\nFT Vocabulary\nData Viz Project\nData to Viz\nData Visualisation Catalogue"
+  },
+  {
+    "objectID": "city/index.html#gapminder",
+    "href": "city/index.html#gapminder",
+    "title": "Intro to Data Journalism",
+    "section": "Gapminder",
+    "text": "Gapminder"
+  },
+  {
+    "objectID": "city/index.html#gapminder-exercise",
+    "href": "city/index.html#gapminder-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Gapminder exercise",
+    "text": "Gapminder exercise\n\nDownload the “Life expectancy” and “Fertiliy rate” (and “Population” if you want) datasets from Gapminder.\nUse XLOOKUP to join the datasets.\nReproduce Hans Rosling’s chart in Google Sheets."
+  },
+  {
+    "objectID": "city/index.html#gapminder-exercise-1",
+    "href": "city/index.html#gapminder-exercise-1",
+    "title": "Intro to Data Journalism",
+    "section": "Gapminder exercise",
+    "text": "Gapminder exercise"
+  },
+  {
+    "objectID": "city/index.html#police-crime-exercise",
+    "href": "city/index.html#police-crime-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Police crime exercise",
+    "text": "Police crime exercise\n\nDownload the Police recorded crime open data Police Force Area tables, year ending March 2013 onwards table.\nWorking in groups of two, think of stories to tell based on this data.\nWrite a couple headlines based on your analysis.\nChoose a headline and make a chart."
+  },
+  {
+    "objectID": "city/index.html#contact-4",
+    "href": "city/index.html#contact-4",
+    "title": "Intro to Data Journalism",
+    "section": "Contact",
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk\n\n\nPlease make Flourish and Datawrapper accounts"
   },
   {
     "objectID": "sources/academic.html",
