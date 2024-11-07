@@ -968,26 +968,6 @@ Please make Flourish and Datawrapper accounts
 Data [Visualisation]<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
 
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/"></iframe>
-::: footer
-Source: [Reuters](https://www.reuters.com/graphics/MINING-DEEPSEA/CLIMATE/zjpqezqzlpx/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/"></iframe>
-::: footer
-Source: [Bloomberg](https://www.bloomberg.com/graphics/2024-us-election-key-state-voter-polling/)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/"></iframe>
-::: footer
-Source: [Washington Post](https://www.washingtonpost.com/world/interactive/2023/gaza-rising-death-toll-civilians/)
-:::
-
 ## Dataviz Toolbox
 
 <iframe class="stretch" data-src="https://ddj.nicu.md/toolbox/#visualisation"></iframe>
@@ -1151,26 +1131,21 @@ Source: CBS News
 Source: [WTF Visualizations](https://viz.wtf/)
 :::
 
-## Cities exercise {background-color="white"}
+## Cities exercise
 
 1. Create a new chart in Datawrapper.
 2. Select the **Rural and urban dataset**.
 3. Make a **stacked bar chart**.
 
 
-## Covid exercise
+## Gapminder exercise
 
-1. Download a copy of the [Covid-19 data](https://github.com/owid/covid-19-data/blob/master/public/data/latest/owid-covid-latest.csv).
-2. Filter it to only the deaths and vaccination rates in Europe.
-3. Copy the data into Datawrapper.
-4. Create a scatter plot.
-5. Customise axis labels, colours, size, tooltips, title, description and source.
-6. Add annotations.
-7. Publish or download the chart.
-
-## Covid exercise - example {background-color="white"}
-
-<iframe class="stretch" data-src="https://datawrapper.dwcdn.net/AyGb7/1/"></iframe>
+1. Download the [Gapminder data](https://github.com/kirenz/datasets/blob/master/gapminder.csv).
+2. Copy the data into Datawrapper.
+3. Create a scatter plot.
+4. Customise axis labels, colours, size, tooltips, title, description and source.
+5. Add annotations.
+6. Publish or download the chart.
 
 ## Flourish example (on your own) {background-color="white"}
 

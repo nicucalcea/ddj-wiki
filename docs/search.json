@@ -740,27 +740,6 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk\n\n\nPlease make Flourish and Datawrapper accounts"
   },
   {
-    "objectID": "city/index.html#section-3",
-    "href": "city/index.html#section-3",
-    "title": "Intro to Data Journalism",
-    "section": "",
-    "text": "Source: Reuters"
-  },
-  {
-    "objectID": "city/index.html#section-4",
-    "href": "city/index.html#section-4",
-    "title": "Intro to Data Journalism",
-    "section": "",
-    "text": "Source: Bloomberg"
-  },
-  {
-    "objectID": "city/index.html#section-5",
-    "href": "city/index.html#section-5",
-    "title": "Intro to Data Journalism",
-    "section": "",
-    "text": "Source: Washington Post"
-  },
-  {
     "objectID": "city/index.html#dataviz-toolbox",
     "href": "city/index.html#dataviz-toolbox",
     "title": "Intro to Data Journalism",
@@ -873,18 +852,11 @@
     "text": "Cities exercise\n\nCreate a new chart in Datawrapper.\nSelect the Rural and urban dataset.\nMake a stacked bar chart."
   },
   {
-    "objectID": "city/index.html#covid-exercise",
-    "href": "city/index.html#covid-exercise",
+    "objectID": "city/index.html#gapminder-exercise-2",
+    "href": "city/index.html#gapminder-exercise-2",
     "title": "Intro to Data Journalism",
-    "section": "Covid exercise",
-    "text": "Covid exercise\n\nDownload a copy of the Covid-19 data.\nFilter it to only the deaths and vaccination rates in Europe.\nCopy the data into Datawrapper.\nCreate a scatter plot.\nCustomise axis labels, colours, size, tooltips, title, description and source.\nAdd annotations.\nPublish or download the chart."
-  },
-  {
-    "objectID": "city/index.html#covid-exercise---example",
-    "href": "city/index.html#covid-exercise---example",
-    "title": "Intro to Data Journalism",
-    "section": "Covid exercise - example",
-    "text": "Covid exercise - example"
+    "section": "Gapminder exercise",
+    "text": "Gapminder exercise\n\nDownload the Gapminder data.\nCopy the data into Datawrapper.\nCreate a scatter plot.\nCustomise axis labels, colours, size, tooltips, title, description and source.\nAdd annotations.\nPublish or download the chart."
   },
   {
     "objectID": "city/index.html#flourish-example-on-your-own",
