@@ -880,6 +880,90 @@
     "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk"
   },
   {
+    "objectID": "city/index.html#choropleth",
+    "href": "city/index.html#choropleth",
+    "title": "Intro to Data Journalism",
+    "section": "Choropleth",
+    "text": "Choropleth\n\n\n\n\nPre-defined areas such as countries, regions or districts are coloured (either sequential, diverging or categorical) in proportion to values in a dataset."
+  },
+  {
+    "objectID": "city/index.html#bubblesymbol-map",
+    "href": "city/index.html#bubblesymbol-map",
+    "title": "Intro to Data Journalism",
+    "section": "Bubble/symbol map",
+    "text": "Bubble/symbol map\n\n\n\n\nCircles are drawn on top of a map, with their size or colour proportional to values in a dataset."
+  },
+  {
+    "objectID": "city/index.html#cartogram-hex-map",
+    "href": "city/index.html#cartogram-hex-map",
+    "title": "Intro to Data Journalism",
+    "section": "Cartogram / hex map",
+    "text": "Cartogram / hex map\n\n\n\n\nCartograms resize regions in proportion to a variable in your dataset, such as population.  Hex maps standardise administrative units into same-sizes hexagons, squares or triangles."
+  },
+  {
+    "objectID": "city/index.html#the-2019-general-election",
+    "href": "city/index.html#the-2019-general-election",
+    "title": "Intro to Data Journalism",
+    "section": "The 2019 general election",
+    "text": "The 2019 general election"
+  },
+  {
+    "objectID": "city/index.html#not-always-the-right-choice",
+    "href": "city/index.html#not-always-the-right-choice",
+    "title": "Intro to Data Journalism",
+    "section": "Not always the right choice",
+    "text": "Not always the right choice\n\n\n\n\nTry to only use maps when there’s a geographical pattern to your data.  Don’t make a map if it’s going to basically be a population map.\n\n\nSource: xkcd"
+  },
+  {
+    "objectID": "city/index.html#what-data-youll-need",
+    "href": "city/index.html#what-data-youll-need",
+    "title": "Intro to Data Journalism",
+    "section": "What data you’ll need",
+    "text": "What data you’ll need\n\n\n\nGeographical data\nThis can be polygons (areas), lines or points. Some tools have a few options by default, or you can get additional ones from the ONS, Natural Earth or ArcGIS.\n\n\nNumerical or categorical data\nThis is the data that will be placed in the shapes on your map. Normally contains region IDs or coordinates (latitude and longitude)."
+  },
+  {
+    "objectID": "city/index.html#internet-speed-exercise",
+    "href": "city/index.html#internet-speed-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Internet speed exercise",
+    "text": "Internet speed exercise\n\nMake a copy of the internet speed in Europe data.\nCreate a choropleth map (NUTS3, 2021).\nCopy the data in.\nCustomise colours, title, description and source.\nAdd annotations.\nPublish or download the chart."
+  },
+  {
+    "objectID": "city/index.html#internet-speed---example",
+    "href": "city/index.html#internet-speed---example",
+    "title": "Intro to Data Journalism",
+    "section": "Internet speed - example",
+    "text": "Internet speed - example"
+  },
+  {
+    "objectID": "city/index.html#uk-elections-exercise",
+    "href": "city/index.html#uk-elections-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "UK elections exercise",
+    "text": "UK elections exercise\n\nDonwload this CSV.\nCreate a symbol map in Datawrapper (UK constituencies, 2023).\nCopy the data in.\nCustomise colours, title, description and source.\nPublish or download the chart."
+  },
+  {
+    "objectID": "city/index.html#missing-migrants-exercise-flourish",
+    "href": "city/index.html#missing-migrants-exercise-flourish",
+    "title": "Intro to Data Journalism",
+    "section": "Missing migrants exercise (Flourish)",
+    "text": "Missing migrants exercise (Flourish)\n\nGo to the missing migrants tab in the spreadsheet you’ve copied earlier.\nCopy the data into Datawrapper or Flourish.\nCreate a symbol map.\nCustomise it (colour, size, opacity, etc)."
+  },
+  {
+    "objectID": "city/index.html#missing-migrants---example",
+    "href": "city/index.html#missing-migrants---example",
+    "title": "Intro to Data Journalism",
+    "section": "Missing migrants - example",
+    "text": "Missing migrants - example"
+  },
+  {
+    "objectID": "city/index.html#contact-6",
+    "href": "city/index.html#contact-6",
+    "title": "Intro to Data Journalism",
+    "section": "Contact",
+    "text": "Contact\n\nIon.Calcea.2@city.ac.uk\nJames.Morris@city.ac.uk"
+  },
+  {
     "objectID": "sources/academic.html",
     "href": "sources/academic.html",
     "title": "Academic Data Sources",

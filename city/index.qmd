@@ -1169,59 +1169,10 @@ Source: [Reddit](https://www.reddit.com/r/dataisbeautiful/comments/d9mirb/oc_how
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
-<!-- # Week 7
+# Week 7
 
-[Maps]<br>
+**Maps**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://blog.datawrapper.de/how-to-get-started-with-data-visualization/"></iframe>
-::: footer
-Source: [Datawrapper](https://blog.datawrapper.de/how-to-get-started-with-data-visualization/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.bbc.co.uk/news/business-67489975"></iframe>
-::: footer
-Source: [BBC](https://www.bbc.co.uk/news/business-67489975)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.ons.gov.uk/visualisations/censusorigindestination/"></iframe>
-::: footer
-Source: [ONS](https://www.ons.gov.uk/visualisations/censusorigindestination/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://honzaap.github.io/Pathfinding/"></iframe>
-::: footer
-Source: [Jan Pánek](https://honzaap.github.io/Pathfinding/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/"></iframe>
-::: footer
-Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-italy-power-profits-covid-lockdown/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html"></iframe>
-::: footer
-Source: [The New York Times](https://www.nytimes.com/interactive/2023/11/16/world/asia/south-china-sea-ships.html)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/"></iframe>
-::: footer
-Source: [Washington Post](https://www.washingtonpost.com/technology/2023/11/10/pigeons-are-faster-than-your-internet/)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/"></iframe>
-::: footer
-Source: [openDemocracy](https://www.opendemocracy.net/en/boris-johnson-covid-inquiry-patrick-vallance/)
-:::
 
 ## Choropleth {background-color="white"}
 
@@ -1320,15 +1271,15 @@ This is the data that will be placed in the shapes on your map. Normally contain
 
 <iframe class="stretch" data-src="https://datawrapper.dwcdn.net/uJ92E/"></iframe>
 
-## Students exercise
+## UK elections exercise
 
-1. Go to the international students tab in [the spreadsheet you've copied earlier](https://docs.google.com/spreadsheets/d/1jHngN4MzHA8r_Nq_3fdkqpWGhNi7Cs2I_PwBShiPLXM/copy).
-2. Create a 3D globe flow map in Flourish.
+1. Donwload [this CSV](https://datawrapper.dwcdn.net/p8NRs/9/dataset.csv).
+2. Create a symbol map in Datawrapper (UK constituencies, 2023).
 3. Copy the data in.
 4. Customise colours, title, description and source.
 5. Publish or download the chart.
 
-## Missing migrants exercise
+## Missing migrants exercise (Flourish)
 
 1. Go to the missing migrants tab in the spreadsheet you've copied earlier.
 2. Copy the data into Datawrapper or Flourish.
@@ -1342,7 +1293,7 @@ This is the data that will be placed in the shapes on your map. Normally contain
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
 
 
