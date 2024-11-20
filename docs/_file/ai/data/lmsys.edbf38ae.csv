@@ -1,0 +1,19 @@
+name,arena_elo,org,licence,knowledge_cutoff,link,context,input_1m_tokens,output_1m_tokens,context_source,price_source
+GPT-4-Turbo-2024-04-09,1260,OpenAI,Proprietary,2023/12,https://platform.openai.com/docs/models/gpt-4-turbo-and-gpt-4,128000,10,30,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Claude 3 Opus,1255,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family,200000,15,75,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://www.anthropic.com/api
+GPT-4-1106-preview,1254,OpenAI,Proprietary,2023/4,https://openai.com/blog/new-models-and-developer-products-announced-at-devday,128000,10,30,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+GPT-4-0125-preview,1250,OpenAI,Proprietary,2023/12,https://openai.com/blog/new-models-and-developer-products-announced-at-devday,128000,10,30,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Bard (Gemini Pro),1209,Google,Proprietary,Online,https://bard.google.com/,32000,0.5,1.5,https://blog.google/technology/ai/long-context-window-ai-models/,https://ai.google.dev/pricing
+Claude 3 Sonnet,1203,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family,200000,3,15,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://www.anthropic.com/api
+Command R+,1193,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r-plus-microsoft-azure/,128000,3,15,https://cohere.com/blog/command-r-plus-microsoft-azure,https://cohere.com/pricing
+Claude 3 Haiku,1182,Anthropic,Proprietary,2023/8,https://www.anthropic.com/news/claude-3-family,200000,0.25,1.25,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://www.anthropic.com/api
+GPT-4-0613,1164,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo,8192,30,60,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Mistral-Large-2402,1158,Mistral,Proprietary,Unknown,https://mistral.ai/news/mistral-large/,32000,8,24,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://mistral.ai/technology/#pricing
+Mistral Medium,1148,Mistral,Proprietary,Unknown,https://mistral.ai/news/la-plateforme/,32000,2.7,8.1,https://docsbot.ai/tools/gpt-openai-api-pricing-calculator,https://mistral.ai/technology/#pricing
+Command R,1148,Cohere,CC-BY-NC-4.0,2024/3,https://txt.cohere.com/command-r,128000,0.5,1.5,https://cohere.com/blog/Command-R,https://cohere.com/pricing
+Claude-2.0,1131,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/claude-2,100000,8,24,https://www.anthropic.com/api,https://www.anthropic.com/api
+GPT-3.5-Turbo-0613,1119,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-3-5,4096,1.5,2,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+Claude-2.1,1119,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/claude-2-1,200000,8,24,https://www.anthropic.com/api,https://www.anthropic.com/api
+Claude-Instant-1,1109,Anthropic,Proprietary,Unknown,https://www.anthropic.com/index/introducing-claude,100000,0.8,2.4,https://www.anthropic.com/api,https://www.anthropic.com/api
+GPT-3.5-Turbo-0125,1104,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-3-5-turbo,16385,0.5,1.5,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing
+GPT-3.5-Turbo-1106,1072,OpenAI,Proprietary,2021/9,https://platform.openai.com/docs/models/gpt-3-5,16385,1,2,https://platform.openai.com/docs/models/continuous-model-upgrades,https://openai.com/pricing

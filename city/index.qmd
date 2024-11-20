@@ -173,6 +173,14 @@ Data journalism is exciting (I hope). The pandemic has shown that readers will r
 :::
 
 
+## {fullscreen=true}
+<iframe class="stretch" data-src="https://source.opennews.org/articles/how-coding-can-change-very-journalism-we-do/"></iframe>
+::: footer
+Source: [Source](https://source.opennews.org/articles/how-coding-can-change-very-journalism-we-do/)
+:::
+
+
+
 ## Job trends {.smaller}
 
 ::: columns
@@ -1298,52 +1306,10 @@ This is the data that will be placed in the shapes on your map. Normally contain
 
 
 
-<!-- # Week 8
+# Week 8
 
-Data [Projects]<br>
+Data **Projects**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined"></iframe>
-::: footer
-Source: [Friends of the Earth](https://policy.friendsoftheearth.uk/insight/how-britains-bus-services-have-drastically-declined)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html"></iframe>
-::: footer
-Source: [The New York Times](https://www.nytimes.com/interactive/2023/11/06/business/economy/commuting-change-covid.html)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://ig.ft.com/china-mosques/"></iframe>
-::: footer
-Source: [Financial Times](https://ig.ft.com/china-mosques/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src=https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html"></iframe>
-::: footer
-Source: [AP](https://projects.apnews.com/features/2023/the-protein-problem/agriculture-land-use-history/index.html)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.wsj.com/personal-finance/income-raise-happiness-06a70900"></iframe>
-::: footer
-Source: [Wall Street Journal](https://www.wsj.com/personal-finance/income-raise-happiness-06a70900)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/"></iframe>
-::: footer
-Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-israel-hamas-war-misinformation-twitter-community-notes/)
-:::
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://texty.org.ua/projects/111159/"></iframe>
-::: footer
-Source: [Texty](https://texty.org.ua/projects/111159/)
-:::
 
 
 ## {.smaller}
@@ -1467,6 +1433,10 @@ Source: BBC News
 
 > Interactive graphics are not just a fun addition but can actually increase the transparency of our work, open us for criticism, and thereby, hopefully, help re-build some trust in journalism. --- **[Gregor Aisch (Datawrapper)](https://www.vis4.net/blog/2017/03/in-defense-of-interactive-graphics/)**
 
+## Various resources
+- [Math for journalists](https://observablehq.com/@nshiab/math-for-journalists)
+- [Reporting with numbers](https://www.reportingwithnumbers.com/)
+- [Rate my visualization](https://stephanieevergreen.com/rate-your-visualization/)
 
 ## Let's hear from you
 
@@ -1476,6 +1446,10 @@ Source: BBC News
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
 
+
+
+
+<!-- 
 # Week 9
 
 [Scraping]<br>
