@@ -1449,53 +1449,10 @@ Source: BBC News
 
 
 
-<!-- 
 # Week 9
 
-[Scraping]<br>
+**Scraping**<br>
 <a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://usafacts.org/data-projects/christmas-decorating-injuries"></iframe>
-::: footer
-Source: [USAFacts](https://usafacts.org/data-projects/christmas-decorating-injuries)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.bloomberg.com/graphics/2023-inflation-economy-cost-of-living/"></iframe>
-::: footer
-Source: [Bloomberg](https://www.bloomberg.com/graphics/2023-inflation-economy-cost-of-living/)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/"></iframe>
-::: footer
-Source: [CNN](https://edition.cnn.com/interactive/2023/12/us/countries-climate-change-emissions-cop28/)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://bbycroft.net/llm"></iframe>
-::: footer
-Source: [Brendan Bycroft](https://bbycroft.net/llm)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states"></iframe>
-::: footer
-Source: [McKinsey](https://www.mckinsey.com/bem/our-insights/impacts-of-climate-change-on-black-populations-in-the-united-states)
-:::
-
-
-## {fullscreen=true}
-<iframe class="stretch" data-src="https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html"></iframe>
-::: footer
-Source: [Le Monde](https://www.lemonde.fr/les-decodeurs/article/2023/12/01/decouvrez-l-origine-de-tous-les-noms-de-pays-hommes-integres-nation-centrale-frontiere-des-danes_5231936_4355771.html)
-:::
 
 
 ##
@@ -1533,6 +1490,7 @@ Source: [Tabula](https://tabula.technology/)
 
 ::: notes
 Show an example.
+https://oms-www.files.svdcdn.com/production/downloads/academic/The_Future_of_Employment.pdf
 :::
 
 
@@ -1589,26 +1547,11 @@ Source: [Inspect Element](https://inspectelement.org/)
 
 ## The Gazette exercise
 
-1. Go to the [the Gazette website](https://m.thegazette.co.uk/insolvency?categorycode=G205010000&results-page=1)
-2. Scrape company names, notice IDs, types, company IDs, date, etc.
+1. Go to the [UK petitions website](https://petition.parliament.uk/archived/petitions?state=published).
+2. Scrape the name of the petition, text, number of signatures, etc.
 
-## Module Evaluation Survey
-
-Take part in the [module evaluation survey](https://city.surveys.evasysplus.co.uk/).
-
-![](media/survey-qr.png){.absolute height="500"}
-
-::: notes
-Notes for staff:
-
-We recommend that you use this slide in class and when module evaluation surveys for your module are open. This is usually in week 9 of the term for ‘standard' modules but if you are unsure your School contact will know (see Section 4 of the Guidance document - https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice)
-
-Once a survey opens, students will receive an email containing a link to the individual module survey. This email will also include a link to the Student Survey Portal (linked to on this slide) which is a static link to show students all open surveys. Individual module survey links will take students directly to the survey. To access the Student Survey Portal students will need to sign in using their University credentials.
-
-Students will receive feedback on their responses but we do need a sufficient number of students to submit a response to enable us to do this. See the Guidance document and Module Leader FAQs for more on feedback https://staffhub.city.ac.uk/academic-services/policies-and-guidance/quality-manual/student-voice
-:::
 
 ## Contact
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
-- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk) -->
+- [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
