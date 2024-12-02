@@ -394,7 +394,7 @@
     "href": "city/index.html#job-trends",
     "title": "Intro to Data Journalism",
     "section": "Job trends",
-    "text": "Job trends\n\n\nSince the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions.\n\nNew(-ish) platforms like Datawrapper and Flourish allow journalists to create and visualise data stories easier and without much technical expertise.\n\nHowever, the increased supply of data journalists from courses like this means there are higher entry requirements (R, Python, SQL).\n\n\n\nData teams like the one at the FT and the BBC are now so big they need to be split into several smaller teams.\nThere are R, Python and SQL courses on Datacamp, which you have access to for free."
+    "text": "Job trends\n\n\nSince the pandemic, nearly every newsrooms has prioritised data journalism and has been massively hiring for data journalism positions.\n\nNew(-ish) platforms like Datawrapper and Flourish allow journalists to create and visualise data stories easier and without much technical expertise.\n\nHowever, the increased supply of data journalists from courses like this means there are higher entry requirements (R, Python, SQL).\n\n\nData teams like the one at the FT and the BBC are now so big they need to be split into several smaller teams.\nThere are R, Python and SQL courses on Datacamp, which you have access to for free."
   },
   {
     "objectID": "city/index.html#the-process",
@@ -408,7 +408,7 @@
     "href": "city/index.html#the-process-1",
     "title": "Intro to Data Journalism",
     "section": "The process",
-    "text": "The process\n\n\nAnalyse data\nHow do you find the answer to your question in the data?\n\n\n\nReview\nWhile data doesn’t lie, data publishers do. Do your findings make sense? Can you verify them?\n\n\n\n\nPresent results\nCommunicate data in the most suitable way. Usually, but not always, you will visualise your findings.\n\n\n\n\nAnalyse data: be platform agnostic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives."
+    "text": "The process\n\n\nAnalyse data\nHow do you find the answer to your question in the data?\n\n\n\nReview\nWhile data doesn’t lie, data publishers do. Do your findings make sense? Can you verify them?\n\n\n\n\nPresent results\nCommunicate data in the most suitable way. Usually, but not always, you will visualise your findings.\n\n\n\nAnalyse data: be platform agnostic. Some tools die because APIs change, others are abandoned by their developers, some are replaced by better alternatives."
   },
   {
     "objectID": "city/index.html#the-process-2",
@@ -457,7 +457,7 @@
     "href": "city/index.html#assignments",
     "title": "Intro to Data Journalism",
     "section": "Assignments",
-    "text": "Assignments\n\n\nCritique a data journalism project\n\nA 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.\n500-word group reflection, with appropriate references.\nA 200-word reflection on your own learning.\n\nDeadline: Friday, 13 December, 16:00 Marking: 40% of your final mark\n\nData journalism portfolio\n\nOne news story (400 words).\nOne EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.\nA 200 word reflective blog-post style log on you own learning journey.\n\nDeadline: Friday, 24 January, 16:00 Marking: 60% of your final mark\n\n\n\nNo plagiarism, careful with AI."
+    "text": "Assignments\n\n\nCritique a data journalism project\n\nA 20-25 minute long narrated group PowerPoint presentation critiquing a data project that won or was shortlisted for the Sigma Awards.\n500-word group reflection, with appropriate references.\nA 200-word reflection on your own learning.\n\nDeadline: Friday, 13 December, 16:00 Marking: 40% of your final mark\n\nData journalism portfolio\n\nOne news story (400 words).\nOne EITHER feature story OR news investigation (800 words) substantially based on data techniques; and published digitally with appropriate visualisations.\nA 200 word reflective blog-post style log on you own learning journey.\n\nDeadline: Friday, 24 January, 16:00 Marking: 60% of your final mark\n\n\nNo plagiarism, careful with AI."
   },
   {
     "objectID": "city/index.html#contact",
@@ -471,7 +471,7 @@
     "href": "city/index.html#sourcing-data",
     "title": "Intro to Data Journalism",
     "section": "Sourcing data",
-    "text": "Sourcing data\nOpen Data\n\n\n\nUK\n\nONS\nGOV.UK\nNomis (labour stats)\nNHS Digital\nCovid dashboard\n\n\n\n\nOther nations\n\nUS gov\nEurostat\n\nInternational\n\nWorld Bank\nUnited Nations\nOECD\nOur World in Data\n\n\n\n\n\nMore sources: ddj.nicu.md"
+    "text": "Sourcing data\nOpen Data\n\n\n\nUK\n\nONS\nGOV.UK\nNomis (labour stats)\nNHS Digital\nCovid dashboard\n\n\n\n\nOther nations\n\nUS gov\nEurostat\n\nInternational\n\nWorld Bank\nUnited Nations\nOECD\nOur World in Data\n\n\n\n\nMore sources: ddj.nicu.md"
   },
   {
     "objectID": "city/index.html#plan-ahead",
@@ -583,7 +583,7 @@
     "href": "city/index.html#make-your-spreadsheets-fact-checkable",
     "title": "Intro to Data Journalism",
     "section": "Make your spreadsheets fact-checkable",
-    "text": "Make your spreadsheets fact-checkable\nIt’s all about:\n\n\nDocumentation\n\nkeep the reference to the source data unaltered\nif needed add a data dictionary or write down what you did\nuse sensible names for your columns (not “weight”) and sheets (not “Sheet1”)\none question = one sheet\n\n\nReproducibility\n\ndo analysis on a new sheet, never on the original data\nuse range or sheet protection\nback up often\n\n\n\n\nhttps://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit"
+    "text": "Make your spreadsheets fact-checkable\nIt’s all about:\n\n\nDocumentation\n\nkeep the reference to the source data unaltered\nif needed add a data dictionary or write down what you did\nuse sensible names for your columns (not “weight”) and sheets (not “Sheet1”)\none question = one sheet\n\n\nReproducibility\n\ndo analysis on a new sheet, never on the original data\nuse range or sheet protection\nback up often\n\n\n\nhttps://docs.google.com/presentation/d/1VpLdSJDvVAdtPOaMuwsw3aRY0vEv3NWJZbe2SdYKJrU/edit"
   },
   {
     "objectID": "city/index.html#data-prep",
@@ -919,7 +919,7 @@
     "href": "city/index.html#not-always-the-right-choice",
     "title": "Intro to Data Journalism",
     "section": "Not always the right choice",
-    "text": "Not always the right choice\n\n\n\n\nTry to only use maps when there’s a geographical pattern to your data.  Don’t make a map if it’s going to basically be a population map.\n\n\n\nSource: xkcd"
+    "text": "Not always the right choice\n\n\n\n\nTry to only use maps when there’s a geographical pattern to your data.  Don’t make a map if it’s going to basically be a population map.\n\n\nSource: xkcd"
   },
   {
     "objectID": "city/index.html#what-data-youll-need",
@@ -1003,21 +1003,21 @@
     "href": "city/index.html#trackers",
     "title": "Intro to Data Journalism",
     "section": "Trackers",
-    "text": "Trackers\n\n\n\n\n\n\n\n\nTrackers are data visualisations connected to a data source that is periodically updated.  Examples include FiveThirtyEight’s Biden approval rating tracker, Bloomberg’s Pret Index and the New Statesman’s Covid-19 tracker.\n\n\n\nSource: New Statesman"
+    "text": "Trackers\n\n\n\n\n\n\n\n\nTrackers are data visualisations connected to a data source that is periodically updated.  Examples include FiveThirtyEight’s Biden approval rating tracker, Bloomberg’s Pret Index and the New Statesman’s Covid-19 tracker.\n\n\nSource: New Statesman"
   },
   {
     "objectID": "city/index.html#calculators",
     "href": "city/index.html#calculators",
     "title": "Intro to Data Journalism",
     "section": "Calculators",
-    "text": "Calculators\n\n\n\n\n\n\n\n\nCalculators allow readers to input their own data and receive a result.  Examples include the FT personal data worth calculator, the New Statesman election calculator and the BBC’s energy calculator.\n\n\n\nSource: BBC News"
+    "text": "Calculators\n\n\n\n\n\n\n\n\nCalculators allow readers to input their own data and receive a result.  Examples include the FT personal data worth calculator, the New Statesman election calculator and the BBC’s energy calculator.\n\n\nSource: BBC News"
   },
   {
     "objectID": "city/index.html#scrollable-stories",
     "href": "city/index.html#scrollable-stories",
     "title": "Intro to Data Journalism",
     "section": "Scrollable stories",
-    "text": "Scrollable stories\n\n\n\n\n\n\n\n\nScrollytelling is the use of a browser’s scrolling functionality to interactively tell a data story.  Examples include The Impatient List, the New York Times delta variant story and the New Statesman million years lost investigation.\n\n\n\nSource: BBC News"
+    "text": "Scrollable stories\n\n\n\n\n\n\n\n\nScrollytelling is the use of a browser’s scrolling functionality to interactively tell a data story.  Examples include The Impatient List, the New York Times delta variant story and the New Statesman million years lost investigation.\n\n\nSource: BBC News"
   },
   {
     "objectID": "city/index.html#section-7",
@@ -1218,5 +1218,47 @@
       "Data Sources",
       "Data Sources"
     ]
+  },
+  {
+    "objectID": "city/index.html#petitions-exercise",
+    "href": "city/index.html#petitions-exercise",
+    "title": "Intro to Data Journalism",
+    "section": "Petitions exercise",
+    "text": "Petitions exercise\n\nGo to the UK petitions website.\nScrape the name of the petition, text, number of signatures, etc."
+  },
+  {
+    "objectID": "city/index.html#how-to-get-started",
+    "href": "city/index.html#how-to-get-started",
+    "title": "Intro to Data Journalism",
+    "section": "How to get started",
+    "text": "How to get started\n\n\nThink of a story idea\n\n\nRich countries pledged $300bn a year to low and middle income countries by 2035. How much is that?\n\n\n\nFind data sources"
+  },
+  {
+    "objectID": "city/index.html#think-of-a-story-idea",
+    "href": "city/index.html#think-of-a-story-idea",
+    "title": "Intro to Data Journalism",
+    "section": "Think of a story idea",
+    "text": "Think of a story idea\nAt COP29, after delayed negations, advanced economies pledged to provide $300bn a year to low and middle income countries by 2035.\nClimate vulnerable countries said this isn’t enough, and the number should be closer to $1.3tn.\nCan we contextualise how much $300bn is?"
+  },
+  {
+    "objectID": "city/index.html#find-data",
+    "href": "city/index.html#find-data",
+    "title": "Intro to Data Journalism",
+    "section": "Find data",
+    "text": "Find data\nThe OECD tracks how much climate financing developing countries have mobilised so far.\nIn partnership with the IISD, they also track how much countries spend on fossil fuel subsidies.\nDownload both datasets and put them in a new Google Sheet.\nWe’ll also need a list of “developed countries”."
+  },
+  {
+    "objectID": "city/index.html#clean-and-transform-the-data",
+    "href": "city/index.html#clean-and-transform-the-data",
+    "title": "Intro to Data Journalism",
+    "section": "Clean and transform the data",
+    "text": "Clean and transform the data\nWe need to pivot and filter both tables. There’s some additional cleaning we need to do as well, for example, making sure the units are consistent between the two datasets."
+  },
+  {
+    "objectID": "city/index.html#visualise",
+    "href": "city/index.html#visualise",
+    "title": "Intro to Data Journalism",
+    "section": "Visualise",
+    "text": "Visualise\nCopy the data into Datawrapper and visualise it as a grouped bar chart."
   }
 ]

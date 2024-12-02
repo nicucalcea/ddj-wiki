@@ -1545,7 +1545,7 @@ Source: [Inspect Element](https://inspectelement.org/)
 ```
 
 
-## The Gazette exercise
+## Petitions exercise
 
 1. Go to the [UK petitions website](https://petition.parliament.uk/archived/petitions?state=published).
 2. Scrape the name of the petition, text, number of signatures, etc.
@@ -1555,3 +1555,35 @@ Source: [Inspect Element](https://inspectelement.org/)
 
 - [Ion.Calcea.2@city.ac.uk](mailto:ion.calcea.2@city.ac.uk)
 - [James.Morris@city.ac.uk](mailto:James.Morris@city.ac.uk)
+
+
+# Week 10
+
+**Recap**<br>
+<a href='https://ddj.nicu.md/city/'>https://ddj.nicu.md/city/</a>
+
+## Think of a story idea
+
+At COP29, after delayed negations, advanced economies pledged to provide $300bn a year to low and middle income countries by 2035.
+
+Climate vulnerable countries said this isn't enough, and the number should be closer to $1.3tn.
+
+Can we contextualise how much $300bn is?
+
+## Find data
+
+The OECD tracks how much climate financing developing countries [have mobilised so far](https://www.oecd.org/en/publications/climate-finance-provided-and-mobilised-by-developed-countries-in-2013-2022_19150727-en/full-report/component-2.html).
+
+In partnership with the IISD, they also track how much countries spend on [fossil fuel subsidies](https://fossilfuelsubsidytracker.org/).
+
+Download both datasets and put them in a new Google Sheet.
+
+We'll also need a [list of "developed countries"](https://www.oecd-ilibrary.org/sites/f0773d55-en/1/4/3/index.html?itemId=/content/publication/f0773d55-en&_csp_=5026909c969925715cde6ea16f4854ee&itemIGO=oecd&itemContentType=book#tablegrp-d1e4673).
+
+## Clean and transform the data
+
+We need to pivot and filter both tables. There's some additional cleaning we need to do as well, for example, making sure the units are consistent between the two datasets.
+
+## Visualise
+
+Copy the data into Datawrapper and visualise it as a grouped bar chart.
