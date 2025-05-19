@@ -1,0 +1,47 @@
+
+input_csv: ai/data/fec_unclassified.csv
+output_csv: ai/data/fec_classified.csv
+model:
+  provider: openai
+  name: gpt-4.1-mini
+search:
+  engine: brightdata_google
+prompt:
+  system: You are an expert researcher whose job is to research the connections between political donors and Donald Trump.
+  user: |
+    # Instructions
+
+    Your job is to research {{Name}}, a donor to Donald Trump's inaugural fund. Your will determine how Donald Trump and {{Name}} are connected, whether via family, business ties, political ties or something else.
+
+    ## Searching guidelines
+
+    In most cases, you should start by searching for "{{Name}}" and "Donald Trump". Where relevant, remove redundant words like "INC", "LLC", "GROUP", etc from the search query. If you need to perform another search, try to refine it by adding relevant keywords. Note that each case will be different, so be flexible and adaptable. Unless necessary, limit your research to two or three searches.
+
+    With each search, select a few sources that are most likely to provide relevant information. Access them using the tools provided. Be critical and use common sense. ALWAYS cite your sources.
+
+    Now, please proceed with your analysis and classification of {{Name}}'s connections to Donald Trump.
+structure:
+  donor_industry:
+    type: str
+    description: What industry does this company, individual or organisation belong to?
+  type_of_connection:
+    type: str
+    description: How are they connected to Donald Trump?
+    options:
+      - Family
+      - Business
+      - Political
+      - Other
+      - No connection
+      - Don't know or not enough information
+  explanation:
+    type: str
+    description: A few paragraphs explaining your decision in English, formatted in Markdown. In the explanation, link to the most relevant sources from the provided documents. Include at least one inline URL.
+examples:
+  - input: "Melinda Hildebrand"
+    output:
+      donor_industry: Energy
+      type_of_connection: Political
+      explanation: |
+        President Donald Trump nominated River Oaks Donuts owner and energy executive Melinda Hildebrand [to serve as U.S. Ambassador to Costa Rica](https://www.congress.gov/nomination/119th-congress/55/21). In May 2024, [the Financial Times reported](https://www.ft.com/content/c89bbfc4-80db-4f3f-8d63-3aeb46ae91a9) the Hildebrand and her husband hosted a campaign event for then-presidential candidate Trump, who was seeking donations from power players in the U.S. energy industry. [The Daily Beast reported](https://www.thedailybeast.com/trump-goes-small-at-fundraisers-as-harris-goes-big-all-over/) that the Hildebrands also served on the host committee of a Trump fundraising dinner in Colorado. According to the Daily Beast, the host committee gave or raised $500,000 per couple.
+logfire: true
