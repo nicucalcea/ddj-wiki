@@ -55,12 +55,8 @@ export default {
           "path": "ai/python-classification.html"
         },
         {
-          "name": "Identifying fossil fuel lobbyists",
-          "path": "ai/python-classification-rag.html"
-        },
-        {
-          "name": "Data validation in Python",
-          "path": "ai/python-validation.html"
+          "name": "Agents in Python",
+          "path": "ai/python-classification-agent.html"
         },
         {
           "name": "LLM comparison",

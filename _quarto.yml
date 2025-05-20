@@ -45,12 +45,12 @@ website:
           - text: "AI classification in Python"
             icon: "filetype-py"
             href: ai/python-classification.qmd
-          - text: "Identifying fossil fuel lobbyists"
+          - text: "Agents in Python"
             icon: "filetype-py"
-            href: ai/python-classification-rag.ipynb
-          - text: "Data validation in Python"
-            icon: "filetype-py"
-            href: ai/python-validation.qmd
+            href: ai/python-classification-agent.ipynb
+          # - text: "Data validation in Python"
+          #   icon: "filetype-py"
+          #   href: ai/python-validation.qmd
           - text: "LLM comparison"
             icon: "currency-dollar"
             href: ai/llm-comparison.html
