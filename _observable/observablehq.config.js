@@ -51,11 +51,7 @@ export default {
           "path": "ai/google-sheets.html"
         },
         {
-          "name": "AI classification in Python",
-          "path": "ai/python-classification.html"
-        },
-        {
-          "name": "Agents in Python",
+          "name": "Classification agents",
           "path": "ai/python-classification-agent.html"
         },
         {

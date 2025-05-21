@@ -1,6 +1,6 @@
 
-input_csv: ai/data/fec_unclassified.csv
-output_csv: ai/data/fec_classified.csv
+input_csv: data/fec_unclassified.csv
+output_csv: data/fec_classified.csv
 model:
   provider: openai
   name: gpt-4.1-mini
@@ -11,7 +11,7 @@ prompt:
   user: |
     # Instructions
 
-    Your job is to research {{Name}}, a donor to Donald Trump's inaugural fund. Your will determine how Donald Trump and {{Name}} are connected, whether via family, business ties, political ties or something else.
+    Your job is to research {{Name}}, a donor to Donald Trump's inaugural fund. Your will determine how Donald Trump and {{Name}} are connected, whether via family, business ties, political ties or something else. Don't consider donations to the inaugural fund as a connection, we're only interested in connections before or after the donation.
 
     ## Searching guidelines
 
@@ -37,6 +37,12 @@ structure:
   explanation:
     type: str
     description: A few paragraphs explaining your decision in English, formatted in Markdown. In the explanation, link to the most relevant sources from the provided documents. Include at least one inline URL.
+# mcpServers:
+#   - name: sequential-thinking
+#     command: npx
+#     args:
+#       - "-y"
+#       - "@modelcontextprotocol/server-sequential-thinking"
 examples:
   - input: "Melinda Hildebrand"
     output:

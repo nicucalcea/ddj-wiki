@@ -5,7 +5,6 @@ project:
     - scripts/move_speaker_notes.py
     - scripts/generate_config.py
     - scripts/build_observable.py
-
 website:
   title: "Data Journalism Wiki"
   favicon: favicon.png
@@ -42,10 +41,10 @@ website:
           - text: "AI in Google Sheets"
             icon: "file-earmark-spreadsheet"
             href: ai/google-sheets.qmd
-          - text: "AI classification in Python"
-            icon: "filetype-py"
-            href: ai/python-classification.qmd
-          - text: "Agents in Python"
+          # - text: "AI classification in Python"
+          #   icon: "filetype-py"
+          #   href: ai/python-classification.qmd
+          - text: "Classification agents"
             icon: "filetype-py"
             href: ai/python-classification-agent.ipynb
           # - text: "Data validation in Python"

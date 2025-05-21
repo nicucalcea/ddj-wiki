@@ -1,7 +1,7 @@
+ipykernel
 pandas
-anthropic
 python-dotenv
-joblib
-guardrails-ai
 pydantic
 pydantic-ai
+duckduckgo-search
+trafilatura
