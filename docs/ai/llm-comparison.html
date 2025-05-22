@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>LLM comparison | Data Journalism Wiki</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_import/src/style.6ce5ff67.css">
+<link rel="preload" as="style" href="../_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_import/src/style.6ce5ff67.css">
+<link rel="stylesheet" type="text/css" href="../_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_npm/@observablehq/plot@0.6.14/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dsv@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3@7.9.0/_esm.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="../_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="../_npm/isoformat@0.2.1/_esm.js">
+<link rel="modulepreload" href="../_npm/interval-tree-1d@1.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-array@3.2.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-axis@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-brush@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-chord@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-color@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-contour@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-delaunay@6.0.4/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-dispatch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-drag@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-ease@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-fetch@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-force@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-format@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-geo@3.1.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-hierarchy@3.1.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-interpolate@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-path@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-polygon@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-quadtree@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-random@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale@4.0.2/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-scale-chromatic@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-selection@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-shape@3.2.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time@3.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-time-format@4.1.0/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-timer@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-transition@3.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/d3-zoom@3.0.0/_esm.js">
+<link rel="modulepreload" href="../_npm/binary-search-bounds@2.0.5/_esm.js">
+<link rel="modulepreload" href="../_npm/internmap@2.0.3/_esm.js">
+<link rel="modulepreload" href="../_npm/delaunator@5.0.1/_esm.js">
+<link rel="modulepreload" href="../_npm/robust-predicates@3.0.2/_esm.js">
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+import {registerFile} from "../_observablehq/stdlib.js";
+
+registerFile("./data/lmsys.csv", {"name":"./data/lmsys.csv","mimeType":"text/csv","path":"../_file/ai/data/lmsys.edbf38ae.csv","lastModified":1713816015649});
+
+define({id: "970f4173", outputs: ["Plot"], body: async () => {
+const Plot = await import("../_npm/@observablehq/plot@0.6.14/_esm.js");
+
+return {Plot};
+}});
+
+define({id: "7a6d08bd", inputs: ["FileAttachment"], outputs: ["lmsys"], body: async (FileAttachment) => {
+const lmsys = await FileAttachment("./data/lmsys.csv").csv({ typed: true });
+return {lmsys};
+}});
+
+define({id: "d79cb187", inputs: ["view","Inputs"], outputs: ["inputType","tokensInput","tokensOutput","apiCalls"], body: (view,Inputs) => {
+const inputType = view(Inputs.radio(["tokens", "words", "characters"], {label: "Input type", value: "tokens"}));
+
+const tokensInput = view(
+  Inputs.number({
+    id: "tokensInput",
+    label: "Input",
+    placeholder: "How many input tokens do you need?",
+    value: 15000
+  })
+);
+
+
+const tokensOutput = view(
+  Inputs.number({
+    label: "Output",
+    placeholder: "How many output tokens do you need?",
+    value: 150
+  })
+);
+
+
+const apiCalls = view(
+  Inputs.number({
+    label: "API calls",
+    placeholder: "How many API calls?",
+    value: 10000
+  })
+);
+
+// const qualPreference = view(Inputs.range([0, 1], {label: html`Quality over price?`, step: .1}));
+return {inputType,tokensInput,tokensOutput,apiCalls};
+}});
+
+define({id: "a51b611c", inputs: ["inputType"], outputs: ["divisor"], body: (inputType) => {
+// work out a divisor for words and characters
+let divisor
+if (inputType === "words") {
+  divisor = 1 / 0.75
+} else if (inputType === "characters") {
+  divisor = 4
+} else {
+  divisor = 1
+}
+return {divisor};
+}});
+
+define({id: "02f4f392", inputs: ["lmsys","tokensInput","tokensOutput","apiCalls","divisor"], outputs: ["lmsys_cost"], body: (lmsys,tokensInput,tokensOutput,apiCalls,divisor) => {
+// add new "cost" column and filter table if over token limit
+const lmsys_cost = lmsys.map(d => ({
+  ...d, 
+  cost: (d.input_1m_tokens * tokensInput / 1000000 + d.output_1m_tokens * tokensOutput / 1000000) * apiCalls / divisor,
+  cost_per_elo: d.arena_elo / ((d.input_1m_tokens * tokensInput / 1000000 + d.output_1m_tokens * tokensOutput / 1000000) * apiCalls / divisor)
+})).filter(d => (tokensInput + tokensOutput) < d.context);
+return {lmsys_cost};
+}});
+
+define({id: "fba4f00e", inputs: ["Inputs","lmsys_cost","sparkbar","d3","display"], body: async (Inputs,lmsys_cost,sparkbar,d3,display) => {
+display(await(
+Inputs.table(lmsys_cost, {
+  columns: [
+    "name",
+    "arena_elo",
+    "org",
+    "context",
+    "cost",
+    "cost_per_elo"
+  ],
+  header: {
+    name: "LLM",
+    arena_elo: "ELO score",
+    org: "Organisation",
+    context: "Context window",
+    cost: "Cost",
+    cost_per_elo: "Score"
+  },
+  format: {
+    cost: (x) => `$${Number(x).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`,
+    cost_per_elo: sparkbar(d3.max(lmsys_cost, d => d.cost_per_elo)),
+  },
+  sort: "cost_per_elo", reverse: true
+})
+))
+}});
+
+define({id: "8639f3b0", inputs: ["htl"], outputs: ["sparkbar"], body: (htl) => {
+function sparkbar(max) {
+  return (x) => htl.html`<div style="
+    background: var(--accent);
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font: 10px/1.6 var(--sans-serif);
+    width: ${100 * x / max}%;
+    float: right;
+    padding-right: 3px;
+    box-sizing: border-box;
+    overflow: visible;
+    display: flex;
+    justify-content: end;">${x.toLocaleString("en-US")}`
+}
+return {sparkbar};
+}});
+
+define({id: "328dae46", inputs: ["Plot","lmsys_cost","display"], body: async (Plot,lmsys_cost,display) => {
+display(await(
+Plot.plot({
+  grid: true,
+  inset: 10,
+  x: {label: "Cost ($)"},
+  y: {label: "ELO rating"},
+  marks: [
+    Plot.frame({strokeOpacity: 0.2}),
+    [
+      "top-left", "top-right", "bottom-right", "bottom-left" // corners
+    ].map((anchor, index) => [
+      Plot.text([["cheap & powerfull"], ["expensive & powerfull"], ["expensive & weak"], ["cheap & weak"]][index], {frameAnchor: anchor, anchor})
+    ]),
+    Plot.dot(lmsys_cost, {
+      x: "cost",
+      y: "arena_elo",
+      stroke: "org",
+      size: 100,
+      channels: {name: "name"},
+      tip: true
+      })
+      ]
+})
+))
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">Data Journalism Wiki</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="../">Home</a></li></ol>
+    <details open>
+      <summary>Data Sources</summary>
+      <ol>
+    <li class="observablehq-link"><a href="../sources/">Data Sources</a></li>
+    <li class="observablehq-link"><a href="../sources/academic.html">Academic Sources</a></li>
+    <li class="observablehq-link"><a href="../sources/calendar.html">Data Calendar</a></li>
+      </ol>
+    </details>
+    <details open>
+      <summary>Dataviz</summary>
+      <ol>
+    <li class="observablehq-link"><a href="../viz/extending-datawrapper.html">Extending Datawrapper</a></li>
+      </ol>
+    </details>
+    <details open class="observablehq-section-active">
+      <summary>AI</summary>
+      <ol>
+    <li class="observablehq-link"><a href="./">AI for journalists</a></li>
+    <li class="observablehq-link"><a href="./google-sheets.html">AI in Google Sheets</a></li>
+    <li class="observablehq-link"><a href="./python-classification-agent.html">Classification agents</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./llm-comparison.html">LLM comparison</a></li>
+      </ol>
+    </details>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="../toolbox/">Toolbox</a></li>
+    <li class="observablehq-link"><a href="../awards/">Awards</a></li>
+  </ol>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div id="cell-970f4173" class="observablehq observablehq--block"></div>
+<p>There are many Large Language Models out there, with varying capabilities and costs. This page aims to provide a comparison of some of the most popular models.</p>
+<p><em>Data valid as of 2024-08-19.</em></p>
+<div id="cell-7a6d08bd" class="observablehq observablehq--block"></div>
+<h2 id="what-do-you-need%3F" tabindex="-1"><a class="observablehq-header-anchor" href="#what-do-you-need%3F">What do you need?</a></h2>
+<div id="cell-d79cb187" class="observablehq observablehq--block"></div>
+<div id="cell-a51b611c" class="observablehq observablehq--block"></div>
+<div id="cell-02f4f392" class="observablehq observablehq--block"></div>
+<div id="cell-fba4f00e" class="observablehq observablehq--block observablehq--loading"></div>
+<div id="cell-8639f3b0" class="observablehq observablehq--block"></div>
+<p>The score column is calculated by dividing the ELO score by the cost. The higher the score, the better deal you get for the money.</p>
+<br>
+<h3 id="where's-the-sweet-spot%3F" tabindex="-1"><a class="observablehq-header-anchor" href="#where's-the-sweet-spot%3F">Where's the sweet spot?</a></h3>
+<p>The dots in the top left corner are the most cost-effective models.</p>
+<p>The further to the right, the more expensive the model is. The higher up, the better the model is at doing various tasks.</p>
+<div id="cell-328dae46" class="observablehq observablehq--block observablehq--loading"></div>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="./python-classification-agent.html"><span>Classification agents</span></a><a rel="next" href="../toolbox/"><span>Toolbox</span></a></nav>
+<div><a href="https://nicu.md/" target="_blank" rel="noopener noreferrer">Copyright 2024, Nicu Calcea</a>.</div>
+</footer>
+</div>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Extending Datawrapper | Data Journalism Wiki</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../_import/src/style.6ce5ff67.css">
+<link rel="preload" as="style" href="../_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../_import/src/style.6ce5ff67.css">
+<link rel="stylesheet" type="text/css" href="../_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="../_observablehq/client.js">
+<link rel="modulepreload" href="../_observablehq/runtime.js">
+<link rel="modulepreload" href="../_observablehq/stdlib.js">
+<link rel="modulepreload" href="../_import/src/datawrapper.334ff22c.js">
+<link rel="modulepreload" href="../_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="../_npm/htl@0.3.1/_esm.js">
+<link rel="modulepreload" href="../_npm/isoformat@0.2.1/_esm.js">
+<script type="module">
+
+import {define} from "../_observablehq/client.js";
+
+define({id: "c0a3eecc", outputs: ["Datawrapper"], body: async () => {
+const {Datawrapper} = await import("../_import/src/datawrapper.334ff22c.js");
+
+return {Datawrapper};
+}});
+
+define({id: "c981b40a", inputs: ["Datawrapper"], outputs: ["scatterId","scatter"], body: (Datawrapper) => {
+const scatterId = 'hhddC';
+const scatter = new Datawrapper(scatterId, 'scatter-plot-updateable');
+return {scatterId,scatter};
+}});
+
+define({id: "c23063af", inputs: ["countrySelect","scatter"], body: (countrySelect,scatter) => {
+if (countrySelect) {
+    scatter.updateViz(`metadata.visualize.add-labels`, [countrySelect]);
+    scatter.updateViz(`title`, `Income vs life expectancy in ${countrySelect} in 2021`);
+    }
+}});
+
+define({id: "3fc0e826", inputs: ["view","Inputs"], outputs: ["countrySelect"], body: (view,Inputs) => {
+const countrySelect = view(
+  Inputs.select(
+    [
+  "Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Antigua and Barbuda",
+  "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas, The", "Bahrain",
+  "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia",
+  "Bosnia and Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei Darussalam",
+  "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Cayman Islands",
+  "Central African Republic", "Chad", "Channel Islands", "Chile", "China", "Colombia", "Comoros",
+  "Congo, Dem. Rep.", "Congo, Rep.", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Curacao", "Cyprus",
+  "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt, Arab Rep.", "El Salvador",
+  "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Faroe Islands", "Fiji", "Finland",
+  "France", "French Polynesia", "Gabon", "Gambia, The", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece",
+  "Greenland", "Grenada", "Guam", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras",
+  "Hong Kong SAR, China", "Hungary", "Iceland", "India", "Indonesia", "Iran, Islamic Rep.", "Iraq", "Ireland",
+  "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati",
+  "Korea, Dem. People's Rep.", "Korea, Rep.", "Kosovo", "Kuwait", "Kyrgyz Republic", "Lao PDR", "Latvia",
+  "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macao SAR, China",
+  "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania",
+  "Mauritius", "Mexico", "Micronesia, Fed. Sts.", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco",
+  "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Caledonia", "New Zealand",
+  "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Northern Mariana Islands", "Norway", "Oman", "Pakistan",
+  "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal",
+  "Puerto Rico", "Qatar", "Romania", "Russian Federation", "Rwanda", "Samoa", "San Marino", "Sao Tome and Principe",
+  "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Sint Maarten (Dutch part)",
+  "Slovak Republic", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka",
+  "St. Kitts and Nevis", "St. Lucia", "St. Martin (French part)", "St. Vincent and the Grenadines", "Sudan",
+  "Suriname", "Sweden", "Switzerland", "Syrian Arab Republic", "Tajikistan", "Tanzania", "Thailand",
+  "Timor-Leste", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkiye", "Turkmenistan",
+  "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom",
+  "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela, RB", "Virgin Islands (U.S.)",
+  "West Bank and Gaza", "Yemen, Rep.", "Zambia", "Zimbabwe"
+],
+    {label: "Country: "}
+  )
+);
+return {countrySelect};
+}});
+
+define({id: "0896b115", inputs: ["Datawrapper","scatterId"], outputs: ["scatterTooltips"], body: (Datawrapper,scatterId) => {
+const scatterTooltips = new Datawrapper(scatterId, 'scatter-plot-tooltips');
+return {scatterTooltips};
+}});
+
+define({id: "d5b8099f", inputs: ["scatterTooltips"], outputs: ["tooltip"], body: (scatterTooltips) => {
+const tooltip = document.querySelector('#tooltip');
+
+scatterTooltips.on('symbol.mouseenter', (data) => {
+  tooltip.innerHTML = `<h3>Country: ${data.data.country}</h3>GDP per capita: ${data.data.gdp_per_capita_current_2021}<br>Life expectancy: ${data.data.life_expectancy_2021}`;
+          tooltip.style.display = 'block';
+});
+
+scatterTooltips.on('symbol.mouseleave', (data) => {
+  tooltip.style.display = 'none';
+});
+return {tooltip};
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../">Data Journalism Wiki</a></li>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="../">Home</a></li></ol>
+    <details open>
+      <summary>Data Sources</summary>
+      <ol>
+    <li class="observablehq-link"><a href="../sources/">Data Sources</a></li>
+    <li class="observablehq-link"><a href="../sources/academic.html">Academic Sources</a></li>
+    <li class="observablehq-link"><a href="../sources/calendar.html">Data Calendar</a></li>
+      </ol>
+    </details>
+    <details open class="observablehq-section-active">
+      <summary>Dataviz</summary>
+      <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./extending-datawrapper.html">Extending Datawrapper</a></li>
+      </ol>
+    </details>
+    <details open>
+      <summary>AI</summary>
+      <ol>
+    <li class="observablehq-link"><a href="../ai/">AI for journalists</a></li>
+    <li class="observablehq-link"><a href="../ai/google-sheets.html">AI in Google Sheets</a></li>
+    <li class="observablehq-link"><a href="../ai/python-classification-agent.html">Classification agents</a></li>
+    <li class="observablehq-link"><a href="../ai/llm-comparison.html">LLM comparison</a></li>
+      </ol>
+    </details>
+  </ol>
+  <ol>
+    <li class="observablehq-link"><a href="../toolbox/">Toolbox</a></li>
+    <li class="observablehq-link"><a href="../awards/">Awards</a></li>
+  </ol>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#update-charts-with-user-input">Update charts with user input</a></li>
+<li class="observablehq-secondary-link"><a href="#listening-to-chart-interactions">Listening to chart interactions</a></li>
+</ol>
+</nav>
+</aside>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<p>There are ways to extend Datawrapper charts so they can interact with the page around them.</p>
+<h2 id="update-charts-with-user-input" tabindex="-1"><a class="observablehq-header-anchor" href="#update-charts-with-user-input">Update charts with user input</a></h2>
+<div class="note">These notes are mostly inspired from the <a href="https://youtu.be/uKMVKarlgI4?feature=shared&amp;t=10688" target="_blank" rel="noopener noreferrer">How we ditched D3 and mostly used Datawrapper</a> talk.</div>
+<p>Let's take a simple scatterplot.</p>
+<div style="min-height:436px"><script type="text/javascript" defer="" src="https://datawrapper.dwcdn.net/hhddC/embed.js?v=11" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/hhddC/full.png" alt=""></noscript></div>
+<p>While this is nice and tells a story, it's not ideal for exploring data. Can you easily find your country in the chart? Can you change one of the axis? Can you see how the data changes over time?</p>
+<p>While it's a virtually undocumented feature, you can set up Datawrapper to update a chart based on some in-browser triggers, like a button or dropwdown menu.</p>
+<p>Instead of the traditional iframes, you need to <a href="https://blog.datawrapper.de/web-component-embedding/" target="_blank" rel="noopener noreferrer">embed Datawrapper charts with Web Components</a>. This has several advantages, mainly in terms of performance, but for the purposes of this tutorial, it allows us to make changes to the chart based on user input.</p>
+<p>First, we'll load some JS code that makes everything possible. Add the following to your HTML file (you can <a href="https://gist.github.com/nicucalcea/576bb8c351d3c0337942432ccb6dda8f" target="_blank" rel="noopener noreferrer">find the full code here</a>):</p>
+<div id="cell-c0a3eecc" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Datawrapper</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/datawrapper.js'</span>;
+</code></pre>
+<p>Next, we add the ID of our Datawrapper chart and create it. We'll display the chart later.</p>
+<div id="cell-c981b40a" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> scatterId = <span class="hljs-string">'hhddC'</span>;
+<span class="hljs-keyword">const</span> scatter = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Datawrapper</span>(scatterId, <span class="hljs-string">'scatter-plot-updateable'</span>);
+</code></pre>
+<p>We'll need some form of an input. I'm using the <code>Inputs</code> Observable module to create a nice dropdown menu, but you can crate it with whatever framework you like or in vanilla JS.</p>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> <span class="hljs-title class_">Inputs</span> <span class="hljs-keyword">from</span> <span class="hljs-string">"npm:@observablehq/inputs"</span>;
+
+<span class="hljs-keyword">const</span> countrySelect = <span class="hljs-title function_">view</span>(
+  <span class="hljs-title class_">Inputs</span>.<span class="hljs-title function_">select</span>(
+    [
+      <span class="hljs-string">"Afghanistan"</span>, <span class="hljs-string">"Albania"</span>, <span class="hljs-string">"Algeria"</span>, <span class="hljs-string">"Angola"</span>, <span class="hljs-string">"Antigua and Barbuda"</span>, <span class="hljs-string">"Argentina"</span>, <span class="hljs-string">"Armenia"</span>, <span class="hljs-string">"Aruba"</span>, <span class="hljs-string">"Australia"</span>, <span class="hljs-string">"Austria"</span>, <span class="hljs-string">"Azerbaijan"</span>, <span class="hljs-string">"Bahamas"</span>, <span class="hljs-string">"Bahrain"</span>, <span class="hljs-string">"Bangladesh"</span>, <span class="hljs-string">"Barbados"</span>, <span class="hljs-string">"Belarus"</span>, <span class="hljs-string">"Belgium"</span>, <span class="hljs-string">"Belize"</span>, <span class="hljs-string">"Benin"</span>, <span class="hljs-string">"Bermuda"</span>, <span class="hljs-string">"Bhutan"</span>, <span class="hljs-string">"Bolivia"</span>, <span class="hljs-string">"Bosnia and Herzegovina"</span>, <span class="hljs-string">"Botswana"</span>, <span class="hljs-string">"Brazil"</span>, <span class="hljs-string">"Brunei"</span>, <span class="hljs-string">"Bulgaria"</span>, <span class="hljs-string">"Burkina Faso"</span>, <span class="hljs-string">"Burundi"</span>, <span class="hljs-string">"Cambodia"</span>, <span class="hljs-string">"Cameroon"</span>, <span class="hljs-string">"Canada"</span>, <span class="hljs-string">"Cape Verde"</span>, <span class="hljs-string">"Cayman Islands"</span>, <span class="hljs-string">"Central African Republic"</span>, <span class="hljs-string">"Chad"</span>, <span class="hljs-string">"Chile"</span>, <span class="hljs-string">"China"</span>, <span class="hljs-string">"Colombia"</span>, <span class="hljs-string">"Comoros"</span>, <span class="hljs-string">"Congo"</span>, <span class="hljs-string">"Costa Rica"</span>, <span class="hljs-string">"Cote d'Ivoire"</span>, <span class="hljs-string">"Croatia"</span>, <span class="hljs-string">"Curacao"</span>, <span class="hljs-string">"Cyprus"</span>, <span class="hljs-string">"Czechia"</span>, <span class="hljs-string">"Democratic Republic of Congo"</span>, <span class="hljs-string">"Denmark"</span>, <span class="hljs-string">"Djibouti"</span>, <span class="hljs-string">"Dominica"</span>, <span class="hljs-string">"Dominican Republic"</span>, <span class="hljs-string">"Egypt"</span>, <span class="hljs-string">"Equatorial Guinea"</span>, <span class="hljs-string">"Estonia"</span>, <span class="hljs-string">"Eswatini"</span>, <span class="hljs-string">"Ethiopia"</span>, <span class="hljs-string">"Fiji"</span>, <span class="hljs-string">"Finland"</span>, <span class="hljs-string">"France"</span>, <span class="hljs-string">"Gabon"</span>, <span class="hljs-string">"Gambia"</span>, <span class="hljs-string">"Ghana"</span>, <span class="hljs-string">"Greece"</span>, <span class="hljs-string">"Grenada"</span>, <span class="hljs-string">"Guatemala"</span>, <span class="hljs-string">"Guinea"</span>, <span class="hljs-string">"Guinea-Bissau"</span>, <span class="hljs-string">"Guyana"</span>, <span class="hljs-string">"Hong Kong"</span>, <span class="hljs-string">"Hungary"</span>, <span class="hljs-string">"Iceland"</span>, <span class="hljs-string">"India"</span>, <span class="hljs-string">"Indonesia"</span>, <span class="hljs-string">"Iraq"</span>, <span class="hljs-string">"Ireland"</span>, <span class="hljs-string">"Israel"</span>, <span class="hljs-string">"Italy"</span>, <span class="hljs-string">"Jamaica"</span>, <span class="hljs-string">"Jordan"</span>, <span class="hljs-string">"Kenya"</span>, <span class="hljs-string">"Kiribati"</span>, <span class="hljs-string">"Kyrgyzstan"</span>, <span class="hljs-string">"Latvia"</span>, <span class="hljs-string">"Lebanon"</span>, <span class="hljs-string">"Lesotho"</span>, <span class="hljs-string">"Liberia"</span>, <span class="hljs-string">"Libya"</span>, <span class="hljs-string">"Lithuania"</span>, <span class="hljs-string">"Luxembourg"</span>, <span class="hljs-string">"Macao"</span>, <span class="hljs-string">"Madagascar"</span>, <span class="hljs-string">"Malawi"</span>, <span class="hljs-string">"Mali"</span>, <span class="hljs-string">"Malta"</span>, <span class="hljs-string">"Marshall Islands"</span>, <span class="hljs-string">"Mauritius"</span>, <span class="hljs-string">"Micronesia (country)"</span>, <span class="hljs-string">"Moldova"</span>, <span class="hljs-string">"Mongolia"</span>, <span class="hljs-string">"Montenegro"</span>, <span class="hljs-string">"Morocco"</span>, <span class="hljs-string">"Mozambique"</span>, <span class="hljs-string">"Myanmar"</span>, <span class="hljs-string">"Namibia"</span>, <span class="hljs-string">"Nauru"</span>, <span class="hljs-string">"Nepal"</span>, <span class="hljs-string">"Netherlands"</span>, <span class="hljs-string">"New Zealand"</span>, <span class="hljs-string">"Nicaragua"</span>, <span class="hljs-string">"Niger"</span>, <span class="hljs-string">"Nigeria"</span>, <span class="hljs-string">"North Macedonia"</span>, <span class="hljs-string">"Oman"</span>, <span class="hljs-string">"Pakistan"</span>, <span class="hljs-string">"Palau"</span>, <span class="hljs-string">"Panama"</span>, <span class="hljs-string">"Papua New Guinea"</span>, <span class="hljs-string">"Paraguay"</span>, <span class="hljs-string">"Peru"</span>, <span class="hljs-string">"Philippines"</span>, <span class="hljs-string">"Portugal"</span>, <span class="hljs-string">"Qatar"</span>, <span class="hljs-string">"Romania"</span>, <span class="hljs-string">"Russia"</span>, <span class="hljs-string">"Rwanda"</span>, <span class="hljs-string">"Saint Kitts and Nevis"</span>, <span class="hljs-string">"Saint Lucia"</span>, <span class="hljs-string">"Saint Vincent and the Grenadines"</span>, <span class="hljs-string">"Sao Tome and Principe"</span>, <span class="hljs-string">"Saudi Arabia"</span>, <span class="hljs-string">"Senegal"</span>, <span class="hljs-string">"Seychelles"</span>, <span class="hljs-string">"Sierra Leone"</span>, <span class="hljs-string">"Singapore"</span>, <span class="hljs-string">"Slovakia"</span>, <span class="hljs-string">"Slovenia"</span>, <span class="hljs-string">"Solomon Islands"</span>, <span class="hljs-string">"Somalia"</span>, <span class="hljs-string">"South Africa"</span>, <span class="hljs-string">"South Korea"</span>, <span class="hljs-string">"Spain"</span>, <span class="hljs-string">"Sri Lanka"</span>, <span class="hljs-string">"Sudan"</span>, <span class="hljs-string">"Suriname"</span>, <span class="hljs-string">"Sweden"</span>, <span class="hljs-string">"Tajikistan"</span>, <span class="hljs-string">"Tanzania"</span>, <span class="hljs-string">"Thailand"</span>, <span class="hljs-string">"Togo"</span>, <span class="hljs-string">"Tonga"</span>, <span class="hljs-string">"Trinidad and Tobago"</span>, <span class="hljs-string">"Tunisia"</span>, <span class="hljs-string">"Turkey"</span>, <span class="hljs-string">"Turks and Caicos Islands"</span>, <span class="hljs-string">"Tuvalu"</span>, <span class="hljs-string">"Uganda"</span>, <span class="hljs-string">"Ukraine"</span>, <span class="hljs-string">"United Arab Emirates"</span>, <span class="hljs-string">"United Kingdom"</span>, <span class="hljs-string">"United States"</span>, <span class="hljs-string">"Uruguay"</span>, <span class="hljs-string">"Uzbekistan"</span>, <span class="hljs-string">"Vanuatu"</span>, <span class="hljs-string">"Vietnam"</span>, <span class="hljs-string">"Zambia"</span>, <span class="hljs-string">"Zimbabwe"</span>, <span class="hljs-string">"Japan"</span>, <span class="hljs-string">"Kazakhstan"</span>, <span class="hljs-string">"Mexico"</span>, <span class="hljs-string">"Norway"</span>, <span class="hljs-string">"Armenia"</span>, <span class="hljs-string">"Azerbaijan"</span>, <span class="hljs-string">"Cyprus"</span>, <span class="hljs-string">"Laos"</span>, <span class="hljs-string">"Russia"</span>, <span class="hljs-string">"Turkey"</span>, <span class="hljs-string">"East Timor"</span>, <span class="hljs-string">"Ecuador"</span>, <span class="hljs-string">"El Salvador"</span>, <span class="hljs-string">"Georgia"</span>, <span class="hljs-string">"Germany"</span>, <span class="hljs-string">"Haiti"</span>, <span class="hljs-string">"Honduras"</span>, <span class="hljs-string">"Iran"</span>, <span class="hljs-string">"Kazakhstan"</span>, <span class="hljs-string">"Malaysia"</span>, <span class="hljs-string">"Maldives"</span>, <span class="hljs-string">"Mauritania"</span>, <span class="hljs-string">"Poland"</span>, <span class="hljs-string">"Puerto Rico"</span>, <span class="hljs-string">"Samoa"</span>, <span class="hljs-string">"Serbia"</span>, <span class="hljs-string">"Switzerland"</span>, <span class="hljs-string">"Georgia"</span>
+    ],
+    {<span class="hljs-attr">label</span>: <span class="hljs-string">"Country: "</span>}
+  )
+);
+</code></pre>
+<p>We also need a bit of code that listens to changes in the dropdown menu and pushes changes to the chart.</p>
+<div id="cell-c23063af" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">if</span> (countrySelect) {
+    scatter.<span class="hljs-title function_">updateViz</span>(<span class="hljs-string">`metadata.visualize.add-labels`</span>, [countrySelect]);
+    scatter.<span class="hljs-title function_">updateViz</span>(<span class="hljs-string">`title`</span>, <span class="hljs-string">`Income vs life expectancy in <span class="hljs-subst">${countrySelect}</span> in 2021`</span>);
+    }
+</code></pre>
+<p>Finally, let's add a <code>scatter-plot-updateable</code> div to our HTML. This is where the chart will be insterted. For convenience, we'll also copy the <code>countrySelect</code> dropdown menu again.</p>
+<pre><code>&lt;div id="scatter-plot-updateable"&gt;&lt;/div&gt;
+</code></pre>
+<div id="cell-3fc0e826" class="observablehq observablehq--block"></div>
+<div id="scatter-plot-updateable"></div>
+<p>You can find a list of updateable properties <a href="https://developer.datawrapper.de/docs/chart-properties" target="_blank" rel="noopener noreferrer">on the Datawrapper website</a> or <a href="https://api.datawrapper.de/v3/charts/hhddC" target="_blank" rel="noopener noreferrer">see the properties of your own chart here</a> (replace the ID with your chart ID).</p>
+<p>Theoretically, you can use this method to create scrollable stories or animated charts.</p>
+<h2 id="listening-to-chart-interactions" tabindex="-1"><a class="observablehq-header-anchor" href="#listening-to-chart-interactions">Listening to chart interactions</a></h2>
+<p>Similarly to how you can update a chart based on user input outside the chart, you can also listen to interactions within the chart to update other parts of the page.</p>
+<p>If you haven't already done so, import the necessary code.</p>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">import</span> {<span class="hljs-title class_">Datawrapper</span>} <span class="hljs-keyword">from</span> <span class="hljs-string">'../src/datawrapper.js'</span>;
+</code></pre>
+<p>And as before, we'll add the ID of our Datawrapper chart and display it. We'll also add a tooltip div, which I'll explain below.</p>
+<div id="cell-0896b115" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> scatterTooltips = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Datawrapper</span>(scatterId, <span class="hljs-string">'scatter-plot-tooltips'</span>);
+</code></pre>
+<pre><code>&lt;div id="scatter-plot-tooltips"&gt;&lt;/div&gt;
+&lt;div id="tooltip"&gt;&lt;/div&gt;
+</code></pre>
+<div id="scatter-plot-tooltips"></div>
+<div id="tooltip" class="tip">Tooltips will show up here.</div>
+<p>Now, we'll add a bit of code that listens for mouse events on the chart and displays a tooltip with data from the chart.</p>
+<div id="cell-d5b8099f" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> tooltip = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">'#tooltip'</span>);
+
+scatterTooltips.<span class="hljs-title function_">on</span>(<span class="hljs-string">'symbol.mouseenter'</span>, <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+  tooltip.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">`&lt;h3&gt;Country: <span class="hljs-subst">${data.data.country}</span>&lt;/h3&gt;GDP per capita: <span class="hljs-subst">${data.data.gdp_per_capita_current_2021}</span>&lt;br&gt;Life expectancy: <span class="hljs-subst">${data.data.life_expectancy_2021}</span>`</span>;
+          tooltip.<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">'block'</span>;
+});
+
+scatterTooltips.<span class="hljs-title function_">on</span>(<span class="hljs-string">'symbol.mouseleave'</span>, <span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+  tooltip.<span class="hljs-property">style</span>.<span class="hljs-property">display</span> = <span class="hljs-string">'none'</span>;
+});
+</code></pre>
+<p>Now, when you hover over a scatterplot point, you should see a tooltip with the country name, GDP per capita, and life expectancy.</p>
+<p>You can combine the two methods explained above to create a more interactive experience using just Datawrapper charts and a little bit of JavaScript.</p>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="../sources/calendar.html"><span>Data Calendar</span></a><a rel="next" href="../ai/"><span>AI for journalists</span></a></nav>
+<div><a href="https://nicu.md/" target="_blank" rel="noopener noreferrer">Copyright 2024, Nicu Calcea</a>.</div>
+</footer>
+</div>

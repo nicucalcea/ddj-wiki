@@ -267,12 +267,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#install-and-load-libraries" id="toc-install-and-load-libraries" class="nav-link active" data-scroll-target="#install-and-load-libraries">Install and load libraries</a></li>
   <li><a href="#prep-data" id="toc-prep-data" class="nav-link" data-scroll-target="#prep-data">Prep data</a></li>
-  <li><a href="#grounding" id="toc-grounding" class="nav-link" data-scroll-target="#grounding">Grounding</a></li>
-  <li><a href="#structured-output" id="toc-structured-output" class="nav-link" data-scroll-target="#structured-output">Structured output</a></li>
-  <li><a href="#agents" id="toc-agents" class="nav-link" data-scroll-target="#agents">Agents</a></li>
+  <li><a href="#trying-to-make-ai-lie-less" id="toc-trying-to-make-ai-lie-less" class="nav-link" data-scroll-target="#trying-to-make-ai-lie-less">Trying to make AI lie less</a></li>
+  <li><a href="#creating-machine-readable-data" id="toc-creating-machine-readable-data" class="nav-link" data-scroll-target="#creating-machine-readable-data">Creating machine-readable data</a></li>
+  <li><a href="#building-agents" id="toc-building-agents" class="nav-link" data-scroll-target="#building-agents">Building agents</a></li>
   <li><a href="#running-on-the-full-dataset" id="toc-running-on-the-full-dataset" class="nav-link" data-scroll-target="#running-on-the-full-dataset">Running on the full dataset</a></li>
   <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
-  <li><a href="#a-better-way" id="toc-a-better-way" class="nav-link" data-scroll-target="#a-better-way">A better way</a></li>
+  <li><a href="#augmenta-a-better-way" id="toc-augmenta-a-better-way" class="nav-link" data-scroll-target="#augmenta-a-better-way">Augmenta: A better way</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.dev/nicucalcea/ddj-wiki/blob/main/ai/python-classification-agent.ipynb" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nicucalcea/ddj-wiki/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-agent.ipynb" target="_blank"><i class="bi bi-download"></i>Download notebook</a></li><li><a href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-agent.ipynb" target="_blank"><i class="bi bi-google"></i>Open in Google Colab</a></li></ul></div></nav>
     </div>
@@ -311,7 +311,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install trafilatura</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then, we’ll import those libraries.</p>
-<div id="cell-6" class="cell" data-execution_count="2">
+<div id="cell-6" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># data</span></span>
@@ -338,10 +338,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Finally, we need to define some of the API keys we’ll be using. You can get your own <a href="https://platform.openai.com/account/api-keys">OpenAI API key</a> or from another provider.</p>
 <p><span hidden="">Get a <a href="https://static.globalwitness.org/dataharvest-api-keys.txt" target="_blank">temporary API key here</a>.</span></p>
-<div id="cell-8" class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">"OPENAI_API_KEY"</span>] <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">"BRIGHTDATA_API_KEY"</span>] <span class="op">=</span> <span class="st">""</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">"BRIGHTDATA_ZONE"</span>] <span class="op">=</span> <span class="st">""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cell-8" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">"OPENAI_API_KEY"</span>] <span class="op">=</span> <span class="st">""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="prep-data" class="level2">
@@ -425,8 +423,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="grounding" class="level2">
-<h2 class="anchored" data-anchor-id="grounding">Grounding</h2>
+<section id="trying-to-make-ai-lie-less" class="level2">
+<h2 class="anchored" data-anchor-id="trying-to-make-ai-lie-less">Trying to make AI lie less</h2>
 <p>Large Language Models are prone to <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinations</a>. If you ask an LLM a question it doesn’t know the answer to, <a href="https://ddj.nicu.md/ai/">it will confidently make up a plausible-sounding answer</a> that is completely wrong. This is particularly the case with lesser known organisations or individuals that wouldn’t feature promionently in the training data.</p>
 <p>One way to minimise (but not completely eliminate) hallucinations is by “grounding” the LLM with some factual data like documents or databases. This is sometimes a technique called Retrieval-Augmented Generation (RAG).</p>
 <p>In our case, we want to allow out agent to search the internet to look for additional information about each donor.</p>
@@ -462,8 +460,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>We’ll eventually give our agent access to both the duckduckgo search function, as well as the <code>extract_text</code> function that we just created.</p>
 </section>
-<section id="structured-output" class="level2">
-<h2 class="anchored" data-anchor-id="structured-output">Structured output</h2>
+<section id="creating-machine-readable-data" class="level2">
+<h2 class="anchored" data-anchor-id="creating-machine-readable-data">Creating machine-readable data</h2>
 <p>Most modern LLMs are trained to produce structured output, which means they can return data in a specific format. This is useful for producing consistent outputs when we’re asking the model to classify or research multiple items.</p>
 <p>We can define the output format we expect using a <a href="https://docs.pydantic.dev/latest/concepts/models/">Pydantic model</a>.</p>
 <div id="cell-25" class="cell" data-execution_count="9">
@@ -474,8 +472,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    source_urls: <span class="bu">str</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="agents" class="level2">
-<h2 class="anchored" data-anchor-id="agents">Agents</h2>
+<section id="building-agents" class="level2">
+<h2 class="anchored" data-anchor-id="building-agents">Building agents</h2>
 <p>If we have an idea about what we want to search for, we could use a simple workflow where we first search for the donor’s name, then extract the text from the first 5-10 results, and finally feed them to an LLM. An earlier version of this project used this approach, and it worked well enough.</p>
 <p>Since then, AI agents have become a lot more prominent. Agents are systems in which LLMs are allowed to choose their own steps, use tools appropriate for different tasks and make decisions about when to stop.</p>
 <p>The code required to create an agent from scratch is fairly simple, but there are several frameworks which come with batteries included. We’ll use <a href="https://ai.pydantic.dev">PydanticAI</a>, but most frameworks provide a similar set of features.</p>
@@ -625,9 +623,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Verify</strong>. LLMs are still dumb and shouldn’t be trusted! Manually verify the classifications if you’re going to publish the results.</li>
 </ul>
 </section>
-<section id="a-better-way" class="level1">
-<h1>A better way</h1>
-<p>I’ve used the approach described above for several projects at Global Witness, including our <a href="https://globalwitness.org/en/campaigns/fossil-fuels/how-we-used-ai-to-help-us-find-lobbyists-at-cop/">annual classification of fossil fuel donors at COP</a>.</p>
+<section id="augmenta-a-better-way" class="level1">
+<h1>Augmenta: A better way</h1>
+<p>I’ve used the approach described above for several projects at <a href="https://globalwitness.org/">Global Witness</a>, including our <a href="https://globalwitness.org/en/campaigns/fossil-fuels/how-we-used-ai-to-help-us-find-lobbyists-at-cop/">annual classification of fossil fuel donors at COP</a>.</p>
 <p>As the codebase grew to account for the suggestions described above, I decided to package everything into a Python library called <strong><a href="https://github.com/Global-Witness/augmenta/">Augmenta</a></strong>. You can use Augmenta to build agents without writing any code. It has a few features that make life easier, such as:</p>
 <ul>
 <li>Built-in search and text extraction tools</li>
@@ -637,161 +635,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Support for <a href="https://github.com/Global-Witness/augmenta/blob/main/docs/tools.md">third-party tools via MCP</a></li>
 <li>Logfire integration for monitoring and debugging</li>
 </ul>
-<p>Let’s see how it works.</p>
-<p>Because Augmenta is an interactive command-line tool, it doesn’t work great in a Jupyter notebook. Instead, we’ll run it in a separate terminal locally.</p>
-<p>First, we need to install Augmenta.</p>
-<div id="cell-45" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install augmenta</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Note: you may need to restart the kernel to use updated packages.</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>c:\Users\NicuCalcea\Projects\ddj-wiki\.venv\Scripts\python.exe: No module named pip</code></pre>
-</div>
-</div>
-<p>Next, we need to create a configuration file. This is a YAML file that contains all the settings for the agent, including the search engine to use, the LLM to use and the prompts. It may look something like this.</p>
-<div id="cell-47" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>yaml_config <span class="op">=</span> <span class="st">"""</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="st">input_csv: data/fec_unclassified.csv</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="st">output_csv: data/fec_classified.csv</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="st">model:</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="st">  provider: openai</span></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="st">  name: gpt-4.1-mini</span></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="st">search:</span></span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="st">  engine: brightdata_google</span></span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="st">prompt:</span></span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="st">  system: You are an expert researcher whose job is to research the connections between political donors and Donald Trump.</span></span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="st">  user: |</span></span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="st">    # Instructions</span></span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="st">    Your job is to research </span><span class="sc">{{</span><span class="st">Name</span><span class="sc">}}</span><span class="st">, a donor to Donald Trump's inaugural fund. Your will determine how Donald Trump and </span><span class="sc">{{</span><span class="st">Name</span><span class="sc">}}</span><span class="st"> are connected, whether via family, business ties, political ties or something else. Don't consider donations to the inaugural fund as a connection, we're only interested in connections before or after the donation.</span></span>
-<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a><span class="st">    ## Searching guidelines</span></span>
-<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a><span class="st">    In most cases, you should start by searching for "</span><span class="sc">{{</span><span class="st">Name</span><span class="sc">}}</span><span class="st">" and "Donald Trump". Where relevant, remove redundant words like "INC", "LLC", "GROUP", etc from the search query. If you need to perform another search, try to refine it by adding relevant keywords. Note that each case will be different, so be flexible and adaptable. Unless necessary, limit your research to two or three searches.</span></span>
-<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a><span class="st">    With each search, select a few sources that are most likely to provide relevant information. Access them using the tools provided. Be critical and use common sense. ALWAYS cite your sources.</span></span>
-<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a><span class="st">    Now, please proceed with your analysis and classification of </span><span class="sc">{{</span><span class="st">Name</span><span class="sc">}}</span><span class="st">'s connections to Donald Trump.</span></span>
-<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a><span class="st">structure:</span></span>
-<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a><span class="st">  donor_industry:</span></span>
-<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a><span class="st">    type: str</span></span>
-<span id="cb21-26"><a href="#cb21-26" aria-hidden="true" tabindex="-1"></a><span class="st">    description: What industry does this company, individual or organisation belong to?</span></span>
-<span id="cb21-27"><a href="#cb21-27" aria-hidden="true" tabindex="-1"></a><span class="st">  type_of_connection:</span></span>
-<span id="cb21-28"><a href="#cb21-28" aria-hidden="true" tabindex="-1"></a><span class="st">    type: str</span></span>
-<span id="cb21-29"><a href="#cb21-29" aria-hidden="true" tabindex="-1"></a><span class="st">    description: How are they connected to Donald Trump?</span></span>
-<span id="cb21-30"><a href="#cb21-30" aria-hidden="true" tabindex="-1"></a><span class="st">    options:</span></span>
-<span id="cb21-31"><a href="#cb21-31" aria-hidden="true" tabindex="-1"></a><span class="st">      - Family</span></span>
-<span id="cb21-32"><a href="#cb21-32" aria-hidden="true" tabindex="-1"></a><span class="st">      - Business</span></span>
-<span id="cb21-33"><a href="#cb21-33" aria-hidden="true" tabindex="-1"></a><span class="st">      - Political</span></span>
-<span id="cb21-34"><a href="#cb21-34" aria-hidden="true" tabindex="-1"></a><span class="st">      - Other</span></span>
-<span id="cb21-35"><a href="#cb21-35" aria-hidden="true" tabindex="-1"></a><span class="st">      - No connection</span></span>
-<span id="cb21-36"><a href="#cb21-36" aria-hidden="true" tabindex="-1"></a><span class="st">      - Don't know or not enough information</span></span>
-<span id="cb21-37"><a href="#cb21-37" aria-hidden="true" tabindex="-1"></a><span class="st">  explanation:</span></span>
-<span id="cb21-38"><a href="#cb21-38" aria-hidden="true" tabindex="-1"></a><span class="st">    type: str</span></span>
-<span id="cb21-39"><a href="#cb21-39" aria-hidden="true" tabindex="-1"></a><span class="st">    description: A few paragraphs explaining your decision in English, formatted in Markdown. In the explanation, link to the most relevant sources from the provided documents. Include at least one inline URL.</span></span>
-<span id="cb21-40"><a href="#cb21-40" aria-hidden="true" tabindex="-1"></a><span class="st"># mcpServers:</span></span>
-<span id="cb21-41"><a href="#cb21-41" aria-hidden="true" tabindex="-1"></a><span class="st">#   - name: sequential-thinking</span></span>
-<span id="cb21-42"><a href="#cb21-42" aria-hidden="true" tabindex="-1"></a><span class="st">#     command: npx</span></span>
-<span id="cb21-43"><a href="#cb21-43" aria-hidden="true" tabindex="-1"></a><span class="st">#     args:</span></span>
-<span id="cb21-44"><a href="#cb21-44" aria-hidden="true" tabindex="-1"></a><span class="st">#       - "-y"</span></span>
-<span id="cb21-45"><a href="#cb21-45" aria-hidden="true" tabindex="-1"></a><span class="st">#       - "@modelcontextprotocol/server-sequential-thinking"</span></span>
-<span id="cb21-46"><a href="#cb21-46" aria-hidden="true" tabindex="-1"></a><span class="st">examples:</span></span>
-<span id="cb21-47"><a href="#cb21-47" aria-hidden="true" tabindex="-1"></a><span class="st">  - input: "Melinda Hildebrand"</span></span>
-<span id="cb21-48"><a href="#cb21-48" aria-hidden="true" tabindex="-1"></a><span class="st">    output:</span></span>
-<span id="cb21-49"><a href="#cb21-49" aria-hidden="true" tabindex="-1"></a><span class="st">      donor_industry: Energy</span></span>
-<span id="cb21-50"><a href="#cb21-50" aria-hidden="true" tabindex="-1"></a><span class="st">      type_of_connection: Political</span></span>
-<span id="cb21-51"><a href="#cb21-51" aria-hidden="true" tabindex="-1"></a><span class="st">      explanation: |</span></span>
-<span id="cb21-52"><a href="#cb21-52" aria-hidden="true" tabindex="-1"></a><span class="st">        President Donald Trump nominated River Oaks Donuts owner and energy executive Melinda Hildebrand [to serve as U.S. Ambassador to Costa Rica](https://www.congress.gov/nomination/119th-congress/55/21). In May 2024, [the Financial Times reported](https://www.ft.com/content/c89bbfc4-80db-4f3f-8d63-3aeb46ae91a9) the Hildebrand and her husband hosted a campaign event for then-presidential candidate Trump, who was seeking donations from power players in the U.S. energy industry. [The Daily Beast reported](https://www.thedailybeast.com/trump-goes-small-at-fundraisers-as-harris-goes-big-all-over/) that the Hildebrands also served on the host committee of a Trump fundraising dinner in Colorado. According to the Daily Beast, the host committee gave or raised $500,000 per couple.</span></span>
-<span id="cb21-53"><a href="#cb21-53" aria-hidden="true" tabindex="-1"></a><span class="st">logfire: true</span></span>
-<span id="cb21-54"><a href="#cb21-54" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
-<span id="cb21-55"><a href="#cb21-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-56"><a href="#cb21-56" aria-hidden="true" tabindex="-1"></a><span class="co"># Write the string directly to the file</span></span>
-<span id="cb21-57"><a href="#cb21-57" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"data/augmenta.yaml"</span>, <span class="st">'w'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb21-58"><a href="#cb21-58" aria-hidden="true" tabindex="-1"></a>    <span class="bu">file</span>.write(yaml_config)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Now, we just to run Augmenta.</p>
-<p>Because it’s a CLI tool, we need to run it in a terminal. If you’re running this notebook locally, it’s best to run it in your preferred terminal instad of the notebook. If you’re running it in Google Colab, you can start a terminal by running the following command in a code cell.</p>
-<div id="cell-49" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>bash</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>'bash' is not recognized as an internal or external command,
-operable program or batch file.</code></pre>
-</div>
-</div>
-<p>Next, you want to run the following command in the terminal.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="ex">augmenta</span> data/augmenta.yaml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Note that you’ll need API keys for OpenAI and BrightData in your environment (we did that at the top of the notebook).</p>
-<p>Once the classification is done, we can import the CSV back into the notebook and see the results.</p>
-<div id="cell-52" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>fec_classified <span class="op">=</span> pd.read_csv(<span class="st">'data/fec_classified.csv'</span>)</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>fec_classified</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-<div>
-
-
-<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Name</th>
-<th data-quarto-table-cell-role="th">Donation Amount</th>
-<th data-quarto-table-cell-role="th">donor_industry</th>
-<th data-quarto-table-cell-role="th">type_of_connection</th>
-<th data-quarto-table-cell-role="th">explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>PILGRIM'S PRIDE CORPORATION</td>
-<td>5000000.00</td>
-<td>Food and Meat Processing</td>
-<td>Political</td>
-<td>Pilgrim's Pride Corporation, a major poultry p...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>RIPPLE LABS, INC.</td>
-<td>4889345.33</td>
-<td>Cryptocurrency / Blockchain Technology</td>
-<td>Political</td>
-<td>Ripple Labs, Inc. is a cryptocurrency and bloc...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>WARREN A STEPHENS</td>
-<td>4000000.00</td>
-<td>Financial Services</td>
-<td>Political</td>
-<td>Warren A. Stephens is a billionaire investment...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>CHEVRON PRODUCTS COMPANY</td>
-<td>2000000.00</td>
-<td>Energy</td>
-<td>Political</td>
-<td>Chevron Products Company is an energy company ...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>ROBINHOOD MARKETS, INC.</td>
-<td>2000000.00</td>
-<td>Financial Services</td>
-<td>Political</td>
-<td>Robinhood Markets, Inc. is an American financi...</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<p>This approach is faster (parallel processing), more reliable (caching), more transparent (logging via logfire) and easier to use (no need to write code).</p>
-<p>You can also <a href="https://github.com/Global-Witness/augmenta/blob/main/docs/tools.md">extend Augmenta with custom tools</a> via MCP servers. That means you can make it reason before each step, give it access to databases and APIs, and even allow it to write its own Python code (useful for processing data, doing maths, etc.).</p>
-<p>Feel free to check the <a href="https://github.com/Global-Witness/augmenta">README</a> and get in touch if you have any questions or suggestions.</p>
+<p>If you would like to test it out, you can read the <a href="https://github.com/Global-Witness/augmenta/">documentation on GitHub</a> and <a href="https://github.com/Global-Witness/augmenta/issues">get in touch</a> if you have any questions or suggestions.</p>
 
 
 </section>
