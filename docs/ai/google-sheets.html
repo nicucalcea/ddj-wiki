@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Academic Data Sources – Investigative Data Journalism Training</title>
+<title>AI in Google Sheets – Investigative Data Journalism Training</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -311,10 +346,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../ddj/index.html">
  <span class="dropdown-text">Introduction to Data Journalism</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../sources/index.html">
- <span class="dropdown-text">Data Sources</span></a>
-  </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Generative AI</li>
         <li>
@@ -352,7 +383,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sources/index.html">Data Sources</a></li><li class="breadcrumb-item"><a href="../sources/academic.html">Academic Data Sources</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">Generative AI</a></li><li class="breadcrumb-item"><a href="../ai/google-sheets.html">AI in Google Sheets</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -367,7 +398,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Data Sources</span></a>
+ <span class="menu-text">Data Journalism</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -375,20 +406,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sources/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Sources</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sources/academic.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Academic Data Sources</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sources/calendar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Calendar</span></a>
+  <a href="../ddj/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Data Journalism</span></a>
   </div>
 </li>
       </ul>
@@ -396,7 +415,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Toolbox</span></a>
+ <span class="menu-text">Generative AI</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -404,25 +423,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../toolbox/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Toolbox</span></a>
+  <a href="../ai/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI for journalists</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Events</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../awards/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Journalism Awards</span></a>
+  <a href="../ai/google-sheets.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">AI in Google Sheets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/python-classification-agent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI classification agent</span></a>
   </div>
 </li>
       </ul>
@@ -437,18 +451,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#where-to-find-papers" id="toc-where-to-find-papers" class="nav-link active" data-scroll-target="#where-to-find-papers">Where to find papers</a>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link active" data-scroll-target="#exercise">Exercise</a></li>
+  <li><a href="#extracting-structruted-data" id="toc-extracting-structruted-data" class="nav-link" data-scroll-target="#extracting-structruted-data">Extracting structruted data</a>
   <ul class="collapse">
-  <li><a href="#search-engines" id="toc-search-engines" class="nav-link" data-scroll-target="#search-engines">Search engines</a></li>
-  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data sources</a></li>
-  <li><a href="#research-institutions" id="toc-research-institutions" class="nav-link" data-scroll-target="#research-institutions">Research institutions</a></li>
-  </ul></li>
-  <li><a href="#how-to-get-alerts-for-new-papers" id="toc-how-to-get-alerts-for-new-papers" class="nav-link" data-scroll-target="#how-to-get-alerts-for-new-papers">How to get alerts for new papers</a></li>
-  <li><a href="#how-to-access-the-papers" id="toc-how-to-access-the-papers" class="nav-link" data-scroll-target="#how-to-access-the-papers">How to access the papers</a>
-  <ul class="collapse">
-  <li><a href="#institutional-access" id="toc-institutional-access" class="nav-link" data-scroll-target="#institutional-access">Institutional access</a></li>
-  <li><a href="#authors" id="toc-authors" class="nav-link" data-scroll-target="#authors">Authors</a></li>
-  <li><a href="#rscholar" id="toc-rscholar" class="nav-link" data-scroll-target="#rscholar">/r/Scholar</a></li>
+  <li><a href="#data-validation" id="toc-data-validation" class="nav-link" data-scroll-target="#data-validation">Data validation</a></li>
+  <li><a href="#summarising-text" id="toc-summarising-text" class="nav-link" data-scroll-target="#summarising-text">Summarising text</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -457,9 +464,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sources/index.html">Data Sources</a></li><li class="breadcrumb-item"><a href="../sources/academic.html">Academic Data Sources</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">Generative AI</a></li><li class="breadcrumb-item"><a href="../ai/google-sheets.html">AI in Google Sheets</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Academic Data Sources</h1>
+<h1 class="title">AI in Google Sheets</h1>
 </div>
 
 
@@ -476,62 +483,119 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This is a small guide on how to use academic papers for your data journalism needs.</p>
-<section id="where-to-find-papers" class="level2">
-<h2 class="anchored" data-anchor-id="where-to-find-papers">Where to find papers</h2>
-<section id="search-engines" class="level3">
-<h3 class="anchored" data-anchor-id="search-engines">Search engines</h3>
-<p>There are several websites that index all the major journals. That makes it easier to keep track of new publications and to search all academic journals in one place.</p>
-<ul>
-<li><a href="https://scholar.google.com/">Google Scholar</a>: The most popular academic search engine.</li>
-<li><a href="https://www.lens.org/lens/search/scholar/structured">Lens.org</a>: Shows a few aggregated stats such as most cited authors, journals, etc.</li>
-<li><a href="https://app.dimensions.ai/discover/publication">Dimensions.ai</a>: Includes an “Altmetric”, which is a measure of how popular a paper is based on news coverage, blogs, social media, etc. Useful for weeding out obscure papers if you don’t want those.</li>
-<li><a href="https://arxiv.org/">ArXiv</a>: Repository of open-access papers. Many preprint papers. Included in some of the search engines above.</li>
-</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These notes are mostly inspired from the <a href="https://www.eventbrite.com/e/practical-ai-for-investigative-journalism-tickets-880990695887" target="_blank">Practical AI for (investigative) journalism</a> sessions.</p>
+</div>
+</div>
+<p>There are <a href="https://workspace.google.com/marketplace/search/AI?host=sheets" target="_blank">several Google Sheets extensions</a> that will let you connect to a Large Language Model (LLM), write requests and store the results of those requests.</p>
+<p>However, some of those extensions charge extra fees and the way they work is opaque, meaning they could be reading your requests.</p>
+<p>I wrote a very simple Google Sheets script that provides most of the same functionality without sending your data or charging a subscription. Follow the instructions in the link below to install it.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/nicucalcea/sheets-llm"><img src="https://gh-card.dev/repos/nicucalcea/sheets-llm.svg" class="img-fluid figure-img"></a></p>
+<figcaption>nicucalcea/sheets-llm</figcaption>
+</figure>
+</div>
+<p>Note that you will still need an OpenAI API key, which does have a cost. This key is different from ChatGPT Plus. You don’t need the latter to get an API key.</p>
+<hr>
+<p>Let’s look at an example.</p>
+<p>Make a copy of <a href="https://docs.google.com/spreadsheets/d/1OC1NLimTQ2lSLHOl2X6BVHTSJiKtpkPpFj3gabRVNec/copy" target="_blank">this Google Sheet</a>. Note that this will also copy the associate Apps Script, aka. the code you need to make the LLM magic happen.</p>
+<p>Click on <code>LLM</code> in the top menu, select <code>Settings</code>, paste your OpenAI key and save.</p>
+<p>In cell <code>B2</code>, copy the following formula:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">LLM</span><span class="op">(</span>A2<span class="op">,</span> <span class="st">"Extract the category from the following text. It can be something like crime, environment, education or healthcare. Please respond with just the category."</span><span class="op">,</span> <span class="st">"gpt-3.5-turbo"</span><span class="op">,</span> <span class="dv">0</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Let’s break it down.</p>
+<ol type="1">
+<li>First, we have the <code>LLM</code> formula which tells Sheets that we want to use the Apps Script that connects us to OpenAI.</li>
+<li>Then we’re selecting the <code>A2</code> cell, or the first cell with data we want to analyse.</li>
+<li>Next we have the user prompt. This is a set of instructions that help the AI understand our request and respond accordingly.</li>
+<li>You can optionally specify the model you want to use. We use <code>gpt-3.5-turbo</code> by default, but you can <a href="..\ai/llm.html">change it to a more intelligent, but much pricier model</a>.</li>
+<li>Finally, you specify the model temperature. Since we want precision, rather than creativity, I’ve set the temperature to <code>0</code>.</li>
+</ol>
+<p>You can then drag the formula down to repeat the categorisation for each row.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because Google Sheets tends to recalculate cells at times, it may try to rerun your formula, which means you may incur additional charges. You can select your <code>LLM</code> cells, copy (<code>Ctrl + C</code>) and paste them as values (<code>Ctrl + Shift + V</code>) to overwrite the formulas with static text.</p>
+</div>
+</div>
+<section id="exercise" class="level3">
+<h3 class="anchored" data-anchor-id="exercise">Exercise</h3>
+<p>Use the <code>LLM</code> formula to detect whether each piece of legislation is about retirement. Make sure the output is either <code>Yes</code>, <code>No</code> or <code>Don't know</code>.</p>
+<!-- ## Structured, validated data from LLMs
+
+Video: [Structured, validated data from LLMs (Practical AI for Investigative Journalism) - YouTube](https://www.youtube.com/watch?v=5MHEMedLWeI) -->
 </section>
-<section id="data-sources" class="level3">
-<h3 class="anchored" data-anchor-id="data-sources">Data sources</h3>
-<p>Additionally, there are several repositories of data used in academic research. These are usually replication data, meaning you can use them to recreate the findings of the study, but you can also analyse them differently for new angles.</p>
-<ul>
-<li><a href="https://dataverse.harvard.edu/dataverse/harvard?q=&amp;types=dataverses%3Adatasets&amp;sort=dateSort&amp;order=desc&amp;page=1">Harvard Dataverse</a>: Includes replication data and code (often Stata or SPSS, sometimes R).</li>
-<li><a href="https://zenodo.org/">Zenodo</a>: Same as above, fewer datasets.</li>
-<li><a href="https://www.icpsr.umich.edu/web/ICPSR/search/studies?start=0&amp;sort=DATEUPDATED%20desc&amp;RESTRICTED_DATA_TYPE=Public%20Use&amp;ARCHIVE=ICPSR&amp;PUBLISH_STATUS=PUBLISHED&amp;rows=50&amp;q=">ICPSR</a>: More academic data.</li>
-<li><a href="https://data.humdata.org/search?q=&amp;ext_page_size=100">Humanitarian Data Exchange</a>: Mainly datasets that get regularly updated by various corporations and non-profit orgs. Heavy humanitarian focus. Also see <a href="https://www.aiddata.org/datasets">AidData</a>.</li>
-<li><a href="https://oasishub.co/dataset?q=&amp;sort=metadata_modified+desc">OasisHUB</a>: Environmental and risk data.</li>
-<li><a href="https://paperswithcode.com/">Papers with Code</a>: What it says on the tin</li>
-<li><a href="https://ejd.econ.mathematik.uni-ulm.de/">Economic Articles with Data</a>: Economic articles that have provided data and code for replication purposes</li>
-</ul>
+<section id="extracting-structruted-data" class="level2">
+<h2 class="anchored" data-anchor-id="extracting-structruted-data">Extracting structruted data</h2>
+<p>I’ve alluded to this issue above when we had to instruct the LLM to <code>respond with just the category</code>. Without it, the AI would have responded with something like <code>The category of the text is "Schools/High School."</code>, which is more difficult to aggregate.</p>
+<p>Because many of the models we use are fine-tuned to be chatbots, so they tend to get a little wordy and emulate a human conversation.</p>
+<p>We’ll try to coerce these models into giving us structured data in exactly the format we want.</p>
+<p>In the <a href="https://docs.google.com/spreadsheets/d/1OC1NLimTQ2lSLHOl2X6BVHTSJiKtpkPpFj3gabRVNec/copy" target="_blank">same Google Sheet you made a copy of earlier</a>, go to the <code>food</code> tab.</p>
+<p>In the <code>B2</code> cell, copy the following formula:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">LLM</span><span class="op">(</span>A2<span class="op">,</span> <span class="st">"Extract the name from this email. Respond with just the name, nothing else."</span><span class="op">,</span> <span class="st">"gpt-3.5-turbo"</span><span class="op">,</span> <span class="dv">0</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Drag the formula down, and repeat the process for the <code>product</code>, <code>email</code> and <code>email_domain</code> columns.</p>
+<p>For the <code>emotion</code> column, use the following formula:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">LLM</span><span class="op">(</span>A2<span class="op">,</span> <span class="st">"Extract the emotion from this email. Respond with just 'positive' or 'negative', nothing else."</span><span class="op">,</span> <span class="st">"gpt-3.5-turbo"</span><span class="op">,</span> <span class="dv">0</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Not drag the formula down and take a look at the results. Notice anything odd?</p>
+<p>In the last row, the AI has responded with <code>sad</code> instead of <code>negative</code> or <code>positive</code>, which is what we asked for.</p>
+<p>If you look back at the contents of the tax, you’ll notice that it explicitly instructs the model to overwrite our initial instructions. This is an example of “<a href="https://simonwillison.net/2023/Apr/14/worst-that-can-happen/">prompt injection</a>”.</p>
+<section id="data-validation" class="level3">
+<h3 class="anchored" data-anchor-id="data-validation">Data validation</h3>
+<p>To spot issues like this, we can use a Sheets formula to validate the response. In the <code>emotion_valid</code> column, paste the following formula:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">IF</span><span class="op">(</span><span class="fu">ISNUMBER</span><span class="op">(</span><span class="fu">MATCH</span><span class="op">(</span>F2<span class="op">,</span> <span class="op">{</span><span class="st">"positive"</span><span class="op">,</span> <span class="st">"negative"</span><span class="op">},</span> <span class="dv">0</span><span class="op">)),</span> <span class="st">"yes"</span><span class="op">,</span> <span class="st">"no"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This formula checks if the response if either <code>positive</code> or <code>negative</code>. If it is, it returns <code>yes</code>, otherwise it returns <code>no</code>.</p>
+<p>As you drag the formula down, you’ll notice that the last row has a <code>no</code> in the <code>emotion_valid</code> column.</p>
+<p>Let’s do something a little more complex. How do we validate that the <code>email</code> is a valid email address?</p>
+<p>Make sure you’ve asked the LLM to extract the email in column D, and paste the following formula in <code>email_valid</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">IF</span><span class="op">(</span><span class="fu">REGEXMATCH</span><span class="op">(</span>D2<span class="op">,</span> <span class="st">"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+</span><span class="er">\.</span><span class="st">[a-zA-Z]{2,}$"</span><span class="op">),</span> <span class="st">"yes"</span><span class="op">,</span> <span class="st">"no"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>What we used here is a regular expression, which is a sequence of characters that define a search pattern. In this case, we’re looking for a pattern that matches a typical email address.</p>
+<p><a href="https://support.google.com/a/answer/1371415">Regular expressions</a> are not fun to read or write, but they can be very powerful. You can use AI to generate them for you, but that’s a topic for another day.</p>
+<p>Let’s move on to another example. Open the <code>comments</code> tab and type in this formula in the <code>email_address</code> column, then drag it down:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">LLM</span><span class="op">(</span>A2<span class="op">,</span> <span class="st">"Extract a valid email address from this text. Respond with just the email address, nothing else."</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Depending on which model you use, you’ll notice that the AI has extracted some email addresses, but then refused to do so for some texts. In my case, it has returned some messages like <code>There is no valid email address in the provided text</code>.</p>
+<p>Let’s check if the extracted emails are valid. Adapt the regular expressions formula from above in the <code>email_valid</code> column.</p>
+<p>But this only checks if the extracted email is in the right format. It doesn’t check if the email actually exists in the original text.</p>
+<p>For that, let’s write a new formula in the <code>email_exists</code> column:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">IF</span><span class="op">(</span><span class="fu">REGEXMATCH</span><span class="op">(</span>A2<span class="op">,</span> B2<span class="op">),</span> <span class="st">"yes"</span><span class="op">,</span> <span class="st">"no"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This formula checks if the extracted email address is anywhere in the original text. If it is, it returns <code>yes</code>, otherwise it returns <code>no</code>.</p>
+<p>Once you drag it down, you’ll notice that even in columns where it has extracted an email address, Sheets can’t find that email in the text. In my case it extracted <code>info@apha.org</code> in row 4, but there is no email address in that bit of text, only a domain name.</p>
+<p>This again shows how LLMs are simply tools that return statisically likely responses, rather than correct ones, and why it’s important to validate their responses.</p>
 </section>
-<section id="research-institutions" class="level3">
-<h3 class="anchored" data-anchor-id="research-institutions">Research institutions</h3>
-<ul>
-<li><a href="https://www.nber.org/">NBER</a>: Has a “New This Week” customisable newsletter that includes <a href="https://www.nber.org/papers?page=1&amp;perPage=50&amp;sortBy=public_date">working papers</a>. You can choose a few categories or keywords, or get everything.</li>
-</ul>
-</section>
-</section>
-<section id="how-to-get-alerts-for-new-papers" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-get-alerts-for-new-papers">How to get alerts for new papers</h2>
-<p><a href="https://academicanswers.waldenu.edu/faq/134432">Google Scholar</a>, <a href="https://support.lens.org/knowledge-base/saved-queries/">Lens.org</a> and <a href="https://plus.dimensions.ai/support/solutions/articles/23000018788-how-can-i-get-alerts-on-new-publications-or-grants-for-my-search-">Dimensions.ai</a> can all send you alerts for particular topics.</p>
-<p>With most of them, you can also use advanced search queries to tweak your search to only get certain keywords. Google Scholar, for example, uses the same search operators as normal Google, ex. fdi OR “foreign direct investment” -“flexible display interface”.</p>
-<p>Once you’ve tuned your search, set an email alert and they’ll send you all new papers that match those search terms.</p>
-</section>
-<section id="how-to-access-the-papers" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-access-the-papers">How to access the papers</h2>
-<section id="institutional-access" class="level3">
-<h3 class="anchored" data-anchor-id="institutional-access">Institutional access</h3>
-<p>If you know someone who’s a student or lecturer, they might have access to academic resources.</p>
-</section>
-<section id="authors" class="level3">
-<h3 class="anchored" data-anchor-id="authors">Authors</h3>
-<p>Authors usually retain copyright and have the legal right to distribute their papers, so you’ll often find them on <a href="https://www.researchgate.net/">ResearchGate</a>, <a href="https://www.scribd.com/">Scribd</a> or the authors’ websites. You can also email them and they’ll usually send over a copy.</p>
-<!-- ## Sci-Hub -->
-<!-- [Sci-Hub](https://sci-hub.se/) is a website that uses academic logins donated by researchers to automatically retrieve the papers you need. Just paste the URL or DOI of the paper you’re trying to access, and Sci-Hub will retrieve the paper for you. -->
-<!-- Note that no new papers are being added to the database while the creator awaits a court hearing. Most stuff before 2020 should be available though. -->
-<!-- Also try [Library Genesis](https://www.libgen.is/scimag/), a website associated with Sci-Hub, as well as [Z-Library](https://booksc.org/). -->
-</section>
-<section id="rscholar" class="level3">
-<h3 class="anchored" data-anchor-id="rscholar">/r/Scholar</h3>
-<p>There’s <a href="https://www.reddit.com/r/Scholar/">a subreddit</a> where people can request specific papers. Try the other methods and if you can’t get the paper, request it there and someone with access will retrieve it for you.</p>
+<section id="summarising-text" class="level3">
+<h3 class="anchored" data-anchor-id="summarising-text">Summarising text</h3>
+<p>In the <code>articles</code> tab, we have a list of articles in different languages. Let’s say they’re too long, and we don’t speak all the languages. We want to summarise them.</p>
+<p>In the <code>summary</code> column, paste the following formula:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode scala code-with-copy"><code class="sourceCode scala"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="op">=</span><span class="fu">LLM</span><span class="op">(</span>B2<span class="op">,</span> <span class="st">"Summarise this article in English."</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Drag the formula down and take a look at the results. You’ll notice that all of the summaries are in English, even if the original article was not.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Despite LLMs being quite good at summarising text, they are <a href="https://www.nytimes.com/2023/11/06/technology/chatbots-hallucination-rates.html">still prone to halucinations</a>. Double-check the results or don’t use them for critical stuff.</p>
+</div>
+</div>
 
 
 </section>
