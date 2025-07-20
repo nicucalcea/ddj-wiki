@@ -1,0 +1,49 @@
+meta:
+  name: Nicu Calcea
+  link:
+    home: https://nicu.md
+    github: https://github.com/nicucalcea
+    bluesky: https://bsky.app/profile/nicu.md
+    linkedin: https://www.linkedin.com/in/nicucalcea/
+  description: |
+    Nicu Calcea is a journalist with 15 years of experience in media, specialised in data reporting. Currently based in London.
+  founded: 1994
+
+color:
+  palette:
+    white: "#fffffe"
+    white-off: "#eff0f3"
+    black: "#0d0d0d"
+    grey-dark: "#2a2a2a"
+    grey-light: "#a7a9be"
+
+    purple: "#994ff3"
+    red: "#e53170"
+
+    orange: "#ff8906"
+    teal: "#419599"
+    burgundy: "#9A4665"
+
+  foreground: white # text color
+  background: grey-dark # background color of some sections
+  primary: black # top navbar background
+  secondary: purple # button background
+  tertiary: purple
+  success: purple # link color
+  info: teal
+  warning: orange
+  danger: burgundy
+  light: white
+  dark: "#404041"
+
+typography:
+  fonts:
+    - family: Roboto
+      source: google
+    - family: Domine
+      source: google
+    - family: Fira Code
+      source: google
+  base: Roboto
+  headings: Domine
+  monospace: Fira Code

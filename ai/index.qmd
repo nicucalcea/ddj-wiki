@@ -39,7 +39,7 @@ You can see this in action in the [OpenAI Playground](https://platform.openai.co
 
 You'll notice the completed words have been highlighted in different colours, and clicking on the highlighted blocks will show you several options and percentages. This indicates the most likely next "token", or group of letters. In our example, there was a 91.38% chance that the sentence `Dearest friend, I daresay I have not partaken of food in ages. I'm positively` would be followed by `fam`, which had a 99.87% change of being followed by `ished`, and so on.
 
-![The OpenAI Playground](/images/gpt-tokens.png)
+![The OpenAI Playground](/media/gpt-tokens.png)
 
 To keep the responses dynamic, LLMs apply a degree of randomness to choosing the next token. This means that asking the same question multiple times may give you different answers.
 

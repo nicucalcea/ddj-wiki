@@ -1,81 +1,72 @@
 project:
   type: website
-  output-dir: docs
-  post-render: 
-    - scripts/move_speaker_notes.py
-    - scripts/generate_config.py
-    - scripts/build_observable.py
+
 website:
-  title: "Data Journalism Wiki"
+  title: "Investigative Data Journalism Training"
   favicon: favicon.png
-  page-navigation: true
-  sidebar:
-    style: "floating"
+  navbar:
+    background: primary
     search: true
-    contents:
-      - text: Home
-        href: index.qmd
-      - section: "Data Sources"
-        # icon: "table"
-        contents:
-          - text: "Data Sources"
-            icon: "table"
-            href: sources/index.qmd
-          - text: "Academic Sources"
-            icon: "mortarboard"
-            href: sources/academic.qmd
-          - text: "Data Calendar"
-            icon: "calendar-week"
-            href: sources/calendar.qmd
-      - section: "Dataviz"
-        contents:
-          - text: "Extending Datawrapper"
-            icon: "bar-chart-steps"
-            href: viz/extending-datawrapper.html
-      - section: "AI"
-        # icon: "robot"
-        contents:
-          - text: "AI for journalists"
-            icon: "robot"
-            href: ai/index.qmd
-          - text: "AI in Google Sheets"
-            icon: "file-earmark-spreadsheet"
-            href: ai/google-sheets.qmd
-          # - text: "AI classification in Python"
-          #   icon: "filetype-py"
-          #   href: ai/python-classification.qmd
-          - text: "Classification agents"
-            icon: "filetype-py"
-            href: ai/python-classification-agent.ipynb
-          # - text: "Data validation in Python"
-          #   icon: "filetype-py"
-          #   href: ai/python-validation.qmd
-          - text: "LLM comparison"
-            icon: "currency-dollar"
-            href: ai/llm-comparison.html
-      - text: Toolbox
-        icon: "tools"
-        href: toolbox/index.qmd
-      - text: Awards
-        icon: "trophy"
-        href: awards/index.qmd
-  repo-url: https://github.com/nicucalcea/ddj-wiki
-  repo-actions: [edit, issue]
-  site-url: https://ddj.nicu.md/
-  page-footer: "<a href='https://nicu.md/' target='_blank'>Copyright 2024, Nicu Calcea</a>."
+    left:
+      - href: index.qmd
+        text: Home
+      - sidebar:resources
+      - sidebar:lessons
+      - text: About
+        href: https://nicu.md
+      - href: "mailto:training@nicu.md?subject=Data Training"
+        text: Contact
+    tools:
+      - icon: envelope
+        href: mailto:training@nicu.md?subject=Data Training
+  sidebar:
+    - id: resources
+      title: "Resources"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        - section: Data Sources
+          contents:
+            - sources/index.qmd
+            - sources/academic.qmd
+            - sources/calendar.qmd
+        - section: Toolbox
+          contents:
+            - toolbox/index.qmd
+        - section: Events
+          contents:
+            - awards/index.qmd
+    - id: lessons
+      title: "Lessons"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        - section: Data Journalism
+          contents:
+            - ddj/index.qmd
+            # - sources/index.qmd
+        - section: Generative AI
+          contents:
+            - ai/index.qmd
+            - ai/google-sheets.qmd
+            - ai/python-classification-agent.ipynb
+  page-footer: "Copyright 2025, Nicu Calcea • Made with 💜 in London"
 
 format:
   html:
+    respect-user-color-scheme: true
     theme:
-      - cyborg
-      - style.scss
+      light:
+        - flatly
+        - brand
+      dark:
+        - darkly
+        - brand
+    css: styles/style.css
     toc: true
-    code-overflow: wrap
+    link-external-icon: true
+    link-external-newwindow: true
 
-execute:
-  cache: true
-
-editor: source
-
-resources:
-  - CNAME
+brand:
+  light: styles/brand-light.yml
+  dark: styles/brand-dark.yml

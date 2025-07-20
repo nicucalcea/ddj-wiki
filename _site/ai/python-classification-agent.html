@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>AI classification agent – Investigative Data Journalism Training</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d49c55b2a02038d936e54d6a2565e99.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-95b9d8bfb9033cfe0e62f8828f2324d8.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-4d49c55b2a02038d936e54d6a2565e99.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f9ebf545667ba58f7885b61125ff288e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0dada23843ea8f816dae34d73912f47e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-f9ebf545667ba58f7885b61125ff288e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Investigative Data Journalism Training</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li class="dropdown-header">Data Sources</li>
+        <li>
+    <a class="dropdown-item" href="../sources/index.html">
+ <span class="dropdown-text">Data Sources</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sources/academic.html">
+ <span class="dropdown-text">Academic Data Sources</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../sources/calendar.html">
+ <span class="dropdown-text">Data Calendar</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Toolbox</li>
+        <li>
+    <a class="dropdown-item" href="../toolbox/index.html">
+ <span class="dropdown-text">Data Toolbox</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Events</li>
+        <li>
+    <a class="dropdown-item" href="../awards/index.html">
+ <span class="dropdown-text">Data Journalism Awards</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lessons" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Lessons</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lessons">    
+        <li class="dropdown-header">Data Journalism</li>
+        <li>
+    <a class="dropdown-item" href="../ddj/index.html">
+ <span class="dropdown-text">Introduction to Data Journalism</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Generative AI</li>
+        <li>
+    <a class="dropdown-item" href="../ai/index.html">
+ <span class="dropdown-text">AI for journalists</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../ai/google-sheets.html">
+ <span class="dropdown-text">AI in Google Sheets</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../ai/python-classification-agent.html">
+ <span class="dropdown-text">AI classification agent</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://nicu.md"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:training@nicu.md?subject=Data Training"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="mailto:training@nicu.md?subject=Data Training" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-envelope"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">Generative AI</a></li><li class="breadcrumb-item"><a href="../ai/python-classification-agent.html">AI classification agent</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Data Journalism</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ddj/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Data Journalism</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Generative AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI for journalists</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/google-sheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI in Google Sheets</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ai/python-classification-agent.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">AI classification agent</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#install-and-load-libraries" id="toc-install-and-load-libraries" class="nav-link active" data-scroll-target="#install-and-load-libraries">Install and load libraries</a></li>
+  <li><a href="#prep-data" id="toc-prep-data" class="nav-link" data-scroll-target="#prep-data">Prep data</a></li>
+  <li><a href="#trying-to-make-ai-lie-less" id="toc-trying-to-make-ai-lie-less" class="nav-link" data-scroll-target="#trying-to-make-ai-lie-less">Trying to make AI lie less</a></li>
+  <li><a href="#creating-machine-readable-data" id="toc-creating-machine-readable-data" class="nav-link" data-scroll-target="#creating-machine-readable-data">Creating machine-readable data</a></li>
+  <li><a href="#building-agents" id="toc-building-agents" class="nav-link" data-scroll-target="#building-agents">Building agents</a></li>
+  <li><a href="#running-on-the-full-dataset" id="toc-running-on-the-full-dataset" class="nav-link" data-scroll-target="#running-on-the-full-dataset">Running on the full dataset</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
+  <li><a href="#augmenta-a-better-way" id="toc-augmenta-a-better-way" class="nav-link" data-scroll-target="#augmenta-a-better-way">Augmenta: A better way</a></li>
+  </ul>
+<div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-agent.ipynb" target="_blank"><i class="bi bi-download"></i>Download notebook</a></li><li><a href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-agent.ipynb" target="_blank"><i class="bi bi-google"></i>Open in Google Colab</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../ai/index.html">Generative AI</a></li><li class="breadcrumb-item"><a href="../ai/python-classification-agent.html">AI classification agent</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">AI classification agent</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>You find yourself staring at a dataset with tens or hundreds of thousands of rows. Maybe you want to get up-to-date FOIA contact details for all government departments in your country, or to find out which political donors have links to the fossil fuels industry. What do you do?</p>
+<p>This kind of work is time-consuming and challenging. However, Large Language Models (LLMs) like those powering ChatGPT can help journalists automate simple research and classification tasks that would take an unreasonably long time to do otherwise.</p>
+<p>In this session, we’ll outline how to use LLMs, search engines and web scraping to help us identify links between Donald Trump and his donors. You can <a href="https://github.com/nicucalcea/ddj-wiki/blob/main/ai/python-classification-agent.ipynb">download the notebook</a> and run it yourself, or you can <a href="https://colab.research.google.com/github/nicucalcea/ddj-wiki/blob/main/ai/python-classification-agent.ipynb">run it in the cloud using Google Colab</a>. Both links also in the sidebar to the right, or at the bottom of the page on mobile.</p>
+<section id="install-and-load-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="install-and-load-libraries">Install and load libraries</h2>
+<p>First, we’ll need to install some libraries to help us call different LLMs and retrieve search results.</p>
+<div id="cell-4" class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pandas</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pydantic<span class="op">-</span>ai</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install duckduckgo<span class="op">-</span>search</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install trafilatura</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then, we’ll import those libraries.</p>
+<div id="cell-6" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># data</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># scraping</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> urllib <span class="im">import</span> request</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> ssl</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> trafilatura <span class="im">import</span> extract</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># validation</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> List, Tuple</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pydantic <span class="im">import</span> BaseModel</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> typing <span class="im">import</span> Literal</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># AI</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pydantic_ai <span class="im">import</span> Agent, Tool</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pydantic_ai.common_tools.duckduckgo <span class="im">import</span> duckduckgo_search_tool</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># make async work in jupyter</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nest_asyncio</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>nest_asyncio.<span class="bu">apply</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finally, we need to define some of the API keys we’ll be using. You can get your own <a href="https://platform.openai.com/account/api-keys">OpenAI API key</a> or from another provider.</p>
+<p><span hidden="">Get a <a href="https://static.globalwitness.org/dataharvest-api-keys.txt" target="_blank">temporary API key here</a>.</span></p>
+<div id="cell-8" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>os.environ[<span class="st">"OPENAI_API_KEY"</span>] <span class="op">=</span> <span class="st">""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="prep-data" class="level2">
+<h2 class="anchored" data-anchor-id="prep-data">Prep data</h2>
+<p>We’ll work with some data from the US Federal Election Commission (FEC) on <a href="https://docquery.fec.gov/cgi-bin/forms/C00894162/1889684/f132">donations to Donald Trump’s inaugural committee</a>. Because a downloadable version isn’t provided, we’ll scrape the data directly from the website.</p>
+<div id="cell-11" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> request.urlopen(<span class="st">"https://docquery.fec.gov/cgi-bin/forms/C00894162/1889684/f132"</span>,</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                           context<span class="op">=</span>ssl._create_unverified_context())</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>html <span class="op">=</span> response.read()</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>fec_raw <span class="op">=</span> pd.read_html(html)[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We need to fix some of the formatting issues, like removing dollar signs and converting dates to a more standard format.</p>
+<div id="cell-13" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fec <span class="op">=</span> fec_raw.copy()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>fec <span class="op">=</span> fec.iloc[:<span class="op">-</span><span class="dv">1</span>] <span class="co"># the last row is a summary</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>fec[<span class="st">'Date Donation Received'</span>] <span class="op">=</span> pd.to_datetime(</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    fec[<span class="st">'Date Donation Received'</span>], </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">format</span><span class="op">=</span><span class="st">'%m/</span><span class="sc">%d</span><span class="st">/%Y'</span>  <span class="co"># Format for "31/12/2025"</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>fec[<span class="st">'Donation Amount'</span>] <span class="op">=</span> fec[<span class="st">'Donation Amount'</span>].<span class="bu">str</span>.replace(<span class="st">'$'</span>, <span class="st">''</span>, regex<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>fec[<span class="st">'Donation Amount'</span>] <span class="op">=</span> pd.to_numeric(fec[<span class="st">'Donation Amount'</span>])</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>fec <span class="op">=</span> fec.drop(columns<span class="op">=</span>[<span class="st">"Donor's Aggregate Donations To Date"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Some donors donated multiple times, so we’ll want to group them together and only classify them once.</p>
+<div id="cell-15" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fec_total <span class="op">=</span> fec.groupby(<span class="st">'Name'</span>)[<span class="st">'Donation Amount'</span>].<span class="bu">sum</span>().reset_index()</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>fec_total <span class="op">=</span> fec_total.sort_values(by<span class="op">=</span><span class="st">'Donation Amount'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>fec_total <span class="op">=</span> fec_total.head(<span class="dv">5</span>) <span class="co"># To keep things simple, we're only going to use the first 5 rows of the dataset.</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>os.makedirs(<span class="st">'data'</span>, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>fec_total.to_csv(<span class="st">'data/fec_unclassified.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We should be ready to go. Let’s see what the data looks like.</p>
+<div id="cell-17" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>fec_total</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Donation Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">618</td>
+<td>PILGRIM'S PRIDE CORPORATION</td>
+<td>5000000.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">652</td>
+<td>RIPPLE LABS, INC.</td>
+<td>4889345.33</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">824</td>
+<td>WARREN A STEPHENS</td>
+<td>4000000.00</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">667</td>
+<td>ROBINHOOD MARKETS, INC.</td>
+<td>2000000.00</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">360</td>
+<td>JARED ISAACMAN</td>
+<td>2000000.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="trying-to-make-ai-lie-less" class="level2">
+<h2 class="anchored" data-anchor-id="trying-to-make-ai-lie-less">Trying to make AI lie less</h2>
+<p>Large Language Models are prone to <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">hallucinations</a>. If you ask an LLM a question it doesn’t know the answer to, <a href="https://ddj.nicu.md/ai/">it will confidently make up a plausible-sounding answer</a> that is completely wrong. This is particularly the case with lesser known organisations or individuals that wouldn’t feature promionently in the training data.</p>
+<p>One way to minimise (but not completely eliminate) hallucinations is by “grounding” the LLM with some factual data like documents or databases. This is sometimes a technique called Retrieval-Augmented Generation (RAG).</p>
+<p>In our case, we want to allow out agent to search the internet to look for additional information about each donor.</p>
+<p>We could try scraping search results from Google like we did with the FEC data, but Google doesn’t like that, and they will put various roadblocks in your way such as CAPTCHAs, rate limits or even blocking your IP address. Instead, they want you to use their <a href="https://developers.google.com/custom-search/v1/overview">Custom Search API</a>, which is paid and limited to 10k queries per day.</p>
+<p>Other search engines like Brave provide generous free tiers and more reasonable pricing, and there are some services that specifically cater to AI applications, like <a href="https://tavily.com/">Tavily</a> and <a href="https://docs.perplexity.ai/home">Perplexity</a>.</p>
+<p>We’ll use the DuckDuckGo API since it’s free (but rate-limited), doesn’t require signing up for an API key, and comes included with the agents framework we’ll be using.</p>
+<p>We also want to give our AI the ability to visit each of those search results and extract the text from there. We’ll use a library called <a href="https://github.com/adbar/trafilatura">Trafilatura</a> since it extract the main text without headers, footers and other irrelevant bits that we probably don’t need for the classification.</p>
+<div id="cell-21" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_text(urls: List[<span class="bu">str</span>]) <span class="op">-&gt;</span> List[Tuple[<span class="bu">str</span>, <span class="bu">str</span>]]:</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Extract text content from a list of URLs.</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">    </span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">        urls: A list of URLs to scrape</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">        </span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">        A list of tuples containing (url, extracted_text)</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    results <span class="op">=</span> []</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> url <span class="kw">in</span> urls:</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># print(f"Scraping {url}...")</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">try</span>:</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>            response <span class="op">=</span> requests.get(url, timeout<span class="op">=</span><span class="dv">30</span>, verify<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>            response.raise_for_status()</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>            extracted_text <span class="op">=</span> extract(response.text, output_format<span class="op">=</span><span class="st">"markdown"</span>)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>            results.append((url, extracted_text))</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span> requests.RequestException <span class="im">as</span> e:</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>            <span class="co"># print(f"Error scraping {url}: {str(e)}")</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>            results.append((url, <span class="ss">f"Error: </span><span class="sc">{</span><span class="bu">str</span>(e)<span class="sc">}</span><span class="ss">"</span>))</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We’ll eventually give our agent access to both the duckduckgo search function, as well as the <code>extract_text</code> function that we just created.</p>
+</section>
+<section id="creating-machine-readable-data" class="level2">
+<h2 class="anchored" data-anchor-id="creating-machine-readable-data">Creating machine-readable data</h2>
+<p>Most modern LLMs are trained to produce structured output, which means they can return data in a specific format. This is useful for producing consistent outputs when we’re asking the model to classify or research multiple items.</p>
+<p>We can define the output format we expect using a <a href="https://docs.pydantic.dev/latest/concepts/models/">Pydantic model</a>.</p>
+<div id="cell-25" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> TrumpConnection(BaseModel):</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    donor_industry: <span class="bu">str</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    type_of_connection: Literal[<span class="st">'Family'</span>, <span class="st">'Business'</span>, <span class="st">'Political'</span>, <span class="st">'Other'</span>, <span class="st">'No connection'</span>, <span class="st">'Don</span><span class="ch">\'</span><span class="st">t know or not enough information'</span>]</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    explanation: <span class="bu">str</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    source_urls: <span class="bu">str</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="building-agents" class="level2">
+<h2 class="anchored" data-anchor-id="building-agents">Building agents</h2>
+<p>If we have an idea about what we want to search for, we could use a simple workflow where we first search for the donor’s name, then extract the text from the first 5-10 results, and finally feed them to an LLM. An earlier version of this project used this approach, and it worked well enough.</p>
+<p>Since then, AI agents have become a lot more prominent. Agents are systems in which LLMs are allowed to choose their own steps, use tools appropriate for different tasks and make decisions about when to stop.</p>
+<p>The code required to create an agent from scratch is fairly simple, but there are several frameworks which come with batteries included. We’ll use <a href="https://ai.pydantic.dev">PydanticAI</a>, but most frameworks provide a similar set of features.</p>
+<p>First, let’s create the agent. We’ll choose a model to use, give it a system prompt, define the tools it should have access to, and the structured output we expect.</p>
+<div id="cell-28" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>agent <span class="op">=</span> Agent(</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'openai:gpt-4.1-mini'</span>,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    system_prompt<span class="op">=</span><span class="st">'Answer the question to the best of your abilities, using the tools at your disposal (`duckduckgo_search_tool` and `extract_text`).'</span>,</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    tools<span class="op">=</span>[duckduckgo_search_tool(), Tool(extract_text)],</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    output_type<span class="op">=</span>TrumpConnection,</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    model_settings<span class="op">=</span>{<span class="st">'temperature'</span>: <span class="fl">0.0</span>}</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s check whether that works. We’ll ask the agent to classify a single donor, and see what it returns.</p>
+<div id="cell-30" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> agent.run_sync(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'What is the connection between WARREN A STEPHENS and Donald Trump?'</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-31" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>result.all_messages()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+<pre><code>[ModelRequest(parts=[SystemPromptPart(content='Answer the question to the best of your abilities, using the tools at your disposal (`duckduckgo_search_tool` and `extract_text`).', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 20, 9940, tzinfo=datetime.timezone.utc), dynamic_ref=None, part_kind='system-prompt'), UserPromptPart(content='What is the connection between WARREN A STEPHENS and Donald Trump?', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 20, 9955, tzinfo=datetime.timezone.utc), part_kind='user-prompt')], instructions=None, kind='request'),
+ ModelResponse(parts=[ToolCallPart(tool_name='duckduckgo_search', args='{"query":"WARREN A STEPHENS and Donald Trump connection"}', tool_call_id='call_Nm06XTWC5CNY7d0N114NoE86', part_kind='tool-call')], usage=Usage(requests=1, request_tokens=226, response_tokens=26, total_tokens=252, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0, 'cached_tokens': 0}), model_name='gpt-4.1-mini-2025-04-14', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 27, tzinfo=datetime.timezone.utc), kind='response', vendor_id='chatcmpl-BZb2Jc45GK38dNYhKUptZR8KJeyRv'),
+ ModelRequest(parts=[ToolReturnPart(tool_name='duckduckgo_search', content=[{'title': 'Warren Stephens - Wikipedia', 'href': 'https://en.wikipedia.org/wiki/Warren_Stephens', 'body': 'Warren Amerine Stephens (born February 18, 1957) is an American diplomat and businessman who is the designate to serve as the United States ambassador to the United Kingdom under President Donald Trump in his second administration.He is the chairman, president and chief executive officer (CEO) of Stephens Inc., a privately held investment bank. [1]On December 2, 2024, President-elect Trump ...'}, {'title': "Trump's UK Ambassador Has Investments in Industries Set to Benefit from ...", 'href': 'https://www.desmog.com/2025/05/15/donald-trump-uk-ambassador-warren-stephens-investments-industries-set-to-benefit-from-trade-deal/', 'body': "Stephens Inc., founded in 1933, has a $7 billion portfolio listed with the SEC, making it one of the largest privately owned investment banks in the U.S.. Warren Stephens is listed as chairman of the company, having also served as its CEO and president prior to being appointed as Trump's ambassador to the UK in February. The firm is now run ..."}, {'title': 'Trump picks investment banker Warren Stephens as UK ambassador - BBC', 'href': 'https://www.bbc.co.uk/news/articles/c20e79nlpe6o', 'body': 'President-elect Donald Trump has nominated businessman Warren Stephens to serve as America\'s ambassador to the United Kingdom. "Warren has always dreamed of serving the United States full time ...'}, {'title': 'Trump names billionaire investment banker Warren Stephens as his envoy ...', 'href': 'https://apnews.com/article/trump-transition-appointments-ambassador-52e4744db02a0f8e078685a7a754835d', 'body': 'WASHINGTON (AP) — President-elect Donald Trump has named billionaire investment banker Warren Stephens as his envoy to Britain, a prestigious posting for the Republican donor whose contributions this year included $2 million to a Trump-backing super PAC. Trump, in a post on his Truth Social site Monday evening, announced he was selecting Stephens to be the U.S. ambassador to the Court of ...'}, {'title': "Who Is Warren Stephens: Net Worth, Family, Prison Scandal, and Trump's ...", 'href': 'https://www.ibtimes.co.uk/who-warren-stephens-net-worth-family-prison-scandal-trumps-pick-uk-ambassador-1729149', 'body': 'Warren Stephens, a billionaire investment banker and CEO of Stephens Inc., has been nominated by President-elect Donald Trump to serve as the next U.S. Ambassador to the United Kingdom.'}, {'title': "Trump's UK Ambassador Stands to Benefit From New Trade Deal - Jacobin", 'href': 'https://jacobin.com/2025/05/trump-uk-ambassador-trade-deal', 'body': "President Donald Trump's UK ambassador, Warren Stephens, holds shares worth hundreds of millions in the key sectors that stand to benefit from last week's UK-US trade agreement. Stephens played a key role in pushing through the deal, according to the United Kingdom's ambassador to the United States, Peter Mandelson, and campaigners have raised concerns that he will personally benefit."}, {'title': 'Meet Warren Stephens, Investment Banker Picked By Trump To Be UK ...', 'href': 'https://www.timesnownews.com/world/us/us-news/who-is-warren-stephens-donald-trump-uk-ambassador-pick-age-net-worth-career-family-controversiesotherdetails-article-115912443', 'body': 'Warren Stephens, a multibillionaire investment banker, has been nominated by President-elect Donald Trump to be the next American ambassador to the United Kingdom. Stephens, the chairman of Stephens Inc., brings to the position his conservative political connections and decades of economic success. The nomination comes amid rumors that former U.K. Ambassador Woody Johnson will return, and ...'}, {'title': "Donald Trump news: US President's man in London, Warren Stephens, backs ...", 'href': 'https://thenightly.com.au/business/donald-trump-news-us-presidents-man-in-london-warren-stephens-backs-aukus-partnership-c-18749933', 'body': 'Donald Trump\'s new ambassador to the UK has used his first public speech to back the AUKUS partnership with Britain and Australia. Warren Stephens highlighted how "vital the US-UK relationship is to our countries and to the world" at an event in parliament attended by UK Prime Minister Keir ...'}, {'title': 'Warren Stephens: the Arkansan Spurs fan Trump is sending to London', 'href': 'https://www.ft.com/content/ec972106-e168-42ee-9805-b9854bb65b82', 'body': "Warren Stephens took control of his family's investment bank in 2005 after the death of his father, Jack, just as Wall Street entered a debt bubble that would nearly collapse the global ..."}, {'title': 'Trump Picks Warren Stephens, Billionaire Investment Banker, for U.K ...', 'href': 'https://www.nytimes.com/2024/12/02/us/politics/britain-ambassador-trump-stephens.html', 'body': "Warren Stephens, an investment banker, gave $2 million in 2016 to a group aiming to block Donald J. Trump's political rise. More recently, he backed Asa Hutchinson, Chris Christie, Mike Pence ..."}], tool_call_id='call_Nm06XTWC5CNY7d0N114NoE86', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 28, 44169, tzinfo=datetime.timezone.utc), part_kind='tool-return')], instructions=None, kind='request'),
+ ModelResponse(parts=[ToolCallPart(tool_name='extract_text', args='{"urls":["https://en.wikipedia.org/wiki/Warren_Stephens","https://www.bbc.co.uk/news/articles/c20e79nlpe6o","https://apnews.com/article/trump-transition-appointments-ambassador-52e4744db02a0f8e078685a7a754835d","https://www.ibtimes.co.uk/who-warren-stephens-net-worth-family-prison-scandal-trumps-pick-uk-ambassador-1729149","https://www.nytimes.com/2024/12/02/us/politics/britain-ambassador-trump-stephens.html"]}', tool_call_id='call_9R70VTnj65ktLbgkGHTUrOps', part_kind='tool-call')], usage=Usage(requests=1, request_tokens=1368, response_tokens=146, total_tokens=1514, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0, 'cached_tokens': 0}), model_name='gpt-4.1-mini-2025-04-14', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 30, tzinfo=datetime.timezone.utc), kind='response', vendor_id='chatcmpl-BZb2MDc6jiTXRvu9F1iTnwSp2sC6C'),
+ ModelRequest(parts=[ToolReturnPart(tool_name='extract_text', content=[('https://en.wikipedia.org/wiki/Warren_Stephens', '# Warren Stephens\n\n\nWarren Stephens | |\n|---|---|\n| United States Ambassador to the United Kingdom | |\nAssuming officeTBD | |\n| President | Donald Trump |\n| Succeeding | Jane D. Hartley |\n| Personal details | |\n| Born | Warren Amerine Stephens February 18, 1957 Little Rock, Arkansas, U.S. |\n| Spouse | Harriet Stephens |\n| Children | 3 |\n| Parent |\n|\n| Education | Washington and Lee University (BA) Wake Forest University (MBA) |\n| Occupation | Chairman, President, and CEO of Stephens Inc. |\n\n**Warren Amerine Stephens** (born February 18, 1957) is an American diplomat and businessman who is the designate to serve as the United States ambassador to the United Kingdom under President Donald Trump in his second administration. He is the chairman, president and chief executive officer (CEO) of Stephens Inc., a privately held investment bank.[1]\n\nOn December 2, 2024, President-elect Trump announced his nomination of Stephens to serve as the ambassador to the United Kingdom.[2] The U.S. Senate confirmed his nomination in a 59–39 vote.[3] He was sworn in on April 30, 2025.[ citation needed]\n\n## Early life and education\n\n[edit]Stephens was born in Little Rock, the son of Jackson T. Stephens and Mary Amerine Stephens. Warren\'s father, "Jack" Stephens, and his uncle, "Witt" Stephens, partnered as investors and financiers in the investment firm, Stephens Inc.[4]\n\nWarren began his education in Little Rock, and in 1975, graduated from Trinity Presbyterian High School in Montgomery, Alabama. He graduated from Washington and Lee University in 1979 with a BA in economics, and received his MBA from Wake Forest University in 1981.[5]\n\n## Career\n\n[edit]Stephens joined his father and uncle in the investment banking business in Little Rock, which had 139 employees. At that time, the firm resembled and operated much like one of the old British merchant banks, investing the firm\'s and family funds in various businesses and ventures, and it still operates the same way today. Stephens Inc is noted for handling the IPO of Wal-Mart Stores in 1970.[4]\n\nStephens began work as an associate in the corporate finance department, concentrating on oil and gas. He became head of the department in 1983 and spent a lot of time on mergers and acquisitions. On February 18, 1986, Stephens was appointed president and CEO of Stephens Inc.[4]\n\nIn 1990, he was the senior advisor to Tyson Foods in their acquisition of Holly Farms in a nine-month takeover battle.[4] He is only the third chairman, president and CEO in the firm\'s more than 90 years of operations since 1933.[6]\n\nIn 2006, Stephens acquired 100 percent of the outstanding shares of Stephens Inc from the other family members.[4]\n\nStephens is on the board of Dillard\'s.[7]\n\nIn January 2025, Warren Stephens revealed his decision to step down from his role as CEO of Stephens Inc., as he gets ready to take on the position of U.S. ambassador to the United Kingdom. His sons, Miles and John Stephens, have been named co-CEOs, representing the third generation of family leadership at the firm.[8]\n\n## Political involvement\n\n[edit]A Republican, he supported Bob Dole in 1996, Steve Forbes in 1999, and has supported Mike Huckabee.[9] Stephens was a bundler for Mitt Romney in 2012.[10] He has been critical of presidents Bill Clinton and Barack Obama.[11][12][9] During the 2016 election, Stephens and his brother Jackson Stephens were major financial supporters of the Stop Trump movement.[13]\n\nDuring the 2020 presidential election, Stephens donated more than $3 million to Super PACs supporting Trump. In the 2024 Republican presidential primaries, Stephens was a major financial backer of Asa Hutchinson and Nikki Haley.[14][15] During the 2024 presidential campaign, Stephens also contributed to MAGA Inc., a Super PAC aligned with Donald Trump.[16]\n\nOn December 2, 2024, President-elect Donald Trump announced Stephens as the nominee to serve as the United States ambassador to the United Kingdom.[17] On February 12, 2025, his nomination was sent to the Senate.[18] His nomination was confirmed by a vote of 59–39 on April 29, 2025.[3] He is awaiting the presentation of his credentials.\n\n## Philanthropy\n\n[edit]Stephens was on the board of trustees of his alma mater, Washington and Lee University.[5] Stephens and his wife Harriet are benefactors of various organizations, most notably the Episcopal Collegiate School and the Arkansas Arts Center, both in Little Rock.[19][20]\n\n## References\n\n[edit]**^**"Warren Stephens".*Stephens*.**^**"Trump picks investment banker Warren Stephens as UK ambassador".*BBC News*. Retrieved December 3, 2024.- ^\n**a**Solomon, Scott (April 29, 2025). "Warren Stephens receives confirmation to serve as U.S. Ambassador to United Kingdom".**b***KATV*. Retrieved April 29, 2025. - ^\n**a****b****c****d**"Stephens History".**e***Stephens*. Archived from the original on December 8, 2014. Retrieved December 11, 2014. - ^\n**a**"W&amp;L".**b***Washington &amp; Lee*. **^**"University of Arkansas/Walton College/Arkansas Business Hall of Fame/Warren A. Stephens". Retrieved December 7, 2023.**^**"Dillard\'s Board of Directors".*Bloomberg Business Week*. Archived from the original on December 13, 2014.**^**Clarke, Paul. "Warren Stephens\' UK ambassador role triggers succession at family owned investment bank".*www.fnlondon.com*. Retrieved May 16, 2025.- ^\n**a**Steven Barnes, \'PRIVATE SECTOR; Understatement, at $5 Billion\', in**b***The New York Times*, November 21, 1999 [1] **^**Schouten, Fredreka (July 13, 2012). "Mitt Romney announces three bundlers".*USA Today*. Retrieved October 15, 2013.**^**"Warren Stephens".*Forbes*. Archived from the original on May 28, 2023.**^**BusinessWeek profile**^**Mider, Zachary (March 21, 2016). "Arkansas Billionaire Warren Stephens A Leading Stop-Trump Donor". Southwest Times Record. Archived from the original on August 17, 2016. Retrieved July 18, 2016.**^**Schwartz, Brian (July 31, 2023). "Almost all of Trump\'s biggest 2020 super PAC donors refrain from giving to his rivals". NBC News.**^**Reston, Maeve; Morse, Clara Ence; Knowles, Hanna (February 1, 2024). "Trump spent more than $55 million in donor money on legal fees last year, filings show".*Washington Post*.**^**Woodward, Alex. "Reclusive Republican megadonor drops $50m into Trump super PAC". Independent.**^**"Donald Trump nominates billionaire investment banker Warren Stephens to be US ambassador to UK".*Sky News*. United States. December 2, 2024. Retrieved December 3, 2024.**^**"Nominations Sent to the Senate" (Press release). The White House. February 12, 2025.**^**"Episcopal Collegiate School: History".*Episcopal Collegiate School*.**^**"The King of Little Rock".*Barron\'s*.\n\n- 1957 births\n- Living people\n- 20th-century American businesspeople\n- 21st-century American businesspeople\n- 21st-century American diplomats\n- Ambassadors of the United States to the United Kingdom\n- American billionaires\n- American chief executives of financial services companies\n- American investment bankers\n- Arkansas Republicans\n- Businesspeople from Little Rock, Arkansas\n- People named in the Paradise Papers\n- Second Trump administration personnel\n- Wake Forest University alumni\n- Washington and Lee University alumni\n- Washington and Lee University trustees'), ('https://www.bbc.co.uk/news/articles/c20e79nlpe6o', '# Trump picks investment banker Warren Stephens as UK ambassador\n\n- Published\n\n**President-elect Donald Trump has nominated businessman Warren Stephens to serve as Americaâs ambassador to the United Kingdom.**\n\nâWarren has always dreamed of serving the United States full time,â Trump said in a statement on Truth Social. âI am thrilled that he will now have that opportunity as the top diplomat, representing the USA to one of Americaâs most cherished and beloved allies.â\n\nStephens, who is CEO of private Arkansas-based investment bank Stephens Inc, donated millions to Trumpâs re-election campaign this year.\n\nIf his nomination is successful, Stephens will help to maintain the so-called âspecial relationshipâ between the US and the UK.\n\nThe two countries maintain close military, intelligence, and cultural ties.\n\nTrump has vowed to rework the USâ relationships abroad, vowing to implement an âAmerica-firstâ ethos to foreign policy.\n\nThe role of US ambassador to the UK is one of the most coveted diplomatic positions, and presidents have been known to bestow the role to prominent backers.\n\nDuring his first term in office, Trump appointed Woody Johnson, a top Republican donor and owner of the American football team the New York Jets, as UK ambassador.\n\nBarack Obama chose long-time Democratic Party fundraiser and lawyer Louis Susman as his first emissary to the UK - or the Court of St James.\n\nStephens did not always back Trumpâs candidacies, however. In 2016, when Trump first ran for president, Stephens donated about $4m (Â£3.1m) to political groups that sought to stop Trumpâs ascent, the Arkansas Democrat-Gazette reported at the time.\n\nThe investment banker also donated over $2m to a political action committee that supported former UN Ambassador Nikki Haley as she unsuccessfully ran for president in 2024, the campaign finance watchdog OpenSecrets found.\n\nWhen Trump ultimately triumphed in this yearâs Republican presidential primary, however, Stephens threw his support behind him. Federal campaign finance data show he also donated to Republican groups and US Senate candidates this year.\n\nIn a statement, Stephens said he was honoured by the nomination.\n\n"I have expressed to President Trump that I would be extremely proud to serve our country and his administration, working to implement the Presidentâs agenda and further strengthen the long-standing alliance between the United States and the United Kingdom,â he said.\n\nHe and his wife also maintain a philanthropic organisation, the Harriet and Warren Stephens Family Foundation, which has donated to the Arkansas Museum of Fine Arts, the University of Mississippi, and the Episcopal Collegiate School in Little Rock.\n\n- Published2 December 2024\n\n- Published1 December 2024\n\n- Published25 February\n\n\nNorth America correspondent Anthony Zurcher makes sense of US politics in his twice weekly US Election Unspun newsletter. Readers in the UK can sign up here. Those outside the UK can sign up here.'), ('https://apnews.com/article/trump-transition-appointments-ambassador-52e4744db02a0f8e078685a7a754835d', '# Trump names billionaire investment banker Warren Stephens as his envoy to Britain\n\nWASHINGTON (AP) — President-elect Donald Trump has named billionaire investment banker Warren Stephens as his envoy to Britain, a prestigious posting for the Republican donor whose contributions this year included $2 million to a Trump-backing super PAC.\n\nTrump, in a post on his Truth Social site Monday evening, announced he was selecting Stephens to be the U.S. ambassador to the Court of Saint James. The Senate is required to confirm the choice.\n\n“Warren has always dreamed of serving the United States full time. I am thrilled that he will now have that opportunity as the top Diplomat, representing the U.S.A. to one of America’s most cherished and beloved Allies,” Trump said in in his post.\n\nStephens is the chairman, president and CEO of Little Rock, Arkansas-based financial services firm Stephens Inc., having taken over the firm from his father.\n\nTrump has already named many of his nominees for his Cabinet and high-profile diplomatic posts, assembling a roster of staunch loyalists. Over the weekend, Trump announced he intends to nominate real estate developer Charles Kushner, father of Trump’s son-in-law Jared Kushner, to serve as ambassador to France.\n\nDuring his first term, Trump selected Robert “Woody” Johnson, a contributor to his campaign and the owner of the New York Jets football team, as his representative to the United Kingdom.'), ('https://www.ibtimes.co.uk/who-warren-stephens-net-worth-family-prison-scandal-trumps-pick-uk-ambassador-1729149', 'Error: 403 Client Error: Forbidden for url: https://www.ibtimes.co.uk/who-warren-stephens-net-worth-family-prison-scandal-trumps-pick-uk-ambassador-1729149'), ('https://www.nytimes.com/2024/12/02/us/politics/britain-ambassador-trump-stephens.html', 'Error: 403 Client Error: Forbidden for url: https://www.nytimes.com/2024/12/02/us/politics/britain-ambassador-trump-stephens.html')], tool_call_id='call_9R70VTnj65ktLbgkGHTUrOps', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 33, 605096, tzinfo=datetime.timezone.utc), part_kind='tool-return')], instructions=None, kind='request'),
+ ModelResponse(parts=[ToolCallPart(tool_name='final_result', args='{"donor_industry":"Investment banking and financial services","type_of_connection":"Political","explanation":"Warren A. Stephens is a billionaire investment banker and CEO of Stephens Inc. He was nominated by President Donald Trump to serve as the United States ambassador to the United Kingdom in Trump\'s second administration. Stephens has been a significant political donor, including donations to Trump-aligned Super PACs and campaigns. Although he initially supported efforts to stop Trump in 2016, he later became a major financial supporter of Trump and his aligned political groups. His appointment as ambassador is a political connection stemming from his support and donations to Trump and his administration.","source_urls":"https://en.wikipedia.org/wiki/Warren_Stephens, https://www.bbc.co.uk/news/articles/c20e79nlpe6o, https://apnews.com/article/trump-transition-appointments-ambassador-52e4744db02a0f8e078685a7a754835d"}', tool_call_id='call_lyRikPjRKAIGUgXvxW7r9lxc', part_kind='tool-call')], usage=Usage(requests=1, request_tokens=4513, response_tokens=206, total_tokens=4719, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0, 'cached_tokens': 0}), model_name='gpt-4.1-mini-2025-04-14', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 34, tzinfo=datetime.timezone.utc), kind='response', vendor_id='chatcmpl-BZb2QjD4o50FAzQDPPzPcwg6DiQV0'),
+ ModelRequest(parts=[ToolReturnPart(tool_name='final_result', content='Final result processed.', tool_call_id='call_lyRikPjRKAIGUgXvxW7r9lxc', timestamp=datetime.datetime(2025, 5, 21, 10, 32, 38, 978804, tzinfo=datetime.timezone.utc), part_kind='tool-return')], instructions=None, kind='request')]</code></pre>
+</div>
+</div>
+<p>As you can see above, our agent started by searching the internet, read the search results, selected a few of the most relevant ones, read the text from those pages, and finally produced an output in the format we defined earlier.</p>
+</section>
+<section id="running-on-the-full-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="running-on-the-full-dataset">Running on the full dataset</h2>
+<p>We now have a working agent that can search the internet, read websites and return structured outputs. We can now have it run on each row of our dataset and return a full classification for each donor.</p>
+<p>First, let’s define a simple function that incorporates the agent run shown above.</p>
+<div id="cell-35" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> classify_donor(donor: <span class="bu">str</span>):</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> agent.run_sync(<span class="ss">f'What is the connection between </span><span class="sc">{</span>donor<span class="sc">}</span><span class="ss"> and Donald Trump?'</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result.output</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, we can run it on the scraped data from the FEC website.</p>
+<div id="cell-37" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> apply_classify_donor(df):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Apply the classify_donor function to each row</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'classification'</span>] <span class="op">=</span> df.<span class="bu">apply</span>(<span class="kw">lambda</span> row: classify_donor(donor<span class="op">=</span>row[<span class="st">'Name'</span>]), axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Convert the Pydantic objects to dictionaries</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    classification_dicts <span class="op">=</span> df[<span class="st">'classification'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: x.model_dump())</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create a new DataFrame from the classification dictionaries</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This ensures the index matches the original dataframe</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    classification_df <span class="op">=</span> pd.DataFrame(classification_dicts.tolist(), index<span class="op">=</span>df.index)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Combine original data with classification data</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    result_df <span class="op">=</span> pd.concat([df.drop([<span class="st">'classification'</span>], axis<span class="op">=</span><span class="dv">1</span>), classification_df], axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-38" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>fec_classified <span class="op">=</span> apply_classify_donor(fec_total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="cell-39" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>fec_classified</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="16">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Name</th>
+<th data-quarto-table-cell-role="th">Donation Amount</th>
+<th data-quarto-table-cell-role="th">donor_industry</th>
+<th data-quarto-table-cell-role="th">type_of_connection</th>
+<th data-quarto-table-cell-role="th">explanation</th>
+<th data-quarto-table-cell-role="th">source_urls</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">618</td>
+<td>PILGRIM'S PRIDE CORPORATION</td>
+<td>5000000.00</td>
+<td>Poultry processing</td>
+<td>Business</td>
+<td>Pilgrim's Pride Corporation, a major poultry p...</td>
+<td>https://readsludge.com/2025/04/21/trumps-top-i...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">652</td>
+<td>RIPPLE LABS, INC.</td>
+<td>4889345.33</td>
+<td>Cryptocurrency and blockchain technology</td>
+<td>Political</td>
+<td>Ripple Labs, Inc. has a political connection w...</td>
+<td>https://abcnews.go.com/US/sec-drops-case-crypt...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">824</td>
+<td>WARREN A STEPHENS</td>
+<td>4000000.00</td>
+<td>Investment banking and financial services</td>
+<td>Political</td>
+<td>Warren A. Stephens is a billionaire investment...</td>
+<td>https://en.wikipedia.org/wiki/Warren_Stephens,...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">667</td>
+<td>ROBINHOOD MARKETS, INC.</td>
+<td>2000000.00</td>
+<td>Financial Technology (Fintech)</td>
+<td>Political</td>
+<td>Robinhood Markets, Inc. made a $2 million dona...</td>
+<td>https://www.benzinga.com/markets/equities/24/1...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">360</td>
+<td>JARED ISAACMAN</td>
+<td>2000000.00</td>
+<td>Casinos and hospitality (Trump Taj Mahal casino)</td>
+<td>Business</td>
+<td>Jared Isaacman was sued by Trump's Taj Mahal c...</td>
+<td>https://www.firstpost.com/world/trumps-nasa-no...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>We now have a full classification for each donor which we can export to a CSV file, analyse further or review manually.</p>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next steps</h2>
+<p>The example above shows a minimal working example of how to use LLMs to research a dataset. However, there are several ways in which this process could be improved. Here are some ideas:</p>
+<ul>
+<li><strong><a href="https://github.com/Global-Witness/augmenta/">Play with the prompt</a></strong>. We asked a simple question, but the more specific you are, the better the results. Write a good prompt, include examples and iterate.</li>
+<li><strong><a href="https://github.com/Global-Witness/augmenta/blob/main/docs/tools.md#:~:text=MCP%20servers%20are%3A-,sequential%20thinking,--%20Allows%20the%20agent">Make the AI reason</a></strong>. Allowing an LLM to “reason” about its next steps can help it produce better outputs.</li>
+<li><strong><a href="https://github.com/Global-Witness/augmenta/blob/main/docs/search.md">Use different search engines</a></strong>. DuckDuckGo is free and good for a prototype. However, their API isn’t meant to be used this way and will often return errors, especially when used on bigger datasets. It also doesn’t return the best results. I recomment switching to Google, potentially via a SERP API.</li>
+<li><strong>Try other models</strong>. I like to use gpt-4.1-mini because it is reasonably fast, cheap and “smart” enough for most tasks. If you find it often gets it wrong, you can use the smarter gpt-4.1 or a “reasoning” model like o3.</li>
+<li><strong>Validate the output</strong>. While we did code the classifier to return structured output, you can go beyond that and validate the output (ie. check that the sources are valid URLs, check that the explanation includes exact quotes from the sources, etc).</li>
+<li><strong><a href="https://github.com/Global-Witness/augmenta/blob/main/docs/cache.md">Save your progress</a></strong>. Things can and will go wrong! The search engine may fail, the LLM may be down (Claude often is), your Python script may throw an unexpected error. If you don’t want to lose progress, you should save your progress to file or a database so you can pick up from where you left off.</li>
+<li><strong>Async/Multithreading</strong>. In my tests, each classification takes about 20-50 seconds, but it can take longer if the LLM is trying to accesss an unresponsive website. If you have a lot of rows to classify, you should consider running multiple agents in parallel.</li>
+<li><strong>Verify</strong>. LLMs are still dumb and shouldn’t be trusted! Manually verify the classifications if you’re going to publish the results.</li>
+</ul>
+</section>
+<section id="augmenta-a-better-way" class="level1">
+<h1>Augmenta: A better way</h1>
+<p>I’ve used the approach described above for several projects at <a href="https://globalwitness.org/">Global Witness</a>, including our <a href="https://globalwitness.org/en/campaigns/fossil-fuels/how-we-used-ai-to-help-us-find-lobbyists-at-cop/">annual classification of fossil fuel donors at COP</a>.</p>
+<p>As the codebase grew to account for the suggestions described above, I decided to package everything into a Python library called <strong><a href="https://github.com/Global-Witness/augmenta/">Augmenta</a></strong>. You can use Augmenta to build agents without writing any code. It has a few features that make life easier, such as:</p>
+<ul>
+<li>Built-in search and text extraction tools</li>
+<li>Support for multiple LLMs</li>
+<li>Asynchronous processing</li>
+<li>Automatic caching to save progress</li>
+<li>Support for <a href="https://github.com/Global-Witness/augmenta/blob/main/docs/tools.md">third-party tools via MCP</a></li>
+<li>Logfire integration for monitoring and debugging</li>
+</ul>
+<p>If you would like to test it out, you can read the <a href="https://github.com/Global-Witness/augmenta/">documentation on GitHub</a> and <a href="https://github.com/Global-Witness/augmenta/issues">get in touch</a> if you have any questions or suggestions.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright 2025, Nicu Calcea • Made with 💜 in London</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
